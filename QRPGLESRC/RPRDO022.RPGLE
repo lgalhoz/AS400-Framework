@@ -449,7 +449,7 @@
      ICRHIPOT   NS
      I                                  8   47  NOMCRH
      I****************************************************
-     I* GUARDIAN - TABELAS PU E VG                       *
+     I* TABELAS PU E VG                       *
      I****************************************************
      IFTABX     NS
      I                                  1    2  TPTAB
