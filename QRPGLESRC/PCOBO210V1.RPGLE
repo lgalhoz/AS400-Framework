@@ -57,7 +57,7 @@
      D TIP#Recibo      C                   'R'
      D TIP#Apolice     C                   'A'
      D TIP#Interface   C                   'I'
-     D TIP#Lusitania   C                   'L'
+     D TIP#CMPSeguro   C                   'L'
      D*==================================================================*
       /FREE
 
@@ -333,7 +333,7 @@
                     ECR_NOSEG     = INT_NOMSEG;
                     ECR_NUMORDEM  = INT_NUMORDRC;
                  ENDIF;
-             ELSEIF (COB_TPENTID=TIP#Recibo) OR (COB_TPENTID=TIP#Lusitania);
+             ELSEIF (COB_TPENTID=TIP#Recibo) OR (COB_TPENTID=TIP#CMPSeguro);
                 WNumOrdemRC = COB_NUORDEM;
                 CHAIN WNumOrdemRC RECIBO R#RECIBO;
                 IF (%FOUND(RECIBO));

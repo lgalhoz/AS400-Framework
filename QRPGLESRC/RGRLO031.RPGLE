@@ -5,7 +5,7 @@
      H* Objectivo..: Converter um ficheiro CSV para dentro de um DB2
      H* Descrição..:
      H* - Acede a uma API para obter a descrição dos campos usados no ficheiro
-     H*   obtém de cada campo o respectivo dominio, e a partir daqui formata
+     H*   obtém de cada campo o respectivo dominio, e a partir daqui forComp
      H*   os campos do CSV para dentro do ficheiro DB2/400.
      H*
      H* - Como parametro recebe a informação sobre o ficheiro ter um cabeçalho,

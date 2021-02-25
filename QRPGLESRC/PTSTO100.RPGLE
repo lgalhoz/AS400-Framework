@@ -37,7 +37,7 @@
         //-------------------------------------------------------
         URI = %str(getenv('REQUEST_URI'));
         MONITOR;
-           POS = %SCAN('/josemata?val=': uri) + %len('/josemata?val=');
+           POS = %SCAN('/DemoComp?val=': uri) + %len('/DemoComp?val=');
            CDPROD = %int(%subst(uri:pos));
         ON-ERROR;
            DATA = $addXMLHdr(500:'URI inválido')

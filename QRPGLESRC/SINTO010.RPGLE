@@ -37,11 +37,11 @@
      D   Valor                      100A   CONST
      D   Reset                         N   CONST OPTIONS(*NOPASS)
      D
-     D*==> Obter o código (José Mata, Lda) do Mediador
+     D*==> Obter o código (Demo Comp, Lda) do Mediador
      D $GetCodMedia    PR             3S 0
      D   CodMedia                     9S 0 CONST
      D
-     D*==> Obter o código (José Mata, Lda) do Mediador
+     D*==> Obter o código (Demo Comp, Lda) do Mediador
      D $CvtCode        PR           100A
      D   FieldValue                 100A   CONST
      D   FmtCode                      2A   CONST

@@ -283,7 +283,7 @@
      C                   ADD       TIRS          TOTAL
      C                   ADD       TSELO         TOTAL
      C     TVAL          SUB       TOTAL         TDIF
-     C*===> Formatar a morada correcta
+     C*===> ForCompr a morada correcta
       /FREE
         //----------------------------------------
         // Procurar o registo no ficheiro GFSEG

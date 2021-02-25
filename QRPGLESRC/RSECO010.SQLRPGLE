@@ -167,7 +167,7 @@
      D*=======================================================
       /FREE
         //---------------------------------------------------------
-        // Formatar Parametros Recebidos
+        // ForCompr Parametros Recebidos
         //---------------------------------------------------------
         WResult     = *ZEROS;
         WIsToInsert = *OFF;
@@ -602,7 +602,7 @@
        ENDDO;
 
        //---------------------------------------------------
-       // Formatar valor por defeito
+       // ForCompr valor por defeito
        //---------------------------------------------------
        IF (WDfAccess = 'A');
           WResult = *ON;

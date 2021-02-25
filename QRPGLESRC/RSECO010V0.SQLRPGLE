@@ -331,7 +331,7 @@
        EXEC SQL CLOSE C4;
 
        //---------------------------------------------------
-       // Formatar valor por defeito
+       // ForCompr valor por defeito
        //---------------------------------------------------
        IF (WDfAccess = 'A');
           WResult = *ON;

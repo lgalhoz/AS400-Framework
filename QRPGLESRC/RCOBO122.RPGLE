@@ -335,7 +335,7 @@
              //--------------------------------------------------
              ELSEIF (LST#Lote.Rec(WidxRec).SitAct = KTE#ActCobrado);
                 IF (LST#Lote.Rec(WIdxRec).SitRec = KTE#RecCobrado);
-                   WMsgErro = 'COB0037'; // O Recibo já foi Cobrado em José Mata
+                   WMsgErro = 'COB0037'; // O Recibo já foi Cobrado em Demo Comp
                    // Actualizar o estado
                 ENDIF;
              //--------------------------------------------------
@@ -343,7 +343,7 @@
              //--------------------------------------------------
              ELSEIF (LST#Lote.Rec(WidxRec).SitAct <> KTE#ActPendent);
                 IF (LST#Lote.Rec(WIdxRec).SitRec = KTE#RecCobrado);
-                   WMsgErro = 'COB0038'; // O Recibo foi Anulado em José Mata
+                   WMsgErro = 'COB0038'; // O Recibo foi Anulado em Demo Comp
                    // Actualizar o estado
                 ENDIF;
              ELSE;

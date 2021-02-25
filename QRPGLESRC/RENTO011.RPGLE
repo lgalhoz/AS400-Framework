@@ -13,7 +13,7 @@
      H*     conformidade com o seguinte critério:
      H*     [x] Segurados de Mediação Directa
      H*     [x] Segurados sem Mediador com Cobrança
-     H*     [x] Segurados da Mediação da José Mata Clube TAP
+     H*     [x] Segurados da Mediação da Demo Comp Clube TAP
      H*     [x] Pessoas (NIF: [100000000;300000000])
      H*     [x] Segurados com Contratos Activos
      H*
@@ -130,7 +130,7 @@
               ENDIF;
 
               //--------------------------------------------------------------
-              // Formatar o registo com a informação existente o Corretor
+              // ForCompr o registo com a informação existente o Corretor
               //--------------------------------------------------------------
               IF (WIsToProceed = TRUE);
                  LST#SEGURAD.NIF       = WNumNif;

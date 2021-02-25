@@ -3,7 +3,7 @@
      H*===========================================================
      H* Programa..: PINTO022
      H* Descrição.: Actualizar o estado do recibos, partindo da
-     H*             informação existente em José Mata, Lda.
+     H*             informação existente em Demo Comp, Lda.
      H*
      H*===========================================================
      FFINTP028  IF   E           K DISK    PREFIX(INT_)

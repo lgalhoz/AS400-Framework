@@ -47,7 +47,7 @@
      C                   PARM                    WCodErro
       /FREE
         //-----------------------------------------
-        // Formatar os valores pode defeito
+        // ForCompr os valores pode defeito
         //-----------------------------------------
         WCodErro = *BLANKS;
         MONITOR;

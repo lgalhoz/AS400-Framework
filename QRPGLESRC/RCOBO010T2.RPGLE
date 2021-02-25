@@ -2,7 +2,7 @@
      H AUT(*ALL)
      H*===========================================================
      H* Programa..: RCOBO010
-     H* Objectivo.: Criar o Recibo em José Mata, Lda ou na Companhia.
+     H* Objectivo.: Criar o Recibo em Demo Comp, Lda ou na Companhia.
      H* Descrição.: Esta rotina é invocada de diferentes formas, para
      H*             gerar os recibos no Corretor e/ou Companhia.
      H*             São criados todos os tipos de Recibos, e a

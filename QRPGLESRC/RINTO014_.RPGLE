@@ -13,9 +13,9 @@
      F*==> Correspondência com as Apólices em JM e Modelo Comissionamento
      FFCATP205  IF   E           K DISK    PREFIX(CAT_)                         Modelos de Comissionamento
      FSD1RM     IF   F  128     3AIDISK    KEYLOC(5) EXTFILE('SD.1.RM')         Tabela Ramos e modelo Comissionamento
-     FSD1AP1    IF   F  320    16AIDISK    KEYLOC(8) EXTFILE('SD.1.AP1')        Apólices Activas em J.Mata
-     FSD1AP2    IF   F  320    16AIDISK    KEYLOC(8) EXTFILE('SD.1.AP2')        Apólice em Arquivo em J.Mata
-     FFINTP021  UF A E           K DISK    PREFIX(REL_)                         Relação com Apólices J.Mata e regras DD
+     FSD1AP1    IF   F  320    16AIDISK    KEYLOC(8) EXTFILE('SD.1.AP1')        Apólices Activas em J.Comp
+     FSD1AP2    IF   F  320    16AIDISK    KEYLOC(8) EXTFILE('SD.1.AP2')        Apólice em Arquivo em J.Comp
+     FFINTP021  UF A E           K DISK    PREFIX(REL_)                         Relação com Apólices J.Comp e regras DD
      F*
      F*==> Registo de Excepções quando detectado
      FFINTP023  UF A E           K DISK    PREFIX(INT_)                         Excepções

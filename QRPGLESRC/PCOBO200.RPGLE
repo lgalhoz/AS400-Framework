@@ -182,7 +182,7 @@
        $SetLstFld('R.NOMSEG':'Segurado':33:'E');
        $SetPage(12);
        //--------------------------------------------------------
-       // Formatar valores por defeito
+       // ForCompr valores por defeito
        //--------------------------------------------------------
        Lst#Pastas(1).IsEmpty  = *ON;
        WCdEstado = *ZEROS;

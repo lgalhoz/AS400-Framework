@@ -75,7 +75,7 @@
      C
       /FREE
        //----------------------------------------------------
-       // Formatar o parâmetro de Entrada
+       // ForCompr o parâmetro de Entrada
        //----------------------------------------------------
        WDatSelect = %Subdt(%date:*years)*10000+
                    %subdt(%date:*months)*100 +
@@ -263,7 +263,7 @@
           // EXCEPT UPDNUMERO;
 
           //-------------------------------------
-          // Formatar Data e Hora de Inicio
+          // ForCompr Data e Hora de Inicio
           //-------------------------------------
           WDatInicio = (%SubDt(%Date():*Years) * 10000) +
                      (%SubDt(%Date():*Months) * 100) +

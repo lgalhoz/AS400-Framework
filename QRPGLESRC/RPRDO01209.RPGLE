@@ -248,7 +248,7 @@
        //==================================================================
        BEGSR WriteText;
           //-------------------------------------------
-          // Formatar os limites de Indemnização
+          // ForCompr os limites de Indemnização
           //-------------------------------------------
           WLinhaTxt = *BLANKS;
           WLinhaTxt = %TRIM(WDsCobert) + ' ' +
@@ -317,7 +317,7 @@
        //==================================================================
        BEGSR WriteFranquia;
           //-------------------------------------------
-          // Formatar as Franquias
+          // ForCompr as Franquias
           //-------------------------------------------
           IF (WVlPerFrq > *ZEROS) OR (WVlMinFrq > *ZEROS);
              EXSR WRiteHDR;

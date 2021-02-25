@@ -4,10 +4,10 @@
      ** Programa..: PRPTO010
      ** Objectivo.: Extracto das Cobranças realizadas no dia para o Mediador
      **
-     H* Execução..: http://20.0.0.1/josemata?frame=login&user=apache
-     H*             http://20.0.0.1/josemata?frame=reccobdia
-     H*             http://20.0.0.1/josemata?frame=reccobdia&data=20150707
-     H*             http://20.0.0.1/josemata?frame=reccobdia&data=20150707&med=1
+     H* Execução..: http://20.0.0.1/DemoComp?frame=login&user=apache
+     H*             http://20.0.0.1/DemoComp?frame=reccobdia
+     H*             http://20.0.0.1/DemoComp?frame=reccobdia&data=20150707
+     H*             http://20.0.0.1/DemoComp?frame=reccobdia&data=20150707&med=1
      H*
      **====================================================================
       /Copy QRPGLESRC,SSECO010
@@ -54,7 +54,7 @@
            WData      = $getHTTPVar('data');
            WNumMed    = $getHTTPVar('mediador');
         ON-ERROR;
-           WData    = *BLANKS; // Formatar com a data do dia
+           WData    = *BLANKS; // ForCompr com a data do dia
            WNumMed  = *BLANKS;
         ENDMON;
 

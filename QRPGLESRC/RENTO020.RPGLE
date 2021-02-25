@@ -75,7 +75,7 @@
         WLstEntidade = $GetNextKey('FENTP001':'CODIGO');
 
         //-----------------------------------------------------
-        // Actualizar informação em função da Lusitania Azul
+        // Actualizar informação em função da CmpSeguro Azul
         //-----------------------------------------------------
         SETLL *LOVAL GFSEG;
         READ GFSEG;

@@ -5,7 +5,7 @@
      H* Objectivo..: Simplificação das operações de acesso aos
      H*              Utilizadas em AS/400 ILE (Cobol, RPG, ...)
      H*=======================================================
-     D*==> Formatar a Intrução SQL
+     D*==> ForCompr a Intrução SQL
      D $AddDBDate      PR
      D    Data                         D   Const
      D $SetDBSession   PR
@@ -17,7 +17,7 @@
      D    SessionId                   5S 0 Const Options(*NOPASS)
      D $InzDBSession   PR
      D    SessionId                   5S 0 Const
-     D*==> Formatar a Intrução SQL
+     D*==> ForCompr a Intrução SQL
      D $setquery       PR
      D    Fields                    300A   Const
      D    Files                     300A   Const
@@ -118,7 +118,7 @@
      D $IsEof          PR              N
      D $GetQtdeReg     PR             9S 0
      D
-     D*==> Formatar a Intrução SQL
+     D*==> ForCompr a Intrução SQL
      D $getSQLStmt     PR          2000A
      D    Fields                   1000A   Const
      D    Files                     300A   Const
@@ -130,7 +130,7 @@
      D    Resumo                       N   Const Options(*NOPASS)
      D    IsLogical                    N   Const Options(*NOPASS)
      D
-     D*==> Formatar os campos da Lista de ecrã
+     D*==> ForCompr os campos da Lista de ecrã
      D $SetLstFld      PR
      D Campo                         20A   CONST
      D Label                         25A   CONST Options(*NOPASS)

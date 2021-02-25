@@ -39,7 +39,7 @@
                      (NUAPOL = '''+%CHAR(WApolice)+''')');
        DOW ($GetRecord(WRecAct) > *ZEROS);
           IF ($GetFieldNum('CDCREDOR') > *ZEROS);
-             EXSR AddTexto; // Formatar as Linhas de Texto
+             EXSR AddTexto; // ForCompr as Linhas de Texto
           ENDIF;
           WRecAct += 1;
        ENDDO;

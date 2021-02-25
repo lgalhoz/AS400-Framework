@@ -147,7 +147,7 @@
           ENDIF;
 
           //--------------------------------------------------------------
-          // Formatar campos dos Provisões de Sinistro
+          // ForCompr campos dos Provisões de Sinistro
           //--------------------------------------------------------------
           SIN_TIPMOV  = ConvN(PRV_TIPMOV :SIN_TIPMOV );
           SIN_DTMOV   = ConvN(PRV_DTMOV  :SIN_DTMOV  :'D');
@@ -215,7 +215,7 @@
           ENDIF;
 
           //--------------------------------------------------------------
-          // Formatar campos dos Pagamentos de Sinistro
+          // ForCompr campos dos Pagamentos de Sinistro
           //--------------------------------------------------------------
           SIN_TIPMOV  = ConvN(PAG_TIPMOV :SIN_TIPMOV );
           SIN_DTMOV   = ConvN(PAG_DTMOV  :SIN_DTMOV  :'D');

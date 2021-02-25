@@ -225,7 +225,7 @@
                  ENDIF;
 
                  //------------------------------------------------------
-                 // Formatar com dados as chaves do ficheiro
+                 // ForCompr com dados as chaves do ficheiro
                  //------------------------------------------------------
                  RPT_CDREPORT = WCdReport;
                  RPT_NUPERIOD = WCdPeriodo;
@@ -277,7 +277,7 @@
               OR (PRD_CATV = 6)) AND (PRD_FROTA <> 'F');
 
               //-------------------------------------------------------
-              // Formatar as datas
+              // ForCompr as datas
               //-------------------------------------------------------
               WDatSinist = $cvtData(PRD_DULSIN:'DMY':'YYMD');
               WDatInicio = $CvtData(PRD_DTINI:'DMY':'YYMD');

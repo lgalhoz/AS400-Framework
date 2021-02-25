@@ -564,7 +564,7 @@
           ENDIF;
 
           //----------------------------------------------
-          // Obter o Estado do Recibo em José Mata (Corretor)
+          // Obter o Estado do Recibo em Demo Comp (Corretor)
           //----------------------------------------------
           CHAIN (054:%CHAR(ECR_IDREC)) SD1RE2;
           IF (%FOUND(SD1RE2));
@@ -576,7 +576,7 @@
                 ENDIF;
              ENDIF;
           ELSE;
-             WCodErro = 'COB0073'; // O Recibo não existe em José Mata, Lda
+             WCodErro = 'COB0073'; // O Recibo não existe em Demo Comp, Lda
           ENDIF;
        ENDSR;
 

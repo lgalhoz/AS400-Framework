@@ -1,7 +1,7 @@
      A*======================================================================
      A* Ficheiro...: FRECT010
-     A* Descrição..: Temporário de Recibos da José Mata
-     A* Observação.: Ficheiro de Recibos da José Mata (SD.1.RCA e SD.1.RCM)
+     A* Descrição..: Temporário de Recibos da Demo Comp
+     A* Observação.: Ficheiro de Recibos da Demo Comp (SD.1.RCA e SD.1.RCM)
      A*======================================================================
      A          R RRECT010
      A            ALFA01         2A         TEXT('                            ')

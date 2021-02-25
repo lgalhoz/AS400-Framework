@@ -190,13 +190,13 @@
      A          R RCOBE20107
      A*%%TS  SD  20140801  170429  LGALHOZ     REL-V6R1M0  5761-WDS
      A                                      WINDOW(4 10 13 60)
-     A                                  1 16'Criar Relação com José Mata'
+     A                                  1 16'Criar Relação com Demo Comp'
      A                                      DSPATR(HI)
      A                                  3  2'Informação do Recibo '
      A                                      COLOR(BLU)
      A                                  4  5'Companhia....:'
      A                                  5  5'Ramo/Apólice.:'
-     A                                  7  2'Informação José Mata '
+     A                                  7  2'Informação Demo Comp '
      A                                      COLOR(BLU)
      A                                  8  5'Companhia....:'
      A                                  9  5'Ramo/Apólice.:'

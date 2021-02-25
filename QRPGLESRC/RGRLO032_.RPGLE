@@ -89,7 +89,7 @@
      P*  WStatus   = $AddScCOL(COL);              // Gravar endereço da Coluna
      P*  WStatus   = $AddScMsg(MSG);              // Gravar endereço da Mensagem
      P*
-     P*  WStatus   = $SetScError(<Field>:<MsgId>);// Formatar erro
+     P*  WStatus   = $SetScError(<Field>:<MsgId>);// ForCompr erro
      P*  WStatus   = $GetScStatus();              // O = 'Sem erros; E = Com Erros
      P*  WStatus   = $InzScStatus();              // Coloca Status = 'O'
      P*===================================================================
@@ -264,7 +264,7 @@
      D   QDFFSCOL              2      2                                         Starting Col
      D WIcErro         S               N
      D
-     D*==> Formatar a biblioteca
+     D*==> ForCompr a biblioteca
      D  FILLIB         DS
      D   WFilLib                     20A
      D    WFILE                1     10A

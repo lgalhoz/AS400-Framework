@@ -92,7 +92,7 @@
                       ASNMMAT   = PRO_MATR1;   // Matricula
                       ASMARCA   = PRO_MARC1;   // Marca
                       ASCATV    = PRO_CATV1;   // Categoria
-                      ASCOMP    = *ZEROS;      // Lusitania Azul
+                      ASCOMP    = *ZEROS;      // CmpSeguro Azul
                       ASNUAPO   = %CHAR(PRO_RM) + '-' +%CHAR(PRO_AP);
                       MSTPINT   = *BLANKS;
                       MSSQINT   = *ZEROS;

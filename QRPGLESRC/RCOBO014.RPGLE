@@ -55,7 +55,7 @@
         WCodContacto = *ZEROS;
 
         //--------------------------------------------------------
-        // Seleccionar recibos em José Mata, Lda com data expirada
+        // Seleccionar recibos em Demo Comp, Lda com data expirada
         //--------------------------------------------------------
         SETLL *LOVAL SD1REC;
         READ SD1REC R#SD1REC;
@@ -124,7 +124,7 @@
         //==========================================================================
         BEGSR Agendar;
            //---------------------------------------------------
-           // Validar o estado do recibo em José Mata, LDA
+           // Validar o estado do recibo em Demo Comp, LDA
            //---------------------------------------------------
            WCodEstado = '0'; // Cobrado
            WIcExiste    = *OFF;

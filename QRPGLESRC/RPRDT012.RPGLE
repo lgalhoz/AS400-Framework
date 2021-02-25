@@ -56,7 +56,7 @@
        WDifCapital= *ZEROS;
 
        //-----------------------------------------------------
-       // Formatar registo com valores por defeito
+       // ForCompr registo com valores por defeito
        //-----------------------------------------------------
        IF (TTrgEvent = IO#INS);
           NEW_NUSEQHST  = $GetNextKey('FPRDP012':'NUSEQHST':'(CDRAMO='''+
@@ -152,7 +152,7 @@
        //=========================================================
        BEGSR UpdSuperior;
           //-------------------------------------------------------------
-          // Formatar Chaves do Registo
+          // ForCompr Chaves do Registo
           //-------------------------------------------------------------
           IF (TTrgEvent = IO#INS) OR (TTrgEvent = IO#UPD);
              WCodRamo  = NEW_CDRAMO;

@@ -162,7 +162,7 @@
              ASNMMAT    = PRO_MATR1;   // Matricula
              ASMARCA    = PRO_MARC1;   // Marca
              ASCATV     = PRO_CATV1;   // Categoria
-             ASCOMP     = *ZEROS;      // Lusitania Azul
+             ASCOMP     = *ZEROS;      // CmpSeguro Azul
              CHAIN (PRO_NSEG) FSEGF1;
              IF (%FOUND);             // Nome do Segurado
                 ASNOME  = SEG_NOM;

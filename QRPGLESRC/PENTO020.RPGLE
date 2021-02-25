@@ -76,7 +76,7 @@
        $SetPage(12);
 
        //--------------------------------------------------------
-       // Formatar valores por defeito
+       // ForCompr valores por defeito
        //--------------------------------------------------------
        ECR_DSCRITER = $getCritText();
        EXSR ShowEntidade;

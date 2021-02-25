@@ -2,7 +2,7 @@
      H AUT(*ALL)
      H*===========================================================
      H* Programa..: RINTO016
-     H* Descrição.: Criar o Recibo em José Mata, Lda
+     H* Descrição.: Criar o Recibo em Demo Comp, Lda
      H*
      H*===========================================================
      FFINTP023  IF   E           K DISK    PREFIX(COM_)
@@ -56,7 +56,7 @@
      C
       /FREE
         //-----------------------------------------------------------------
-        // Formatar os dados a  inserir no Recibo
+        // ForCompr os dados a  inserir no Recibo
         //-----------------------------------------------------------------
         WCodErro = *BLANKS;
         CHAIN(N) (WCdRegis) RINTP028;

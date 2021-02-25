@@ -89,7 +89,7 @@
            EXSR IsToSelect;
            IF (WIsToSelect);
               //------------------------------------------------------------
-              // Formatar a chave do Contrato
+              // ForCompr a chave do Contrato
               //------------------------------------------------------------
               DSC_MES1 = AUT_MES1;
               DSC_NSEG = AUT_NSEG;

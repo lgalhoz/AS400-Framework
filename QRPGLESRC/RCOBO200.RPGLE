@@ -12,26 +12,26 @@
      H*             Canal de Cobrança <> 8.
      H*
      H*--> Antes de Compilar, fazer:
-     H* CRTDUPOBJ OBJ("fcobp010") FROMLIB("josemata") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ(fcobp010)
-     H* CRTDUPOBJ OBJ("fcobp010") FROMLIB("josemata") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ("fcobp010")
-     H* CRTDUPOBJ OBJ("fcob0001") FROMLIB("josemata") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ(fcobp01001)
-     H* CRTDUPOBJ OBJ("fcobp022") FROMLIB("josemata") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ(fcobp022)
-     H* CRTDUPOBJ OBJ("fcobp021") FROMLIB("josemata") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ(fcobp021)
+     H* CRTDUPOBJ OBJ("fcobp010") FROMLIB("DemoComp") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ(fcobp010)
+     H* CRTDUPOBJ OBJ("fcobp010") FROMLIB("DemoComp") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ("fcobp010")
+     H* CRTDUPOBJ OBJ("fcob0001") FROMLIB("DemoComp") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ(fcobp01001)
+     H* CRTDUPOBJ OBJ("fcobp022") FROMLIB("DemoComp") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ(fcobp022)
+     H* CRTDUPOBJ OBJ("fcobp021") FROMLIB("DemoComp") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ(fcobp021)
      H*
      H*==================================================================
      F*==> Novo sistema
      FFCOBP010  UF A E           K DISK    PREFIX(COB_)
-     F                                     EXTFILE('"josemata"/"fcobp010"')
+     F                                     EXTFILE('"DemoComp"/"fcobp010"')
      F                                     RENAME(FCOBP010:RCOBP010)
      FFCOBP01001IF   E           K DISK    PREFIX(COB_)
      F                                     RENAME(FCOBP010:RCOBP01001)
-     F                                     EXTFILE('"josemata"/"fcob0001"')
+     F                                     EXTFILE('"DemoComp"/"fcob0001"')
      FFCOBP022  UF A E           K DISK    PREFIX(COB_)
      F                                     RENAME(FCOBP020:RCOBP022)
-     F                                     EXTFILE('"josemata"/"fcobp022"')
+     F                                     EXTFILE('"DemoComp"/"fcobp022"')
      FFCOBP021  UF A E           K DISK    PREFIX(COB_)
      F                                     RENAME(FCOBP021:RCOBP021)
-     F                                     EXTFILE('"josemata"/"fcobp021"')
+     F                                     EXTFILE('"DemoComp"/"fcobp021"')
      F
      F*==> Sistema Corretor
      FRECIBO    IF   F  326     7AIDISK    KEYLOC(270) EXTFILE('SD.1.REC')
@@ -41,7 +41,7 @@
      FSD1AP1    IF   F  320    16AIDISK    KEYLOC(8) EXTFILE('SD.1.AP1')
      FSD1AP2    IF   F  320    16AIDISK    KEYLOC(8) EXTFILE('SD.1.AP2')
      F
-     F*==> Sistema Lusitania Azul
+     F*==> Sistema CmpSeguro Azul
      FGBASEGRL  IF   E           K DISK    PREFIX(BAS_)
      FGFSEG     IF   E           K DISK    PREFIX(SEG_)
      FGFSEGEXT  IF   E           K DISK    PREFIX(SEG_)
@@ -128,7 +128,7 @@
      D ENT#Corretor    C                   'R'
      D ENT#Apolice     C                   'A'
      D ENT#Interface   C                   'I'
-     D ENT#Lusitania   C                   'L'
+     D ENT#CmpSeguro   C                   'L'
      D
      D STS#Fechado     C                   'F'
      D STS#Aberto      C                   'A'
@@ -184,7 +184,7 @@
              Periodo.Maximo = $DateToInt($IntToDate(Periodo.Maximo)+%DAYS(1));
              WIcNotDiaUtil = $chkDUtil(Periodo.Maximo);
           ENDDO;
-          WSeqInforma = $GetNextKey('"josemata"/"fcobp010"':
+          WSeqInforma = $GetNextKey('"DemoComp"/"fcobp010"':
                                     'CDCONT');
        ENDSR;
 
@@ -234,7 +234,7 @@
           // Excluir Recibos já registados
           //---------------------------------------------------------
           IF (REC_CCOMP = 54);
-             WTipEntidade = ENT#Lusitania;
+             WTipEntidade = ENT#CmpSeguro;
           ELSE;
              WTipEntidade = ENT#Corretor;
           ENDIF;
@@ -306,8 +306,8 @@
                         $CvtData(WDatLimite:'YYMD':'DMYY'):'  /  /    ')
                           :WVariaveis);
 
-          IF (WTipEntidade = ENT#Lusitania);
-             EXSR GetLusitania;
+          IF (WTipEntidade = ENT#CmpSeguro);
+             EXSR GetCmpSeguro;
           ELSE;
              EXSR GetOutras;
           ENDIF;
@@ -315,10 +315,10 @@
        ENDSR;
 
        //===================================================
-       // Subrotina.: GetLusitania
+       // Subrotina.: GetCmpSeguro
        // Objectivo.: Obter informação das outras Companhias
        //===================================================
-       BEGSR GetLusitania;
+       BEGSR GetCmpSeguro;
           //-------------------------------------------
           // Referencia do Recibo
           //-------------------------------------------
@@ -531,8 +531,8 @@
              ENDIF;
           ELSE;
           // Destino.Codigo  = 60277;
-          // Destino.Nome    = 'Tesouraria - Jose Mata, Lda';
-          // Destino.Email   = 'seguros@josemata.pt';
+          // Destino.Nome    = 'Tesouraria ';
+          // Destino.Email   = 'seguros@DemoComp.pt';
           ENDIF;
 
           IF (Destino.Email = *BLANKS);

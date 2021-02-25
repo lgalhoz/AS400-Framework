@@ -2,7 +2,7 @@
      H AUT(*ALL)
      H*===========================================================
      H* Programa..: RCOBO012
-     H* Objectivo.: Facturar um recibo em José Mata, Lda ou Companhia
+     H* Objectivo.: Facturar um recibo em Demo Comp, Lda ou Companhia
      H* Descrição.: Esta rotina é invocada de diferentes formas, para
      H*             Facturar os recibos.
      H*

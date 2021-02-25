@@ -237,7 +237,7 @@
            // Guardar primeira entrada do Job
            //----------------------------------
            IF (NOT WIsSaved);
-              L#JNRENT  = JOSEQN;
+              L#JNRENT  = DemoQN;
               WIsSaved = *ON;
            ENDIF;
 
@@ -247,7 +247,7 @@
            IF (JOENTT = 'SC');
               WStsOpera = 'S';
            ELSEIF (JOENTT = 'CM') OR (JOENTT = 'RB');
-              L#JNRENT  = JOSEQN;
+              L#JNRENT  = DemoQN;
               WStsOpera = 'C';
            ENDIF;
            READ QADSPJRN;

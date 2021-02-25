@@ -19,7 +19,7 @@
      A            DS#PGM        57A  O  1 12DSPATR(HI)
      A          R RPRDE01605
      A*%%TS  SD  20131219  122254  LGALHOZ     REL-V6R1M0  5761-WDS
-     A                                      TEXT('Lusitania')
+     A                                      TEXT('Comp Seguros')
      A                                  4  2'Tomador..:'
      A                                 13  2'Data Carta Seg.:'
      A                                 15  2'Med C/ Cobr.:'
@@ -110,7 +110,7 @@
      A                                  4  6'1316635'
      A                                      DSPATR(HI)
      A                                  4 20'Companhia..'
-     A                                  4 36'54  LUSITANIA,SA'
+     A                                  4 36'54  Companhia de Seguros'
      A                                      DSPATR(HI)
      A                                  5 20'Ramo.......'
      A                                  5 35'342  RISCOS MULTIPLOS-HABIT.'

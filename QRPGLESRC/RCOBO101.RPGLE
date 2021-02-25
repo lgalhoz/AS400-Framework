@@ -116,7 +116,7 @@
           %SUBST(TFTEXT: 1: 1) = '0';                // Identificação "Header do Ficheiro"
           %SUBST(TFTEXT: 2: 1) = 'D';                // Aplicação
           %SUBST(TFTEXT: 3: 3) = 'EDR';              // Identificação do Ficheiro
-          %SUBST(TFTEXT: 6: 6) = '102706';           // ID Atribuido pela SIBS à Jose Mata, Lda
+          %SUBST(TFTEXT: 6: 6) = '999999';           // ID Atribuido pela SIBS 
           %SUBST(TFTEXT:12: 2) = '01';               // Adicção ao Código do Credor
           %SUBST(TFTEXT:14: 2) = '00';               // Valor Reservado
           %SUBST(TFTEXT:16: 4) = '0018';             // Banco Credor (TOTTA)
@@ -141,7 +141,7 @@
           %SUBST(TFTEXT: 2: 4) = '0001';             // Identificação da Linha do Lote
           %SUBST(TFTEXT: 6: 3) = '001';              // ??? CLCSR
           %SUBST(TFTEXT: 9: 2) = '60';               // Tipo de Serviço "Seguros Diversos"
-          %SUBST(TFTEXT:11: 6) = '102706';           // ID Atribuido pela SIBS à Jose Mata, Lda
+          %SUBST(TFTEXT:11: 6) = '666666';           // ID Atribuido pela SIBS 
           %SUBST(TFTEXT:17: 4) = '0018';             // Identificação do Banco Credor
           %SUBST(TFTEXT:21: 3) = '978';              // Código de Moeda (ISO 4217:978) = Euros
           %SUBST(TFTEXT:24:21) = *BLANKS;            // Reservado

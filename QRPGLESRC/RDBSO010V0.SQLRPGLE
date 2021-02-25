@@ -289,7 +289,7 @@
 
      P*=======================================================
      P* Processo..: $SetFiles
-     P* Descrição.: Formatar com  valores o parametro Ficheiros
+     P* Descrição.: ForCompr com  valores o parametro Ficheiros
      P*=======================================================
      P $SetFiles       B                   EXPORT
      D                 PI             5S 0
@@ -339,7 +339,7 @@
 
      P*=======================================================
      P* Processo..: $SetFields
-     P* Descrição.: Formatar com  valores o parametro Ficheiros
+     P* Descrição.: ForCompr com  valores o parametro Ficheiros
      P*             recebe, como parâmetros a lista de campos
      P*             ou o nome do Ficheiro e o prefixo
      P*=======================================================
@@ -444,7 +444,7 @@
 
      P*=======================================================
      P* Processo..: $SetSort
-     P* Descrição.: Formatar com  valores o parametro Ficheiros
+     P* Descrição.: ForCompr com  valores o parametro Ficheiros
      P*=======================================================
      P $SetSort        B                   EXPORT
      D                 PI
@@ -643,7 +643,7 @@
      P $GetCriteria    E
      P*=======================================================
      P* Processo..: $SetCriteria
-     P* Descrição.: Formatar com  valores o parametro Ficheiros
+     P* Descrição.: ForCompr com  valores o parametro Ficheiros
      P*=======================================================
      P $SetCriteria    B                   EXPORT
      D                 PI
@@ -757,7 +757,7 @@
       /FREE
          MONITOR;
          //-----------------------------------------------------
-         // Formatar o número máximo de registos da Consulta
+         // ForCompr o número máximo de registos da Consulta
          //-----------------------------------------------------
          IF (Var#Sess(WSessID).MaxRec = *ZEROS);
             Var#Sess(WSessID).MaxRec = $GetQtdeReg();
@@ -839,7 +839,7 @@
 
      P*=======================================================
      P* Processo..: $getRecord
-     P* Descrição.: Formatar com  valores o parametro Ficheiros
+     P* Descrição.: ForCompr com  valores o parametro Ficheiros
      C*=======================================================
      P $GetRecord      B                   EXPORT
      D                 PI             5S 0
@@ -934,7 +934,7 @@
        ENDIF;
 
        //------------------------------------------------
-       // Formatar lista com os registos
+       // ForCompr lista com os registos
        //------------------------------------------------
        WIdxLst  = *ZEROS;
        WIdxDesc = *ZEROS;
@@ -1095,7 +1095,7 @@
      P* Processo..: $getField
      P* Descrição.: Obter o Valor para o Campo físico ou Virtual
      P*             Se for Virtual então aplicar regras para
-     P*             Formatar o Valor.
+     P*             ForCompr o Valor.
      C*=======================================================
      P $GetField       B                   EXPORT
      D                 PI           150A

@@ -100,7 +100,7 @@
             ENDIF;
 
             //----------------------------------------------
-            // Formatar restantes campos do ficheiro
+            // ForCompr restantes campos do ficheiro
             //----------------------------------------------
             WStatus = GRL_SIT;
             WCdMED1 = GRL_MED1;

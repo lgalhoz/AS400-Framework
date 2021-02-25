@@ -20,7 +20,7 @@
      FSD1AP1    IF   F  320    16AIDISK    KEYLOC(8) EXTFILE('SD.1.AP1')
      FSD1AP2    IF   F  320    16AIDISK    KEYLOC(8) EXTFILE('SD.1.AP2')
      F
-     F*==> Sistema Lusitania Azul
+     F*==> Sistema CmpSeguro Azul
      FGFSEG     IF   E           K DISK    PREFIX(SEG_)
      FGFSEGEXT  IF   E           K DISK    PREFIX(SEG_)
      FFMED      IF   E           K DISK    PREFIX(COR_)
@@ -110,7 +110,7 @@
      D ENT#Corretor    C                   'R'
      D ENT#Apolice     C                   'A'
      D ENT#Interface   C                   'I'
-     D ENT#Lusitania   C                   'L'
+     D ENT#CmpSeguro   C                   'L'
      D
      D STS#Fechado     C                   'F'
      D STS#Aberto      C                   'A'
@@ -214,7 +214,7 @@
           // Excluir Recibos já registados
           //---------------------------------------------------------
           IF (REC_CCOMP = 54);
-             WTipEntidade = ENT#Lusitania;
+             WTipEntidade = ENT#CmpSeguro;
           ELSE;
              WTipEntidade = ENT#Corretor;
           ENDIF;
@@ -295,7 +295,7 @@
 
        //===================================================
        // Subrotina.: GetLusitAzul
-       // Objectivo.: Obter informação da Lusitania Azul
+       // Objectivo.: Obter informação da CmpSeguro Azul
        //===================================================
        BEGSR GetLusitAzul;
           //-------------------------------------------
@@ -366,7 +366,7 @@
 
 
           //------------------------------------------------
-          // formatar os campos variáveis a escrever no mail
+          // forCompr os campos variáveis a escrever no mail
           //------------------------------------------------
           IF (ALS_RAMO <> 50) AND (ALS_RAMO <> 51);
              WDescRisco = %TRIM(ALS_LRPS);
@@ -573,8 +573,8 @@
              ENDIF;
           ELSE;
              Destino.Codigo  = 60277;
-             Destino.Nome    = 'Tesouraria - Jose Mata, Lda';
-             Destino.Email   = 'seguros@josemata.pt';
+             Destino.Nome    = 'Tesouraria';
+             Destino.Email   = 'seguros@DemoComp.pt';
           ENDIF;
 
           IF (Destino.Email = *BLANKS);

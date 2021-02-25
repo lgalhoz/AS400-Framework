@@ -37,7 +37,7 @@
        NewNullPtr = %ADDR(TrgBuffer) + TNewNullOff;
 
        //-----------------------------------------------------
-       // Formatar registo com valores por defeito
+       // ForCompr registo com valores por defeito
        //-----------------------------------------------------
        IF (TTrgEvent = IO#INS);
           IF (N_CDSEQU = *ZEROS);

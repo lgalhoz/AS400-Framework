@@ -106,7 +106,7 @@
                 ENDIF;
 
                 //-------------------------------------------------
-                // Formatar registo de danos Físicos
+                // ForCompr registo de danos Físicos
                 //-------------------------------------------------
                 WMatricula = INT_IMATR1;
                 IF (INT_TPDN = 'F');

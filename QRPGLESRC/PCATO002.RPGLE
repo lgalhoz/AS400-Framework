@@ -480,7 +480,7 @@
        WRec =1;
        DOW ($GetRecord(WRec) > *ZEROS);
           //--------------------------------------------
-          // Formatar o Cabeçalho
+          // ForCompr o Cabeçalho
           //--------------------------------------------
           IF ((WCdNatura <> $GetField('CDNATURA')) AND (PCdsuper = *ZEROS));
              WCdNatura = $GetField('CDNATURA');
@@ -492,7 +492,7 @@
           ENDIF;
 
           //--------------------------------------------
-          // Formatar o Registo
+          // ForCompr o Registo
           //--------------------------------------------
           LST#Cobert(WIdxCobert).Header   = 'N';
           LST#Cobert(WIdxCobert).CdNatura = $GetField('CDNATURA');
@@ -506,7 +506,7 @@
           LST#Cobert(WIdxCobert+1).IsEmpty = *ON;
 
           //--------------------------------------------
-          // Formatar os Dependentes
+          // ForCompr os Dependentes
           //--------------------------------------------
           WLstIdx = WIdxCobert;
           FillCoberturas(PCdProd:$GetFieldNum('CDCOBERT'));

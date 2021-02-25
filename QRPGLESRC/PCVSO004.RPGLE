@@ -50,7 +50,7 @@
        ENDIF;
 
        //-----------------------------------------------------------------
-       // Formatar parametros recebidos
+       // ForCompr parametros recebidos
        //-----------------------------------------------------------------
        MONITOR;
          WCdRamo = PCdRamo;

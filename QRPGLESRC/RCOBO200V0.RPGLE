@@ -19,7 +19,7 @@
      FSD1AP1    IF   F  320    16AIDISK    KEYLOC(8) EXTFILE('SD.1.AP1')
      FSD1AP2    IF   F  320    16AIDISK    KEYLOC(8) EXTFILE('SD.1.AP2')
      F
-     F*==> Sistema Lusitania Azul
+     F*==> Sistema CmpSeguro Azul
      FGFSEG     IF   E           K DISK    PREFIX(SEG_)
      FGFSEGEXT  IF   E           K DISK    PREFIX(SEG_)
      FFMED      IF   E           K DISK    PREFIX(COR_)
@@ -260,7 +260,7 @@
 
        //===================================================
        // Subrotina.: GetLusitAzul
-       // Objectivo.: Obter informação da Lusitania Azul
+       // Objectivo.: Obter informação da CmpSeguro Azul
        //===================================================
        BEGSR GetLusitAzul;
           //-------------------------------------------
@@ -470,8 +470,8 @@
              ENDIF;
           ELSE;
              Destino.Codigo  = 60277;
-             Destino.Nome    = 'Tesouraria - Jose Mata, Lda';
-             Destino.Email   = 'seguros@josemata.pt';
+             Destino.Nome    = 'Tesouraria';
+             Destino.Email   = 'seguros@DemoComp.pt';
           ENDIF;
           EXSR AddDestinatario;
           WNumSequ += 1;

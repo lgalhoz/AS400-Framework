@@ -61,7 +61,7 @@
      D   NomFile                     10A
      D   NomLib                      10A
      D FTPUser         S             10A   INZ('ntorrado')
-     D FTPPassw        S             15A   inz('josemat@2011')
+     D FTPPassw        S             15A   inz('Demomat@2011')
      D FTPServer       S             15A   INZ('20.0.0.130')
      D FTPFmt          S              5A   INZ('ASCII')
      D

@@ -207,7 +207,7 @@
        //=================================================================
        BEGSR ConvRegisto;
           //-----------------------------------------------
-          // Formatar o Código de Ramo
+          // ForCompr o Código de Ramo
           //-----------------------------------------------
           WCdChvOr = '??????????';
           WIdx = 1;
@@ -249,7 +249,7 @@
 
        //=================================================================
        // SubRotina..: GetTipRecib
-       // Objectivo..: Formatar o Tipo de Recibo
+       // Objectivo..: ForCompr o Tipo de Recibo
        //=================================================================
        BEGSR GetTipRecib;
           WTipRecibo = 'P';

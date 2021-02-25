@@ -3,7 +3,7 @@
      H*===========================================================
      H* Programa..: RINTO015
      H* Descrição.: Completar a informação dos recibos, com o que
-     H*             já está carregado em José Mata, Lda (Corretor)
+     H*             já está carregado em Demo Comp, Lda (Corretor)
      H*             Obter o respectivo número de Ordem.
      H*
      H*===========================================================

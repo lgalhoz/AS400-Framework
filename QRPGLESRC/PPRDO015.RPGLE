@@ -230,7 +230,7 @@
                 ECR_LSTDET = $GetLstLine();
 
                 //---------------------------------------------
-                // Formatar as Chaves das Tabelas
+                // ForCompr as Chaves das Tabelas
                 //---------------------------------------------
                 ECR_APLDR    = $GetField('APLDR');
                 MONITOR;
@@ -362,7 +362,7 @@
              IF ($GetDBSession()=KTE#CoSegu);
                 ECR_LIDER = 'N';
                 //--------------------------------------------------
-                // Formatar a quota parte de responsabilidade
+                // ForCompr a quota parte de responsabilidade
                 //--------------------------------------------------
                 ECR_QPER = *ZEROS;
                 SETLL (ECR_RAMO:ECR_APOL) CSF02F1;

@@ -391,7 +391,7 @@
        //========================================================
        BEGSR ShowText;
           //---------------------------------------------------
-          // Formatar o texto associado à Cobertura
+          // ForCompr o texto associado à Cobertura
           //---------------------------------------------------
        // EXFMT RPRDE10407;
        ENDSR;

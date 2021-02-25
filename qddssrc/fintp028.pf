@@ -16,7 +16,7 @@
      A            NUMRECOR      15A         TEXT('Número de Recibo Original')
      A            CDCANAL        1A         TEXT('Canal Cobrança')
      A
-     A*==> Correspondência com José Mata (Corretor)
+     A*==> Correspondência com Demo Comp (Corretor)
      A            NUMORDAP       8S 0       TEXT('Número de Ordem Apólice')
      A            NUMORDRC       8S 0       TEXT('Número de Ordem Recibo')
      A            CDRAMO         3S 0       TEXT('Código de Ramo Corretor')

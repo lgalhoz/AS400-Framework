@@ -85,7 +85,7 @@
        // ENDIF;
 
        //-----------------------------------------------------
-       // Formatar parametros recebidos
+       // ForCompr parametros recebidos
        //-----------------------------------------------------
        WIcUnica = *OFF;
        MONITOR;
@@ -210,7 +210,7 @@
        //========================================================
        BEGSR FillHistorico;
           //------------------------------------
-          // Formatar os Parametros
+          // ForCompr os Parametros
           //------------------------------------
           IF (WIcUnica);
              WParms(1).ValField = %TRIM(%EDITW(WNuApolice:'0       '));

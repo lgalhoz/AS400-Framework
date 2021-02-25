@@ -52,7 +52,7 @@
 
      P*=======================================================
      P* Processo..: SetFiles
-     P* Descrição.: Formatar com  valores o parametro Ficheiros
+     P* Descrição.: ForCompr com  valores o parametro Ficheiros
      C*=======================================================
      P SetFiles        B                   EXPORT
      D SetFiles        PI
@@ -65,7 +65,7 @@
 
      P*=======================================================
      P* Processo..: SetFields
-     P* Descrição.: Formatar com  valores o parametro Ficheiros
+     P* Descrição.: ForCompr com  valores o parametro Ficheiros
      C*=======================================================
      P SetFields       B                   EXPORT
      D SetFields       PI
@@ -78,7 +78,7 @@
 
      P*=======================================================
      P* Processo..: SetSort
-     P* Descrição.: Formatar com  valores o parametro Ficheiros
+     P* Descrição.: ForCompr com  valores o parametro Ficheiros
      C*=======================================================
      P SetSort         B                   EXPORT
      D SetSort         PI
@@ -91,7 +91,7 @@
 
      P*=======================================================
      P* Processo..: SetCriteria
-     P* Descrição.: Formatar com  valores o parametro Ficheiros
+     P* Descrição.: ForCompr com  valores o parametro Ficheiros
      C*=======================================================
      P SetCriteria     B                   EXPORT
      D SetCriteria     PI
@@ -104,7 +104,7 @@
 
      P*=======================================================
      P* Processo..: getRecord
-     P* Descrição.: Formatar com  valores o parametro Ficheiros
+     P* Descrição.: ForCompr com  valores o parametro Ficheiros
      C*=======================================================
      P GetRecord       B                   EXPORT
      D GetRecord       PI             5S 0
@@ -144,7 +144,7 @@
        EXEC SQL CLOSE REC;
 
        //------------------------------------------------
-       // Formatar lista com os registos
+       // ForCompr lista com os registos
        //------------------------------------------------
        IF (NOT WIsEof);
           WIdx = 1;

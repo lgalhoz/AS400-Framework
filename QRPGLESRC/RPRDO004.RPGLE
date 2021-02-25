@@ -261,7 +261,7 @@
    78           ECR_MOTIVO  = 'Backup antes da Anuidade da Apólice';
              ENDIF;
 
-             //--> Formatar o texto para o mês
+             //--> ForCompr o texto para o mês
              IF (WMesFich = 1);
    78           ECR_MES = 'Janeiro';
              ELSEIF (WMesFich = 2);

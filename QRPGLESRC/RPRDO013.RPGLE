@@ -73,7 +73,7 @@
       /FREE
        EXSR InzVariaveis; // Limpara campos de Trabalho
        EXSR GetRiscApol;  // Obter os Riscos da Apólice
-       EXSR AddTexto;     // Formatar as Linhas de Texto
+       EXSR AddTexto;     // ForCompr as Linhas de Texto
 
        $RmvDBSession(WSessPRD);
        $RmvDBSession(WSessCAT);

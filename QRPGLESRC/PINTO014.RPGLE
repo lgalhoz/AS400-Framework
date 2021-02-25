@@ -199,7 +199,7 @@
        //=================================================================
        BEGSR ConvRegisto;
           //-----------------------------------------------
-          // formatar Chave (Ramo/Modalidade/Submod)
+          // forCompr Chave (Ramo/Modalidade/Submod)
           //-----------------------------------------------
           WModali     = ExtFieldNum(TMP_MODAL:'="#"');
           WSubMod     = ExtFieldNum(TMP_SUBMOD:'="#"');
@@ -231,7 +231,7 @@
 
        //=================================================================
        // SubRotina..: GetTipRecib
-       // Objectivo..: Formatar o Tipo de Recibo
+       // Objectivo..: ForCompr o Tipo de Recibo
        //=================================================================
        BEGSR GetTipRecib;
           WTipRecibo = 'P';

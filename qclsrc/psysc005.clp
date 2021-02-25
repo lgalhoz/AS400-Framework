@@ -1,6 +1,6 @@
              /*================================================================*/
              /* Programa..: PSYSC005                                           */
-             /* Objectivo.: Gerir o Portal da José Mata                        */
+             /* Objectivo.: Gerir o Portal da Demo Comp                        */
              /*      I ==> Inicial a nova Versão                               */
              /*      F ==> Termina a nova Versão                               */
              /*      S ==> Inicia a Versão Antiga                              */

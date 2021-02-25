@@ -147,7 +147,7 @@
         //=================================================================
         BEGSR AddCriteria;
            //------------------------------------------------------------
-           // Formatar Variáveis recebidas
+           // ForCompr Variáveis recebidas
            //------------------------------------------------------------
            IF (WnumMed <> 'XXX');
               WCriteria = '(CDMEDI='''+WNumMed+''' OR CDCORR='''+WNumMed+''')';

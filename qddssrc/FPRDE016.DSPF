@@ -65,8 +65,8 @@
      A                                      DSPATR(HI)
      A          R RPRDE01605
      A*%%TS  SD  20130523  130512  LGALHOZ     REL-V6R1M0  5761-WDS
-     A                                      TEXT('Lusitania')
-     A                                  1  2'LUSITANIA'
+     A                                      TEXT('Comp. Seguros')
+     A                                  1  2'Comp. Seguros'
      A                                  1 12'COMPª'
      A                                  1 18'SEGUROS,SA'
      A                                  1 33'GESTÃO DE COBRANÇAS'
@@ -159,7 +159,7 @@
      A                                 15  2'Med'
      A                                 15  6'C/'
      A                                 15  9'Cobr.:'
-     A                                 15 16'0299 JOSÉ MATA, LDA'
+     A                                 15 16'0299 Demo Comp, LDA'
      A                                      DSPATR(HI)
      A                                 16  2'Med'
      A                                 16  6'S/'
@@ -226,7 +226,7 @@
      A                                  4  6'1316635'
      A                                      DSPATR(HI)
      A                                  4 20'Companhia..'
-     A                                  4 36'54  LUSITANIA,SA'
+     A                                  4 36'54  Comp. Seguros'
      A                                      DSPATR(HI)
      A                                  5 20'Ramo.......'
      A                                  5 35'342  RISCOS MULTIPLOS-HABIT.'

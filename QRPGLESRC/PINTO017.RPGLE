@@ -234,7 +234,7 @@
 
        //=================================================================
        // SubRotina..: ConvCharct
-       // Objectivo..: Converter os Caracteres mal formatados.
+       // Objectivo..: Converter os Caracteres mal forCompdos.
        //=================================================================
        BEGSR ConvCharct;
           WNomSeg = TMP_TOMADOR;

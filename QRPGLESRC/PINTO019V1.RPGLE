@@ -233,7 +233,7 @@
           ENDIF;
 
           //--------------------------------------------------------------
-          // Formatar campos dos Processos de Sinistro
+          // ForCompr campos dos Processos de Sinistro
           //--------------------------------------------------------------
           SIN_DTRINI  = *ZEROS;
           SIN_TOTEST  = *ZEROS;
@@ -271,7 +271,7 @@
           //--------------------------------------------------------------
           IF (WIsToChange = 'S');
              SIN_DTUACT  = $DateToInt(%DATE());
-             SIN_USERID  = 'LUSITANIA';
+             SIN_USERID  = 'CMPSeguro';
              SIN_NORDSIN = WNordSin;
              IF (WAction = ACT#Insert);
                 MONITOR;
@@ -313,7 +313,7 @@
           ENDIF;
 
           //--------------------------------------------------------------
-          // Formatar campos de Detalhe de Automóvel
+          // ForCompr campos de Detalhe de Automóvel
           //--------------------------------------------------------------
           SIN_CAPINI  = *ZEROS;
           SIN_QIVSN   = *BLANKS;
@@ -385,7 +385,7 @@
        //==============================================================
        BEGSR ActViaturas;
           //--------------------------------------------------------------
-          // Formatar campos de Detalhe da Viatura
+          // ForCompr campos de Detalhe da Viatura
           //--------------------------------------------------------------
           WNuSequ = 1;
           CHAIN (WNordSin:WNuSequ) FSINT102;
@@ -397,7 +397,7 @@
           ENDIF;
 
           //--------------------------------------------------------------
-          // Formatar campos de Detalhe da Viatura
+          // ForCompr campos de Detalhe da Viatura
           //--------------------------------------------------------------
           SIN_NORDSIN = WNordSin;
           SIN_NUSEQU  = WNuSequ;
@@ -445,7 +445,7 @@
           ENDIF;
 
           //--------------------------------------------------------------
-          // Formatar campos dos Provisões de Sinistro
+          // ForCompr campos dos Provisões de Sinistro
           //--------------------------------------------------------------
           SIN_DESCR   = *BLANKS;
           SIN_VALR3   = *ZEROS;
@@ -473,7 +473,7 @@
           //--------------------------------------------------------------
           IF (WIsToChange = 'S');
              SIN_DTUACT  = $DateToInt(%DATE());
-             SIN_USERID  = 'LUSITANIA';
+             SIN_USERID  = 'CMPSeguro';
              IF (WAction = ACT#Insert);
                 MONITOR;
                    WRITE RSINT118;
@@ -510,7 +510,7 @@
           ENDIF;
 
           //--------------------------------------------------------------
-          // Formatar campos dos Pagamentos de Sinistro
+          // ForCompr campos dos Pagamentos de Sinistro
           //--------------------------------------------------------------
           SIN_DESCR   = *BLANKS;
           SIN_VALR3   = *ZEROS;
@@ -555,7 +555,7 @@
           //--------------------------------------------------------------
           IF (WIsToChange = 'S');
              SIN_DTUACT  = $DateToInt(%DATE());
-             SIN_USERID  = 'LUSITANIA';
+             SIN_USERID  = 'CMPSeguro';
              IF (WAction = ACT#Insert);
                 MONITOR;
                    WRITE RSINT128;
@@ -614,7 +614,7 @@
              WDatFile    = %SUBST(WNomFile:15:4) + '-' +
                            %SUBST(WNomFile:19:2) + '-' +
                            %SUBST(WNomFile:21:2);
-             INT_DTFILE  = %DATE(WDatFile:*ISO); // Formatar com a data do ficheiro
+             INT_DTFILE  = %DATE(WDatFile:*ISO); // ForCompr com a data do ficheiro
           ON-ERROR;
              INT_DTFILE  = %DATE();
           ENDMON;

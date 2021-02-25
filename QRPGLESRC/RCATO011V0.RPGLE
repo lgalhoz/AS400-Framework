@@ -155,12 +155,12 @@
      C
       /FREE
         //-----------------------------------------------------------------
-        // Formatar a variável para selecção dos períodos
+        // ForCompr a variável para selecção dos períodos
         //-----------------------------------------------------------------
         EXSR getBaseLine;   // Obter data limite
 
         //---------------------------------------------------------------
-        // Formatar a biblioteca de Histórico em função da data de inicio
+        // ForCompr a biblioteca de Histórico em função da data de inicio
         //---------------------------------------------------------------
         WNomLib = 'GUIAS'+ %CHAR(WAnoElm);
         EXSR ListFiles;  // Obter Histórico do ano anterior
@@ -179,7 +179,7 @@
         BEGSR getBaseLine;
            MONITOR;
               //-------------------------------------
-              // Formatar o mês dos Continuados
+              // ForCompr o mês dos Continuados
               //-------------------------------------
               WDataElm = WDatVencim;
 

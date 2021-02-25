@@ -72,7 +72,7 @@
      C
       /FREE
        //----------------------------------------------------
-       // Formatar o parâmetro de Entrada
+       // ForCompr o parâmetro de Entrada
        //----------------------------------------------------
        WDatSelect = 20120101;
        MONITOR;
@@ -200,7 +200,7 @@
           EXCEPT UPDNUMERO;
 
           //-------------------------------------
-          // Formatar Data e Hora de Inicio
+          // ForCompr Data e Hora de Inicio
           //-------------------------------------
           WDatInicio = (%SubDt(%Date():*Years) * 10000) +
                      (%SubDt(%Date():*Months) * 100) +

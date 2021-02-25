@@ -4,8 +4,8 @@
      H* Programa..: PCOBO203
      H* Descrição.: Manutenção de Apólices
      P*==================================================================
-     FSD1AP     IF   F  320     7AIDISK    KEYLOC(1) EXTFILE('SD.1.AP')         Apólices Activas em J.Mata
-     FSD1APM    IF   F  320     7AIDISK    KEYLOC(1) EXTFILE('SD.1.APM')        Apólice em Arquivo em J.Mata
+     FSD1AP     IF   F  320     7AIDISK    KEYLOC(1) EXTFILE('SD.1.AP')         Apólices Activas em J.Comp
+     FSD1APM    IF   F  320     7AIDISK    KEYLOC(1) EXTFILE('SD.1.APM')        Apólice em Arquivo em J.Comp
      FSD1CR     IF   F  128     3AIDISK    KEYLOC(4) EXTFILE('SD.1.CR')         Ficheiro de Mediadores
      FFCOBE203  CF   E             WORKSTN PREFIX(ECR_)
      F                                     INFDS(INFD#KEYS)

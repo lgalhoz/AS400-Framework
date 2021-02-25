@@ -59,7 +59,7 @@
      A            CPOSM          4A  O  4 50DSPATR(UL)
      A            ZPOSM          3A  O  4 55DSPATR(UL)
      A            CPMOR2        20A  O  4 59DSPATR(UL)
-     A                                  1  2'LUSITANIA COMPª SEGUROS,SA'
+     A                                  1  2'COMPª SEGUROS,SA'
      A                                      DSPATR(CS)
      A                                      DSPATR(HI)
      A                                      DSPATR(BL)
@@ -549,7 +549,7 @@
      A*-------------------------------------------------------------------------
      A          H                           HLPARA(01 001 24 080)
      A                                      HLPRCD(HELPAP01)
-     A                                 01002'LUSITANIA COMPª SEGUROS,SA'
+     A                                 01002'COMPª SEGUROS,SA'
      A                                      DSPATR(CS HI BL)
      A            INDREG        01   B 01029DSPATR(PR ND MDT)
      A                                 01031'Opção:'

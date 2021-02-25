@@ -80,11 +80,11 @@
 
        //============================================================
        // Subrotina..: MakeIndices
-       // Objectivo..: Formatar os campos de indices automaticamente
+       // Objectivo..: ForCompr os campos de indices automaticamente
        //============================================================
        BEGSR MakeIndices;
           //------------------------------------------
-          // Formatar data Inicio e Obter data do dia
+          // ForCompr data Inicio e Obter data do dia
           //------------------------------------------
           WData6A = OR_DTINI;
           WCvtAno += 1;

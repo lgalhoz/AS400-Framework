@@ -46,7 +46,7 @@
        NewNullPtr = %ADDR(TrgBuffer) + TNewNullOff;
 
        //-----------------------------------------------------
-       // Formatar registo com valores por defeito
+       // ForCompr registo com valores por defeito
        //-----------------------------------------------------
        IF (TTrgEvent = IO#INS);
           N_NUSEQHST  = $GetNextKey('FPRDP013':'NUSEQHST':'(CDRAMO='''+

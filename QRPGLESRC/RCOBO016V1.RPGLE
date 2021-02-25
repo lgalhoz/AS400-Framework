@@ -4,8 +4,8 @@
      ** Programa..: PRPTO010
      ** Objectivo.: Extracto das Cobranças realizadas no dia para o Mediador
      **
-     H* Execução..: http://20.0.0.1/josemata?frame=login&user=apache
-     H*             http://20.0.0.1/josemata?frame=recdia&data=20150707
+     H* Execução..: http://20.0.0.1/DemoComp?frame=login&user=apache
+     H*             http://20.0.0.1/DemoComp?frame=recdia&data=20150707
      H*
      **====================================================================
      FRCOBI016  O    F  212        PRINTER OFLIND(PrintOf) PRTCTL(PrintDS)

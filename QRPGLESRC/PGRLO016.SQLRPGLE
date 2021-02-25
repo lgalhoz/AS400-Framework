@@ -2,7 +2,7 @@
      H BNDDIR('QC2LE':'JMDIR')
      H*===========================================================
      H* Programa..: PGRLO016
-     H* Descrição.: Escutar a pasta da Lusitania e validar se
+     H* Descrição.: Escutar a pasta da CMPSeguro e validar se
      H*             existem ficheiros a processar.
      H*===========================================================
      FFINTP010  UF A E           K DISK    PREFIX(INT_)
@@ -99,7 +99,7 @@
        $SetFields('LCFIELD,NUSEQU,NOFIELD,POINI,DIMENSAO,TIPO');
        $SetSort('NUSEQU');
 
-       EXSR ExecRecebidos; // Tratar Registos Recebidos da Lusitania
+       EXSR ExecRecebidos; // Tratar Registos Recebidos da CMPSeguro
 
        $RmvDBSession(WSessTPL);
        $RmvDBSession(WFieldDef);
@@ -116,7 +116,7 @@
 
        //=============================================================
        // Subrotina..: ExecRecebidos
-       // Descrição..: Escutar pasta da Lusitania e tratar ficheiros
+       // Descrição..: Escutar pasta da CMPSeguro e tratar ficheiros
        //              recebidos.
        //=============================================================
        BEGSR ExecRecebidos;
@@ -257,12 +257,12 @@
                    WDatFile   = %SUBST(WFileInDir:14:4) + '-' +
                                 %SUBST(WFileInDir:18:2) + '-' +
                                 %SUBST(WFileInDir:20:2);
-                   INT_DTFILE = %DATE(WDatFile:*ISO); // Formatar com a data do ficheiro
+                   INT_DTFILE = %DATE(WDatFile:*ISO); // ForCompr com a data do ficheiro
                 ELSEIF (WCdInter = 18);
                    WDatFile   = %SUBST(WFileInDir:15:4) + '-' +
                                 %SUBST(WFileInDir:19:2) + '-' +
                                 %SUBST(WFileInDir:21:2);
-                   INT_DTFILE = %DATE(WDatFile:*ISO); // Formatar com a data do ficheiro
+                   INT_DTFILE = %DATE(WDatFile:*ISO); // ForCompr com a data do ficheiro
                 ENDIF;
              ON-ERROR;
                 INT_DTFILE  = %DATE();

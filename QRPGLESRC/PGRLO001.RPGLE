@@ -343,7 +343,7 @@
       /FREE
 
           //----------------------------------------------
-          // Formatar Variáveis de Trabalho
+          // ForCompr Variáveis de Trabalho
           //----------------------------------------------
           WDataHoraPrm = FilDate * 1000000 + FilTime;
           WProduto     = $ExtrStringVar(FilNome:FilTemplate:'P');

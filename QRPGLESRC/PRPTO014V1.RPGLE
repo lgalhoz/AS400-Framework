@@ -465,7 +465,7 @@
         ENDIF;
 
         //-------------------------------------
-        // Formatar restantes campos do registo
+        // ForCompr restantes campos do registo
         //-------------------------------------
         WResult.ANOALT = (WAnoCont - 2000);
         IF (WResult.IsToSelect);

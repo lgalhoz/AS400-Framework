@@ -71,7 +71,7 @@
      D
      D*==> Constantes
      D WDftUSer        C                   'ntorrado'
-     D WDftPassw       C                   'josemat@2011'
+     D WDftPassw       C                   'Demomat@2011'
      D WDftServer      C                   '20.0.0.130'
      D WDftFmt         C                   'ASCII'
      D*=================================================================

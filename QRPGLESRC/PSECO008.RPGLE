@@ -13,7 +13,7 @@
      H* Alterações a implementar no ficheiro de configuração do Apache
      H*   Ficheiro: /www/apachedft/conf/httpd.conf
      H*--------------------------------------------------------------
-     H*       ScriptAlias /josemata /qsys.lib/#JMPRDOBJ.lib/pseco008.pgm
+     H*       ScriptAlias /DemoComp /qsys.lib/#JMPRDOBJ.lib/pseco008.pgm
      H*       ScriptAlias /test /qsys.lib/#JMPRDOBJ.lib/ptsto100.pgm
      H*       <Directory /qsys.lib/#JMPRDOBJ.lib>
      H*          Order Allow,Deny
@@ -55,7 +55,7 @@
            WUser  = $getHTTPVar('user');
            WPassw = $getHTTPVar('passw');
         ON-ERROR;
-           WURI = 'http://20.0.0.1/josemata?frame=apolseg&nif=198757751';
+           WURI = 'http://20.0.0.1/DemoComp?frame=apolseg&nif=198757751';
            WIP = '20.0.0.53';
            WFrame = 'apolseg';
            WUser  = 'APACHE';

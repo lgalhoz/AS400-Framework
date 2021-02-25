@@ -96,7 +96,7 @@
             ENDIF;
 
             //----------------------------------------------
-            // Formatar restantes campos do ficheiro
+            // ForCompr restantes campos do ficheiro
             //----------------------------------------------
             WNuSeg  = GRL_NSEG;
             WCdRamo = GRL_RAMO;

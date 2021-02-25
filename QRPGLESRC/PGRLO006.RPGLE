@@ -4,10 +4,10 @@
      H* Programa..: PGRLO006
      H* Data......: 23/Nov/2012
      H* Descrição.: Realizar a troca automática de Interfaces entre
-     H*             a Lusitania e a Jose Mata.
+     H*             
      H*
-     H*             Mover os ficheiros da Lusitania para Temporário DB2
-     H*             e colocar Interfaces no Share da Lusitania.
+     H*             Mover os ficheiros da CMPSeguro para Temporário DB2
+     H*             e colocar Interfaces no Share da CMPSeguro.
      H*==================================================================
      FFGRLP200  IF   E           K DISK
      FFGRLP201  IF   E           K DISK
@@ -140,8 +140,8 @@
            DOW (WIdx < 9);
               WIdx += 1;
               FTPRec = TXTFTP(WIdx);
-              FTPRec = $strReplace('%USRNAME':'jmata':FTPRec);
-              FTPRec = $strReplace('%PASSW':'jmata!lusitania':FTPRec);
+              FTPRec = $strReplace('%USRNAME':'jComp':FTPRec);
+              FTPRec = $strReplace('%PASSW':'jComp!CMPSeguro':FTPRec);
               FTPRec = $strReplace('%ORIGEM':'/qsys.lib/soapserv.lib/+
                                     fcatp010.file/fcatp010.mbr':FTPRec);
               FTPRec = $strReplace('%DESTINO':'fcatp010.txt':FTPRec);

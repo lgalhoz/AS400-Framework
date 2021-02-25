@@ -3,7 +3,7 @@
      H*===========================================================
      H* Programa..: RPRDO026
      H* Objectivo.: Validar se o Segurado é mau pagador
-     H* Descrição.: Pesquisar em José Mata (Corretor), se o Segurado
+     H* Descrição.: Pesquisar em Demo Comp (Corretor), se o Segurado
      H*             tem recibos e apólices anuladas por falta de
      H*             pagamento, ou recibos pagos fora do prazo de
      H*             pagamento.

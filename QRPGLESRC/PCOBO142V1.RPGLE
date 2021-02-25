@@ -144,7 +144,7 @@
           UPDATE RCOBP142 %FIELDS(COB_QTDEREC:COB_ULTCONTI);
 
           //---------------------------------------------------
-          // Formatar a data do Estado
+          // ForCompr a data do Estado
           //---------------------------------------------------
           WDatEstado = %DATE('0001-01-01');
           IF (REC_CODSIT = 2);

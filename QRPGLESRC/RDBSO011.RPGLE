@@ -1,6 +1,6 @@
      H*===================================================================
      H* Processo...: $getSqlStmt
-     H* Objectivo..: Formatar uma query DB2/400
+     H* Objectivo..: ForCompr uma query DB2/400
      H* Descrição..: Possiblilitar obter segmentos de registos com a
      H*              indicação do registo inicial e a quantidade pedida.
      H*              Util para usar em ecrãs de consulta em lista.
@@ -41,7 +41,7 @@
      D    #Fields                  1000A   Const
      P*===================================================================
      P* Processo..: $getSQLStmt
-     P* Descrição.: formata a instrução de SQL para obter segmentos
+     P* Descrição.: forComp a instrução de SQL para obter segmentos
      P*             de registos
      P*===================================================================
      P $getSQLStmt     B                   EXPORT
@@ -117,7 +117,7 @@
        ENDIF;
 
        //-----------------------------
-       // Formatação da Query
+       // ForCompção da Query
        //-----------------------------
        EXSR AddTemplate;
        WResult = WSqlTmpl;
@@ -139,7 +139,7 @@
        //=============================================================
        BEGSR addTemplate;
           //------------------------------------------------------
-          // Formatar Template para possibilitar page at a time
+          // ForCompr Template para possibilitar page at a time
           //------------------------------------------------------
           IF (NOT Resumo);
              IF (WIsLogical);

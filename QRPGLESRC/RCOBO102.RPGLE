@@ -104,7 +104,7 @@
        //------------------------------------------------
        // Validar a ADC - Isto é temporário e serve
        // apenas para certificar que o Código ADC está
-       // a ser bem formatado nas rotinas anteriores.
+       // a ser bem forCompdo nas rotinas anteriores.
        //------------------------------------------------
        IF (WNumNIB > *ZEROS);
           IF (WADCSepa <> *BLANKS);

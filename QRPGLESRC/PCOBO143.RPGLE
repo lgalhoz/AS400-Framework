@@ -183,7 +183,7 @@
                    WSaldo       += COB_IMSALDO;
 
                    //----------------------------------------------
-                   // Formatar restantes campos e actualizar
+                   // ForCompr restantes campos e actualizar
                    //----------------------------------------------
                    COB_TIPRECIBO = WCodMov;
                    COB_ESTRECIBO = WCodSit;

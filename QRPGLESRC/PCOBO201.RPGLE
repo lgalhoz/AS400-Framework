@@ -7,8 +7,8 @@
      FFINTP02501IF   E           K DISK    PREFIX(COM_)
      F                                     RENAME(RINTP025:RINTP02501)
      FFINTP023  IF   E           K DISK    PREFIX(COM_)
-     FSD1AP1    IF   F  320     7AIDISK    KEYLOC(1) EXTFILE('SD.1.AP')         Apólices Activas em J.Mata
-     FSD1AP2    IF   F  320     7AIDISK    KEYLOC(1) EXTFILE('SD.1.APM')        Apólice em Arquivo em J.Mata
+     FSD1AP1    IF   F  320     7AIDISK    KEYLOC(1) EXTFILE('SD.1.AP')         Apólices Activas em J.Comp
+     FSD1AP2    IF   F  320     7AIDISK    KEYLOC(1) EXTFILE('SD.1.APM')        Apólice em Arquivo em J.Comp
      FSD1CR     IF   F  128     3AIDISK    KEYLOC(4) EXTFILE('SD.1.CR')         Ficheiro de Mediadores
      FSD1RE2    IF   E           K DISK    PREFIX(REC_)
      FFCATP205  IF   E           K DISK    PREFIX(CAT_)
@@ -496,11 +496,11 @@
              WDesOperacao = 'Ligar este recibo à Apólice (se esta já existir)';
           ELSEIF (INT_CDESTAD = '2');
              WDynamic = 'RINTO015';
-             WDesOperacao = 'Localizar o Recibo em José Mata (se já existir)';
+             WDesOperacao = 'Localizar o Recibo em Demo Comp (se já existir)';
           ELSEIF (INT_CDESTAD = '3');
              IF (INT_TPRECIB <> REC#Indemniza);
              WDynamic = 'RINTO016';
-             WDesOperacao = 'Criar o Recibo em José Mata';
+             WDesOperacao = 'Criar o Recibo em Demo Comp';
              ENDIF;
           ELSEIF (INT_CDESTAD = '4');
              IF (INT_TPRECIB <> REC#Indemniza);

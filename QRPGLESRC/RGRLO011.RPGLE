@@ -30,7 +30,7 @@
 
      P*===================================================================
      P* Processo..: $SetTexto
-     P* Descrição.: Carregar campos de trabalho com a palavra a formatar.
+     P* Descrição.: Carregar campos de trabalho com a palavra a forCompr.
      P*===================================================================
      P $SetTexto       B                   EXPORT
      D                 PI

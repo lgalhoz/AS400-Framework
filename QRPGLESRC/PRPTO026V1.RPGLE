@@ -293,7 +293,7 @@
           ENDIF;
 
           //--------------------------------------------------------   -
-          // Formatar a chave combinado Categorias com Tipo Registo
+          // ForCompr a chave combinado Categorias com Tipo Registo
           //--------------------------------------------------------   -
           IF (CATV = 1) OR (CATV = 6) OR (CATV = 7);
              WFactor = 0;

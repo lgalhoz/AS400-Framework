@@ -24,7 +24,7 @@
      C
      C*===================================================================
      C* Subrotina.: SRFIC
-     C* Descrição.: Formatar Valores por defeito
+     C* Descrição.: ForCompr Valores por defeito
      C*===================================================================
      CSR   SRFIC         BEGSR
      C                   EVAL      NSEG = 84471

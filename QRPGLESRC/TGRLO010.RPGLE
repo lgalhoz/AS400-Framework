@@ -2,7 +2,7 @@
      H*=============================================================
      H* Descrição.: Esta Template é o molde para gerar exportar o
      H*             Resultado para um qualquer browser Web, acedido
-     H*             através de: http://20.0.0.1/josemata?...
+     H*             através de: http://20.0.0.1/DemoComp?...
      H*
      H* Deverá registar o Componente na inventário de Componentes do
      H* sistema através do prgrama PSECO0001.

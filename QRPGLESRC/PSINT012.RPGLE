@@ -3,7 +3,7 @@
      H*=====================================================================
      H* Programa...: TRSF22
      H* Objectivo..: Carregar Interface de Lesados para integrar nos
-     H*              Sistemas de Informação da Lusitania.
+     H*              Sistemas de Informação da CmpSeguro.
      H*
      H* Observações: Este programa é invocado com os seguintes parametros
      H*              CALL PGM(TRSF22) PARMS(<Data Encerra> <Data Altera>)
@@ -27,7 +27,7 @@
      D
       /FREE
         //-----------------------------------------------------
-        // Formatar o valor de defeito para a data de inicio
+        // ForCompr o valor de defeito para a data de inicio
         //-----------------------------------------------------
         EXSR ExtractDC;
         EXSR ExtractDM;
@@ -48,7 +48,7 @@
               //-----------------------------------------------------------
               // Calcular percentagem de Responsabilidade
               //-----------------------------------------------------------
-              SIN10223 = *ZEROS; // Outro formatar valor por defeito
+              SIN10223 = *ZEROS; // Outro forCompr valor por defeito
               IF (NRPROC >= '1390000');
                  //-----------------------------------------------------------
                  // Validar se está ao Abrigo do Decreto Lei
@@ -90,7 +90,7 @@
               //-----------------------------------------------------------
               // Calcular percentagem de Responsabilidade
               //-----------------------------------------------------------
-              SIN10332 = *ZEROS; // Outro formatar valor por defeito
+              SIN10332 = *ZEROS; // Outro forCompr valor por defeito
               IF (NRPROC >= '1390000');
                  //-----------------------------------------------------------
                  // Validar se está ao Abrigo do Decreto Lei
@@ -132,7 +132,7 @@
               //-----------------------------------------------------------
               // Calcular percentagem de Responsabilidade
               //-----------------------------------------------------------
-              SIN10436 = *ZEROS; // Outro formatar valor por defeito
+              SIN10436 = *ZEROS; // Outro forCompr valor por defeito
               IF (NRPROC >= '1390000');
                  //-----------------------------------------------------------
                  // Validar se está ao Abrigo do Decreto Lei

@@ -85,7 +85,7 @@
         ENDIF;
 
         //------------------------------------------------
-        // Formatar Saida
+        // ForCompr Saida
         //------------------------------------------------
         IF (WFmtOut = 'YMD');
            WResultado = (WAno-%INT(WAno/100)*100) * 10000 +
@@ -152,7 +152,7 @@
         ENDIF;
 
         //------------------------------------------------
-        // Formatar Saida
+        // ForCompr Saida
         //------------------------------------------------
         IF (WFmtOut = 'YMD');
            WResultado = %SUBST(%TRIM(%EDITW(WAno:'0    ')):3:2) +

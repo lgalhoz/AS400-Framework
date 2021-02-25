@@ -55,8 +55,8 @@
      D WCodTransf      S              2S 0
      D
      D*==> Definição das Constantes
-     D OR#Lusitania    C                   'Lusitania'
-     D OR#JoseMata     C                   'Jose Mata'
+     D OR#CompSeg      C                   'CompSeg'
+     D OR#DemoComp     C                   'Demo Comp'
      D*===========================================================
      C     *ENTRY        PLIST
      C                   PARM                    WNumSegurado

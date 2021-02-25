@@ -205,7 +205,7 @@
         //=================================================================
         BEGSR AddCriteria;
            //------------------------------------------------------------
-           // Formatar Variáveis recebidas
+           // ForCompr Variáveis recebidas
            //------------------------------------------------------------
            WCriteria = '(CODMOV=15 AND CCOMP=54)';
            IF (WNumMed <> 'XXX');
@@ -234,7 +234,7 @@
            ENDIF;
 
            //------------------------------------------------------------
-           // Formatar Estado dos Recibos
+           // ForCompr Estado dos Recibos
            //------------------------------------------------------------
            WDatChar = %TRIM(%CHAR(%DATE():*ISO));
            WDatChar = %SUBST(WDatChar:1:4)+%SUBST(WDatChar:6:2)+
@@ -258,7 +258,7 @@
         //=================================================================
         BEGSR GetRecInfo;
            //-----------------------------------------------
-           // Formatar a Situação dos Recibos
+           // ForCompr a Situação dos Recibos
            //-----------------------------------------------
            WDsTipRecibo = 'Desconhecido';
            WSituacao  = 'Desconhecidio';

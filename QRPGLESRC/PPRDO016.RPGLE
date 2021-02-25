@@ -79,7 +79,7 @@
        EXSR CvtRamo;
 
        //----------------------------------------------
-       // Lista de Recibos - Lusitania Azul
+       // Lista de Recibos - CmpSeguro Azul
        //----------------------------------------------
        KTE#RecLus = $SetFiles('GCOBGR');
        $addCriteria('Número.....:':'GCNREC':'GE');
@@ -150,7 +150,7 @@
 
        //===============================================================
        // Subrotina..: CvtRamo
-       // Objectivo..: Converter Ramo para a Lusitania Azul
+       // Objectivo..: Converter Ramo para a CmpSeguro Azul
        //===============================================================
        BEGSR CvtRamo;
           WCvtRamo = *BLANKS;
@@ -198,7 +198,7 @@
 
      P*===================================================================
      P* Processo..: DspRecibos
-     P* Descrição.: Apresenta os Recibos da Lusitania Azul e Corretor
+     P* Descrição.: Apresenta os Recibos da CmpSeguro Azul e Corretor
      P*===================================================================
      P DspRecibos      B                   EXPORT
      D DspRecibos      PI
@@ -224,7 +224,7 @@
        EXSR getRecords;
        DOW (NOT *IN03 AND NOT *IN12);
           IF ($GetDBSession() = KTE#RecLus);
-             WNoFunction = 'RPRDE01603'; // Listar Recibos Lusitania Azul
+             WNoFunction = 'RPRDE01603'; // Listar Recibos CmpSeguro Azul
           ELSE;
              WNoFunction = 'RPRDE01604'; // Listar Recibos Corretor
           ENDIF;

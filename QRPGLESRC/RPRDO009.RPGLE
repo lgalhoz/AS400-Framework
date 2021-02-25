@@ -48,7 +48,7 @@
 
        $addLineType('HR'); // Header Principal
        $addException(*ON);
-       EXSR MakeHeader; // Formatar as Linhas de Texto
+       EXSR MakeHeader; // ForCompr as Linhas de Texto
        $addException(*OFF);
        $addLineType('T1'); // Texto Normal
 
@@ -56,7 +56,7 @@
 
        //==================================================================
        // Subrotina..: MakeHeader
-       // Objectivo..: Obter os Elementos para o Header e formatar as linhas
+       // Objectivo..: Obter os Elementos para o Header e forCompr as linhas
        //              de Texto.
        //==================================================================
        BEGSR MakeHeader;

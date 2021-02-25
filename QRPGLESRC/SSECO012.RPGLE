@@ -34,7 +34,7 @@
      D   WTagName                    50A   CONST OPTIONS(*NOPASS)
      D   WValue                     300A   CONST OPTIONS(*NOPASS)
      D
-     D*==> Formatar Mensagem de erro
+     D*==> ForCompr Mensagem de erro
      D $getHTTPmsg     PR          1000A
      D   PMsgCode                     7A   CONST
      D   PStatus                      3A   CONST OPTIONS(*NOPASS)

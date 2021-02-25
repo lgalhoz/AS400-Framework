@@ -20,7 +20,7 @@
      A            INDREG         1A  B  1 79DSPATR(PR)
      A                                      DSPATR(ND)
      A                                      DSPATR(MDT)
-     A                                  2  1'LUSITANIA COMPANHIA DE SEGUROS,SA'
+     A                                  2  1'COMPANHIA DE SEGUROS,SA'
      A                                      DSPATR(CS)
      A                                      DSPATR(HI)
      A                                      DSPATR(BL)
@@ -89,7 +89,7 @@
 0002 A                                      HLPRCD(HELP0101)
 0002 A          H                           HLPARA(01 001 24 080)
 0002 A                                      HLPRCD(HELP0102)
-0002 A                                 01002'LUSITANIA'
+0002 A                                 01002'Comp. Seguros'
 0002 A                                      DSPATR(CS HI BL)
 0003 A                                 01016'VERSÃO 2012'
 0003 A                                      DSPATR(HI UL)
@@ -763,7 +763,7 @@
      A          H                           HLPRCD(HELP0102)
      A  *DS3                                HLPARA(01 001 24 080)
      A  *DS4                                HLPARA(01 001 24 080)
-     A                                  1  2'LUSITANIA'
+     A                                  1  2'CompSeguros'
      A                                      DSPATR(CS)
      A                                      DSPATR(HI)
      A                                      DSPATR(BL)

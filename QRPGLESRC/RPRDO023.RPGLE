@@ -5,8 +5,8 @@
      H*
      H* Observação:
      H*   Para executar este programa num Browser Web fazer:
-     H*   1.Login    => http://jomata/josemata?frame=login&user=<user>&passw=<passw>
-     H*   2.Executar => http://jomata/josemata?frame=actatst&ramo=5&apolice=9910401
+     H*   1.Login    => http://joComp/DemoComp?frame=login&user=<user>&passw=<passw>
+     H*   2.Executar => http://joComp/DemoComp?frame=actatst&ramo=5&apolice=9910401
      H*
      H*   Para executar este programa no AS400 fazer:
      H*   1.Executar => CALL RPRDO023 PARM(' ' ' ')

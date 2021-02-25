@@ -54,7 +54,7 @@
 
           WIdx += 1;
           NamTC(WIdx).WNome01 = 'CONSTRUÇOES ROCHAFIEL,LDA               ';
-          NamTC(WIdx).Wnome02 = 'JOSE LUIS PINTO DA ROCHA                ';
+          NamTC(WIdx).Wnome02 = 'Demo LUIS PINTO DA ROCHA                ';
 
           WIdx += 1;
           NamTC(WIdx).WNome01 = 'GELPEIXE-ALIMENTOS CONGELADOS,SA        ';

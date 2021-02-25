@@ -3,8 +3,8 @@
      H* Programa..: RPRDO029
      H* Descrição.: Devolve Informação das Cartas Verdes
      H*
-     H* Execução..: http://20.0.0.1/josemata?frame=login&user=apache
-     H*             http://20.0.0.1/josemata?frame=getcverde&apolice=9956715
+     H* Execução..: http://20.0.0.1/DemoComp?frame=login&user=apache
+     H*             http://20.0.0.1/DemoComp?frame=getcverde&apolice=9956715
      H*
      H* Combinações:
      H*

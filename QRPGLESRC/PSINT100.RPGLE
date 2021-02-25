@@ -127,7 +127,7 @@
           ENDIF;
 
           //--------------------------------------------------------------
-          // Formatar campos dos Processos de Sinistro
+          // ForCompr campos dos Processos de Sinistro
           //--------------------------------------------------------------
           SIN_IPROC   = ConvA(PRO_IPROC  :SIN_IPROC  );
           SIN_SPROC   = ConvN(PRO_SPROC  :SIN_SPROC  );
@@ -211,7 +211,7 @@
           ENDIF;
 
           //--------------------------------------------------------------
-          // Formatar campos de Detalhe de Automóvel
+          // ForCompr campos de Detalhe de Automóvel
           //--------------------------------------------------------------
           SIN_CAPINI  = ConvN(PRO_CAPINI :SIN_CAPINI );
           SIN_QIVSN   = ConvA(PRO_QIVSN  :SIN_QIVSN  );
@@ -293,7 +293,7 @@
        //==============================================================
        BEGSR ActViaturas;
           //--------------------------------------------------------------
-          // Formatar campos de Detalhe da Viatura
+          // ForCompr campos de Detalhe da Viatura
           //--------------------------------------------------------------
           IF ((%TRIM(WBkMARC) <> *BLANKS) OR
               (%TRIM(WBkMATR) <> *BLANKS));
@@ -306,7 +306,7 @@
              ENDIF;
 
              //--------------------------------------------------------------
-             // Formatar campos de Detalhe da Viatura
+             // ForCompr campos de Detalhe da Viatura
              //--------------------------------------------------------------
              SIN_NORDSIN = WNordSin;
              SIN_NUSEQU  = WNuSequ;

@@ -46,7 +46,7 @@
      D*===========================================================
       /FREE
        //----------------------------------------
-       // Formatar parametros recebidos
+       // ForCompr parametros recebidos
        //----------------------------------------
        MONITOR;
           OPEN SENTE014;
@@ -228,7 +228,7 @@
      D*===========================================================
       /FREE
        //----------------------------------------
-       // Formatar parametros recebidos
+       // ForCompr parametros recebidos
        //----------------------------------------
        WRamo    = *ZEROS;
        WApolice = *ZEROS;

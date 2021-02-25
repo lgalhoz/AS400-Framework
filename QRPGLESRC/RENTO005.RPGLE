@@ -1,6 +1,6 @@
      H*==========================================================
      H* Programa...: RENTO005
-     H* Descrição..: Formatar restante parte do nome com
+     H* Descrição..: ForCompr restante parte do nome com
      H*              asteriscos
      H*==========================================================
      D

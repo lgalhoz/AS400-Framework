@@ -170,7 +170,7 @@
                 ECR_LSTDET = $GetLstLine();
 
                 //---------------------------------------------
-                // Formatar as Chaves das Tabelas
+                // ForCompr as Chaves das Tabelas
                 //---------------------------------------------
                 MONITOR;
                    ECR_CDPAGINA = %DEC($GetField('CDPAGINA'):5:0);

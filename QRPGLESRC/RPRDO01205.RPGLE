@@ -270,7 +270,7 @@
        BEGSR WriteText;
 
           //-------------------------------------------
-          // Formatar os limites de Indemnização
+          // ForCompr os limites de Indemnização
           //-------------------------------------------
           WLinhaTxt = *BLANKS;
           IF (PRM_Tipo = 'L'); // Limites
@@ -289,7 +289,7 @@
           // ENDIF;
           ELSE;
              //-------------------------------------------
-             // Formatar as Franquias
+             // ForCompr as Franquias
              //-------------------------------------------
              WVlMaxInd = *ZEROS;
           // WDsIncFrq = $GetDescricao(24:WCdIncFrq);

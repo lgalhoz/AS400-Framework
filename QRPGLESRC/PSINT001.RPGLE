@@ -1,7 +1,7 @@
      H*====================================================================
      H* Programa...: PSINT001
      H* Objectivo..: Actualizar Inventário de Todos os Processos de Sinistro
-     H*              da Jose Mata.
+     H*              
      H*
      H*====================================================================
      H  ALWNULL(*USRCTL) DFTACTGRP(*NO)

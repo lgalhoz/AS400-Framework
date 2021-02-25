@@ -168,7 +168,7 @@
           WCdFile     = $GetNextKey('FINTP010':'CDFILE');
           INT_CDFILE  = WCdFile;
           INT_NOMFILE = WNomFile;
-          INT_DTFILE  = %DATE(); // Formatar com a data do ficheiro
+          INT_DTFILE  = %DATE(); // ForCompr com a data do ficheiro
           INT_DTPROC  = %DATE();
           WRITE RINTP010;
           RETURN;

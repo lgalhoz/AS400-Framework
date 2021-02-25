@@ -225,12 +225,12 @@
 
        //========================================================
        // Subrotina.: FmtFields
-       // Descrição.: Fomatar com valores os diferentes campos
+       // Descrição.: FoCompr com valores os diferentes campos
        //             do Contrato.
        //========================================================
        BEGSR FmtFields;
           WDatInicio = $IntToDate($CvtData(BAS_DTINI:'DMY':'YYMD'));
-          WDatTermo  = %DATE('9999-12-31'); // Formatar Termo
+          WDatTermo  = %DATE('9999-12-31'); // ForCompr Termo
           WPremTotal = BAS_TOTREC;
 
           CVT#MACONT.MACONT = BAS_MACONT;

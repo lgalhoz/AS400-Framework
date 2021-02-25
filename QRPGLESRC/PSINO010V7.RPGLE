@@ -139,8 +139,8 @@
      D WSelTodos       S               N
      D
      D*==> Definição das Constantes
-     D OR#Lusitania    C                   'Lusitania'
-     D OR#JoseMata     C                   'Jose Mata'
+     D OR#CmpSeg       C                   
+     D OR#DemoComp     C                   
      D*===========================================================
      C     *ENTRY        PLIST
      C                   PARM                    WCodRamo
@@ -268,7 +268,7 @@
                 EXSR GetProvLusit;
                 EXSR GetPagaLusit;
 
-                WOrigem    = OR#Lusitania;
+                WOrigem    = OR#CmpSeg;
                 WAnoProces = LPRC_AAPROC + 2000;
                 WNumSeq    = LPRC_NSEQ;
                 WDataPart  = LPRC_DTPART;
@@ -300,7 +300,7 @@
                 EXSR GetProvAU;
                 EXSR GetPagaAU;
 
-                WOrigem    = OR#JoseMata;
+                WOrigem    = OR#DemoComp;
                 WAnoProces = APRC_AAPROC + 2000;
                 WNumSeq    = APRC_NSEQ;
                 WDataPart  = APRC_DTPART;
@@ -333,7 +333,7 @@
                 EXSR GetProvOR;
                 EXSR GetPagaOR;
 
-                WOrigem    = OR#JoseMata;
+                WOrigem    = OR#DemoComp;
                 WAnoProces = OPRC_AAPROC + 2000;
                 WNumSeq    = OPRC_NSEQ;
                 WDataPart  = OPRC_DTPART;

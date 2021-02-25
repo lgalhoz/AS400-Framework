@@ -161,7 +161,7 @@
              WDatFile    = %SUBST(WNomFile:14:4) + '-' +
                            %SUBST(WNomFile:18:2) + '-' +
                            %SUBST(WNomFile:20:2);
-             INT_DTFILE  = %DATE(WDatFile:*ISO); // Formatar com a data do ficheiro
+             INT_DTFILE  = %DATE(WDatFile:*ISO); // ForCompr com a data do ficheiro
           ON-ERROR;
              INT_DTFILE  = %DATE();
           ENDMON;

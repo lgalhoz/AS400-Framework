@@ -464,7 +464,7 @@
               WCdLimite = $GetFieldNum('A.CDLIMITE');
 
               //---------------------------------------------------
-              // Formatar a descrição
+              // ForCompr a descrição
               //---------------------------------------------------
               IF ($GetField('A.DSLIMITE') = *BLANKS);
                  LST#Limites(Widx).DsLimite = $GetField('B.DSCOBERT');

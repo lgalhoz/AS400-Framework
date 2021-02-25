@@ -11,7 +11,7 @@
      ** Observação: Este programa está preparado para correr em dois modos
      **             Batch, com a colocação de Parâmetros automática e
      **             On-line com a colocação de parâmetros pelo utilizador.
-     **             Se não receber nada então formata os parâmetros de
+     **             Se não receber nada então forComp os parâmetros de
      **             forma Automática. Por defeito corre em modo Interactivo (I)
      **
      **             Se por algum motivo for necessário correr os Continuados
@@ -226,7 +226,7 @@
 
            //-----------------------------------------------
            // Validar se os Parâmetros não estão preenchidos
-           // Formatar o Ano e Mês dos Próximos Continuados
+           // ForCompr o Ano e Mês dos Próximos Continuados
            //-----------------------------------------------
            IF (WAnoVenc = *ZEROS) OR (WMesVenc = *ZEROS);
               EXSR GetLastProc;
@@ -610,7 +610,7 @@
         //=================================================================
         BEGSR ChgRecord;
            O_TALT = 2;           // Tipo de alteração
-           O_DALT = WDatAltera;  // Formatar a data do dia
+           O_DALT = WDatAltera;  // ForCompr a data do dia
            O_TXIND = (WTAXA/10); // Aplicar a Taxa
            O_INDEX = 'S';
            // O_OBS1  = *BLANKS;

@@ -2,7 +2,7 @@
      H AUT(*ALL)
      H*==================================================================
      H* Programa..: PSINO110
-     H* Descrição.: Pesquisa de Intervenientes formata a área de dados
+     H* Descrição.: Pesquisa de Intervenientes forComp a área de dados
      H*             Local com o resultado da pesquisa.
      H*==================================================================
      FFSINE110  CF   E             WORKSTN SFILE(RSINE11002:REC#)

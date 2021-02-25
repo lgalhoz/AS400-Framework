@@ -13,8 +13,8 @@
      H* Parâmetros: Este programa recebe como parâmetros duas datas
      H*             que correspondem ao período de pesquisa.
      H*
-     H*             http://20.0.0.1/josemata?frame=login&user=apache
-     H*             http://20.0.0.1/josemata?frame=recchip&dtini=20150101&dtfim=20150110
+     H*             http://20.0.0.1/DemoComp?frame=login&user=apache
+     H*             http://20.0.0.1/DemoComp?frame=recchip&dtini=20150101&dtfim=20150110
      H*=============================================================
      FSD1RM     IF   F  128     3AIDISK    KEYLOC(5)   EXTFILE('SD.1.RM')
      FSD1CP     IF   F   64     7AIDISK    KEYLOC(2)   EXTFILE('SD.1.CP')
@@ -135,7 +135,7 @@
         //=================================================================
         BEGSR GetRecibos;
            //------------------------------------------------------------
-           // Formatar Variáveis recebidas
+           // ForCompr Variáveis recebidas
            //------------------------------------------------------------
            SETLL *LOVAL SD1REC;
            READ SD1REC R#SD1RCA;

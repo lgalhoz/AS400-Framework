@@ -39,9 +39,9 @@
      A                                 15  2'*   ******   *   ********   *'
      A                                 17  2'***        ***   ********   *'
      A                                 16  2'**   ****   **   ********   *'
-     A                                  4  2'José Mata, Lda.'
+     A                                  4  2'Demo Company'
      A                                      COLOR(WHT)
-     A                                 20  2'Copyright  Jose Mata, Lda'
+     A                                 20  2'Copyright  Demo Company'
      A                                  5 34'Opção'
      A                                      COLOR(WHT)
      A                                  5 41'Descrição'
@@ -223,10 +223,10 @@
      A                                 18 80'|'
      A                                  6 80'|'
      A                                 20  2'Copyright'
-     A                                 20 13'Jose'
-     A                                 20 18'Mata,'
+     A                                 20 13'Demo'
+     A                                 20 18'Comp,'
      A                                 20 24'Lda'
-     A                                  4  2'José Mata, Lda.'
+     A                                  4  2'Demo Comp, Lda.'
      A                                      DSPATR(HI)
      A            MORE           7   O 20 73DSPATR(HI)
      A          R RGRLE01030

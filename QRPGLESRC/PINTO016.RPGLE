@@ -138,7 +138,7 @@
                    INT_CDCANAL  = *BLANKS;
 
                    //------------------------------------------------
-                   // Correspondência com José Mata, Lda
+                   // Correspondência com Demo Comp, Lda
                    //------------------------------------------------
                    INT_NUMORDAP = *ZEROS;
                    INT_NUMORDRC = *ZEROS;
@@ -215,7 +215,7 @@
        //=================================================================
        BEGSR ConvRegisto;
           //-----------------------------------------------
-          // formatar Chave (Ramo/Modalidade/Submod)
+          // forCompr Chave (Ramo/Modalidade/Submod)
           //-----------------------------------------------
           WCdChvOr    = TMP_CDRAMO;
 

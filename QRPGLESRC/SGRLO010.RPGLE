@@ -234,7 +234,7 @@
      D* Processador de Texto
      D*
      D*======================================================
-     D*==> Texto formatado (limitado a uma largura de 100)
+     D*==> Texto forCompdo (limitado a uma largura de 100)
      D #RetTexto       DS                  QUALIFIED DIM(2000)
      D   Texto                      100A
      D   IsEMpty                       N

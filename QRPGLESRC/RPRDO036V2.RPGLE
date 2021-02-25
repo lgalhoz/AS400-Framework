@@ -120,7 +120,7 @@
            ENDMON;
 
            //-------------------------------------------------
-           // O Valor actual é formatado com zeros
+           // O Valor actual é forCompdo com zeros
            //-------------------------------------------------
            MONITOR;
               WValActual = PValActual;

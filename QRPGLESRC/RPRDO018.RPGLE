@@ -46,7 +46,7 @@
        ptrOr       = WptrOR;
        WIcTituloH1 = *OFF;
        WIcTituloH2 = *OFF;
-       EXSR AddTexto; // Formatar as Linhas de Texto
+       EXSR AddTexto; // ForCompr as Linhas de Texto
 
        RETURN;
 

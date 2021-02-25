@@ -98,7 +98,7 @@
              WStdCmd = 'OVRDBF FILE(RECIBO) TOFILE/QS36F/'+ %TRIM(WFile)+')';
              shell(WStdCmd:%Size(WStdLen));
           on-error;
-             // Formatar código do Erro
+             // ForCompr código do Erro
              WIcErro = *ON;
           endmon;
        ENDSR;

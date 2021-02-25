@@ -8,10 +8,10 @@
      H*             poder ser tratado à posteriori em diferentes formatos, por
      H*             exemplo em PDF ou em XML.
      H*
-     H* Execução..: http://20.0.0.1/josemata?frame=login&user=apache
-     H*             http://20.0.0.1/josemata?frame=sinistros&mediador=900&inicio=20150101&termo=20150630
-     H*             http://20.0.0.1/josemata?frame=sinistros&segurado=84142&inicio=20150101&termo=20150630
-     H*             http://20.0.0.1/josemata?frame=sinistros&grupo=84&inicio=20150101&termo=20150630
+     H* Execução..: http://20.0.0.1/DemoComp?frame=login&user=apache
+     H*             http://20.0.0.1/DemoComp?frame=sinistros&mediador=900&inicio=20150101&termo=20150630
+     H*             http://20.0.0.1/DemoComp?frame=sinistros&segurado=84142&inicio=20150101&termo=20150630
+     H*             http://20.0.0.1/DemoComp?frame=sinistros&grupo=84&inicio=20150101&termo=20150630
      H*
      H* Compilar..: CRTPF FILE(QTEMP/FSINT008) SRCFILE(#JMPRDSRC/QDDSSRC)
      H*====================================================================

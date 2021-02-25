@@ -354,7 +354,7 @@
        ENDDO;
 
        //---------------------------------------------------
-       // Formatar valor por defeito
+       // ForCompr valor por defeito
        //---------------------------------------------------
        IF (WDfAccess = 'A');
           WResult = *ON;

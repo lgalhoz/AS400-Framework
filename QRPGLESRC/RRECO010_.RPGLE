@@ -223,7 +223,7 @@
         //=================================================================
         BEGSR GetRecInfo;
            //-----------------------------------------------
-           // Formatar a Situação dos Recibos
+           // ForCompr a Situação dos Recibos
            //-----------------------------------------------
            WDsTipRecibo = 'Desconhecido';
            WSituacao  = 'Desconhecidio';

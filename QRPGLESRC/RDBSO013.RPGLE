@@ -229,7 +229,7 @@
         ENDIF;
 
         //-------------------------------------------------
-        // Formatar nome do Campos Standard (Controlo)
+        // ForCompr nome do Campos Standard (Controlo)
         //-------------------------------------------------
         WNomeStd = %SUBST(PRM_FILE:2:3)+%SUBST(PRM_FILE:6:3);
         IF (PRM_TIPO = 'DI');

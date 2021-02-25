@@ -380,7 +380,7 @@
 
         //================================================================
         // Subrotina.: FormatRecord
-        // objectivo.: Formatar o registo do Interface
+        // objectivo.: ForCompr o registo do Interface
         //================================================================
         BEGSR FormatRecord;
            WRegisto  = *BLANKS;

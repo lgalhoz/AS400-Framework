@@ -254,7 +254,7 @@
               OR (PRD_CATV = 6)) AND (PRD_FROTA <> 'F');
 
               //-------------------------------------------------------
-              // Formatar as datas
+              // ForCompr as datas
               //-------------------------------------------------------
               WDatSinist = $cvtData(PRD_DULSIN:'DMY':'YYMD');
               WDatInicio = $CvtData(PRD_DTINI:'DMY':'YYMD');

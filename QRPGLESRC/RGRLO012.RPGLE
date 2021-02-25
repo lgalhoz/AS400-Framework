@@ -188,7 +188,7 @@
      D QDFFSCOL                2      2
      D WIcErro         S               N
      D
-     D*==> Formatar a biblioteca
+     D*==> ForCompr a biblioteca
      D  FILLIB         DS
      D   WFilLib                           LIKE( QNamTyp )
      D    WFILE                1     10A

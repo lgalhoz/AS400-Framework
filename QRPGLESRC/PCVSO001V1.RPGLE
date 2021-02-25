@@ -196,7 +196,7 @@
                  ENDIF;
 
                  //-----------------------------------------
-                 // Formatar data de Alteração
+                 // ForCompr data de Alteração
                  //-----------------------------------------
                  IF (WNomFile = 'GBASEGRO') OR (OR_DALT = *ZEROS);
                     WDatDMA = OR_DTINI;

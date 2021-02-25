@@ -6,8 +6,8 @@
      H*
      H* Observação:
      H*   Para executar este programa num Browser Web fazer:
-     H*   1.Login    => http://jomata/josemata?frame=login&user=<user>&passw=<passw>
-     H*   2.Executar => http://jomata/josemata?frame=sinlabel&nuproc=6960&ano=12
+     H*   1.Login    => http://joComp/DemoComp?frame=login&user=<user>&passw=<passw>
+     H*   2.Executar => http://joComp/DemoComp?frame=sinlabel&nuproc=6960&ano=12
      H*
      H*   Para executar este programa no AS400 fazer:
      H*   1.Executar => CALL RSINO005 PARM(' ' ' ')

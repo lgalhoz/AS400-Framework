@@ -157,7 +157,7 @@
          EXSR  getRecords;
 
          //-----------------------------------
-         // Formatar as Opções de Menu
+         // ForCompr as Opções de Menu
          //-----------------------------------
          WModoSimples = *ON;
 

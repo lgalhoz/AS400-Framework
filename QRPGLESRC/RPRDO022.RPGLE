@@ -2263,7 +2263,7 @@
      C                   ENDSR
 +    C*************************************************************************
 +    C* NOVO PRODUTO MERCANTILE, JANEIRO 2007, ASILVA
-+    C* formatar textos das coberturas, cláusulas e condições especiais
++    C* forCompr textos das coberturas, cláusulas e condições especiais
 +    C* do ramo 55-MERCANTILE para a impresão no bloco das Condições Especiais
 +    C*************************************************************************
 +    C     TXTM          BEGSR

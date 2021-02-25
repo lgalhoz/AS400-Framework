@@ -1,7 +1,6 @@
      H ALWNULL(*USRCTL)  BNDDIR('JMDIR') DFTACTGRP(*NO) ACTGRP(*NEW)
      H DECEDIT(',') DFTNAME(GP015) DATEDIT(*DMY.) FIXNBR(*ZONED) AUT(*ALL)
-     H********************************************************************
-     H*  Empresa....:  JOSE MATA, LDA                                    *
+     H********************************************************************     
      H*  Programa...:  PPRDO012                                          *
      H*  Autor......:  Luis Galhoz                                       *
      H*  Data.......:  24/05/2012                                        *
@@ -867,7 +866,7 @@
 ||   C                   EVAL      *IN98 = *ON
 |+---C                   ENDIF
 |    C*
-|    C*==> Formatar os Campos que não poderam ser apresentados no ecrã
+|    C*==> ForCompr os Campos que não poderam ser apresentados no ecrã
 |    C                   EVAL      CM#COL = 6
 |    C                   EVAL      CM#ROW = 5
 |    C                   EVAL      WIcSair = *OFF
@@ -1268,7 +1267,7 @@
 |+---C                   ENDIF
 |    C*
 |    C
-|    C*==> Formatar os Campos que não poderam ser apresentados no ecrã
+|    C*==> ForCompr os Campos que não poderam ser apresentados no ecrã
 |    C                   EVAL      WIcSair = *OFF
 |+---C                   DOW       (NOT WIcSair)
 ||   C                   EXFMT     RPRDE01205                           92
@@ -2827,7 +2826,7 @@
 +----C                   ENDSR
      C*====================================================================
      C* Subrotina.: BEGS04
-     C* Objectivo.: Formata campos do Base para Display
+     C* Objectivo.: ForComp campos do Base para Display
      C*====================================================================
 +----C     BEGS04        BEGSR
 |    C                   MOVE      *BLANKS       NOMENT
@@ -2901,7 +2900,7 @@
 +----C                   ENDSR
      C*====================================================================
      C* Subrotina.: BEGS05
-     C* Objectivo.: Formata campos do Display para o Base
+     C* Objectivo.: ForComp campos do Display para o Base
      C*====================================================================
 +----C     BEGS05        BEGSR
 |    C                   MOVE      AAINI         AAINIC

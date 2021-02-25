@@ -451,7 +451,7 @@
 
      P*=======================================================
      P* Processo..: $getHTTPmsg
-     P* Objectivo.: Obter a mensagem de erro formatada em XML
+     P* Objectivo.: Obter a mensagem de erro forCompda em XML
      P*=======================================================
      P $getHTTPmsg     B                   EXPORT
      D                 PI          1000A

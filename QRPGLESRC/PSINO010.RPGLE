@@ -154,8 +154,8 @@
      D WSelTodos       S               N
      D
      D*==> Definição das Constantes
-     D OR#Lusitania    C                   'Lusitania'
-     D OR#JoseMata     C                   'Jose Mata'
+     D OR#CSeguros     C                   
+     D OR#DemoComp     C                   
      D*===========================================================
      C     *ENTRY        PLIST
      C                   PARM                    WCodRamo
@@ -289,7 +289,7 @@
                 EXSR GetProvLusit;
                 EXSR GetPagaLusit;
 
-                WOrigem    = OR#Lusitania;
+                WOrigem    = OR#CSeguros;
                 WAnoRegist = LPRC_AAPROC;
                 WAnoProces = GetAnuidade(WDatIniApol:
                                           $CvtData(LPRC_DTSIN:'YMD':'YYMD'));
@@ -326,7 +326,7 @@
                 EXSR GetProvAU;
                 EXSR GetPagaAU;
 
-                WOrigem    = OR#JoseMata;
+                WOrigem    = OR#DemComp;
                 WAnoRegist = APRC_AAPROC;
                 WAnoProces = GetAnuidade(WDatIniApol:
                                           $CvtData(APRC_DTSIN:'YMD':'YYMD'));
@@ -361,7 +361,7 @@
                 EXSR GetProvOR;
                 EXSR GetPagaOR;
 
-                WOrigem    = OR#JoseMata;
+                WOrigem    = OR#DemoComp;
                 WAnoRegist = OPRC_AAPROC;
                 WAnoProces = GetAnuidade(WDatIniApol:
                                           $CvtData(OPRC_DTSIN:'YMD':'YYMD'));

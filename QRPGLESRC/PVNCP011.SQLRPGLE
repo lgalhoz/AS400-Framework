@@ -54,7 +54,7 @@
      D   PCdIndice                    5S 0 CONST
      D   PCodigo                     15A   CONST
      D
-     D*==> Formatar a Intrução SQL
+     D*==> ForCompr a Intrução SQL
      D getSQLStmt      PR          1000A
      D    Fields                    300A   Const
      D    Files                     300A   Const

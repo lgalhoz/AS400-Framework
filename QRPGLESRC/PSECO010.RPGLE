@@ -182,7 +182,7 @@
                 ECR_LSTDET = $GetLstLine();
 
                 //---------------------------------------------
-                // Formatar as Chaves das Tabelas
+                // ForCompr as Chaves das Tabelas
                 //---------------------------------------------
                 MONITOR;
                    ECR_CDTABELA = %DEC($GetField('CDINDICE'):5:0);

@@ -2,7 +2,7 @@
      H AUT(*ALL)
      H*===========================================================
      H* Programa..: PGRLO015
-     H* Descrição.: Escutar a pasta da Lusitania e validar se
+     H* Descrição.: Escutar a pasta da CMPSeguro e validar se
      H*             existem ficheiros a processar.
      H*===========================================================
       /Copy QRPGLESRC,SGRLO010
@@ -70,8 +70,8 @@
        //---------------------------------------------------
        WMsgErro = *BLANKS;
        LST#Pasta(1).IsEmpty = *ON;
-       EXSR ExecRecebidos; // Tratar Registos Recebidos da Lusitania
-       EXSR ExecEnviados;  // Registar registos enviados para a Lusitania
+       EXSR ExecRecebidos; // Tratar Registos Recebidos da CMPSeguro
+       EXSR ExecEnviados;  // Registar registos enviados para a CMPSeguro
 
        $RmvDBSession(WSession);
        *INLR = *ON;
@@ -79,7 +79,7 @@
 
        //=============================================================
        // Subrotina..: ExecRecebidos
-       // Descrição..: Escutar pasta da Lusitania e tratar ficheiros
+       // Descrição..: Escutar pasta da CMPSeguro e tratar ficheiros
        //              recebidos.
        //=============================================================
        BEGSR ExecRecebidos;

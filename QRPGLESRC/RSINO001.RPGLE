@@ -147,7 +147,7 @@
                 ENDIF;
 
                 //-------------------------------------------------
-                // Formatar registo de danos Físicos
+                // ForCompr registo de danos Físicos
                 //-------------------------------------------------
                 WMatricula = INT_IMATR1;
                 IF (INT_TPDN = 'F');
@@ -343,7 +343,7 @@
            D_TIPINT   = TipInterv;
 
            //----------------------------------------
-           // Formatar valores por defeito
+           // ForCompr valores por defeito
            //----------------------------------------
            D_SIN10212 = '00'; // Informações P7
            D_SIN10213 = '00'; // Informações P8
@@ -352,7 +352,7 @@
            D_SIN10216 = '00'; // Informações P11
 
            //----------------------------------------
-           // formatar as datas com valores nulos
+           // forCompr as datas com valores nulos
            //----------------------------------------
            %NullInd(D_SIN10202) = *ON; // Data Pedido Indemnizatório
            %NullInd(D_SIN10203) = *ON; // Data Informação Necessidade   Exames
@@ -466,7 +466,7 @@
            D_TIPINT    = TipInterv;
 
            //----------------------------------------
-           // Formatar valores por defeito
+           // ForCompr valores por defeito
            //----------------------------------------
            D_SIN10305 = 'N';   // Direcção Efectiva da Reparação (S/N  )
            D_SIN10307 = 'N';   // Necessidade de desmontagem do Veicu  lo (S/N)
@@ -478,7 +478,7 @@
            D_SIN10327 = '00';  // Informações P6
 
            //----------------------------------------
-           // formatar as datas com valores nulos
+           // forCompr as datas com valores nulos
            //----------------------------------------
            %NullInd(D_SIN10303) = *ON;  // Data 1º.Contacto
            %NullInd(D_SIN10306) = *ON;  // Data disponibilidade da of  icina e Segurado
@@ -549,7 +549,7 @@
            D_TIPINT    = TipInterv;
 
            //----------------------------------------
-           // Formatar valores por defeito
+           // ForCompr valores por defeito
            //----------------------------------------
            D_SIN10415 = '00'; // Informações P12
            D_SIN10416 = '00'; // Informações P13
@@ -572,7 +572,7 @@
            D_SIN10433 = *BLANKS;// Interveniente Encerrado
 
            //----------------------------------------
-           // formatar as datas com valores nulos
+           // forCompr as datas com valores nulos
            //----------------------------------------
            %NullInd(D_SIN10402) = *ON; // Data 1º Contacto para autorização Reg.  DM
            %NullInd(D_SIN10403) = *ON; // Assunção ou não de Responsabilidade

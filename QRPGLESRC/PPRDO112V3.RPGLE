@@ -113,7 +113,7 @@
        ENDIF;
 
        //------------------------------------
-       // Formatar parâmetros recebidos
+       // ForCompr parâmetros recebidos
        //------------------------------------
        WPtrData     = WPtrOR;
        WDatSelect   = WDatInicio;

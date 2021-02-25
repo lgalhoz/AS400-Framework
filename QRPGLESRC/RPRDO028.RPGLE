@@ -3,9 +3,9 @@
      H* Programa..: RPRDO028
      H* Descrição.: Informação das Apólices e Segurados
      H*
-     H* Execução..: http://20.0.0.1/josemata?frame=login&user=apache
-     H*             http://20.0.0.1/josemata?frame=apolseg&nif=198757751
-     H*             http://20.0.0.1/josemata?frame=apolseg&apolice=9958672&matricula=99-00-NZ
+     H* Execução..: http://20.0.0.1/DemoComp?frame=login&user=apache
+     H*             http://20.0.0.1/DemoComp?frame=apolseg&nif=198757751
+     H*             http://20.0.0.1/DemoComp?frame=apolseg&apolice=9958672&matricula=99-00-NZ
      H*
      H*====================================================================
       /Copy QRPGLESRC,SSECO010

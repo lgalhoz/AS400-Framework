@@ -51,7 +51,7 @@
      D   MSGTEXT                       *   Const
      D
      D*------------------------------------------------------
-     D* Formatar a mensagem de Erro
+     D* ForCompr a mensagem de Erro
      D*   Ex.: WStatus = $SetScError(<Field>:<MsgId>);
      D*------------------------------------------------------
      D  $SetScError    PR              N

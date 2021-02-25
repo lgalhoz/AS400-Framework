@@ -5,18 +5,18 @@
      H* Descrição.: Gestão de contactos
      H*
      H*--> Antes de Compilar, fazer:
-     H* CRTDUPOBJ OBJ("fcobp010") FROMLIB("josemata") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ(fcobp010)
-     H* CRTDUPOBJ OBJ("fcobp011") FROMLIB("josemata") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ(fcobp011)
-     H* CRTDUPOBJ OBJ("fcobp012") FROMLIB("josemata") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ(fcobp012)
+     H* CRTDUPOBJ OBJ("fcobp010") FROMLIB("DemoComp") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ(fcobp010)
+     H* CRTDUPOBJ OBJ("fcobp011") FROMLIB("DemoComp") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ(fcobp011)
+     H* CRTDUPOBJ OBJ("fcobp012") FROMLIB("DemoComp") OBJTYPE(*FILE) TOLIB(QTEMP) NEWOBJ(fcobp012)
      H*==================================================================
      FFCOBP010  UF   E           K DISK    PREFIX(COB_)
-     F                                     EXTFILE('"josemata"/"fcobp010"')
+     F                                     EXTFILE('"DemoComp"/"fcobp010"')
      F                                     RENAME(FCOBP010:RCOBP010)
      FFCOBP011  UF   E           K DISK    PREFIX(COB_)
-     F                                     EXTFILE('"josemata"/"fcobp011"')
+     F                                     EXTFILE('"DemoComp"/"fcobp011"')
      F                                     RENAME(FCOBP011:RCOBP011)
      FFCOBP012  UF   E           K DISK    PREFIX(COB_)
-     F                                     EXTFILE('"josemata"/"fcobp012"')
+     F                                     EXTFILE('"DemoComp"/"fcobp012"')
      F                                     RENAME(FCOBP012:RCOBP012)
      F
      FFINTP028  IF   E           K DISK    PREFIX(INT_)
@@ -73,7 +73,7 @@
      D ENT#Recibo      C                   'R'
      D ENT#Apolice     C                   'A'
      D ENT#Interface   C                   'I'
-     D ENT#Lusitania   C                   'L'
+     D ENT#CMPSeguro   C                   'L'
      D
      D LST#Geral       C                   'G'
      D LST#Contactos   C                   'C'
@@ -94,7 +94,7 @@
        //----------------------------------------------
        WModoIO = MOD#Consulta;
        WSelActivas = *ON;
-       KTE#AGEND = $SetFiles('"josemata"/"fcobp010"');
+       KTE#AGEND = $SetFiles('"DemoComp"/"fcobp010"');
        $addCriteria('Agenda.....:':'DTPXCNT':'GE');
        $addCriteria('Responsavel:':'CDUSER':'GE');
        $SetCriteria('ICESTAD = ''A''');
@@ -107,8 +107,8 @@
        //----------------------------------------------
        // Histórico de Acções Realizadas
        //----------------------------------------------
-       KTE#OPERA = $SetFiles('"josemata"/"fcobp010" A INNER +
-                              JOIN "josemata"/"fcobp011" O +
+       KTE#OPERA = $SetFiles('"DemoComp"/"fcobp010" A INNER +
+                              JOIN "DemoComp"/"fcobp011" O +
                               ON (A.CDCONT = O.CDCONT)');
 
        $SetFields('O.TPCONT,O.DTCONT,O.USCONT,O.TPPXCNT,O.DTPXCNT,+
@@ -366,7 +366,7 @@
                     ECR_NOSEG     = INT_NOMSEG;
                     ECR_NUMORDEM  = INT_NUMORDRC;
                  ENDIF;
-             ELSEIF (COB_TPENTID=ENT#Recibo) OR (COB_TPENTID=ENT#Lusitania);
+             ELSEIF (COB_TPENTID=ENT#Recibo) OR (COB_TPENTID=ENT#CMPSeguro);
                 WNumOrdemRC = COB_NUORDEM;
                 CHAIN WNumOrdemRC RECIBO R#RECIBO;
                 IF (%FOUND(RECIBO));

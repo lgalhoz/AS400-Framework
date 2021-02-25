@@ -320,7 +320,7 @@
        //========================================================
        // Subrotina.: ValidarRecibo
        // Objectivo.: Validiar o estado dos recibos no Corretor
-       //             em José Mata.
+       //             em Demo Comp.
        //========================================================
        BEGSR ValidarRecibo;
           WNumRecJM = %TRIM(%EDITW(IDREC:'0         '));

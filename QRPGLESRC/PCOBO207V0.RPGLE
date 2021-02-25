@@ -6,8 +6,8 @@
      H*             facturar qualquer tipo de recibo, e pode ser
      H*             executado na forma de Rotina ou Programa.
      P*==================================================================
-     FSD1AP1    IF   F  320    16AIDISK    KEYLOC(8) EXTFILE('SD.1.AP1')        Apólices Activas em J.Mata
-     FSD1AP2    IF   F  320    16AIDISK    KEYLOC(8) EXTFILE('SD.1.AP2')        Apólice em Arquivo em J.Mata
+     FSD1AP1    IF   F  320    16AIDISK    KEYLOC(8) EXTFILE('SD.1.AP1')        Apólices Activas em J.Comp
+     FSD1AP2    IF   F  320    16AIDISK    KEYLOC(8) EXTFILE('SD.1.AP2')        Apólice em Arquivo em J.Comp
      FSD1CR     IF   F  128     3AIDISK    KEYLOC(4) EXTFILE('SD.1.CR')         Ficheiro de Mediadores
      FSD1RCA    IF   F  326     6AIDISK    KEYLOC(5) EXTFILE('SD.1.RCA')        Ficheiro de Recibos
      FFCATP205  IF   E           K DISK    PREFIX(CAT_)

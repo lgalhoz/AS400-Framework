@@ -21,7 +21,7 @@
 0000 A                                      HELP
 0000 A*-------------------------------------------------------------------------
 0000 A            INDREG        01   B 01079DSPATR(PR ND MDT)
-0000 A                                 02002'LUSITANIA COMPANHIA DE SEGUROS,SA'
+0000 A                                 02002'COMPANHIA DE SEGUROS,SA'
 0000 A                                      DSPATR(CS HI BL)
 0001 A                                 06016'***  Ficheiro de APÓLICES - Produç-
 0001 A                                      ão OUTROS RAMOS  ***'
@@ -481,7 +481,7 @@
 0026 A            CPOSM          4   O 04050DSPATR(UL)
 0026 A            ZPOSM          3   O 04055DSPATR(UL)
 0026 A            CPMOR2        20   O 04059DSPATR(UL)
-0026 A                                 01002'LUSITANIA COMPª SEGUROS,SA'
+0026 A                                 01002'COMPª SEGUROS,SA'
 0026 A                                      DSPATR(CS HI BL)
 0026 A                                 23010'F7=SAIR'
 0026 A                                      DSPATR(HI)
@@ -969,7 +969,7 @@
 0045 A*-------------------------------------------------------------------------
 0045 A          H                           HLPARA(01 001 24 080)
 0045 A                                      HLPRCD(HELPAP01)
-0045 A                                 01002'LUSITANIA COMPª SEGUROS,SA'
+0045 A                                 01002'COMPª SEGUROS,SA'
 0045 A                                      DSPATR(CS HI BL)
 0045 A            INDREG        01   B 01029DSPATR(PR ND MDT)
 0045 A                                 01031'Opção:'

@@ -290,7 +290,7 @@
           $RmvDBSession(WSessRisco);
 
           //----------------------------------------------------
-          // Formata valor na lista de ecrã
+          // ForComp valor na lista de ecrã
           //----------------------------------------------------
           IF (WNuSequ > *ZEROS);
              IF (WVLRISCO > *ZEROS);

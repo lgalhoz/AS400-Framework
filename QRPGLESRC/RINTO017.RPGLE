@@ -2,7 +2,7 @@
      H AUT(*ALL)
      H*===========================================================
      H* Programa...: RINTO017
-     H* Descrição..: Facturar recibos em José Mata, Lda
+     H* Descrição..: Facturar recibos em Demo Comp, Lda
      H* Observação.: Baseado nos Programas LIb.SD/QS36SRC(SD101) e
      H*                                    LIb.SD/QS36SRC(SD101I)
      H*===========================================================
@@ -54,7 +54,7 @@
      C
       /FREE
         //-----------------------------------------------------------------
-        // Formatar os dados a  inserir no Recibo
+        // ForCompr os dados a  inserir no Recibo
         //-----------------------------------------------------------------
         WCodErro = *BLANKS;
         CHAIN (WCdRegis) RINTP028;

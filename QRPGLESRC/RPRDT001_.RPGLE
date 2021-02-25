@@ -39,13 +39,13 @@
           IF (N_ACORDO = 'S');
              MONITOR;
                 //-------------------------------------------------
-                // Formatar os campos do processo de Sinistro
+                // ForCompr os campos do processo de Sinistro
                 //-------------------------------------------------
                 D_NRPROC   = %CHAR(N_AAPROC)+'9'+%CHAR(N_NSEQ);
                 D_DATAPART = %DATE((N_DTPART+20000000):*ISO);
 
                 //-------------------------------------------------
-                // Formatar Tipo de Documento
+                // ForCompr Tipo de Documento
                 //-------------------------------------------------
                 IF (N_FPART >= '1') AND (N_FPART <= '9');
                    D_TIPODOC = TBD(%DEC(N_FPART:1:0));

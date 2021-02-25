@@ -313,7 +313,7 @@
 
      P*==============================================================================
      P* Processo...: $SetScError
-     P* Descrição..: Formatar mensagem de Erro
+     P* Descrição..: ForCompr mensagem de Erro
      P*==============================================================================
      P $SetScError     B                   Export
      D                 PI              N
@@ -601,7 +601,7 @@
      D   QDFFSCOL              2      2                                         Starting Col
      D WIcErro         S               N
      D
-     D*==> Formatar a biblioteca
+     D*==> ForCompr a biblioteca
      D  FILLIB         DS
      D   WFilLib                     20A
      D    WFILE                1     10A

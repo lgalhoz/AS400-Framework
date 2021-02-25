@@ -83,7 +83,7 @@
           IF (N_IPROC = 'P');
              MONITOR;
                 //-------------------------------------------------
-                // Formatar Tipo de Documento
+                // ForCompr Tipo de Documento
                 //-------------------------------------------------
                 IF (N_FPART >= '1') AND (N_FPART <= '9');
                    D_TIPODOC = TBD(%DEC(N_FPART:1:0));
