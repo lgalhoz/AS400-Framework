@@ -1,0 +1,20 @@
+     A*===============================================================
+     A* Ficheiro...: FCOBP220
+     A* Descrição..: Ficheiro de ADC
+     A* Original...: TBADCPF
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCOBP220                  TEXT('Principal de          ADC')
+     A            CDNADC         9S 0       COLHDG('Código da ADC')
+     A            NUNADC        11S 0       COLHDG('Nº ADC')
+     A                                      EDTWRD('         _  ')
+     A            CDRAMO         2S 0       COLHDG('Ramo')
+     A            NUAPOL         7S 0       COLHDG('Apol')
+     A                                      EDTWRD('       ')
+     A            SITADC         1A         COLHDG('Sit')
+     A            CDUSER        10A         COLHDG('Aprov.por')
+     A            DTAPROV        8S 0       COLHDG('Data aprov')
+     A            CDNIB          3S 0       COLHDG('Código do NIB')
+     A            ADCSEPA       12A
+     A
+     A          K CDNADC

@@ -1,0 +1,15 @@
+     A*===============================================================
+     A* Ficheiro...: FCOBP013
+     A* Descrição..: Ficheiro de envio IDD
+     A* Original...: TBIDDDF
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCOBP013                  TEXT('Ficheiros de envio de IDD')
+     A
+     A            TFFENV        10S 0       COLHDG('Fich.Envio')
+     A                                      EDTWRD('          ')
+     A            TFNLIN         3S 0       COLHDG('NºLinha')
+     A            TFTEXT        94A         COLHDG('Texto')
+     A
+     A          K TFFENV
+     A          K TFNLIN

@@ -1,0 +1,58 @@
+     A*%%TS  SD  20121022  162344  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A*                                     CA03(03 'Fim')
+     A          R RCATE00900
+     A*%%TS  SD  20121018  171459  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(2 2 20 72 *NOMSGLIN)
+     A                                      WDWBORDER((*DSPATR HI))
+     A                                  1 22'Pré-Visualização do Texto'
+     A                                      DSPATR(HI)
+     A          R RCATE00902                SFL
+     A*%%TS  SD  20121022  162344  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            TEXTO         72A  O  3  1
+     A          R RCATE00901                SFLCTL(RCATE00902)
+     A*%%TS  SD  20121022  162344  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      SFLSIZ(0016)
+     A                                      SFLPAG(0015)
+     A                                      WINDOW(RCATE00900)
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      CA03(03 'Sair')
+     A                                      CA12(12 'Cancelar')
+     A                                      CA05(05 'Re-Ordenar')
+     A                                      CA19(19 'Esquerda')
+     A                                      CA20(20 'Direita')
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A                                  2  1'Coluna...:'
+     A                                      COLOR(BLU)
+     A            CURSOR         2Y 0B  2 12EDTWRD('  ')
+     A                                  2 20'Linha....:'
+     A                                      COLOR(BLU)
+     A            LINHA          4Y 0B  2 31EDTWRD('    ')
+     A          R RCATE00998
+     A*%%TS  SD  20120920  115311  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(RCATE00900)
+     A                                      OVERLAY
+     A                                 10 18'| NÃO EXISTEM REGISTOS, PRESSIONE -
+     A                                      A |'
+     A                                      DSPATR(HI)
+     A                                 11 18'|    TECLA F03 ou F12 PARA SAIR   -
+     A                                        |'
+     A                                      DSPATR(HI)
+     A                                  9 18'+----------------------------------
+     A                                      --+'
+     A                                      DSPATR(HI)
+     A                                 12 18'+----------------------------------
+     A                                      --+'
+     A                                      DSPATR(HI)
+     A          R RCATE00999
+     A*%%TS  SD  20120919  125147  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(RCATE00900)
+     A                                      OVERLAY
+     A            DS#KEY01R     60A  O 19  1COLOR(BLU)
+     A            DS#KEY02R     60A  O 20  1COLOR(BLU)

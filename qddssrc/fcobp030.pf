@@ -1,0 +1,23 @@
+     A*================================================================
+     A* Tabela....: FCOBP011
+     A* Descrição.: Gestão de Contactos
+     A*================================================================
+     A                                      UNIQUE
+     A          R RCOBP011
+     A            CDCONT         9S 0       TEXT('Código de Contacto')
+     A            NUOPERA        5S 0       TEXT('Número de Operação')
+     A
+     A*==> Controlo de Contactos
+     A            TPCONT         2A         TEXT('Tipo de Contacto')
+     A            DTCONT         8S 0       TEXT('Data do Contacto')
+     A            HRCONT         6S 0       TEXT('Hora do Contacto')
+     A            USCONT        10A         TEXT('Utilizador')
+     A            CONTAC        60A         TEXT('Pessoa Contactada')
+     A
+     A*==> Agendamento de Contactos
+     A            TPPXCNT        2A         TEXT('Tipo de Contacto')
+     A            DTPXCNT        8S 0       TEXT('Data Próximo Contacto')
+     A            HRPXCNT        6S 0       TEXT('Hora do Próximo Contacto')
+     A
+     A          K CDCONT
+     A          K NUOPERA

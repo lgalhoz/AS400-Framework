@@ -1,0 +1,18 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP040
+     A* Descrição..: Relação dos Certificados Provisórios
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLP042
+     A
+     A            CDCPROV        9S 0       TEXT('Certificado Provisórios')
+     A            NUSEQU         5S 0       TEXT('Sequência da Apólice')
+     A            CDESTADO       2A         TEXT('Código do Estado')
+     A            DTESTADO        L         TEXT('Data do Estado')
+     A
+     A*-----> Campos de Controlo
+     A            GRL04201        L         TEXT('Data de Criação')
+     A            GRL04202        L         TEXT('Data de Alteração')
+     A
+     A          K CDCPROV
+     A          K NUSEQU

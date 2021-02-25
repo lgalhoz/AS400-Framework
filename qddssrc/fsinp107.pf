@@ -1,0 +1,112 @@
+     A*================================================================
+     A* Tabela....: FSINP107
+     A* Alias.....: Tab_Envio_DC
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A                                      UNIQUE
+     A          R RSINP107                  TEXT('TAB_ENVIO_DC')
+     A            NR             9S 0       TEXT('Código')
+     A            CODEMP         4A         TEXT('Código da Empresa')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DATA           8A         TEXT('Data')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            NRPROC        50A         TEXT('Nº do Processo')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            NORDEM         2A         TEXT('Nº Ordem do Lesado')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10701       1A         ALIAS(INTERVENCERRADO)
+     A                                      TEXT('Interv. Encerrado (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DATAPART       8A         TEXT('Data da Participação')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10702       1A         ALIAS(APLICLEIPORT)
+     A                                      TEXT('Fora do Território Nacional')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10703       1A         ALIAS(FACTCLIMEXCEP)
+     A                                      TEXT('Factores Climatérico Excep.')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10704       1A         ALIAS(SUSPFRAUDE)
+     A                                      TEXT('Suspeita de Fraude')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10705       8A         ALIAS(DATAPEDIDOINDEM)
+     A                                      TEXT('Data Pedido Indemnizatório')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10706       8A         ALIAS(DATAPEDIDOEXAMES)
+     A                                      TEXT('Data Informação Necessidade E+
+     A                                            xames')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10707       8A         ALIAS(DATARECEPEXAMES)
+     A                                      TEXT('Recepção dos Exames')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10708       8A         ALIAS(DATADISPEXAMES)
+     A                                      TEXT('Disponibilização dos Exames')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DATAALTA       8A         TEXT('Emissão do Relatório de+
+     A                                             alta da Clinica')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DATAQUANT      8A         TEXT('Data de Quantificação')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10709       8A         ALIAS(DATAASSRESP)
+     A                                      TEXT('Comunicação da assunção de +
+     A                                            Responsabilidade')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10710      50A         ALIAS(ACEITPROPOSTA)
+     A                                      TEXT('Aceitação da Proposta')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10711       8A         ALIAS(DATAASSUNC)
+     A                                      TEXT('Assunção ou não de Responsab+
+     A                                            ilidade')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10712       8A         ALIAS(DATAAPINFADINTER)
+     A                                      TEXT('Data das Informações adiciona+
+     A                                            is')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10713       8A         ALIAS(DATAULTPAGINDEMINTEROFIC)
+     A                                      TEXT('Data do ultimo pagamento')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10714      50A         ALIAS(INFADRELEVAPRECPRZ7)
+     A                                      TEXT('Informações P7')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10715      50A         ALIAS(INFADRELEVAPRECPRZ8)
+     A                                      TEXT('Informações P8')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10716      50A         ALIAS(INFADRELEVAPRECPRZ9)
+     A                                      TEXT('Informações P9')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10717      50A         ALIAS(INFADRELEVAPRECPRZ10)
+     A                                      TEXT('Informações P10')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10718      50A         ALIAS(INFADRELEVAPRECPRZ11)
+     A                                      TEXT('Informações P11')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            ASSRESPONS    50A         TEXT('Assunção Responsabilidade+
+     A                                            pelo Segurador')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A
+     A          K NR

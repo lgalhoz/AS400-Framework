@@ -1,0 +1,12 @@
+     A*================================================================
+     A* Tabela....: FINTP011
+     A* Descrição.: Registos novos e Alterados
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP011
+     A            CDFILE         7S 0       TEXT('Código Ficheiro')
+     A            NUSEQU         5S 0       TEXT('Registos novos e Alterados')
+     A            TPREGIS        2S 0       TEXT('Tipo de Registo')
+     A
+     A          K CDFILE
+     A          K NUSEQU

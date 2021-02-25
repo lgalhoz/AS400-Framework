@@ -1,0 +1,18 @@
+     A*%%TS  SD  20111024  125723  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R RCATE010
+     A*%%TS  SD  20111024  125723  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                  1 18'Indexação de Capitais ISP'
+     A                                  4  2'Parametros da Indexação:'
+     A                                      COLOR(WHT)
+     A                                  5  5'Ano...:'
+     A                                  6  5'Mês...:'
+     A            ANOCONT        4Y 0B  5 13EDTWRD('    ')
+     A            MESCONT        2Y 0B  6 13EDTWRD('  ')
+     A                                 23  2'F03=Sair'
+     A                                 23 17'F12=Cancelar'
+     A                                  5 19'(Ano dos próximos Continuados)'
+     A                                  6 19'(Mês dos próximos Continuados)'

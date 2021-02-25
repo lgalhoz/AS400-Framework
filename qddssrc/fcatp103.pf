@@ -1,0 +1,49 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP103
+     A* Descrição..: Limites e Franquias
+     A* Observação.: Parameterizado manualmente.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP103
+     A
+     A            CDPROD         5S 0       TEXT('Código Produto')
+     A            CDLIMITE       5S 0       TEXT('Chave do Limite')
+     A            CDSUPER        5S 0       TEXT('Nível Superior')
+     A            CDCOBERT       5S 0       TEXT('Código Cobertura')
+     A            CDRISCO        5S 0       TEXT('Código de Risco')
+     A            DSLIMITE     100A         TEXT('Descricao')
+     A            ICSELECT       1A         TEXT('MOSTRAR')
+     A
+     A*==> LIMITES
+     A            CDINCIND       2A         TEXT('Incidência Indemniza')
+     A            VLPERIND       5S 2       TEXT('Percentagem Indemniza')
+     A            VLMAXIND      11S 2       TEXT('Máximo Indemniza')
+     A            ICESCIND       1A         TEXT('Escrever na Acta')
+     A                                      VALUES('S' 'N')
+     A                                      DFT('N')
+     A            CDHDRIND       1A         DFT('T')
+     A            CDTPLIND      65A
+     A
+     A
+     A*==> FRANQUIAS
+     A            CDINCFRQ       2A         TEXT('Incdência Franquia')
+     A            VLPERFRQ       5S 2       TEXT('Percentagem Franqui')
+     A            VLMINFRQ      11S 2       TEXT('Minimo Franquia')
+     A            ICESCFRQ       1A         TEXT('Escrever na Acta')
+     A                                      VALUES('S' 'N')
+     A                                      DFT('N')
+     A            CDHDRFRQ       1A         DFT('T')
+     A            CDTPLFRQ      65A
+     A
+     A*==> Campos de Controlo
+     A            CAT10301        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT10302        L         TEXT('Data de Termo')
+     A                                      DFT('2999-12-31')
+     A            CAT10303       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT10304      10A         TEXT('Quem Criou')
+     A            CAT10305      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD
+     A          K CDLIMITE

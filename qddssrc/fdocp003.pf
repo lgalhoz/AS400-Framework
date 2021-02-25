@@ -1,0 +1,15 @@
+     A                                      UNIQUE
+     A          R RDOCP003
+     A            CDDOCUM        5S 0       TEXT('Código')
+     A            NUPAGINA       5S 0       TEXT('Número da Página')
+     A            NUSEQU         5S 0       TEXT('Sequência')
+     A            NUORDEM        5S 0       TEXT('Ordem')
+     A            NULINHA        3S 0       TEXT('Linha')
+     A            NUCOLUNA       3S 0       TEXT('Coluna')
+     A            TPPARAGR       1A         TEXT('Tipo documento')
+     A            CDESTILO       2A         TEXT('Estilo')
+     A            TEXTO        400A         TEXT('Texto do Parágrafo')
+     A
+     A          K CDDOCUM
+     A          K NUPAGINA
+     A          K NUSEQU

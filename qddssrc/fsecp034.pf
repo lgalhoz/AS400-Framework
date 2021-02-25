@@ -1,0 +1,20 @@
+     A*===============================================================
+     A* Ficheiro...: FSECP034
+     A* Descrição..: Utilizadores do Portal Jose Mata
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RSECP034
+     A
+     A            CDUID          5S 0       TEXT('User ID')
+     A            CDPORTAL       5S 0       TEXT('Código do Portal')
+     A            PASSW         15A         TEXT('Password')
+     A            CDUSER        40A         TEXT('Utilizador')
+     A            EMAIL        100A         TEXT('Endereço de Mail')
+     A            NOME         100A         TEXT('Nome do Mediador')
+     A            CDMEDIA        6S 0       TEXT('Código de Mediador')
+     A
+     A            SEC03401        L
+     A            SEC03402        L
+     A
+     A          K CDUID
+     A          K CDPORTAL

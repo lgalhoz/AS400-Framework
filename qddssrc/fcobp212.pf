@@ -1,0 +1,26 @@
+     A*===============================================================
+     A* Ficheiro...: FCOBP012
+     A* Descrição..: Ficheiro de envio IDD
+     A* Original...: TBIDDEF
+     A*===============================================================
+     A                                      UNIQUE
+     A          R TBIDDE                    TEXT('Ficheiros de envio de IDD')
+     A
+     A            TEFENV        10S 0       COLHDG('Fich.Envio')
+     A                                      EDTWRD('          ')
+     A            TEDATE         8S 0       COLHDG('Data envio')
+     A                                      EDTWRD('  -  -    ')
+     A            TEDATR         8S 0       COLHDG('Data retorno')
+     A                                      EDTWRD('  -  -    ')
+     A            TEDATP         8S 0       COLHDG('Data pagam.')
+     A                                      EDTWRD('  -  -    ')
+     A            TETREG         3S 0       COLHDG('Tot. registos')
+     A                                      EDTWRD('   ')
+     A            TEREGA         3S 0       COLHDG('Registos aceites')
+     A                                      EDTWRD('   ')
+     A            TEVALR         8S 2       COLHDG('Valor Recibos')
+     A                                      EDTWRD('   .   ,  ')
+     A            TEVALP         8S 2       COLHDG('Valor Pagam.')
+     A                                      EDTWRD('   .   ,  ')
+     A
+     A          K TEFENV                    DESCEND

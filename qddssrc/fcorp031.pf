@@ -1,0 +1,13 @@
+     A*===============================================================
+     A* Ficheiro...: FCORP031
+     A* Descrição..: Variáveis do Documento
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCORP031
+ #0  A            CDDOCUM        9S 0       TEXT('Código do Documento')
+ #1  A            NUSEQU         5S 0       TEXT('Sequencia')
+ #2  A            CODVAR         9S 0       TEXT('Variável')
+ #3  A            VALOR        255A         TEXT('Observação')
+     A
+     A          K CDDOCUM
+     A          K NUSEQU

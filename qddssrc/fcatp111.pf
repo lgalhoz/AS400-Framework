@@ -1,0 +1,28 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP111
+     A* Descrição..: Opções das Coberturas
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP111
+     A
+     A            CDPROD         5S 0       TEXT('Código Produto')
+     A            CDCOBERT       5S 0       TEXT('Código')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            DSCOBERT     100A         TEXT('Descricao')
+     A            ISDEFT         1A         TEXT('Por defeito')
+     A            ALIAS         10A         TEXT('Código Alternativo')
+     A            CONVERSAO     10A         TEXT('Conversão')
+     A
+     A*==> Campos de Controlo
+     A            CAT11101        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT11102        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT11103       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT11104      10A         TEXT('Quem Criou')
+     A            CAT11105      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD
+     A          K CDCOBERT
+     A          K NUSEQU

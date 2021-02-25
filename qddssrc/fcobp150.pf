@@ -1,0 +1,21 @@
+     A*========================================================================
+     A* FICHEIRO..: FCOBP147
+     A* DESCRIÇÃO.: Guias de Pagamento
+     A*========================================================================
+     A                                      UNIQUE
+     A          R RCOBP147
+     A            NUMGUIA        8S 0       TEXT('Número da Guia')
+     A
+     A            REFGUIA       60A         TEXT('Referência da Guia')
+     A            DATVALOR        L         TEXT('Data Valor da Guia')
+     A            DATOPERA        L         TEXT('Data de Operação da Guia')
+     A            IMMOVIM       13S 2       TEXT('Valor total da Guia')
+     A            QTDEREGIS      7S 0       TEXT('Quantidade de registos')
+     A            CODESTADO      1S 0       TEXT('Estado da Guia')
+     A            DATESTADO       L         TEXT('Data do Estado')
+     A
+     A**==> Campos de Controlo
+     A            COB14701        L
+     A            COB14702        L
+     A
+     A          K NUMGUIA

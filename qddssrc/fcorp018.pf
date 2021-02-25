@@ -1,0 +1,13 @@
+     A*===============================================================
+     A* Ficheiro...: FCORP018
+     A* Descrição..: Relação da Variável com os campos
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCORP018
+ #0  A            CDQUERY        9S 0       TEXT('Código da Consulta')
+ #1  A            CDFIELD        9S 0       TEXT('Código de Campo')
+ #2  A            CODVAR         9S 0       TEXT('Código da Variável')
+     A
+     A          K CDQUERY
+     A          K CDFIELD
+     A          K CODVAR

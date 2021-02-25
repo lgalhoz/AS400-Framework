@@ -1,0 +1,11 @@
+     A                                      UNIQUE
+     A          R RTMPP001
+     A            RAMO           2S 0
+     A            APOLICE        7S 0
+     A            BONUS          1S 0
+     A            VIAGEM         1A
+     A            DESCONT        5S 2
+     A            TPCARTA        1A
+     A
+     A          K RAMO
+     A          K APOLICE

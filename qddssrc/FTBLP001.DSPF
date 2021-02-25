@@ -1,0 +1,109 @@
+     A*%%TS  SD  20120718  164713  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R RSECE00200
+     A*%%TS  SD  20120224  154940  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                  1 71USER
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A            S#PGM         10A  O  2 71
+     A            DS#FNC        57A  O  2 12DSPATR(HI)
+     A            DS#PGM        57A  O  1 12DSPATR(HI)
+     A          R RSECE00202                SFL
+     A*%%TS  SD  20120718  164713  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            CDPROGR        5Y 0H
+     A            CDFUNCT        5Y 0H
+     A            OPTION         1A  B  8  2
+     A            NMFUNCT       10A  B  8  6
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A            DSFUNCT       40A  B  8 17CHGINPDFT(LC)
+     A                                      DSPATR(UL)
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A          R RSECE00203                SFLCTL(RSECE00202)
+     A*%%TS  SD  20120718  153219  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      SFLSIZ(0013)
+     A                                      SFLPAG(0012)
+     A                                      CF03(03 'Sair')
+     A                                      CF06(06 'Adicionar')
+     A                                      CF12(12 'Cancelar')
+     A                                      CF21(21 'Mudar MODO')
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A                                  7  1'Opt.'
+     A                                      COLOR(WHT)
+     A                                  7  6'Função'
+     A                                      COLOR(WHT)
+     A                                  7 17'Descrição'
+     A                                      DSPATR(HI)
+     A                                  4  1'Componente.:'
+     A                                      DSPATR(HI)
+     A            CDFUNCT        5S 0H
+     A            NMPROGR       10A  O  4 20
+     A            DSPROGR       40A  O  4 31
+     A            CDPROGR        5Y 0O  4 14EDTWRD('     ')
+     A          R RSECE00208                SFL
+     A*%%TS  SD  20120713  142534  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            CDPROGR        5Y 0H
+     A            CDFUNCT        5Y 0H
+     A            CDOPERA        5Y 0H
+     A            OPTION         1A  B  8  2
+     A            DSOPERA       20A  B  8  6CHGINPDFT(LC)
+     A                                      DSPATR(UL)
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A            DFACCESS       1A  B  8 42
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A            VLINDICA       5Y 0B  8 30EDTWRD('     ')
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A          R RSECE00209                SFLCTL(RSECE00208)
+     A*%%TS  SD  20120718  164713  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      SFLSIZ(0013)
+     A                                      SFLPAG(0012)
+     A                                      CF03(03 'Sair')
+     A                                      CF06(06 'Gravar')
+     A                                      CF09(09 'USERS')
+     A                                      CF12(12 'Cancelar')
+     A                                      CF21(21 'Cancelar')
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A                                  4  1'Componente.:'
+     A                                      DSPATR(HI)
+     A            NMPROGR       10A  O  4 20
+     A            DSPROGR       40A  O  4 31
+     A            CDPROGR        5Y 0O  4 14EDTWRD('     ')
+     A                                  7  1'Opt.'
+     A                                      COLOR(WHT)
+     A                                  7  6'Descrição'
+     A                                      DSPATR(HI)
+     A                                  7 30'Valor'
+     A                                      DSPATR(HI)
+     A                                  7 39'Acesso'
+     A                                      DSPATR(HI)
+     A                                  5  1'Função.....:'
+     A                                      DSPATR(HI)
+     A            CDFUNCT        5Y 0O  5 14EDTWRD('     ')
+     A            NMFUNCT       10A  O  5 20
+     A            DSFUNCT       40   O  5 31
+     A          R RSECE00299
+     A*%%TS  SD  20120713  115338  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            DS#KEY01      78   O 22  2COLOR(BLU)
+     A            DS#KEY02      78   O 23  2COLOR(BLU)
+     A            ERR#MSG       78   O 24  2DSPATR(HI)

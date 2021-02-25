@@ -1,0 +1,200 @@
+     A          R RPRDT002
+     A            MEDCOB         3S 0
+     A            RR             2S 0
+     A            APOL           7S 0
+     A            NREC           9S 0
+     A            SEG           40A
+     A            MOR           40A
+     A            FILLER1        5P 0
+     A            CPMOR2        20A
+     A            LCB           40A
+     A            FILLER2        3A
+     A            CPLCB2        20A
+     A            DTINIC         6S 0
+     A            DUR            1S 0
+     A            CE             1S 0
+     A            FILO001        3P 0
+     A            DTALT          6S 0
+     A            ACTA           3P 0
+     A            CR1            1S 0
+     A            CAP1          11P 0
+     A            TX1            5P 4
+     A            CR2            1S 0
+     A            CAP2          11P 0
+     A            TX2            5P 4
+     A            CR3            1S 0
+     A            CAP3          11P 0
+     A            TX3            5P 4
+     A*-----      VSA    -----   1A    ------
+     A*-----      VIA    -----   1A    ------
+     A            LRPS          45A
+     A            NASC           2S 0
+     A            PROF           3P 0
+     A            TEXTO          3P 0
+     A            CL1            2S 0
+     A            CL2            2S 0
+     A            CL3            2S 0
+     A            CL4            2S 0
+     A            CL5            2S 0
+     A            CL6            2S 0
+     A            MARC1         14A
+     A            MATR1         11A
+     A            AC             2S 0
+     A            CIL            1S 0
+     A            PB             1S 0
+     A            NLUG1          1S 0
+     A            MARC2         14A
+     A            MATR2         11A
+     A            TC             1S 0
+     A            NLUG2          1S 0
+     A            OBS1          45A
+     A            OBS2          45A
+     A            TREG           1S 0
+     A            DTFIM          6S 0
+     A            PRS            9P 2
+     A            BONUS          7P 2
+     A            ENCP           9P 2
+     A            CUSTAA         3P 2
+     A            CRC            3P 2
+     A            SELO           7P 2
+     A            SNA            7P 2
+     A            SNB            7P 2
+     A            TOTREC         9P 2
+     A            COM1           7P 2
+     A            MED2           5P 2
+     A            COM2           7P 2
+     A            FRANQ          5P 0
+     A            CATV           1S 0
+     A            C1             1A
+     A            C2             1A
+     A            C3             1A
+     A            C4             1A
+     A            C5             1A
+     A            C6             1A
+     A            C7             1A
+     A            C8             1A
+     A            MALT           2S 0
+     A            ISEN           1S 0
+     A            PRRC           9P 2
+     A            FILO002        5A
+     A            FRAC           1S 0
+     A            NSEG           5P 0
+     A            NATUR         30A
+     A            CLASS          1A
+     A            PERDCQ         1A
+     A            TPERD          1A
+     A            PPERDI         2S 0
+     A            ENCFIX         9S 0
+     A            PINDMN         2S 0
+     A            FILO003        3A
+     A            TCALVG         1A
+     A            PRSVG          7P 2
+     A            PVGAGR         7P 2
+     A            TOTVG          7P 2
+     A            AVENC          7P 2
+     A            AVSELO         7P 2
+     A            AVSNA          7P 2
+     A            AVCOM1         7P 2
+     A            AVCOM2         7P 2
+     A            VIAG           1A
+     A            AVFRAC         7P 2
+     A            AVFGA          7P 2
+     A            VFRAC          7P 2
+     A            FGA            7P 2
+     A            VFRCSP         7P 2
+     A            VLNOVO         7P 0
+     A            VLEXTR         5P 0
+     A            CAPDPI         7P 0
+     A            ARTG5          1A
+     A            CODFRQ         2A
+     A            FILO004        5A
+     A            DESCTO         3P 1
+     A            CATREB         3A
+     A            PRSAGR         9P 2
+     A            TCALPJ         1S 0
+     A            WPRSPJ         7P 2
+     A            PPJAGR         7P 2
+     A            TOTPJ          7P 2
+     A            PJENC          7P 2
+     A            PJSELO         7P 2
+     A            PJSNA          7P 2
+     A            PJCOM1         7P 2
+     A            PJCOM2         7P 2
+     A            PJUR           1A
+     A            PJFRAC         7P 2
+     A            PJFGA          7P 2
+     A            MODELO        20A
+     A            APREF          9S 0
+     A            CDCAE          6A
+     A            JMM1           3S 0
+     A            JMC1           5P 3
+     A            JMM2           3S 0
+     A            JMC2           5P 3
+     A            MOD            1A
+     A            TPT            1A
+     A            CAPFAT        11P 0
+     A            FILO005       46A
+     A            JMCOM1         7P 2
+     A            JMCOM2         7P 2
+     A            JMAVC1         7P 2
+     A            JMAVC2         7P 2
+     A            JMPJC1         7P 2
+     A            JMPJC2         7P 2
+     A            CRHIP          5S 0
+     A            CPMOR1         7P 0
+     A            CPLCB1         7P 0
+     A            CAPREP         7P 0
+     A            DTCREP        11P 0
+     A            QIV            1A
+     A            FILO006        3A
+     A            PRIV           1A
+     A            FILO007        3A
+     A            PROCU          9P 2
+     A            PROCUA         9P 2
+     A            SELOCU         5P 2
+     A            SNAOCU         5P 2
+     A            FILO008        1A
+     A            COM1OC         5P 2
+     A            COM2OC         7P 2
+     A            JMOCC1         7P 2
+     A            JMOCC2         7P 2
+     A            OCFRAC         7P 2
+     A            PBONUS         2S 0
+     A            PAGSIN         3S 0
+     A            FILO009        8A
+     A            CONDOM         1A
+     A            NEWPRD         1A
+     A            CF01           1A
+     A            CF02           1A
+     A            CF03           1A
+     A            CF04           1A
+     A            CF05           1A
+     A            CF06           1A
+     A            CF07           1A
+     A            CF08           1A
+     A            CF09           1A
+     A            CF10           1A
+     A            CF11           1A
+     A            CF12           1A
+     A            CE001          1A
+     A            CE003          1A
+     A            CA030          1A
+     A            CA031          1A
+     A            CA100          1A
+     A            CA101          1A
+     A            CA102          1A
+     A            CD103          1A
+     A            CD130          1A
+     A            CD131          1A
+     A            CD132          1A
+     A            CD133          1A
+     A            CD134          1A
+     A            CD135          1A
+     A            CD136          1A
+     A            CD137          1A
+     A            CF13           1A
+     A            CE002          1A
+     A            FILO012       62A
+     A
+     A          K RR
+     A          K APOL

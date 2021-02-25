@@ -1,0 +1,19 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP207
+     A* Descrição..: Ultima selecção registada
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLP207
+     A
+     A            CDSESS         5S 0       TEXT('Código da Sessão')
+     A            RECKEY        10A         TEXT('Chave do Registo')
+     A            NUSEQU         5S 0       TEXT('Sequência da selecção')
+     A            NUORDEM        5S 0       TEXT('Ordem na lista')
+     A
+     A*-----> Campos de Controlo
+     A            GRL20701        L         TEXT('Data de Criação')
+     A            GRL20702        L         TEXT('Data de Alteração')
+     A
+     A          K CDSESS
+     A          K RECKEY
+     A          K NUSEQU

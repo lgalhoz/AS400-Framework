@@ -1,0 +1,9 @@
+     A***************************************************************
+     A* Tabela....: FCATP01001
+     A* Descrição.: Lógico de Indices
+     A***************************************************************
+     A          R RCATP010                  PFILE(FCATP010)
+     A
+     A          K ANO
+     A          K TRIMESTRE
+     A          K INCIDENCIA

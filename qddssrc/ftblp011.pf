@@ -1,0 +1,11 @@
+     A***************************************************************
+     A* Tabela....: FTBLP011
+     A* Descrição.: TEXTO  das Tabelas
+     A*
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RTBLP011
+     A            CDINDICE       5S 0       TEXT('Indice de Tabelas')
+     A            TEXTO        240A         TEXT('Texto')
+     A
+     A          K CDINDICE

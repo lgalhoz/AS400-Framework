@@ -1,0 +1,25 @@
+     A*==============================================================================
+     A* Ficheiro..: FSINT102
+     A* Descrição.: Informação das Viaturas
+     A*             Informação Específica dos Viaturas envolvidas
+     A*
+     A* Origens...: Lista de Ficheiros Originais de onde foram extraídos os dados:
+     A*             [x] QS36F/G.SINPRO     = Processos de Sinistro Automóvel
+     A*             [x] QS36F/IDSPRO       = Processos de Sinistro IDS
+     A*             [x] QS36F/FICI<AAMMDD> = Interface de Sinistros IDS Lusitânia
+     A*
+     A*==============================================================================
+     A                                      UNIQUE
+     A          R RSINT102
+     A            NORDSIN        9S 0       COLHDG('Número de Ordem')
+     A            NUSEQU         5S 0       COLHDG('Viaturas envolvidas')
+     A
+     A*--> Informação Específica dA Vrocesso
+     A            NUSEGU         8S 0       COLHDG('Segurado')
+     A            MARCA         14A         COLHDG('Marca')
+     A            MATRIC        11A         COLHDG('Matricula')
+     A            CATV           4S 0       COLHDG('Cat.Veiculo')
+     A            AAV            4S 0       COLHDG('Ano Veiculo')
+     A
+     A          K NORDSIN
+     A          K NUSEQU

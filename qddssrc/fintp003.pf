@@ -1,0 +1,17 @@
+     A*===============================================================
+     A* Ficheiro...: FINTP003
+     A* Descrição..: Ficheiros Temporários de Input Utilizados
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RINTP003
+     A            CDREMESSA      9S 0       TEXT('Código Remessa')
+     A            CDBATCH        9S 0       TEXT('Processo Batch')
+     A            NUSEQU         5S 0       TEXT('Sequência do Ficheiro')
+     A            CDSTATUS       1A         TEXT('Situação do Registo')
+     A
+     A            INT00301        Z         TEXT('Data Criação')
+     A            INT00302        Z         TEXT('Data Alteração')
+     A
+     A          K CDREMESSA
+     A          K CDBATCH
+     A          K NUSEQU

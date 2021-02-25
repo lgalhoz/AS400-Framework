@@ -1,0 +1,45 @@
+     A*================================================================
+     A* Tabela....: FSINP114
+     A* Alias.....: Relação MS Access com AS/400
+     A* Descrição.: Tabela actualizada por programas Batch
+     A*================================================================
+     A                                      UNIQUE
+     A          R RSINP114                  TEXT('Relação tabelas')
+     A            AAPROC         2S 0       TEXT('Ano do Processo')
+     A            NUPROC         4S 0       TEXT('Número Processo')
+     A            SEQUENCIA      2S 0       TEXT('Sequencia')
+     A            NUMINT         6S 0       TEXT('Código Segurado')
+     A
+     A*==> Relação com as Tabelas do AS/400
+     A            ASTPINT        1A         TEXT('Tipo Interviniente')
+     A            ASSQINT        3S 0       TEXT('Sequencia Intervininte')
+     A            ASTPSIN        1S 0       TEXT('Tipo Sinist:1=DM,2=DC,3=DMDC')
+     A            ASNOME        40A         TEXT('Nome do Interveninete')
+     A            ASMARCA       20A         TEXT('Marca da Viatura')
+     A            ASNMMAT       20A         TEXT('Número da Matricula')
+                  ASCATV         4S 0       TEXT('Categoria da Viatura')
+     A            ASCOMP         5S 0       TEXT('Código de Companhia')
+     A            ASNUAPO       20A         TEXT('Apólice')
+     A
+     A*==> Relação com as Tabelas do MS Access
+     A            MSTPINT        2A         TEXT('Tipo Interviniente')
+     A            MSSQINT        3S 0       TEXT('Sequencia Interviniente')
+     A            MSTPSIN        1S 0       TEXT('Tipo Sinist:1=DM,2=DC,3=DMDC')
+     A            MSNOME        40A         TEXT('Nome do Interviniente')
+     A            MSNMMAT       20A         TEXT('Número da Matricula')
+     A            MSORIGE        3A         TEXT('Origem dos dados')
+     A
+     A*==> Campos de Controlo
+     A            DATENVIO        L         TEXT('Data de Envio')
+     A            HORENVIO        T         TEXT('Hora de Envio')
+     A            QTDENVIO       5S 0       TEXT('Numero vezes envia.')
+     A            SEQLUSI        2S 0       TEXT('Sequencia na Lusit.')
+     A            CODESTAD       1A         TEXT('Estado: A=Activo;I=Inactivo')
+     A            DATALTER        L         TEXT('Data Alteracao')
+     A            HORALTER        T         TEXT('Hora Alteracao')
+     A            DATCRIA         L         TEXT('Data Criacao')
+     A            HORCRIA         T         TEXT('Hora Criacao')
+     A
+     A          K AAPROC
+     A          K NUPROC
+     A          K SEQUENCIA

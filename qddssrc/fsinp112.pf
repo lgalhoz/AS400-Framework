@@ -1,0 +1,11 @@
+     A*================================================================
+     A* Tabela....: FSINP112
+     A* Alias.....: Tipos de documento
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A                                      UNIQUE
+     A          R RSINP112                  TEXT('Tipos de documento')
+     A            NR             9S 0       TEXT('Número')
+     A            TIPO          50A         TEXT('Tipo de Documento')
+     A
+     A          K NR

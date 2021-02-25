@@ -1,0 +1,17 @@
+     A*===============================================================
+     A* Ficheiro...: FCORP012
+     A* Descrição..: Relação das Consultas com Consultas
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCORP012
+ #0  A            CDQUERY        9S 0       TEXT('Código da Query')
+ #1  A            CDFIELD        9S 0       TEXT('Código do Campo')
+ #2  A            NUSEQU         5S 0       TEXT('Sequencia do Campo')
+     A
+ #3  A            TPRELA         1A         TEXT('Tipo de Relação')
+ #4  A            CDQRYSUP       9S 0       TEXT('Query Superior')
+ #5  A            CDFLDSUP       9S 0       TEXT('Campo Superior')
+     A
+     A          K CDQUERY
+     A          K CDFIELD
+     A          K NUSEQU

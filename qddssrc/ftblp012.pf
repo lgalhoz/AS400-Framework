@@ -1,0 +1,16 @@
+     A***************************************************************
+     A* Tabela....: FTBLP012
+     A* Descrição.: Código das Tabelas
+     A*
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RTBLP012
+     A            CDINDICE       5S 0       TEXT('Indice de Tabelas')
+     A            CDCODIGO       5S 0       TEXT('Sequencia da Chave')
+     A            CODIGO        15A         TEXT('Código da Tabela')
+     A            ALIAS         15A         TEXT('Valor Alternativo')
+     A            DESCCOD      100A         TEXT('Descrição Completa')
+     A            DESCABRV      20A         TEXT('Descrição Abreviada')
+     A
+     A          K CDINDICE
+     A          K CDCODIGO

@@ -1,0 +1,86 @@
+     A*%%TS  SD  20140402  105407  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R RPRDE00200
+     A*%%TS  SD  20120926  130546  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(2 2 20 72 *NOMSGLIN)
+     A                                      WDWBORDER((*DSPATR HI))
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A*                                 1 71USER
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A*           S#PGM         10A  O  2 71
+     A            DS#FNC        57A  O  2 12DSPATR(HI)
+     A            DS#PGM        57A  O  1 12DSPATR(HI)
+     A          R RPRDE00202                SFL
+     A*%%TS  SD  20140402  102610  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            FICHEIRO      10A  H
+     A            BIBLIOTECA    10A  H
+     A            CDMOTIVO       2Y 0H
+     A            OPTION         1A  B  7  2
+     A            TEXTO         68A  O  7  5
+     A          R RPRDE00203                SFLCTL(RPRDE00202)
+     A*%%TS  SD  20140402  102610  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      SFLSIZ(0013)
+     A                                      SFLPAG(0012)
+     A                                      WINDOW(RPRDE00200)
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A                                  4  1'Apólice:'
+     A                                      DSPATR(HI)
+     A            RAMO           2S 0O  4 10
+     A            APOLICE        7S 0O  4 13
+     A            NOMSEG        40A  O  4 21
+     A                                  6  1'Opç'
+     A                                      DSPATR(HI)
+     A            HEADER        68   O  6  5DSPATR(HI)
+     A          R RPRDE00205
+     A*%%TS  SD  20140402  105407  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(RPRDE00200)
+     A                                      CF03(03 'Sair')
+     A                                      CF06(06 'Pop-Up')
+     A                                      CF12(12 'Cancelar')
+     A                                      OVERLAY
+     A                                  4  2'Ramo.....:'
+     A                                  5  2'Apólice..:'
+     A                                  6  2'Motivo...:'
+     A                                  7  2'Data.....:'
+     A                                  8  2'Tipo.....:'
+     A                                  9  2'Recibo...:'
+     A                                 10  2'Periodo..:'
+     A          R RPRDE00298
+     A*%%TS  SD  20140402  101013  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(RPRDE00200)
+     A                                      CF03(03 'Sair')
+     A                                      CF06(06 'Pop-Up')
+     A                                      CF12(12 'Cancelar')
+     A                                      OVERLAY
+     A                                 12  9'|     NÃO EXISTEM REGISTOS DE ACTA-
+     A                                      S PARA ESTA     |'
+     A                                      DSPATR(HI)
+     A                                 11  9'+----------------------------------
+     A                                      ----------------+'
+     A                                      DSPATR(HI)
+     A                                 13  9'|                   APÓLICE       -
+     A                                                      |'
+     A                                      DSPATR(HI)
+     A                                 14  9'+----------------------------------
+     A                                      ----------------+'
+     A                                      DSPATR(HI)
+     A          R RPRDE00299
+     A                                      WINDOW(RPRDE00200)
+     A*%%TS  SD  20120726  144256  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            DS#KEY01R     60A  O 19  2COLOR(BLU)
+     A            DS#KEY02R     60A  O 20  2COLOR(BLU)
+     A          R RPRDE00297
+     A*%%TS  SD  20130516  113140  LGALHOZ     REL-V6R1M0  5761-WDS

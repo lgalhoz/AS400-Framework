@@ -1,0 +1,18 @@
+     A                                      UNIQUE
+     A          R RDOCP001
+     A            CDDOCUM        5S 0       TEXT('Código')
+     A            NMDOCUM       10A         TEXT('Nome')
+     A            NMABREV       20A         TEXT('Nome Abreviado')
+     A            DSDOCUM       50A         TEXT('Descrição')
+     A            TPDOCUM        1A         TEXT('Tipo documento')
+     A            FMTDOC        10A         TEXT('Formato final')
+     A            DESTINO       45A         TEXT('Destino')
+     A            PARSER        45A         TEXT('Parser do documento')
+     A            CDATRIB        5S 0       TEXT('Atributo')
+     A            ICLOCKED       1A         TEXT('Bloqueado ?')
+     A            ICTESTES       1A         TEXT('Testes ?')
+     A
+     A            DOC00101        L         TEXT('Data de Criação')
+     A            DOC00102        L         TEXT('Data de Alteração')
+     A
+     A          K CDDOCUM

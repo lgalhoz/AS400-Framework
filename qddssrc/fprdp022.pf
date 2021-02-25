@@ -1,0 +1,21 @@
+     A*===============================================================
+     A* Ficheiro...: FPRDP022
+     A* Descrição..: Descontos e Agravamentos
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP022
+     A            CDRAMO         2S 0       TEXT('Ramo')
+     A            NUAPOL         7S 0       TEXT('Número da Apólice')
+     A            NUSEQU         5S 0       TEXT('Sequência')
+     A            CDITEM         5S 0       TEXT('Capital do Edificio')
+     A
+     A*==> Campos de controlo do Registo
+     A            PRD02201        L         TEXT('Data de Inicio')
+     A            PRD02202        L         TEXT('Data de Termo')
+     A            PRD02203       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A            PRD02204      10A         TEXT('Quem Criou')
+     A            PRD02205      10A         TEXT('Quem Alterou')
+     A
+     A          K CDRAMO
+     A          K NUAPOL
+     A          K NUSEQU

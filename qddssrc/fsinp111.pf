@@ -1,0 +1,12 @@
+     A*================================================================
+     A* Tabela....: FSINP111
+     A* Alias.....: tipointerveniente
+     A* Descrição.: Tabela de Sinistros usada em MS.ACCESS
+     A*================================================================
+     A                                      UNIQUE
+     A          R RSINP111                  TEXT('tipointerveniente')
+     A            NR             9S 0
+     A            SIN11101      40A         ALIAS(TIPOINTERVENIENTE)
+     A                                      TEXT('Tipo de Interveniente')
+     A
+     A          K NR

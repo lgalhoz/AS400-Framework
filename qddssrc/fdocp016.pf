@@ -1,0 +1,25 @@
+     A*==============================================================
+     A* Ficheiro...: FDOCP016
+     A* Objectivo..: Configuração FTP, IP, User, Password
+     A* Observação.: Estão configurados mais do que um servidor FTP,
+     A*              desta forma ao fim de (n) tentativas frustradas
+     A*              o Sistema passa para o segundo candidato e assim
+     A*              Sucessivamente. Desta forma e caso exista um
+     A*              problema com o Gestor de Arquivo Principal, então
+     A*              passa automáticamente para o segundo.
+     A*==============================================================
+     A                                      UNIQUE
+     A          R RDOCP016                  TEXT('Relação dos Servidores')
+     A            CODSERVER     11S 0       TEXT('Código de Servidor')
+     A            CODUSER       20A         TEXT('Código do Utilizador')
+     A            PASSWORD      20A         TEXT('Nome do Documento')
+     A            SERVER        15A         TEXT('IP do Servidor')
+     A            DESSERVER    100A         TEXT('Descrição do Servidor')
+     A            SEQSERVER     11S 0       TEXT('Sequencia Candidato')
+     A            NUMTENTA       5S 0       TEXT('Numero de Tentativas')
+     A            ACTTENTA       5S 0       TEXT('Numero Falhadas')
+     A            CODSTS         1A         TEXT('Estado do Servidor')
+     A            DATREGISTO      L         TEXT('Data do Registo')
+     A            DATESTADO       L         TEXT('Data do Estado')
+     A
+     A          K CODSERVER

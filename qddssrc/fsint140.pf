@@ -1,0 +1,11 @@
+     A                                      UNIQUE
+     A          R RCATP010
+     A            SERIE          2S 0
+     A            DATA           8S 0
+     A            RAMO           2S 0
+     A            APOLICE        7S 0
+     A            NOME          50A
+     A            OBSERVA       80A
+     A
+     A          K RAMO
+     A          K APOLICE

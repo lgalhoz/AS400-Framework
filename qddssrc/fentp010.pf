@@ -1,0 +1,25 @@
+     A*===============================================================
+     A* Ficheiro...: FENTP010
+     A* Descrição..: NIF's de Penhoras e Inválidos
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RENTP010
+     A            CDREGIS        9S 0       TEXT('Código de Registo')
+     A            NUNIF          9S 0       TEXT('Identificação Fiscal')
+     A            NOME          60A         TEXT('Nome')
+     A            DTINICIO       8S 0       TEXT('Data Inicio')
+     A            DTTERMO        8S 0       TEXT('Data Termo')
+     A            TPREGIS        2A         TEXT('Tipo Registo')
+     A            CDORIGEM       1A         TEXT('Origem do Ficheiro')
+     A            CDFILE         7S 0       TEXT('Código Ficheiro')
+     A
+     A*==> Campos de Controlo
+     A            ENT01001        L         TEXT('Data de Criação')
+     A            ENT01002        L         TEXT('Data de Alteração')
+     A            ENT01003        L         TEXT('Data da Análise')
+     A            ENT01004      10A         TEXT('Utilizador Criação')
+     A            ENT01005      10A         TEXT('Utilizador Alteração')
+     A            ENT01006        L         TEXT('Data de Criação')
+     A            ENT01007        L         TEXT('Data de Alteração')
+     A
+     A          K CDREGIS

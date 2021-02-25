@@ -1,0 +1,23 @@
+     A*================================================================
+     A* Tabela....: FCATP200
+     A* Descrição.: Regra de Conversão de Códigos de Ramos
+     A*================================================================
+     A                                      UNIQUE
+     A          R RCATP200
+     A            CCOMP          3S 0       TEXT('Código de Companhia')
+     A            NMVARI         3S 0       TEXT('Variante do Ramo')
+     A
+     A*==> Informação Original
+     A            CDRAMO         3S 0       TEXT('Código de Ramo Corretor')
+     A            CDCOMIS        5S 0       TEXT('Plano de Comissionamento')
+     A            CDCHVOR       20A         TEXT('Código de Chave Original')
+     A            CDMASK        20A         TEXT('Mascara de Edição')
+     A
+     A*==> Informação de Controlo
+     A            CAT20001        L         TEXT('Data de Criação do registo')
+     A            CAT20002        L         TEXT('Data de Alteração do Registo')
+     A            CAT20003       1A         TEXT('Situação do Registo')
+     A            CAT20004      10A         TEXT('Utilizador Criação')
+     A
+     A          K CCOMP
+     A          K NMVARI

@@ -1,0 +1,16 @@
+     A*===============================================================
+     A* Ficheiro...: FSECP032
+     A* Descrição..: Gestão de IP's
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RSECP032
+     A
+     A            NUIP          15A         TEXT('Número IP')
+     A            DFUSER        10A         TEXT('Utilizador defeito')
+     A            ISACESS        1A         TEXT('Tipo Acesso A/R')
+     A            NUTENTA        5S 0       TEXT('Tentativas falhadas')
+     A
+     A            SEC03201        L
+     A            SEC03202        L
+     A
+     A          K NUIP

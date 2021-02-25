@@ -1,0 +1,9 @@
+     A*===============================================================
+     A* Ficheiro...: FINTT021
+     A* Descrição..: Penhoras e NIF's inválidos
+     A*===============================================================
+     A          R RINTT021
+     A            DATFILE        8S 0       TEXT('Data do Ficheiro            ')
+     A            NUMNIF         9S 0       TEXT('Número de Contribuinte      ')
+     A
+     A          K NUMNIF

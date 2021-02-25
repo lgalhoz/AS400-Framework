@@ -1,0 +1,2234 @@
+     A*%%TS  SD  20120629  100041  LGALHOZ     REL-V6R1M0  5761-WDS
+0000 A*0IGC 0DS4  V6R1M0                    910710
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3                  -
+     A                                             27 132 *DS4)
+     A                                      CHGINPDFT
+     A                                      USRDSPMGT
+     A                                      INDARA
+0000 A**************************************************************************
+0000 A*ECRAN ENTRADA - MENU PRINCIPAL
+0000 A**************************************************************************
+0000 A          R MENU
+0000 A                                      DSPMOD(*DS3)
+0000 A                                      PRINT
+0000 A                                      INVITE
+0000 A                                      SLNO(01)
+0000 A                                      CLRL(*ALL)
+0000 A                                      BLINK
+0000 A                                      ALWROL
+0000 A                                      CF07
+0000 A                                      HELP
+0000 A*-------------------------------------------------------------------------
+0000 A            INDREG        01   B 01079DSPATR(PR ND MDT)
+0000 A                                 02002'LUSITANIA COMPANHIA DE SEGUROS,SA'
+0000 A                                      DSPATR(CS HI BL)
+0001 A                                 06016'***  Ficheiro de APÓLICES - Produç-
+0001 A                                      ão OUTROS RAMOS  ***'
+0001 A                                 10006'Seleccione:'
+0001 A                                 11017'1'
+0001 A                                      DSPATR(HI)
+0001 A                                 11019'- NOVOS'
+0001 A                                 12017'2'
+0001 A                                      DSPATR(HI)
+0001 A                                 12019'- CONSULTAS'
+0001 A                                 13017'3'
+0001 A                                      DSPATR(HI)
+0001 A                                 13019'- ALTERAÇÕES'
+0001 A                                 14017'4'
+0001 A                                      DSPATR(HI)
+0001 A                                 14019'- ALTERAÇÃO NºSEGURADO'
+0002 A                                 16045'OPÇÃO'
+0002 A                                      DSPATR(HI)
+0002 A                                 16053'RR-APÓLICE'
+0002 A                                      DSPATR(HI)
+0002 A            OPCAO          1M  B 17047DSPATR(UL MDT)
+0002 A  49                                  DSPATR(RI PC)
+0002 A            RRAPOL         2D  B 17053DSPATR(UL MDT)
+0002 A  52                                  DSPATR(RI PC)
+0002 A            APOL           7D  B 17056CHECK(RZ ER)
+0002 A                                      DSPATR(UL MDT)
+0002 A  52                                  DSPATR(RI PC)
+0002 A                                 23010'F7=SAIR'
+0002 A                                      DSPATR(HI)
+0002 A**************************************************************************
+0002 A*ECRAN ENTRADA COBERTURAS, CONDIÇÕES E CLAUSULAS DO RAMO RESIDENTIA
+0002 A**************************************************************************
+     A          R INPUT2
+     A*%%TS  SD  20120629  100041  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      DSPMOD(*DS3)
+     A                                      PRINT
+     A                                      INVITE
+     A                                      SLNO(01)
+     A                                      CLRL(*ALL)
+     A                                      BLINK
+     A                                      ALWROL
+     A                                      CF03 CF07
+     A                                      HELP
+     A          H                           HLPRCD(HELPR001)
+     A  *DS3                                HLPARA(01 001 24 080)
+     A  *DS4                                HLPARA(01 001 24 080)
+     A            FL0001         1A  I  1  4DFT('R')
+     A                                      DSPATR(PR)
+     A                                      DSPATR(ND)
+     A                                      DSPATR(MDT)
+     A                                  1 23'Apólice:'
+     A            WAPOL          7A  O  1 33DSPATR(HI)
+     A  23                                  DSPATR(ND)
+     A                                  1 48'Produto:'
+     A                                  1 59'RESIDENTIA'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(RI)
+     A                                  3  4'Coberturas       Condições     Clá-
+     A                                      usulas     Cláusulas'
+     A                                      DSPATR(HI)
+     A                                  4  4'Facultativas     Especiais     Apl-
+     A                                      icáveis     Diversas'
+     A                                      DSPATR(HI)
+     A                                  6  6' 1'
+     A                                      DSPATR(HI)
+     A            WCF01          1A  B  6 10DSPATR(UL)
+     A                                      DSPATR(PC)
+     A                                      DSPATR(MDT)
+     A                                  6 13'S=sim'
+     A                                  6 23'001'
+     A                                      DSPATR(HI)
+     A            WCE001         1A  B  6 28DSPATR(PR)
+     A                                      DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                  6 37'030'
+     A                                      DSPATR(HI)
+     A            WCA030         1A  B  6 42DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                  6 52'103'
+     A                                      DSPATR(HI)
+     A            WCD103         1A  B  6 57DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                  7  6' 2'
+     A                                      DSPATR(HI)
+     A            WCF02          1A  B  7 10DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                  7 23'002'
+     A                                      DSPATR(HI)
+     A            WCE002         1A  B  7 28DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                  7 37'031'
+     A                                      DSPATR(HI)
+     A            WCA031         1A  B  7 42DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                  7 52'130'
+     A                                      DSPATR(HI)
+     A            WCD130         1A  B  7 57DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                  8  6' 3'
+     A                                      DSPATR(HI)
+     A            WCF03          1A  B  8 10DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                  8 23'003'
+     A                                      DSPATR(HI)
+     A            WCE003         1A  B  8 28DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                  8 37'100'
+     A                                      DSPATR(HI)
+     A            WCA100         1A  B  8 42DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                  8 52'131'
+     A                                      DSPATR(HI)
+     A            WCD131         1A  B  8 57DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                  9  6' 4'
+     A                                      DSPATR(HI)
+     A            WCF04          1A  B  9 10DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                  9 23'004'
+     A                                      DSPATR(HI)
+     A            WCE004         1A  B  9 28DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                  9 37'101'
+     A                                      DSPATR(HI)
+     A            WCA101         1A  B  9 42DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                  9 52'132'
+     A                                      DSPATR(HI)
+     A            WCD132         1A  B  9 57DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                 10  6' 5'
+     A                                      DSPATR(HI)
+     A            WCF05          1A  B 10 10DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                 10 37'102'
+     A                                      DSPATR(HI)
+     A            WCA102         1A  B 10 42DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                 11  6' 6'
+     A                                      DSPATR(HI)
+     A            WCF06          1A  B 11 10DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                 12  6' 7'
+     A                                      DSPATR(HI)
+     A            WCF07          1A  B 12 10DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                 13  3' 7.00'
+     A                                      DSPATR(HI)
+     A            WCF800         1A  B 13 10DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                 14  3' 7.30'
+     A                                      DSPATR(HI)
+     A            WCF830         1A  B 14 10DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                 15  6'13'
+     A                                      DSPATR(HI)
+     A            WCF13          1A  B 15 10DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                 17  4'Natureza/Uso Imóveis Adjac.'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                 17 35'Estado Conservação'
+     A                                      DSPATR(HI)
+     A            ESTCON         1A  B 17 54DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                 17 56'1=Bom'
+     A                                      DSPATR(CS)
+     A                                      DSPATR(HI)
+     A                                      DSPATR(BL)
+     A                                 17 62'2=Defic.'
+     A                                      DSPATR(CS)
+     A                                      DSPATR(HI)
+     A                                      DSPATR(BL)
+     A                                 17 71'3=Mau'
+     A                                      DSPATR(CS)
+     A                                      DSPATR(HI)
+     A                                      DSPATR(BL)
+     A                                 18  6'21'
+     A                                      DSPATR(HI)
+     A            WCF21          1A  B 18 10DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A            DCF21         15A  B 18 12DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                 18 35'Tipo Construção...'
+     A                                      DSPATR(HI)
+     A            TIPCON         1A  B 18 54DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                 19  6'22'
+     A                                      DSPATR(HI)
+     A            WCF22          1A  B 19 10DSPATR(UL)
+     A                                      DSPATR(MDT)
+     A                                 21 18'ENTER para confirmar as Opções'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(BL)
+     A  07                                  DSPATR(ND)
+     A                                 23  1'F3=voltar atrás'
+     A                                      DSPATR(HI)
+     A                                 23 33'F7=sair'
+     A                                      DSPATR(HI)
+     A                                 23 57'Botão direito rato=AJUDA'
+     A                                      DSPATR(HI)
+     A                                 24 24'Opção ou Combinação Invalida'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(BL)
+     A  96                                  DSPATR(ND)
+0011 A**************************************************************************
+0011 A*ECRAN ENTRADA COBERTURAS, CONDIÇÕES E CLAUSULAS DO RAMO MERCANTILE
+0011 A**************************************************************************
+0011 A          R INPUT3
+0011 A                                      DSPMOD(*DS3)
+0011 A                                      PRINT
+0011 A                                      INVITE
+0011 A                                      SLNO(01)
+0011 A                                      CLRL(*ALL)
+0011 A                                      BLINK
+0011 A                                      ALWROL
+0011 A                                      CF03 CF07
+0011 A                                      HELP
+0011 A*-------------------------------------------------------------------------
+0011 A          H                           HLPARA(01 001 24 080)
+0011 A                                      HLPRCD(HELPM001)
+0011 A          H                           HLPARA(01 001 24 080)
+0011 A                                      HLPRCD(HELPM002)
+0011 A            FL0001         1   I 01004DFT('M')
+0011 A                                      DSPATR(PR ND MDT)
+0011 A                                 01023'Apólice:'
+0011 A            WAPOL          7   O 01033DSPATR(HI)
+0011 A  23                                  DSPATR(ND)
+0012 A                                 01048'Produto:'
+0012 A                                 01059'MERCANTILE'
+0012 A                                      DSPATR(HI RI)
+0012 A                                 03004'Coberturas       Condições     Clá-
+0012 A                                      usulas     Cláusulas'
+0012 A                                      DSPATR(HI)
+0012 A                                 04004'Facultativas     Especiais     Apl-
+0012 A                                      icáveis     Diversas'
+0012 A                                      DSPATR(HI)
+0012 A                                 06006'01'
+0012 A                                      DSPATR(HI)
+0012 A            WCF01          1   B 06010DSPATR(UL PC MDT)
+0012 A                                 06013'S=sim'
+0012 A                                 06023'001'
+0012 A                                      DSPATR(HI)
+0013 A            WCE001         1   B 06028DSPATR(UL MDT)
+0013 A                                 06037'030'
+0013 A                                      DSPATR(HI)
+0013 A            WCA030         1   B 06042DSPATR(UL MDT)
+0013 A                                 06052'103'
+0013 A                                      DSPATR(HI)
+0013 A            WCD103         1   B 06057DSPATR(UL MDT)
+0013 A                                 07006'02'
+0013 A                                      DSPATR(HI)
+0013 A            WCF02          1   B 07010DSPATR(UL MDT)
+0013 A                                 07023'002'
+0013 A                                      DSPATR(HI)
+0013 A            WCE002         1   B 07028DSPATR(UL MDT)
+0013 A                                 07037'100'
+0013 A                                      DSPATR(HI)
+0014 A            WCA100         1   B 07042DSPATR(UL MDT)
+0014 A                                 07052'133'
+0014 A                                      DSPATR(HI)
+0014 A            WCD133         1   B 07057DSPATR(UL MDT)
+0014 A                                 08006'03'
+0014 A                                      DSPATR(HI)
+0014 A            WCF03          1   B 08010DSPATR(UL MDT)
+0014 A                                 08037'101'
+0014 A                                      DSPATR(HI)
+0014 A            WCA101         1   B 08042DSPATR(UL MDT)
+0014 A                                 08052'134'
+0014 A                                      DSPATR(HI)
+0014 A            WCD134         1   B 08057DSPATR(UL MDT)
+0014 A                                 09006'04'
+0014 A                                      DSPATR(HI)
+0015 A            WCF04          1   B 09010DSPATR(UL MDT)
+0015 A                                 09037'102'
+0015 A                                      DSPATR(HI)
+0015 A            WCA102         1   B 09042DSPATR(UL MDT)
+0015 A                                 09052'135'
+0015 A                                      DSPATR(HI)
+0015 A            WCD135         1   B 09057DSPATR(UL MDT)
+0015 A                                 10006'05'
+0015 A                                      DSPATR(HI)
+0015 A            WCF05          1   B 10010DSPATR(UL MDT)
+0015 A                                 10052'136'
+0015 A                                      DSPATR(HI)
+0015 A            WCD136         1   B 10057DSPATR(UL MDT)
+0015 A                                 11006'06'
+0015 A                                      DSPATR(HI)
+0016 A            WCF06          1   B 11010DSPATR(UL MDT)
+0016 A                                 11052'137'
+0016 A                                      DSPATR(HI)
+0016 A            WCD137         1   B 11057DSPATR(UL MDT)
+0016 A                                 12006'07'
+0016 A                                      DSPATR(HI)
+0016 A            WCF07          1   B 12010DSPATR(UL MDT)
+0016 A                                 13006'08'
+0016 A                                      DSPATR(HI)
+0016 A            WCF08          1   B 13010DSPATR(UL MDT)
+0016 A                                 14006'09'
+0016 A                                      DSPATR(HI)
+0016 A            WCF09          1   B 14010DSPATR(UL MDT)
+0016 A                                 15006'10'
+0016 A                                      DSPATR(HI)
+0017 A            WCF10          1   B 15010DSPATR(UL MDT)
+0017 A                                 16006'11'
+0017 A                                      DSPATR(HI)
+0017 A            WCF11          1   B 16010DSPATR(UL MDT)
+0017 A                                 17006'12'
+0017 A                                      DSPATR(HI)
+0017 A            WCF12          1   B 17010DSPATR(UL MDT)
+0017 A                                 18006'13'
+0017 A                                      DSPATR(HI)
+0017 A            WCF13          1   B 18010DSPATR(UL MDT)
+0017 A                                 19018'ENTER para confirmar as Opções'
+0017 A                                      DSPATR(HI BL)
+0017 A  07                                  DSPATR(ND)
+0017 A                                 23001'F3=voltar atrás'
+0017 A                                      DSPATR(HI)
+0018 A                                 23033'F7=sair'
+0018 A                                      DSPATR(HI)
+0018 A                                 23057'Botão direito rato=AJUDA'
+0018 A                                      DSPATR(HI)
+0018 A                                 24024'Opção ou Combinação Invalida'
+0018 A                                      DSPATR(HI BL)
+0018 A  96                                  DSPATR(ND)
+0018 A**************************************************************************
+0018 A*ECRAN ENTRADA COBERTURAS, CONDIÇÕES E CLAUSULAS DO RAMO CONDOMINIO
+0018 A**************************************************************************
+0018 A          R INPUT4
+0018 A                                      DSPMOD(*DS3)
+0018 A                                      PRINT
+0018 A                                      INVITE
+0018 A                                      SLNO(01)
+0018 A                                      CLRL(*ALL)
+0018 A                                      BLINK
+0018 A                                      ALWROL
+0018 A                                      CF03 CF07
+0018 A                                      HELP
+0018 A*-------------------------------------------------------------------------
+0019 A          H                           HLPARA(01 001 24 080)
+0019 A                                      HLPRCD(HELPC001)
+0019 A            FL0001         1   I 01004DFT('X')
+0019 A                                      DSPATR(PR ND MDT)
+0019 A                                 01023'Apólice:'
+0019 A            WAPOL          7   O 01033DSPATR(HI)
+0019 A  23                                  DSPATR(ND)
+0019 A                                 01048'Produto:'
+0019 A                                 01059'CONDOMINIO'
+0019 A                                      DSPATR(HI RI)
+0019 A                                 03004'Coberturas       Condições     Clá-
+0019 A                                      usulas              '
+0019 A                                      DSPATR(HI)
+0019 A                                 04004'Facultativas     Especiais     Apl-
+0019 A                                      icáveis             '
+0019 A                                      DSPATR(HI)
+0020 A                                 06006' 1'
+0020 A                                      DSPATR(HI)
+0020 A            WCF01          1   B 06010DSPATR(UL PC MDT)
+0020 A                                 06013'S=sim'
+0020 A                                 06023'001'
+0020 A                                      DSPATR(HI)
+0020 A            WCE001         1   B 06028DSPATR(PR UL MDT)
+0020 A                                 06037'030'
+0020 A                                      DSPATR(HI)
+0020 A            WCA030         1   B 06042DSPATR(UL MDT)
+0020 A                                 07006' 2'
+0020 A                                      DSPATR(HI)
+0020 A            WCF02          1   B 07010DSPATR(UL MDT)
+0020 A                                 07023'003'
+0020 A                                      DSPATR(HI)
+0021 A            WCE003         1   B 07028DSPATR(UL MDT)
+0021 A                                 07037'031'
+0021 A                                      DSPATR(HI)
+0021 A            WCA031         1   B 07042DSPATR(UL MDT)
+0021 A                                 08006' 3'
+0021 A                                      DSPATR(HI)
+0021 A            WCF03          1   B 08010DSPATR(UL MDT)
+0021 A                                 08037'100'
+0021 A                                      DSPATR(HI)
+0021 A            WCA100         1   B 08042DSPATR(UL MDT)
+0021 A                                 09006' 4'
+0021 A                                      DSPATR(HI)
+0021 A            WCF04          1   B 09010DSPATR(UL MDT)
+0021 A                                 09037'101'
+0021 A                                      DSPATR(HI)
+0022 A            WCA101         1   B 09042DSPATR(UL MDT)
+0022 A                                 10006' 5'
+0022 A                                      DSPATR(HI)
+0022 A            WCF05          1   B 10010DSPATR(UL MDT)
+0022 A                                 10037'102'
+0022 A                                      DSPATR(HI)
+0022 A            WCA102         1   B 10042DSPATR(UL MDT)
+0022 A                                 11006' 6'
+0022 A                                      DSPATR(HI)
+0022 A            WCF06          1   B 11010DSPATR(UL MDT)
+0022 A                                 12006' 7'
+0022 A                                      DSPATR(HI)
+0022 A            WCF07          1   B 12010DSPATR(UL MDT)
+0022 A                                 13006' 8'
+0022 A                                      DSPATR(HI)
+0023 A            WCF08          1   B 13010DSPATR(UL MDT)
+0023 A                                 14006'13'
+0023 A                                      DSPATR(HI)
+0023 A            WCF13          1   B 14010DSPATR(UL MDT)
+0023 A                                 19018'ENTER para confirmar as Opções'
+0023 A                                      DSPATR(HI BL)
+0023 A  07                                  DSPATR(ND)
+0023 A                                 23001'F3=voltar atrás'
+0023 A                                      DSPATR(HI)
+0023 A                                 23033'F7=sair'
+0023 A                                      DSPATR(HI)
+0023 A                                 23057'Botão direito rato=AJUDA'
+0023 A                                      DSPATR(HI)
+0024 A                                 24024'Opção ou Combinação Invalida'
+0024 A                                      DSPATR(HI BL)
+0024 A  96                                  DSPATR(ND)
+0024 A**************************************************************************
+0024 A*ECRAN ENTRADA NR SEGURADO QUANDO VOU CRIAR NOVA APOLICE DE QUALQUER RAMO
+0024 A**************************************************************************
+0024 A          R INPUT1
+0024 A                                      DSPMOD(*DS3)
+     A                                      RTNCSRLOC(&CM#NMREC &CM#NMFLD)
+     A                                      CSRLOC(CM#ROW     CM#COL)
+0024 A                                      PRINT
+0024 A                                      INVITE
+0024 A                                      SLNO(01)
+0024 A                                      CLRL(*ALL)
+0024 A                                      BLINK
+0024 A                                      ALWROL
+0024 A                                      CF07  CF04
+0024 A                                      HELP
+0024 A          H                           HLPARA(01 001 24 080)
+0024 A                                      HLPRCD(HELPAP01)
+0024 A*-------------------------------------------------------------------------
+0024 A            INDREG        01   B 01030DSPATR(PR ND MDT)
+0024 A                                 01033'Opção:'
+0024 A                                      DSPATR(HI)
+0024 A                                 01055'RR/APOL'
+0024 A                                      DSPATR(HI)
+0025 A                                 02003'NSeg'
+0025 A                                      DSPATR(HI)
+0025 A                                 03004'Seg'
+0025 A                                      DSPATR(HI)
+0025 A            RSALDO        25   O 03055DSPATR(HI BL)
+0025 A                                 04004'Mor'
+0025 A                                      DSPATR(HI)
+0025 A                                 12035'Prima ENTER'
+0025 A                                      DSPATR(HI)
+0025 A            WOPCAO         8   O 01040DSPATR(RI)
+0025 A            RRAPOL        09   O 01063DSPATR(RI UL)
+0025 A            REF            1   O 01079DSPATR(UL)
+0025 A            NSEG          05M  B 02008CHECK(RZ)
+0025 A                                      DSPATR(UL MDT)
+0025 A  21                                  DSPATR(PR)
+0025 A            SEG           40   O 03008DSPATR(UL)
+0026 A            MOR           40   O 04008DSPATR(UL)
+0026 A            CPOSM          4   O 04050DSPATR(UL)
+0026 A            ZPOSM          3   O 04055DSPATR(UL)
+0026 A            CPMOR2        20   O 04059DSPATR(UL)
+0026 A                                 01002'LUSITANIA COMPª SEGUROS,SA'
+0026 A                                      DSPATR(CS HI BL)
+0026 A                                 23010'F7=SAIR'
+0026 A                                      DSPATR(HI)
+     A            CM#ROW         3S 0H
+     A            CM#COL         3S 0H
+     A            CM#NMREC      10A  H
+     A            CM#NMFLD      10A  H
+0026 A**************************************************************************
+0026 A*ECRAN COM DADOS DA APOLICE DE QUALQUER RAMO - CRIAÇÃO E MANUTENÇÃO
+0026 A**************************************************************************
+0027 A          R INPUT
+0027 A                                      DSPMOD(*DS3)
+     A                                      RTNCSRLOC(&CM#NMREC &CM#NMFLD)
+     A                                      CSRLOC(CM#ROW     CM#COL)
+0027 A                                      PRINT
+0027 A                                      INVITE
+0027 A                                      SLNO(05)
+0027 A                                      CLRL(19)
+0027 A                                      BLINK
+0027 A                                      OVERLAY
+0027 A                                      ALWROL
+0027 A                                      CF04 CF07 CF08 CF09
+0027 A                                      HELP
+0027 A          H                           HLPARA(05 001 19 080)
+0027 A                                      HLPRCD(HELPAP01)
+0027 A*-------------------------------------------------------------------------
+0027 A            INDREG        01   B 01002DSPATR(PR ND MDT)
+0027 A                                 01004'Lcb'
+0027 A                                      DSPATR(HI)
+0027 A            LCB           40   B 01008DSPATR(UL MDT)
+0027 A            CPOSL          4M  B 01050DSPATR(UL MDT)
+0027 A  90                                  DSPATR(RI PC)
+0027 A            ZPOSL          3M  B 01055CHECK(RZ)
+0027 A                                      DSPATR(UL MDT)
+0027 A  90                                  DSPATR(RI PC)
+0027 A            CPLCB2        20   B 01059DSPATR(PR UL MDT)
+0027 A                                 02004'SIT'
+0027 A                                      DSPATR(HI)
+0028 A            SIT           01M  B 02008DSPATR(UL MDT)
+0028 A  54                                  DSPATR(RI PC)
+0028 A                                 02015'Inic'
+0028 A                                      DSPATR(HI)
+0028 A            DDINIC        02M  B 02020CHECK(RZ)
+0028 A                                      DSPATR(UL MDT)
+0028 A  55                                  DSPATR(RI PC)
+0028 A            MMINIC        02M  B 02023CHECK(RZ)
+0028 A                                      DSPATR(UL MDT)
+0028 A  56                                  DSPATR(RI PC)
+0028 A            AAINIC         4M  B 02026DSPATR(UL MDT)
+0028 A  57                                  DSPATR(RI PC)
+0028 A                                 02036'Dur'
+0028 A                                      DSPATR(HI)
+0028 A            DUR           01M  B 02040DSPATR(UL MDT)
+0028 A  58                                  DSPATR(RI PC)
+0028 A                                 02049'Fim'
+0028 A                                      DSPATR(HI)
+0028 A            DDFIM         02M  B 02053CHECK(RZ)
+0028 A                                      DSPATR(UL MDT)
+0028 A  59                                  DSPATR(RI PC)
+0028 A            MMFIM         02M  B 02056CHECK(RZ)
+0028 A                                      DSPATR(UL MDT)
+0028 A  60                                  DSPATR(RI PC)
+0029 A            AAFIM          4M  B 02059CHECK(RZ)
+0029 A                                      DSPATR(UL MDT)
+0029 A  30                                  DSPATR(RI PC)
+0029 A                                 02067'Im'
+0029 A                                      DSPATR(HI)
+0029 A            IM            01M  B 02070DSPATR(UL MDT)
+0029 A  53                                  DSPATR(RI PC)
+0029 A                                 03003'Frac'
+0029 A                                      DSPATR(HI)
+0029 A            FRAC          01M  B 03008DSPATR(UL MDT)
+0029 A  31                                  DSPATR(RI PC)
+0029 A                                 03015'Mes1'
+0029 A                                      DSPATR(HI)
+0029 A            MES1          02M  B 03020CHECK(RZ)
+0029 A                                      DSPATR(UL MDT)
+0029 A  32                                  DSPATR(RI PC)
+0029 A                                 03035'CONT'
+0029 A                                      DSPATR(HI)
+0029 A            MMCONT        02M  B 03040CHECK(RZ)
+0029 A                                      DSPATR(UL MDT)
+0029 A  33                                  DSPATR(RI PC)
+0029 A            AACONT         4M  B 03043DSPATR(UL MDT)
+0029 A  33                                  DSPATR(RI PC)
+0030 A                                 03050'Ce'
+0030 A                                      DSPATR(HI)
+0030 A            CEMIS         01M  B 03053DSPATR(UL MDT)
+0030 A  62                                  DSPATR(RI PC)
+0030 A                                 03059'Exclui Contencioso'
+0030 A                                      DSPATR(HI)
+0030 A            EXCONT         1   O 03078DSPATR(UL)
+0030 A                                 04003'Isen'
+0030 A                                      DSPATR(HI)
+0030 A            ISEN          01M  B 04008DSPATR(UL MDT)
+0030 A  63                                  DSPATR(RI PC)
+0030 A                                 04015'Conc'
+0030 A                                      DSPATR(HI)
+0030 A            CONC          03M  B 04020CHECK(RZ)
+0030 A                                      DSPATR(UL MDT)
+0030 A  34                                  DSPATR(RI PC)
+0030 A                                 04025'CR Hipot.'
+0030 A                                      DSPATR(HI)
+0030 A            CRHIP          5M  B 04035CHECK(RZ)
+0030 A                                      DSPATR(UL MDT)
+0030 A  94                                  DSPATR(RI PC)
+0031 A            DSCRHIP       40   O 04041DSPATR(HI)
+0031 A                                 05003'Med1'
+0031 A                                      DSPATR(HI)
+0031 A            MED1          03M  B 05008CHECK(RZ)
+0031 A                                      DSPATR(UL MDT)
+0031 A  35                                  DSPATR(RI PC)
+0031 A                                 05012'%Com1'
+0031 A                                      DSPATR(HI)
+0031 A            COM1           2M  B 05018CHECK(RZ)
+0031 A                                      DSPATR(PR UL MDT)
+0031 A  36                                  DSPATR(RI PC)
+0031 A            FL0001         3M  B 05021CHECK(RZ)
+0031 A                                      DSPATR(PR UL MDT)
+0031 A  36                                  DSPATR(RI PC)
+0031 A                                 05025'CCob'
+0031 A                                      DSPATR(HI)
+0031 A            MED2          05M  B 05030CHECK(RZ)
+0031 A                                      DSPATR(UL MDT)
+0031 A  02                                  DSPATR(RI PC)
+0031 A                                 05036'%Com2'
+0031 A                                      DSPATR(ND)
+0031 A            COM2           2M  B 05042CHECK(RZ)
+0031 A                                      DSPATR(PR ND MDT)
+0032 A            FL0002         3M  B 05045CHECK(RZ)
+0032 A                                      DSPATR(PR ND MDT)
+0032 A                                 05049'Empregado'
+0032 A                                      DSPATR(HI)
+0032 A            EMPREG         1   B 05059DSPATR(UL MDT)
+0032 A                                 05064'Ano Edificio'
+0032 A                                      DSPATR(HI)
+0032 A  95                                  DSPATR(ND)
+0032 A            ANOEDI         4D  B 05077CHECK(RZ FE)
+0032 A                                      DSPATR(UL MDT)
+0032 A  95                                  DSPATR(PR ND)
+0032 A                                 06003'Talt'
+0032 A                                      DSPATR(HI)
+0032 A            TALT          01   O 06008DSPATR(UL)
+0032 A                                 06012'Dalt'
+0032 A                                      DSPATR(HI)
+0032 A            DDALT         02   O 06017DSPATR(UL)
+0032 A            MMALT         02   O 06020DSPATR(UL)
+0033 A            AAALT          4   O 06023DSPATR(UL)
+0033 A                                 06028'Malt'
+0033 A                                      DSPATR(HI)
+0033 A            MALT          02   O 06033DSPATR(UL)
+0033 A                                 06036'Acta'
+0033 A                                      DSPATR(HI)
+0033 A            ACTA          03   O 06041DSPATR(UL)
+0033 A                                 06045'Aviso'
+0033 A                                      DSPATR(HI)
+0033 A            AVISN          1   B 06051DSPATR(UL MDT)
+0033 A  79                                  DSPATR(RI PC)
+0033 A                                 06057'Cod Postal Edificio'
+0033 A                                      DSPATR(HI)
+0033 A  95                                  DSPATR(ND)
+0033 A            CPEDI          4D  B 06077CHECK(RZ FE)
+0033 A                                      DSPATR(UL MDT)
+0033 A  95                                  DSPATR(PR ND)
+0033 A                                 07008'R'
+0033 A                                      DSPATR(HI UL)
+0034 A                                 07015'    Cap    '
+0034 A                                      DSPATR(HI UL)
+0034 A                                 07030'  Tx '
+0034 A                                      DSPATR(HI UL)
+0034 A                                 07041'  Prcact. '
+0034 A                                      DSPATR(HI UL)
+0034 A                                 07056'CS'
+0034 A                                      DSPATR(HI UL)
+0034 A                                 07067'  Prcant. '
+0034 A                                      DSPATR(HI UL)
+0034 A                                 08006'I'
+0034 A                                      DSPATR(HI)
+0034 A            CR1           01M  B 08008DSPATR(UL MDT)
+0034 A  08                                  DSPATR(RI PC)
+0034 A            CAP1          11M  B 08015CHECK(RB FE)
+0034 A                                      DSPATR(UL MDT)
+0034 A  26                                  DSPATR(RI PC)
+0034 A            TX1            5M  B 08030CHECK(RZ)
+0034 A                                      DSPATR(UL MDT)
+0034 A  17                                  DSPATR(RI PC)
+0034 A                                 08036'(3d)'
+0034 A                                      DSPATR(HI)
+0034 A  98                                  DSPATR(ND)
+0035 A            PR1            7M  B 08041CHECK(RB)
+0035 A                                      DSPATR(UL MDT)
+0035 A  18                                  DSPATR(RI PC)
+0035 A            FL0003         2M  B 08049CHECK(RB)
+0035 A                                      DSPATR(UL MDT)
+0035 A  18                                  DSPATR(RI PC)
+0035 A            CS            01M  B 08057DSPATR(UL MDT)
+0035 A            PRCANT         7   O 08067DSPATR(UL)
+0035 A            FL0004         2   O 08075DSPATR(UL)
+0035 A                                 09005'II'
+0035 A                                      DSPATR(HI)
+0035 A  95                                  DSPATR(ND)
+0035 A            CR2           01M  B 09008
+0035 A  80N95                               DSPATR(PC)
+0035 A                                      DSPATR(UL MDT)
+0035 A  80                                  DSPATR(RI)
+0035 A  95                                  DSPATR(PR ND)
+0035 A            CAP2          11M  B 09015CHECK(RB)
+0035 A                                      DSPATR(UL MDT)
+0035 A  95                                  DSPATR(PR ND)
+0035 A            TX2            5M  B 09030CHECK(RZ)
+0035 A                                      DSPATR(UL MDT)
+0035 A  95                                  DSPATR(PR ND)
+0035 A            PR2            7M  B 09041CHECK(RB)
+0035 A                                      DSPATR(UL MDT)
+0035 A  95                                  DSPATR(PR ND)
+0036 A            FL0005         2M  B 09049CHECK(RB)
+0036 A                                      DSPATR(UL MDT)
+0036 A  95                                  DSPATR(PR ND)
+0036 A                                 10004'III'
+0036 A                                      DSPATR(HI)
+0036 A  95                                  DSPATR(ND)
+0036 A            CR3           01M  B 10008
+0036 A  80N95                               DSPATR(PC)
+0036 A                                      DSPATR(UL MDT)
+0036 A  80                                  DSPATR(RI)
+0036 A  95                                  DSPATR(PR ND)
+0036 A            CAP3          11M  B 10015CHECK(RB)
+0036 A                                      DSPATR(UL MDT)
+0036 A  95                                  DSPATR(PR ND)
+0036 A            TX3            5M  B 10030CHECK(RZ)
+0036 A                                      DSPATR(UL MDT)
+0036 A  95                                  DSPATR(PR ND)
+0036 A            PR3            7M  B 10041CHECK(RB)
+0036 A                                      DSPATR(UL MDT)
+0036 A  95                                  DSPATR(PR ND)
+0036 A            FL0006         2M  B 10049CHECK(RB)
+0036 A                                      DSPATR(UL MDT)
+0036 A  95                                  DSPATR(PR ND)
+0036 A                                 10056' Franq.'
+0036 A                                      DSPATR(HI UL)
+0036 A                                 10069' Priant.'
+0036 A                                      DSPATR(HI UL)
+0036 A            CAPTOT        11M  B 11015
+0036 A  38N95                               DSPATR(PC)
+0036 A                                      CHECK(RB)
+0036 A                                      DSPATR(UL MDT)
+0036 A  38                                  DSPATR(RI)
+0036 A  95                                  DSPATR(PR)
+0037 A            TXMED          5M  B 11030CHECK(RZ)
+0037 A                                      DSPATR(UL MDT)
+0037 A  95                                  DSPATR(PR)
+0037 A                                 11036'(3d)'
+0037 A                                      DSPATR(HI)
+0037 A  98                                  DSPATR(ND)
+0037 A            PRCACT         7M  B 11041
+0037 A  39N95                               DSPATR(PC)
+0037 A                                      CHECK(RB)
+0037 A                                      DSPATR(UL MDT)
+0037 A  39                                  DSPATR(RI)
+0037 A  95                                  DSPATR(PR)
+0037 A            FL0007         2M  B 11049
+0037 A  39N95                               DSPATR(PC)
+0037 A                                      CHECK(RB)
+0037 A                                      DSPATR(UL MDT)
+0037 A  39                                  DSPATR(RI)
+0037 A  95                                  DSPATR(PR)
+0037 A            FRANQO         7M  B 11056CHECK(RB)
+0037 A                                      DSPATR(UL MDT)
+0037 A            PRIANT         5   O 11069DSPATR(UL)
+0037 A            FL0008         2   O 11075DSPATR(UL)
+0037 A                                 12007'Cap.FAT'
+0037 A                                      DSPATR(HI)
+0037 A            CAPFAT        11D  B 12015CHECK(RB)
+0037 A                                      DSPATR(UL MDT)
+0037 A                                 12036'ADC'
+0037 A                                      DSPATR(HI)
+0038 A            ADC           11D  B 12040CHECK(RZ)
+0038 A                                      DSPATR(UL MDT)
+0038 A                                 12052'NIB'
+0038 A                                      DSPATR(HI)
+0038 A            NIB           21   B 12056DSPATR(UL MDT)
+0038 A                                 13002'Lrps'
+0038 A                                      DSPATR(HI)
+0038 A            LRPS          45   B 13007DSPATR(UL MDT)
+0038 A                                 13056'% Indexação'
+0038 A                                      DSPATR(HI)
+0038 A            TXIND         03M  B 13068CHECK(RZ)
+0038 A                                      DSPATR(UL MDT)
+0038 A  89                                  DSPATR(RI PC)
+0038 A                                 13072'(S/N)'
+0038 A                                      DSPATR(HI)
+0038 A            INDEX          1   B 13078DSPATR(UL MDT)
+0038 A  89                                  DSPATR(RI PC)
+0038 A                                 14003'Snb'
+0038 A                                      DSPATR(HI)
+0039 A            TXSNB         03M  B 14007CHECK(RZ)
+0039 A                                      DSPATR(UL MDT)
+0039 A                                 14011'Nasc'
+0039 A                                      DSPATR(HI)
+0039 A            NASC           4M  B 14016CHECK(RZ)
+0039 A                                      DSPATR(UL MDT)
+0039 A  40                                  DSPATR(RI PC)
+0039 A                                 14021'Prof/Sl'
+0039 A                                      DSPATR(HI)
+0039 A            PROFSL        03M  B 14029CHECK(RZ)
+0039 A                                      DSPATR(UL MDT)
+0039 A                                 14033'Grupo'
+0039 A                                      DSPATR(HI)
+0039 A            CGRUPO         1D  B 14039DSPATR(UL MDT)
+0039 A                                 14041'N.Pes'
+0039 A                                      DSPATR(HI)
+0039 A            NPESS          5D  B 14047CHECK(RB FE)
+0039 A                                      DSPATR(UL MDT)
+0039 A                                 14056'Risco adicional (S/N)'
+0039 A                                      DSPATR(HI)
+0039 A  11                                  DSPATR(ND)
+0040 A            RA            01   B 14078
+0040 A  50N11                               DSPATR(PC)
+0040 A                                      DSPATR(UL MDT)
+0040 A  11                                  DSPATR(PR ND)
+0040 A  50                                  DSPATR(RI)
+0040 A                                 15002'Nat.'
+0040 A                                      DSPATR(HI)
+0040 A  12                                  DSPATR(ND)
+0040 A            NATUR         30   B 15007
+0040 A  84N12                               DSPATR(PC)
+0040 A                                      DSPATR(UL MDT)
+0040 A  12                                  DSPATR(PR ND)
+0040 A  84                                  DSPATR(RI)
+0040 A                                 15041'Clas'
+0040 A                                      DSPATR(HI)
+0040 A  12                                  DSPATR(ND)
+0040 A            CLASS         01   B 15046DSPATR(UL MDT)
+0040 A  12                                  DSPATR(PR ND)
+0040 A  84                                  DSPATR(RI)
+0040 A                                 15056'Perdas Consq. (S/N)'
+0040 A                                      DSPATR(HI)
+0040 A  12                                  DSPATR(ND)
+0040 A            PERDCQ        01   B 15078
+0040 A  87N12                               DSPATR(PC)
+0040 A                                      DSPATR(UL MDT)
+0040 A  12                                  DSPATR(PR ND)
+0040 A  87                                  DSPATR(RI)
+0040 A                                 16001'Tperd'
+0040 A                                      DSPATR(HI)
+0040 A  12                                  DSPATR(ND)
+0040 A            TPERD         01   B 16007
+0040 A  25N12                               DSPATR(PC)
+0040 A                                      DSPATR(UL MDT)
+0040 A  12                                  DSPATR(PR ND)
+0040 A  25                                  DSPATR(RI)
+0040 A                                 16010'%P.Ind'
+0040 A                                      DSPATR(HI)
+0040 A  12                                  DSPATR(ND)
+0041 A            PPERDI        02M  B 16017CHECK(RZ)
+0041 A                                      DSPATR(UL MDT)
+0041 A  12                                  DSPATR(PR ND)
+0041 A  25                                  DSPATR(RI)
+0041 A                                 16020'EncFix'
+0041 A                                      DSPATR(HI)
+0041 A  12                                  DSPATR(ND)
+0041 A            ENCFIX         9M  B 16027CHECK(RB)
+0041 A                                      DSPATR(UL MDT)
+0041 A  12                                  DSPATR(PR ND)
+0041 A  25                                  DSPATR(RI)
+0041 A                                 16040'Pindm'
+0041 A                                      DSPATR(HI)
+0041 A  12                                  DSPATR(ND)
+0041 A            PINDMN        02M  B 16046CHECK(RZ)
+0041 A                                      DSPATR(UL MDT)
+0041 A  12                                  DSPATR(PR ND)
+0041 A  25                                  DSPATR(RI)
+0041 A                                 16056'Clau'
+0041 A                                      DSPATR(HI)
+0041 A  06                                  DSPATR(ND)
+0041 A            CL01          02M  B 16061
+0041 A  65N06                               DSPATR(PC)
+0041 A                                      CHECK(RZ)
+0041 A                                      DSPATR(UL MDT)
+0041 A  06                                  DSPATR(PR ND)
+0041 A  65                                  DSPATR(RI)
+0041 A            CL02          02M  B 16064
+0041 A  66N06                               DSPATR(PC)
+0041 A                                      CHECK(RZ)
+0041 A                                      DSPATR(UL MDT)
+0041 A  06                                  DSPATR(PR ND)
+0041 A  66                                  DSPATR(RI)
+0041 A            CL03          02M  B 16067
+0041 A  67N06                               DSPATR(PC)
+0041 A                                      CHECK(RZ)
+0041 A                                      DSPATR(UL MDT)
+0041 A  06                                  DSPATR(PR ND)
+0041 A  67                                  DSPATR(RI)
+0041 A            CL04          02M  B 16070
+0041 A  68N06                               DSPATR(PC)
+0041 A                                      CHECK(RZ)
+0041 A                                      DSPATR(UL MDT)
+0041 A  06                                  DSPATR(PR ND)
+0041 A  68                                  DSPATR(RI)
+0042 A            CL05          02M  B 16073
+0042 A  69N06                               DSPATR(PC)
+0042 A                                      CHECK(RZ)
+0042 A                                      DSPATR(UL MDT)
+0042 A  06                                  DSPATR(PR ND)
+0042 A  69                                  DSPATR(RI)
+0042 A            CL06          02M  B 16076
+0042 A  70N06                               DSPATR(PC)
+0042 A                                      CHECK(RZ)
+0042 A                                      DSPATR(UL MDT)
+0042 A  06                                  DSPATR(PR ND)
+0042 A  70                                  DSPATR(RI)
+0042 A                                 17001'%Frac'
+0042 A                                      DSPATR(HI)
+0042 A            PFRC          03M  B 17007CHECK(RZ)
+0042 A                                      DSPATR(UL MDT)
+0042 A                                 17012'Test'
+0042 A                                      DSPATR(HI)
+0042 A            TEST          01   O 17017DSPATR(UL)
+0042 A                                 17020'Txest'
+0042 A                                      DSPATR(HI)
+0042 A            TXEST         03   O 17026DSPATR(UL)
+0042 A                                 17030'Mod'
+0042 A                                      DSPATR(HI)
+0042 A            MOD            1X  B 17034DSPATR(UL MDT)
+0043 A                                 17036'Tpt'
+0043 A                                      DSPATR(HI)
+0043 A            TPP            1X  B 17040DSPATR(UL MDT)
+0043 A                                 17042'CAE'
+0043 A                                      DSPATR(HI)
+0043 A            CAE            6D  B 17046DSPATR(UL MDT)
+0043 A                                 17056'JMM1'
+0043 A                                      DSPATR(HI)
+0043 A            JMM1           3D  B 17061CHECK(RZ)
+0043 A                                      DSPATR(UL MDT)
+0043 A  61                                  DSPATR(RI PC)
+0043 A                                 17065'JMC1'
+0043 A                                      DSPATR(HI)
+0043 A            JMC1           5D  B 17070CHECK(RZ)
+0043 A                                      DSPATR(UL MDT)
+0043 A  61                                  DSPATR(RI PC)
+0043 A                                 18002'Obs1'
+0043 A                                      DSPATR(HI)
+0043 A            OBS1          45   B 18007DSPATR(UL MDT)
+0044 A                                 18056'JMM2'
+0044 A                                      DSPATR(HI)
+0044 A            JMM2           3D  B 18061CHECK(RZ)
+0044 A                                      DSPATR(UL MDT)
+0044 A  37                                  DSPATR(RI PC)
+0044 A                                 18065'JMC2'
+0044 A                                      DSPATR(HI)
+0044 A            JMC2           5D  B 18070CHECK(RZ)
+0044 A                                      DSPATR(UL MDT)
+0044 A  64                                  DSPATR(RI PC)
+0044 A                                 19002'Obs2'
+0044 A                                      DSPATR(HI)
+0044 A            OBS2          45   B 19007DSPATR(UL MDT)
+0044 A                                 19056'Ultrec'
+0044 A                                      DSPATR(HI)
+0044 A            TOTREC        07   O 19063DSPATR(UL)
+0044 A            FL0009        02   O 19071DSPATR(UL)
+0044 A                                 20070'F9=AN/AC'
+0044 A                                      DSPATR(BL)
+0044 A  98                                  DSPATR(ND)
+     A            CM#ROW         3S 0H
+     A            CM#COL         3S 0H
+     A            CM#NMREC      10A  H
+     A            CM#NMFLD      10A  H
+0045 A**************************************************************************
+0045 A*ECRAN CONSULTA DADOS DA APOLICE DE QUALQUER RAMO
+0045 A**************************************************************************
+0045 A          R OUTPUT
+0045 A                                      DSPMOD(*DS3)
+     A                                      RTNCSRLOC(&CM#NMREC &CM#NMFLD)
+     A                                      CSRLOC(CM#ROW     CM#COL)
+0045 A                                      PRINT
+0045 A                                      INVITE
+0045 A                                      SLNO(01)
+0045 A                                      CLRL(23)
+0045 A                                      ALWROL
+0085 A                                      CF01 CF02 CF03 CF04 CF05 CF06 CF07
+0085 A                                      CF08 CF09 CF10 CF11 CF12 CF13 CF14
+0085 A                                      CF15 CF16 CF17 CF18 CF19 CF20 CF21
+0085 A                                      CF22 CF23 CF24
+0045 A                                      HELP
+0045 A*-------------------------------------------------------------------------
+0045 A          H                           HLPARA(01 001 24 080)
+0045 A                                      HLPRCD(HELPAP01)
+0045 A                                 01002'LUSITANIA COMPª SEGUROS,SA'
+0045 A                                      DSPATR(CS HI BL)
+0045 A            INDREG        01   B 01029DSPATR(PR ND MDT)
+0045 A                                 01031'Opção:'
+0045 A                                      DSPATR(HI)
+0046 A            WOPCAO         8   O 01038DSPATR(RI)
+0046 A                                 01054'RR/APOL'
+0046 A                                      DSPATR(HI)
+0046 A            RRAPOL        09   O 01062DSPATR(RI UL)
+0046 A                                 01072'/'
+0046 A            REF            1   O 01074DSPATR(UL)
+0046 A                                 02001'NSeg'
+0046 A                                      DSPATR(HI)
+0046 A            NSEG          05   O 02006DSPATR(UL)
+0046 A                                 03002'Seg'
+0046 A                                      DSPATR(HI)
+0046 A            SEG           40   O 03006DSPATR(RI UL)
+0046 A            RSALDO        25   O 03054DSPATR(HI BL)
+0047 A                                 04002'Mor'
+0047 A                                      DSPATR(HI)
+0047 A            MOR           40   O 04006DSPATR(UL)
+0047 A            CPOSM          4   O 04048DSPATR(UL)
+0047 A            ZPOSM          3   O 04053DSPATR(UL)
+0047 A            CPMOR2        20   O 04057DSPATR(UL)
+0047 A                                 05002'Lcb'
+0047 A                                      DSPATR(HI)
+0047 A            LCB           40   B 05006DSPATR(UL MDT)
+0047 A  20                                  DSPATR(PR)
+0047 A            CPOSL          4M  B 05048
+0047 A  90N20                               DSPATR(PC)
+0047 A                                      DSPATR(UL MDT)
+0047 A  20                                  DSPATR(PR)
+0047 A  90                                  DSPATR(RI)
+0047 A            ZPOSL          3M  B 05053
+0047 A  90N20                               DSPATR(PC)
+0047 A                                      CHECK(RZ)
+0047 A                                      DSPATR(UL MDT)
+0047 A  20                                  DSPATR(PR)
+0047 A  90                                  DSPATR(RI)
+0047 A            CPLCB2        20   B 05057DSPATR(PR UL MDT)
+0048 A                                 06002'SIT'
+0048 A                                      DSPATR(HI)
+0048 A            SIT           01M  B 06006
+0048 A  72N20                               DSPATR(PC)
+0048 A                                      DSPATR(UL MDT)
+0048 A  20                                  DSPATR(PR)
+0048 A  72                                  DSPATR(RI)
+0048 A                                 06015'Inic'
+0048 A                                      DSPATR(HI)
+0048 A            DDINIC        02M  B 06020
+0048 A  73N20                               DSPATR(PC)
+0048 A                                      CHECK(RZ)
+0048 A                                      DSPATR(UL MDT)
+0048 A  20                                  DSPATR(PR)
+0048 A  73                                  DSPATR(RI)
+0048 A            MMINIC        02M  B 06023
+0048 A  74N20                               DSPATR(PC)
+0048 A                                      CHECK(RZ)
+0048 A                                      DSPATR(UL MDT)
+0048 A  20                                  DSPATR(PR)
+0048 A  74                                  DSPATR(RI)
+0048 A            AAINIC         4M  B 06026
+0048 A  75N20                               DSPATR(PC)
+0048 A                                      DSPATR(UL MDT)
+0048 A  20                                  DSPATR(PR)
+0048 A  75                                  DSPATR(RI)
+0048 A                                 06035'Dur'
+0048 A                                      DSPATR(HI)
+0048 A            DUR           01M  B 06039
+0048 A  76N20                               DSPATR(PC)
+0048 A                                      DSPATR(UL MDT)
+0048 A  20                                  DSPATR(PR)
+0048 A  76                                  DSPATR(RI)
+0048 A                                 06048'Fim'
+0048 A                                      DSPATR(HI)
+0048 A            DDFIM         02M  B 06053
+0048 A  77N20                               DSPATR(PC)
+0048 A                                      CHECK(RZ)
+0048 A                                      DSPATR(UL MDT)
+0048 A  20                                  DSPATR(PR)
+0048 A  77                                  DSPATR(RI)
+0049 A            MMFIM         02M  B 06056
+0049 A  78N20                               DSPATR(PC)
+0049 A                                      CHECK(RZ)
+0049 A                                      DSPATR(UL MDT)
+0049 A  20                                  DSPATR(PR)
+0049 A  78                                  DSPATR(RI)
+0049 A            AAFIM          4M  B 06059
+0049 A  30N20                               DSPATR(PC)
+0049 A                                      CHECK(RZ)
+0049 A                                      DSPATR(UL MDT)
+0049 A  20                                  DSPATR(PR)
+0049 A  30                                  DSPATR(RI)
+0049 A                                 06067'Im'
+0049 A                                      DSPATR(HI)
+0049 A            IM            01M  B 06070
+0049 A  71N20                               DSPATR(PC)
+0049 A                                      DSPATR(UL MDT)
+0049 A  20                                  DSPATR(PR)
+0049 A  71                                  DSPATR(RI)
+0049 A                                 07001'Frac'
+0049 A                                      DSPATR(HI)
+0049 A            FRAC          01M  B 07006
+0049 A  31N20                               DSPATR(PC)
+0049 A                                      DSPATR(UL MDT)
+0049 A  20                                  DSPATR(PR)
+0049 A  31                                  DSPATR(RI)
+0049 A                                 07015'Mes1'
+0049 A                                      DSPATR(HI)
+0049 A            MES1          02M  B 07020
+0049 A  29N20                               DSPATR(PC)
+0049 A                                      CHECK(RZ)
+0049 A                                      DSPATR(UL MDT)
+0049 A  20                                  DSPATR(PR)
+0049 A  29                                  DSPATR(RI)
+0049 A                                 07034'CONT'
+0049 A                                      DSPATR(HI)
+0049 A            MMCONT        02M  B 07039
+0049 A  28N20                               DSPATR(PC)
+0049 A                                      CHECK(RZ)
+0049 A                                      DSPATR(UL MDT)
+0049 A  20                                  DSPATR(PR)
+0049 A  28                                  DSPATR(RI)
+0050 A            AACONT         4M  B 07042
+0050 A  28N20                               DSPATR(PC)
+0050 A                                      DSPATR(UL MDT)
+0050 A  20                                  DSPATR(PR)
+0050 A  28                                  DSPATR(RI)
+0050 A                                 07049'Ce'
+0050 A                                      DSPATR(HI)
+0050 A            CEMIS         01M  B 07052
+0050 A  81N20                               DSPATR(PC)
+0050 A                                      DSPATR(UL MDT)
+0050 A  20                                  DSPATR(PR)
+0050 A  81                                  DSPATR(RI)
+0050 A                                 07057'Exclui Contencioso'
+0050 A                                      DSPATR(HI)
+0050 A            EXCONT         1   O 07076DSPATR(UL)
+0050 A                                 08001'Isen'
+0050 A                                      DSPATR(HI)
+0050 A            ISEN          01M  B 08006
+0050 A  82N20                               DSPATR(PC)
+0050 A                                      DSPATR(UL MDT)
+0050 A  20                                  DSPATR(PR)
+0050 A  82                                  DSPATR(RI)
+0050 A                                 08015'Conc'
+0050 A                                      DSPATR(HI)
+0050 A            CONC          03M  B 08020
+0050 A  34N20                               DSPATR(PC)
+0050 A                                      CHECK(RZ)
+0050 A                                      DSPATR(UL MDT)
+0050 A  20                                  DSPATR(PR)
+0050 A  34                                  DSPATR(RI)
+0050 A                                 08025'CR Hipot'
+0050 A                                      DSPATR(HI)
+0051 A            CRHIP          5M  B 08034
+0051 A  94N20                               DSPATR(PC)
+0051 A                                      CHECK(RZ)
+0051 A                                      DSPATR(UL MDT)
+0051 A  20                                  DSPATR(PR)
+0051 A  94                                  DSPATR(RI)
+0051 A            DSCCRHIP      40   O 08040
+0051 A                                 09001'Med1'
+0051 A                                      DSPATR(HI)
+0051 A            MED1           3M  B 09006
+0051 A  35N20                               DSPATR(PC)
+0051 A                                      CHECK(RZ)
+0051 A                                      DSPATR(UL MDT)
+0051 A  20                                  DSPATR(PR)
+0051 A  35                                  DSPATR(RI)
+0051 A                                 09010'%Com1'
+0051 A                                      DSPATR(HI)
+0051 A            COM1           2M  B 09016
+0051 A  36N20                               DSPATR(PC)
+0051 A                                      CHECK(RZ FE)
+0051 A                                      DSPATR(UL MDT)
+0051 A  20                                  DSPATR(PR)
+0051 A  36                                  DSPATR(RI)
+0051 A            FL0001         3M  B 09019
+0051 A  36N20                               DSPATR(PC)
+0051 A                                      CHECK(RZ FE)
+0051 A                                      DSPATR(UL MDT)
+0051 A  20                                  DSPATR(PR)
+0051 A  36                                  DSPATR(RI)
+0051 A                                 09024'CCob'
+0051 A                                      DSPATR(HI)
+0051 A            MED2           5M  B 09029
+0051 A  02N20                               DSPATR(PC)
+0051 A                                      CHECK(RZ FE)
+0051 A                                      DSPATR(UL MDT)
+0051 A  02                                  DSPATR(RI)
+0051 A  20                                  DSPATR(PR)
+0051 A                                 09036'%Com2'
+0051 A                                      DSPATR(ND)
+0052 A            COM2           2M  B 09042CHECK(RZ FE)
+0052 A                                      DSPATR(PR ND MDT)
+0052 A            FL0002         3M  B 09045CHECK(RZ FE)
+0052 A                                      DSPATR(PR ND MDT)
+0052 A                                 09050'Empregado'
+0052 A                                      DSPATR(HI)
+0052 A            EMPREG         1   B 09060DSPATR(UL MDT)
+0052 A  20                                  DSPATR(PR)
+0052 A                                 09063'Ano Edificio'
+0052 A                                      DSPATR(HI)
+0052 A  95                                  DSPATR(ND)
+0052 A            ANOEDI         4D  B 09076CHECK(RZ FE)
+0052 A                                      DSPATR(UL MDT)
+0052 A  20                                  DSPATR(PR)
+0052 A  95                                  DSPATR(ND)
+0052 A                                 10001'Talt'
+0052 A                                      DSPATR(HI)
+0052 A            TALT          01M  B 10006
+0052 A  27N20                               DSPATR(PC)
+0052 A                                      DSPATR(UL MDT)
+0052 A  20                                  DSPATR(PR)
+0052 A  27                                  DSPATR(RI)
+0052 A                                 10008'Dalt'
+0052 A                                      DSPATR(HI)
+0052 A            DDALT         02M  B 10013
+0052 A  85N20                               DSPATR(PC)
+0052 A                                      CHECK(RZ)
+0052 A                                      DSPATR(UL MDT)
+0052 A  20                                  DSPATR(PR)
+0052 A  85                                  DSPATR(RI)
+0053 A            MMALT         02M  B 10016
+0053 A  86N20                               DSPATR(PC)
+0053 A                                      CHECK(RZ)
+0053 A                                      DSPATR(UL MDT)
+0053 A  20                                  DSPATR(PR)
+0053 A  86                                  DSPATR(RI)
+0053 A            AAALT          4M  B 10019
+0053 A  24N20                               DSPATR(PC)
+0053 A                                      DSPATR(UL MDT)
+0053 A  20                                  DSPATR(PR)
+0053 A  24                                  DSPATR(RI)
+0053 A                                 10024'Malt'
+0053 A                                      DSPATR(HI)
+0053 A            MALT          02M  B 10029
+0053 A  88N20                               DSPATR(PC)
+0053 A                                      CHECK(RZ)
+0053 A                                      DSPATR(UL MDT)
+0053 A  20                                  DSPATR(PR)
+0053 A  88                                  DSPATR(RI)
+0053 A                                 10033'Acta'
+0053 A                                      DSPATR(HI)
+0053 A            ACTA          03M  B 10038CHECK(RZ)
+0053 A                                      DSPATR(UL MDT)
+0053 A  20                                  DSPATR(PR)
+0053 A                                 10043'Aviso'
+0053 A                                      DSPATR(HI)
+0053 A            AVISN          1   B 10049
+0053 A  79N20                               DSPATR(PC)
+0053 A                                      DSPATR(UL MDT)
+0053 A  20                                  DSPATR(PR)
+0053 A  79                                  DSPATR(RI)
+0053 A                                 10056'Cod Postal Edificio'
+0053 A                                      DSPATR(HI)
+0053 A            CPEDI          4D  B 10076CHECK(RZ FE)
+0053 A                                      DSPATR(UL MDT)
+0053 A  20                                  DSPATR(PR)
+0053 A  95                                  DSPATR(ND)
+0054 A                                 11009'R'
+0054 A                                      DSPATR(HI UL)
+0054 A                                 11015'    Cap    '
+0054 A                                      DSPATR(HI UL)
+0054 A                                 11030'  Tx '
+0054 A                                      DSPATR(HI UL)
+0054 A                                 11041'  Prcact. '
+0054 A                                      DSPATR(HI UL)
+0054 A                                 11055'CS'
+0054 A                                      DSPATR(HI UL)
+0054 A                                 11067'  Prcant. '
+0054 A                                      DSPATR(HI)
+0054 A                                 12007'I'
+0054 A                                      DSPATR(HI)
+0054 A            CR1           01M  B 12009
+0054 A  08N20                               DSPATR(PC)
+0054 A                                      DSPATR(UL MDT)
+0054 A  08                                  DSPATR(RI)
+0054 A  20                                  DSPATR(PR)
+0054 A            CAP1          11M  B 12015
+0054 A  26N20                               DSPATR(PC)
+0054 A                                      CHECK(RB)
+0054 A                                      DSPATR(UL MDT)
+0054 A  20                                  DSPATR(PR)
+0054 A            TX1            5M  B 12030
+0054 A  17N20                               DSPATR(PC)
+0054 A                                      CHECK(RZ)
+0054 A                                      DSPATR(UL MDT)
+0054 A  17                                  DSPATR(RI)
+0054 A  20                                  DSPATR(PR)
+0055 A                                 12036'(3d)'
+0055 A                                      DSPATR(HI)
+0055 A  98                                  DSPATR(ND)
+0055 A            PR1            7M  B 12041
+0055 A  18N20                               DSPATR(PC)
+0055 A                                      CHECK(RZ)
+0055 A                                      DSPATR(UL MDT)
+0055 A  18                                  DSPATR(RI)
+0055 A  20                                  DSPATR(PR)
+0055 A            FL0003         2M  B 12049
+0055 A  18N20                               DSPATR(PC)
+0055 A                                      CHECK(RZ)
+0055 A                                      DSPATR(UL MDT)
+0055 A  18                                  DSPATR(RI)
+0055 A  20                                  DSPATR(PR)
+0055 A            CS            01M  B 12056
+0055 A  51N20                               DSPATR(PC)
+0055 A                                      DSPATR(UL MDT)
+0055 A  20                                  DSPATR(PR)
+0055 A  51                                  DSPATR(RI)
+0055 A            PRCANT         7M  B 12067CHECK(RZ)
+0055 A                                      DSPATR(UL MDT)
+0055 A  20                                  DSPATR(PR)
+0055 A            FL0004         2M  B 12075CHECK(RZ)
+0055 A                                      DSPATR(UL MDT)
+0055 A  20                                  DSPATR(PR)
+0055 A                                 13006'II'
+0055 A                                      DSPATR(HI)
+0055 A  95                                  DSPATR(ND)
+0055 A            CR2           01M  B 13009
+0055 A  80N20                               DSPATR(PC)
+0055 A                                      DSPATR(UL MDT)
+0055 A  20                                  DSPATR(PR)
+0055 A  80                                  DSPATR(RI)
+0055 A  95                                  DSPATR(ND)
+0055 A            CAP2          11M  B 13015CHECK(RZ)
+0055 A                                      DSPATR(UL MDT)
+0055 A  20                                  DSPATR(PR)
+0055 A  95                                  DSPATR(ND)
+0055 A            TX2            5M  B 13030CHECK(RZ)
+0055 A                                      DSPATR(UL MDT)
+0055 A  20                                  DSPATR(PR)
+0055 A  95                                  DSPATR(ND)
+0056 A            PR2            7M  B 13041CHECK(RZ)
+0056 A                                      DSPATR(UL MDT)
+0056 A  20                                  DSPATR(PR)
+0056 A  95                                  DSPATR(ND)
+0056 A            FL0005         2M  B 13049CHECK(RZ)
+0056 A                                      DSPATR(UL MDT)
+0056 A  20                                  DSPATR(PR)
+0056 A  95                                  DSPATR(ND)
+0056 A                                 14005'III'
+0056 A                                      DSPATR(HI)
+0056 A  95                                  DSPATR(ND)
+0056 A            CR3           01M  B 14009
+0056 A  80N20                               DSPATR(PC)
+0056 A                                      DSPATR(UL MDT)
+0056 A  20                                  DSPATR(PR)
+0056 A  80                                  DSPATR(RI)
+0056 A  95                                  DSPATR(ND)
+0056 A            CAP3          11M  B 14015CHECK(RZ)
+0056 A                                      DSPATR(UL MDT)
+0056 A  20                                  DSPATR(PR)
+0056 A  95                                  DSPATR(ND)
+0056 A            TX3            5M  B 14030CHECK(RZ)
+0056 A                                      DSPATR(UL MDT)
+0056 A  20                                  DSPATR(PR)
+0056 A  95                                  DSPATR(ND)
+0056 A            PR3            7M  B 14041CHECK(RZ)
+0056 A                                      DSPATR(UL MDT)
+0056 A  20                                  DSPATR(PR)
+0056 A  95                                  DSPATR(ND)
+0056 A            FL0006         2M  B 14049CHECK(RZ)
+0056 A                                      DSPATR(UL MDT)
+0056 A  20                                  DSPATR(PR)
+0056 A  95                                  DSPATR(ND)
+0056 A                                 14056' Franq.'
+0056 A                                      DSPATR(HI)
+0056 A                                 14069'Priant. '
+0056 A                                      DSPATR(HI)
+0057 A            CAPTOT        11M  B 15015
+0057 A  38N20                               DSPATR(PC)
+0057 A                                      CHECK(RZ)
+0057 A                                      DSPATR(UL MDT)
+0057 A  20                                  DSPATR(PR)
+0057 A  38                                  DSPATR(RI)
+0057 A            TXMED          5M  B 15030CHECK(RZ)
+0057 A                                      DSPATR(UL MDT)
+0057 A  20                                  DSPATR(PR)
+0057 A                                 15036'(3d)'
+0057 A                                      DSPATR(HI)
+0057 A  98                                  DSPATR(ND)
+0057 A            PRCACT         7M  B 15041
+0057 A  39N20                               DSPATR(PC)
+0057 A                                      CHECK(RZ)
+0057 A                                      DSPATR(UL MDT)
+0057 A  20                                  DSPATR(PR)
+0057 A  39                                  DSPATR(RI)
+0057 A            FL0007         2M  B 15049
+0057 A  39N20                               DSPATR(PC)
+0057 A                                      CHECK(RZ)
+0057 A                                      DSPATR(UL MDT)
+0057 A  20                                  DSPATR(PR)
+0057 A  39                                  DSPATR(RI)
+0057 A            FRANQO         7M  B 15056CHECK(RZ)
+0057 A                                      DSPATR(UL MDT)
+0057 A  20                                  DSPATR(PR)
+0057 A            PRIANT         5   O 15069DSPATR(UL)
+0057 A            FL0008         2   O 15075DSPATR(UL)
+0057 A                                 16007'Cap.FAT'
+0057 A                                      DSPATR(HI)
+0057 A            CAPFAT        11D  B 16015CHECK(RB)
+0057 A                                      DSPATR(UL MDT)
+0057 A  20                                  DSPATR(PR)
+0058 A                                 16039'ADC'
+0058 A                                      DSPATR(HI)
+0058 A            ADC           11D  B 16043CHECK(RZ)
+0058 A                                      DSPATR(UL MDT)
+0058 A  20                                  DSPATR(PR)
+0058 A                                 16055'NIB'
+0058 A                                      DSPATR(HI)
+0058 A            NIB           21   B 16059DSPATR(UL MDT)
+0058 A  20                                  DSPATR(PR)
+0058 A                                 17002'Lrps'
+0058 A                                      DSPATR(HI)
+0058 A            LRPS          45   B 17007DSPATR(UL MDT)
+0058 A  20                                  DSPATR(PR)
+0058 A                                 17056'% Indexação'
+0058 A                                      DSPATR(HI)
+0058 A            TXIND         03M  B 17068
+0058 A  89N20                               DSPATR(PC)
+0058 A                                      CHECK(RZ)
+0058 A                                      DSPATR(UL MDT)
+0058 A  20                                  DSPATR(PR)
+0058 A  89                                  DSPATR(RI)
+0058 A                                 17072'(S/N)'
+0058 A                                      DSPATR(HI)
+0058 A            INDEX          1   B 17078
+0058 A  89N20                               DSPATR(PC)
+0058 A                                      DSPATR(UL MDT)
+0058 A  20                                  DSPATR(PR)
+0058 A  89                                  DSPATR(RI)
+0059 A                                 18003'Snb'
+0059 A                                      DSPATR(HI)
+0059 A            TXSNB         03M  B 18007CHECK(RZ)
+0059 A                                      DSPATR(UL MDT)
+0059 A  20                                  DSPATR(PR)
+0059 A                                 18011'Nasc'
+0059 A                                      DSPATR(HI)
+0059 A            NASC           4M  B 18016
+0059 A  40N20                               DSPATR(PC)
+0059 A                                      CHECK(RZ)
+0059 A                                      DSPATR(UL MDT)
+0059 A  20                                  DSPATR(PR)
+0059 A  40                                  DSPATR(RI)
+0059 A                                 18021'Prof/Sl'
+0059 A                                      DSPATR(HI)
+0059 A            PROFSL        03M  B 18029CHECK(RZ)
+0059 A                                      DSPATR(UL MDT)
+0059 A  20                                  DSPATR(PR)
+0059 A                                 18033'Grupo'
+0059 A                                      DSPATR(HI)
+0059 A            CGRUPO         1D  B 18039DSPATR(UL MDT)
+0059 A  20                                  DSPATR(PR)
+0059 A                                 18041'N.Pes'
+0059 A                                      DSPATR(HI)
+0059 A            NPESS          5D  B 18047CHECK(RB)
+0059 A                                      DSPATR(UL MDT)
+0059 A  20                                  DSPATR(PR)
+0060 A                                 18056'Risco adicional (S/N)'
+0060 A                                      DSPATR(HI)
+0060 A  11                                  DSPATR(ND)
+0060 A            RA            01   B 18078
+0060 A  50N11                               DSPATR(PC)
+0060 A                                      DSPATR(UL MDT)
+0060 A  11                                  DSPATR(PR ND)
+0060 A  50                                  DSPATR(RI)
+0060 A                                 19002'Nat.'
+0060 A                                      DSPATR(HI)
+0060 A  12                                  DSPATR(ND)
+0060 A            NATUR         30   B 19007
+0060 A  84N20                               DSPATR(PC)
+0060 A                                      DSPATR(UL MDT)
+0060 A  12                                  DSPATR(ND)
+0060 A  20                                  DSPATR(PR)
+0060 A  84                                  DSPATR(RI)
+0060 A                                 19041'Clas'
+0060 A                                      DSPATR(HI)
+0060 A  12                                  DSPATR(ND)
+0060 A            CLASS         01   B 19046DSPATR(UL MDT)
+0060 A  12                                  DSPATR(ND)
+0060 A  20                                  DSPATR(PR)
+0060 A  84                                  DSPATR(RI)
+0060 A                                 19056'Perdas consq. (S/N)'
+0060 A                                      DSPATR(HI)
+0060 A  12                                  DSPATR(ND)
+0060 A            PERDCQ        01   B 19078
+0060 A  87N20                               DSPATR(PC)
+0060 A                                      DSPATR(UL MDT)
+0060 A  12                                  DSPATR(ND)
+0060 A  20                                  DSPATR(PR)
+0060 A  87                                  DSPATR(RI)
+0060 A                                 20001'Tperd'
+0060 A                                      DSPATR(HI)
+0060 A  12                                  DSPATR(ND)
+0060 A            TPERD         01   B 20007
+0060 A  25N20                               DSPATR(PC)
+0060 A                                      DSPATR(UL MDT)
+0060 A  12                                  DSPATR(ND)
+0060 A  20                                  DSPATR(PR)
+0060 A  25                                  DSPATR(RI)
+0061 A                                 20010'%P.Ind'
+0061 A                                      DSPATR(HI)
+0061 A  12                                  DSPATR(ND)
+0061 A            PPERDI        02M  B 20017CHECK(RZ)
+0061 A                                      DSPATR(UL MDT)
+0061 A  12                                  DSPATR(ND)
+0061 A  20                                  DSPATR(PR)
+0061 A  25                                  DSPATR(RI)
+0061 A                                 20020'EncFix'
+0061 A                                      DSPATR(HI)
+0061 A  12                                  DSPATR(ND)
+0061 A            ENCFIX         9M  B 20027CHECK(RZ)
+0061 A                                      DSPATR(UL MDT)
+0061 A  12                                  DSPATR(ND)
+0061 A  20                                  DSPATR(PR)
+0061 A  25                                  DSPATR(RI)
+0061 A                                 20040'Pindm'
+0061 A                                      DSPATR(HI)
+0061 A  12                                  DSPATR(ND)
+0061 A            PINDMN        02M  B 20046CHECK(RZ)
+0061 A                                      DSPATR(UL MDT)
+0061 A  12                                  DSPATR(ND)
+0061 A  20                                  DSPATR(PR)
+0061 A  25                                  DSPATR(RI)
+0061 A                                 20056'Clau'
+0061 A                                      DSPATR(HI)
+0061 A  13                                  DSPATR(ND)
+0061 A            CL01          02M  B 20061
+0061 A  43N14                               DSPATR(PC)
+0061 A                                      CHECK(RZ)
+0061 A                                      DSPATR(UL MDT)
+0061 A  13                                  DSPATR(ND)
+0061 A  14                                  DSPATR(PR)
+0061 A  43                                  DSPATR(RI)
+0061 A            CL02          02M  B 20064
+0061 A  44N14                               DSPATR(PC)
+0061 A                                      CHECK(RZ)
+0061 A                                      DSPATR(UL MDT)
+0061 A  13                                  DSPATR(ND)
+0061 A  14                                  DSPATR(PR)
+0061 A  44                                  DSPATR(RI)
+0061 A            CL03          02M  B 20067
+0061 A  45N14                               DSPATR(PC)
+0061 A                                      CHECK(RZ)
+0061 A                                      DSPATR(UL MDT)
+0061 A  13                                  DSPATR(ND)
+0061 A  14                                  DSPATR(PR)
+0061 A  45                                  DSPATR(RI)
+0062 A            CL04          02M  B 20070
+0062 A  46N14                               DSPATR(PC)
+0062 A                                      CHECK(RZ)
+0062 A                                      DSPATR(UL MDT)
+0062 A  13                                  DSPATR(ND)
+0062 A  14                                  DSPATR(PR)
+0062 A  46                                  DSPATR(RI)
+0062 A            CL05          02M  B 20073
+0062 A  47N14                               DSPATR(PC)
+0062 A                                      CHECK(RZ)
+0062 A                                      DSPATR(UL MDT)
+0062 A  13                                  DSPATR(ND)
+0062 A  14                                  DSPATR(PR)
+0062 A  47                                  DSPATR(RI)
+0062 A            CL06          02M  B 20076
+0062 A  48N14                               DSPATR(PC)
+0062 A                                      CHECK(RZ)
+0062 A                                      DSPATR(UL MDT)
+0062 A  13                                  DSPATR(ND)
+0062 A  14                                  DSPATR(PR)
+0062 A  48                                  DSPATR(RI)
+0062 A                                 21001'%Frac'
+0062 A                                      DSPATR(HI)
+0062 A            PFRC          03M  B 21007CHECK(RZ)
+0062 A                                      DSPATR(UL MDT)
+0062 A  20                                  DSPATR(PR)
+0062 A                                 21012'Test'
+0062 A                                      DSPATR(HI)
+0062 A            TEST          01M  B 21017
+0062 A  41N20                               DSPATR(PC)
+0062 A                                      DSPATR(UL MDT)
+0062 A  20                                  DSPATR(PR)
+0062 A  41                                  DSPATR(RI)
+0062 A                                 21020'Txest'
+0062 A                                      DSPATR(HI)
+0062 A            TXEST         03M  B 21026
+0062 A  42N20                               DSPATR(PC)
+0062 A                                      CHECK(RZ)
+0062 A                                      DSPATR(UL MDT)
+0062 A  20                                  DSPATR(PR)
+0062 A  42                                  DSPATR(RI)
+0062 A                                 21030'Mod'
+0062 A                                      DSPATR(HI)
+0063 A            MOD            1X  B 21034CHECK(RB)
+0063 A                                      DSPATR(UL MDT)
+0063 A  20                                  DSPATR(PR)
+0063 A                                 21036'Tpt'
+0063 A                                      DSPATR(HI)
+0063 A            TPP            1X  B 21040CHECK(RB)
+0063 A                                      DSPATR(UL MDT)
+0063 A  20                                  DSPATR(PR)
+0063 A                                 21042'CAE'
+0063 A                                      DSPATR(HI)
+0063 A            CAE            6D  B 21046DSPATR(UL MDT)
+0063 A  20                                  DSPATR(PR)
+0063 A                                 21056'JMM1'
+0063 A                                      DSPATR(HI)
+0063 A            JMM1           3D  B 21061
+0063 A  61N20                               DSPATR(PC)
+0063 A                                      CHECK(RZ)
+0063 A                                      DSPATR(UL MDT)
+0063 A  20                                  DSPATR(PR)
+0063 A  61                                  DSPATR(RI)
+0063 A                                 21065'JMC1'
+0063 A                                      DSPATR(HI)
+0063 A            JMC1           5D  B 21070
+0063 A  61N20                               DSPATR(PC)
+0063 A                                      CHECK(RZ)
+0063 A                                      DSPATR(UL MDT)
+0063 A  20                                  DSPATR(PR)
+0063 A  61                                  DSPATR(RI)
+0063 A                                 22002'Obs1'
+0063 A                                      DSPATR(HI)
+0064 A            OBS1          45   B 22007DSPATR(UL MDT)
+0064 A  20                                  DSPATR(PR)
+0064 A                                 22056'JMM2'
+0064 A                                      DSPATR(HI)
+0064 A            JMM2           3D  B 22061
+0064 A  37N20                               DSPATR(PC)
+0064 A                                      CHECK(RZ)
+0064 A                                      DSPATR(UL MDT)
+0064 A  20                                  DSPATR(PR)
+0064 A  37                                  DSPATR(RI)
+0064 A                                 22065'JMC2'
+0064 A                                      DSPATR(HI)
+0064 A            JMC2           5D  B 22070
+0064 A  83N20                               DSPATR(PC)
+0064 A                                      CHECK(RZ)
+0064 A                                      DSPATR(UL MDT)
+0064 A  20                                  DSPATR(PR)
+0064 A  83                                  DSPATR(RI)
+0064 A                                 23002'Obs2'
+0064 A                                      DSPATR(HI)
+0064 A            OBS2          45   B 23007DSPATR(UL MDT)
+0064 A  20                                  DSPATR(PR)
+0064 A                                 23056'Ultrec'
+0064 A                                      DSPATR(HI)
+0064 A            TOTREC        07M  B 23063DSPATR(RI UL MDT)
+0064 A  20                                  DSPATR(PR)
+0064 A            FL0009        02M  B 23071DSPATR(RI UL MDT)
+0064 A  20                                  DSPATR(PR)
+0065 A                                 24070'F9=AN/AC'
+0065 A                                      DSPATR(BL)
+0065 A  98                                  DSPATR(ND)
+     A            CM#ROW         3S 0H
+     A            CM#COL         3S 0H
+     A            CM#NMREC      10A  H
+     A            CM#NMFLD      10A  H
+0065 A**************************************************************************
+0065 A*ECRAN CONSULTA COBERTURAS, CONDIÇÕES E CLAUSULAS DO RAMO CONDOMINIO
+0065 A**************************************************************************
+0065 A          R OUTP4
+0065 A                                      DSPMOD(*DS3)
+0065 A                                      PRINT
+0065 A                                      INVITE
+0065 A                                      SLNO(01)
+0065 A                                      CLRL(*ALL)
+0065 A                                      BLINK
+0065 A                                      ALWROL
+0065 A                                      CF03 CF12
+0065 A                                      HELP
+0065 A*-------------------------------------------------------------------------
+0065 A          H                           HLPARA(01 001 24 080)
+0065 A                                      HLPRCD(HELPC001)
+0065 A                                 01023'Apólice:'
+0065 A            WAPOL          7   O 01033DSPATR(HI)
+0065 A                                 01048'Produto:'
+0066 A                                 01059'CONDOMINIO'
+0066 A                                      DSPATR(HI RI)
+0066 A                                 03004'Coberturas       Condições     Clá-
+0066 A                                      usulas              '
+0066 A                                      DSPATR(HI)
+0066 A                                 04004'Facultativas     Especiais     Apl-
+0066 A                                      icáveis             '
+0066 A                                      DSPATR(HI)
+0066 A                                 06006' 1'
+0066 A                                      DSPATR(HI)
+0066 A            WCF01          1   O 06010DSPATR(UL)
+0066 A                                 06013'S=sim'
+0066 A                                 06023'001'
+0066 A                                      DSPATR(HI)
+0066 A            WCE001         1   O 06028DSPATR(UL)
+0067 A                                 06037'030'
+0067 A                                      DSPATR(HI)
+0067 A            WCA030         1   O 06042DSPATR(UL)
+0067 A                                 07006' 2'
+0067 A                                      DSPATR(HI)
+0067 A            WCF02          1   O 07010DSPATR(UL)
+0067 A                                 07023'003'
+0067 A                                      DSPATR(HI)
+0067 A            WCE003         1   O 07028DSPATR(UL)
+0067 A                                 07037'031'
+0067 A                                      DSPATR(HI)
+0067 A            WCA031         1   O 07042DSPATR(UL)
+0067 A                                 08006' 3'
+0067 A                                      DSPATR(HI)
+0067 A            WCF03          1   O 08010DSPATR(UL)
+0068 A                                 08037'100'
+0068 A                                      DSPATR(HI)
+0068 A            WCA100         1   O 08042DSPATR(UL)
+0068 A                                 09006' 4'
+0068 A                                      DSPATR(HI)
+0068 A            WCF04          1   O 09010DSPATR(UL)
+0068 A                                 09037'101'
+0068 A                                      DSPATR(HI)
+0068 A            WCA101         1   O 09042DSPATR(UL)
+0068 A                                 10006' 5'
+0068 A                                      DSPATR(HI)
+0068 A            WCF05          1   O 10010DSPATR(UL)
+0068 A                                 10037'102'
+0068 A                                      DSPATR(HI)
+0068 A            WCA102         1   O 10042DSPATR(UL)
+0069 A                                 11006' 6'
+0069 A                                      DSPATR(HI)
+0069 A            WCF06          1   O 11010DSPATR(UL)
+0069 A                                 12006' 7'
+0069 A                                      DSPATR(HI)
+0069 A            WCF07          1   O 12010DSPATR(UL)
+0069 A                                 13006' 8'
+0069 A                                      DSPATR(HI)
+0069 A            WCF08          1   O 13010DSPATR(UL)
+0069 A                                 14006'13'
+0069 A                                      DSPATR(HI)
+0069 A            WCF13          1   O 14010DSPATR(UL)
+0069 A                                 23001'F3=voltar atrás'
+0069 A                                      DSPATR(HI)
+0069 A                                 23018'F7=sair'
+0069 A                                      DSPATR(HI)
+0070 A                                 23027'F12=documento MEMO'
+0070 A                                      DSPATR(HI)
+0070 A                                 23047'Botão direito rato=AJUDA'
+0070 A                                      DSPATR(HI)
+0070 A**************************************************************************
+0070 A*ECRAN CONSULTA COBERTURAS, CONDIÇÕES E CLAUSULAS DO RAMO MERCANTILE
+0070 A**************************************************************************
+0070 A          R OUTP3
+0070 A                                      DSPMOD(*DS3)
+0070 A                                      PRINT
+0070 A                                      INVITE
+0070 A                                      SLNO(01)
+0070 A                                      CLRL(*ALL)
+0070 A                                      BLINK
+0070 A                                      ALWROL
+0070 A                                      CF03 CF12
+0070 A                                      HELP
+0070 A*-------------------------------------------------------------------------
+0070 A          H                           HLPARA(01 001 24 080)
+0070 A                                      HLPRCD(HELPM001)
+0070 A          H                           HLPARA(01 001 24 080)
+0070 A                                      HLPRCD(HELPM002)
+0071 A                                 01023'Apólice:'
+0071 A            WAPOL          7   O 01033DSPATR(HI)
+0071 A                                 01048'Produto:'
+0071 A                                 01059'MERCANTILE'
+0071 A                                      DSPATR(HI RI)
+0071 A                                 03004'Coberturas       Condições     Clá-
+0071 A                                      usulas     Cláusulas'
+0071 A                                      DSPATR(HI)
+0071 A                                 04004'Facultativas     Especiais     Apl-
+0071 A                                      icáveis     Diversas'
+0071 A                                      DSPATR(HI)
+0071 A                                 06006'01'
+0071 A                                      DSPATR(HI)
+0071 A            WCF01          1   O 06010DSPATR(UL)
+0072 A                                 06013'S=sim'
+0072 A                                 06023'001'
+0072 A                                      DSPATR(HI)
+0072 A            WCE001         1   O 06028DSPATR(UL)
+0072 A                                 06037'030'
+0072 A                                      DSPATR(HI)
+0072 A            WCA030         1   O 06042DSPATR(UL)
+0072 A                                 06052'103'
+0072 A                                      DSPATR(HI)
+0072 A            WCD103         1   O 06057DSPATR(UL)
+0072 A                                 07006'02'
+0072 A                                      DSPATR(HI)
+0072 A            WCF02          1   O 07010DSPATR(UL)
+0072 A                                 07023'002'
+0072 A                                      DSPATR(HI)
+0073 A            WCE002         1   O 07028DSPATR(UL)
+0073 A                                 07037'100'
+0073 A                                      DSPATR(HI)
+0073 A            WCA100         1   O 07042DSPATR(UL)
+0073 A                                 07052'133'
+0073 A                                      DSPATR(HI)
+0073 A            WCD133         1   O 07057DSPATR(UL)
+0073 A                                 08006'03'
+0073 A                                      DSPATR(HI)
+0073 A            WCF03          1   O 08010DSPATR(UL)
+0073 A                                 08037'101'
+0073 A                                      DSPATR(HI)
+0073 A            WCA101         1   O 08042DSPATR(UL)
+0073 A                                 08052'134'
+0073 A                                      DSPATR(HI)
+0074 A            WCD134         1   O 08057DSPATR(UL)
+0074 A                                 09006'04'
+0074 A                                      DSPATR(HI)
+0074 A            WCF04          1   O 09010DSPATR(UL)
+0074 A                                 09037'102'
+0074 A                                      DSPATR(HI)
+0074 A            WCA102         1   O 09042DSPATR(UL)
+0074 A                                 09052'135'
+0074 A                                      DSPATR(HI)
+0074 A            WCD135         1   O 09057DSPATR(UL)
+0074 A                                 10006'05'
+0074 A                                      DSPATR(HI)
+0074 A            WCF05          1   O 10010DSPATR(UL)
+0074 A                                 10052'136'
+0074 A                                      DSPATR(HI)
+0075 A            WCD136         1   O 10057DSPATR(UL)
+0075 A                                 11006'06'
+0075 A                                      DSPATR(HI)
+0075 A            WCF06          1   O 11010DSPATR(UL)
+0075 A                                 11052'137'
+0075 A                                      DSPATR(HI)
+0075 A            WCD137         1   O 11057DSPATR(UL)
+0075 A                                 12006'07'
+0075 A                                      DSPATR(HI)
+0075 A            WCF07          1   O 12010DSPATR(UL)
+0075 A                                 13006'08'
+0075 A                                      DSPATR(HI)
+0075 A            WCF08          1   O 13010DSPATR(UL)
+0075 A                                 14006'09'
+0075 A                                      DSPATR(HI)
+0076 A            WCF09          1   O 14010DSPATR(UL)
+0076 A                                 15006'10'
+0076 A                                      DSPATR(HI)
+0076 A            WCF10          1   O 15010DSPATR(UL)
+0076 A                                 16006'11'
+0076 A                                      DSPATR(HI)
+0076 A            WCF11          1   O 16010DSPATR(UL)
+0076 A                                 17006'12'
+0076 A                                      DSPATR(HI)
+0076 A            WCF12          1   O 17010DSPATR(UL)
+0076 A                                 18006'13'
+0076 A                                      DSPATR(HI)
+0076 A            WCF13          1   O 18010DSPATR(UL)
+0076 A                                 23001'F3=voltar atrás'
+0076 A                                      DSPATR(HI)
+0077 A                                 23018'F7=sair'
+0077 A                                      DSPATR(HI)
+0077 A                                 23027'F12=documento MEMO'
+0077 A                                      DSPATR(HI)
+0077 A                                 23047'Botão direito rato=AJUDA'
+0077 A                                      DSPATR(HI)
+0077 A**************************************************************************
+0077 A*ECRAN CONSULTA COBERTURAS, CONDIÇÕES E CLAUSULAS DO RAMO RESIDENTIA
+0077 A**************************************************************************
+     A          R OUTP2
+     A*%%TS  SD  20120629  100041  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      DSPMOD(*DS3)
+     A                                      PRINT
+     A                                      INVITE
+     A                                      SLNO(01)
+     A                                      CLRL(*ALL)
+     A                                      BLINK
+     A                                      ALWROL
+     A                                      CF03
+     A                                      CF12
+     A                                      HELP
+     A          H                           HLPRCD(HELPR001)
+     A  *DS3                                HLPARA(01 001 24 080)
+     A  *DS4                                HLPARA(01 001 24 080)
+     A                                  1 23'Apólice:'
+     A            WAPOL          7A  O  1 33DSPATR(HI)
+     A                                  1 48'Produto:'
+     A                                  1 59'RESIDENTIA'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(RI)
+     A                                  3  4'Coberturas       Condições     Clá-
+     A                                      usulas     Cláusulas'
+     A                                      DSPATR(HI)
+     A                                  4  4'Facultativas     Especiais     Apl-
+     A                                      icáveis     Diversas'
+     A                                      DSPATR(HI)
+     A                                  6  6' 1'
+     A                                      DSPATR(HI)
+     A            WCF01          1A  O  6 10DSPATR(UL)
+     A                                  6 13'S=sim'
+     A                                  6 23'001'
+     A                                      DSPATR(HI)
+     A            WCE001         1A  O  6 28DSPATR(UL)
+     A                                  6 37'030'
+     A                                      DSPATR(HI)
+     A            WCA030         1A  O  6 42DSPATR(UL)
+     A                                  6 52'103'
+     A                                      DSPATR(HI)
+     A            WCD103         1A  O  6 57DSPATR(UL)
+     A                                  7  6' 2'
+     A                                      DSPATR(HI)
+     A            WCF02          1A  O  7 10DSPATR(UL)
+     A                                  7 23'002'
+     A                                      DSPATR(HI)
+     A            WCE002         1A  O  7 28DSPATR(UL)
+     A                                  7 37'031'
+     A                                      DSPATR(HI)
+     A            WCA031         1A  O  7 42DSPATR(UL)
+     A                                  7 52'130'
+     A                                      DSPATR(HI)
+     A            WCD130         1A  O  7 57DSPATR(UL)
+     A                                  8  6' 3'
+     A                                      DSPATR(HI)
+     A            WCF03          1A  O  8 10DSPATR(UL)
+     A                                  8 23'003'
+     A                                      DSPATR(HI)
+     A            WCE003         1A  O  8 28DSPATR(UL)
+     A                                  8 37'100'
+     A                                      DSPATR(HI)
+     A            WCA100         1A  O  8 42DSPATR(UL)
+     A                                  8 52'131'
+     A                                      DSPATR(HI)
+     A            WCD131         1A  O  8 57DSPATR(UL)
+     A                                  9  6' 4'
+     A                                      DSPATR(HI)
+     A            WCF04          1A  O  9 10DSPATR(UL)
+     A                                  9 23'004'
+     A                                      DSPATR(HI)
+     A            WCE004         1A  O  9 28DSPATR(UL)
+     A                                  9 37'101'
+     A                                      DSPATR(HI)
+     A            WCA101         1A  O  9 42DSPATR(UL)
+     A                                  9 52'132'
+     A                                      DSPATR(HI)
+     A            WCD132         1A  O  9 57DSPATR(UL)
+     A                                 10  6' 5'
+     A                                      DSPATR(HI)
+     A            WCF05          1A  O 10 10DSPATR(UL)
+     A                                 10 37'102'
+     A                                      DSPATR(HI)
+     A            WCA102         1A  O 10 42DSPATR(UL)
+     A                                 11  6' 6'
+     A                                      DSPATR(HI)
+     A            WCF06          1A  O 11 10DSPATR(UL)
+     A                                 12  6' 7'
+     A                                      DSPATR(HI)
+     A            WCF07          1A  O 12 10DSPATR(UL)
+     A                                 13  3' 7.00'
+     A                                      DSPATR(HI)
+     A            WCF800         1A  O 13 10DSPATR(UL)
+     A                                 14  3' 7.30'
+     A                                      DSPATR(HI)
+     A            WCF830         1A  O 14 10DSPATR(UL)
+     A                                 15  6'13'
+     A                                      DSPATR(HI)
+     A            WCF13          1A  O 15 10DSPATR(UL)
+     A                                 17  4'Natureza/Uso Imóveis Adjac.'
+     A                                      DSPATR(HI)
+     A                                 17 35'Estado Conservação'
+     A                                      DSPATR(HI)
+     A            ESTCON         1A  O 17 54DSPATR(UL)
+     A                                 17 56'1=Bom'
+     A                                      DSPATR(CS)
+     A                                      DSPATR(HI)
+     A                                      DSPATR(BL)
+     A                                 17 62'2=Defic.'
+     A                                      DSPATR(CS)
+     A                                      DSPATR(HI)
+     A                                      DSPATR(BL)
+     A                                 17 71'3=Mau'
+     A                                      DSPATR(CS)
+     A                                      DSPATR(HI)
+     A                                      DSPATR(BL)
+     A                                 18  6'21'
+     A                                      DSPATR(HI)
+     A            WCF21          1A  O 18 10DSPATR(UL)
+     A            DCF21         15A  O 18 12DSPATR(UL)
+     A                                 18 35'Tipo Construção...'
+     A                                      DSPATR(HI)
+     A            TIPCON         1A  O 18 54DSPATR(UL)
+     A                                 19  6'22'
+     A                                      DSPATR(HI)
+     A            WCF22          1A  O 19 10DSPATR(UL)
+     A                                 23  1'F3=voltar atrás'
+     A                                      DSPATR(HI)
+     A                                 23 18'F7=sair'
+     A                                      DSPATR(HI)
+     A                                 23 27'F12=documento MEMO'
+     A                                      DSPATR(HI)
+     A                                 23 47'Botão direito rato=AJUDA'
+     A                                      DSPATR(HI)
+0085 A**************************************************************************
+0085 A*ECRAN MENSAGENS ERRO
+0085 A**************************************************************************
+0085 A          R ECERRO
+0085 A                                      DSPMOD(*DS3)
+0085 A                                      PRINT(*PGM)
+0085 A                                      INVITE
+0085 A                                      SLNO(24)
+0085 A                                      CLRL(01)
+0085 A                                      OVERLAY
+0085 A                                      ALWROL
+0085 A                                      CF01 CF02 CF03 CF04 CF05 CF06 CF07
+0085 A                                      CF08 CF09 CF10 CF11 CF12 CF13 CF14
+0085 A                                      CF15 CF16 CF17 CF18 CF19 CF20 CF21
+0085 A                                      CF22 CF23 CF24
+0085 A                                      ROLLUP ROLLDOWN CLEAR HLPRTN HOME
+0085 A                                      HELP
+0085 A*-------------------------------------------------------------------------
+0085 A            INDREG        01   B 01002DSPATR(PR ND MDT)
+0086 A            MENSER        60   O 01004DSPATR(BL)
+0086 A**************************************************************************
+0086 A*ECRAN MENSAGENS
+0086 A**************************************************************************
+0086 A          R ECMENS
+0086 A                                      DSPMOD(*DS3)
+0086 A                                      PRINT(*PGM)
+0086 A                                      INVITE
+0086 A                                      SLNO(24)
+0086 A                                      CLRL(01)
+0086 A                                      OVERLAY
+0086 A                                      ALWROL
+0086 A                                      CF01 CF02 CF03 CF04 CF05 CF06 CF07
+0086 A                                      CF08 CF09 CF10 CF11 CF12 CF13 CF14
+0086 A                                      CF15 CF16 CF17 CF18 CF19 CF20 CF21
+0086 A                                      CF22 CF23 CF24
+0086 A                                      ROLLUP ROLLDOWN CLEAR HLPRTN HOME
+0086 A                                      HELP
+0086 A*-------------------------------------------------------------------------
+0086 A            MENSER        60   O 01004DSPATR(HI)
+0086 A**************************************************************************
+0086 A*HELP DOS ECRANS COBERTURAS, CONDIÇÕES E CLAUSULAS DO RAMO RESIDENTIA
+0086 A**************************************************************************
+0087 A          R HELPR001
+0087 A                                      HLPSEQ(HELPR0   01)
+0087 A                                      DSPMOD(*DS3)
+0087 A                                      PRINT
+0087 A                                      INVITE
+0087 A                                      SLNO(01)
+0087 A                                      CLRL(*ALL)
+0087 A                                      BLINK
+0087 A                                      ALWROL
+0087 A                                      HELP
+0087 A*-------------------------------------------------------------------------
+0087 A                                 01031'  RESIDENTIA  '
+0087 A                                      DSPATR(RI)
+0087 A                                 03001'Coberturas Facultativas:'
+0087 A                                      DSPATR(HI UL)
+0087 A                                 03026'01 = greves, tumultos e alterações-
+0087 A                                       da ordem pública'
+0087 A                                 04026'02 = actos de vandalismo ou malici-
+0087 A                                      osos'
+0088 A                                 05026'03 = riscos pessoais domésticos'
+0088 A                                 06026'04 = perda de rendas'
+0088 A                                 07026'05 = aluimento de terras'
+0088 A                                 08026'06 = riscos eléctricos'
+0088 A                                 09026'07 = fenómenos sísmicos'
+0088 A                                 10026'13 = actos de terrorismo'
+0088 A                                 12001'Condições Especiais:'
+0088 A                                      DSPATR(HI UL)
+0089 A                                 12025'001 = assistência ao lar'
+0089 A                                 13025'003 = actualização indexada de cap-
+0089 A                                      itais'
+0089 A                                 15001'Cláusulas Aplicáveis:'
+0089 A                                      DSPATR(HI UL)
+0089 A                                 15025'030 = apólices em regime co-seguro'
+0089 A                                 16025'031 = actualização convencionada d-
+0089 A                                      e capitais'
+0089 A                                 17025'100 = credor hipotecário'
+0090 A                                 18025'101 = descontos por sistemas de pr-
+0090 A                                      otecção'
+0090 A                                 19025'102 = exclusão da actualização ind-
+0090 A                                      exada de capitais'
+0090 A                                 21001'Cláusulas Diversas:'
+0090 A                                      DSPATR(HI UL)
+0090 A                                 21025'103 = livros'
+0090 A                                 22025'130 = quadros e objectos de arte'
+0090 A                                 23025'131 = garagens particulares'
+0091 A                                 24001'ENTER'
+0091 A                                      DSPATR(HI)
+0091 A                                 24007'para voltar'
+0091 A                                 24025'132 = veículos'
+0091 A**************************************************************************
+0091 A*HELP1 DOS ECRANS COBERTURAS, CONDIÇÕES E CLAUSULAS DO RAMO MERCANTILE
+0091 A**************************************************************************
+0091 A          R HELPM001
+0091 A                                      HLPSEQ(HELPM0   01)
+0091 A                                      DSPMOD(*DS3)
+0091 A                                      PRINT
+0091 A                                      INVITE
+0091 A                                      SLNO(01)
+0091 A                                      CLRL(*ALL)
+0091 A                                      BLINK
+0091 A                                      ALWROL
+0091 A                                      HELP
+0091 A*-------------------------------------------------------------------------
+0091 A                                 01031'  MERCANTILE  '
+0091 A                                      DSPATR(RI)
+0092 A                                 02001'Coberturas Facultativas:'
+0092 A                                      DSPATR(HI UL)
+0092 A                                 02026'01 = greves, tumultos e alterações-
+0092 A                                       da ordem pública'
+0092 A                                 03026'02 = actos de vandalismo ou malici-
+0092 A                                      osos'
+0092 A                                 04026'03 = Prejuízos Indirectos (Conteúd-
+0092 A                                      os)'
+0092 A                                 05026'04 = perda de rendas'
+0092 A                                 06026'05 = aluimento de terras'
+0093 A                                 07026'06 = riscos eléctricos'
+0093 A                                 08026'07 = fenómenos sísmicos'
+0093 A                                 09026'08 = encargos fixos (conteúdos)'
+0093 A                                 10026'09 = equipamento electrónico (cont-
+0093 A                                      eúdo)'
+0093 A                                 11026'10 = avaria de máquinas (conteúdo)'
+0093 A                                 12026'11 = deterioração de bens refriger-
+0093 A                                      ados (conteúdo)'
+0094 A                                 13026'12 = trespasse (conteúdo)'
+0094 A                                 14026'13 = actos de terrorismo'
+0094 A                                 16001'Condições Especiais:'
+0094 A                                      DSPATR(HI UL)
+0094 A                                 16025'001 = actualização convencionada d-
+0094 A                                      e capitais'
+0094 A                                 17025'002 = apólices de prémio variável'
+0094 A                                 19001'Cláusulas Aplicáveis:'
+0094 A                                      DSPATR(HI UL)
+0095 A                                 19025'030 = apólices em regime co-seguro'
+0095 A                                 20025'100 = credor hipotecário'
+0095 A                                 21025'101 = valor substituição em novo (-
+0095 A                                      mobiliário e equi.)'
+0095 A                                 22025'102 = apólices de capital variável-
+0095 A                                       (flutuantes)'
+0095 A                                 24001'ENTER'
+0095 A                                      DSPATR(HI)
+0095 A                                 24007'para voltar'
+0096 A                                 24025'PageUp/PageDown'
+0096 A                                      DSPATR(HI)
+0096 A                                 24075'1/2'
+0096 A                                      DSPATR(HI)
+0096 A**************************************************************************
+0096 A*HELP2 DOS ECRANS COBERTURAS, CONDIÇÕES E CLAUSULAS DO RAMO MERCANTILE
+0096 A**************************************************************************
+0096 A          R HELPM002
+0096 A                                      HLPSEQ(HELPM0   02)
+0096 A                                      DSPMOD(*DS3)
+0096 A                                      PRINT
+0096 A                                      INVITE
+0096 A                                      SLNO(01)
+0096 A                                      CLRL(*ALL)
+0096 A                                      BLINK
+0096 A                                      ALWROL
+0096 A                                      HELP
+0096 A*-------------------------------------------------------------------------
+0096 A                                 01031'  MERCANTILE  '
+0096 A                                      DSPATR(RI)
+0096 A                                 03001'Cláusulas Diversas:'
+0096 A                                      DSPATR(HI UL)
+0096 A                                 03025'103 = livros'
+0097 A                                 04025'133 = existência de pólvora (até 2-
+0097 A                                      5 Kg)'
+0097 A                                 05025'134 = cumprimento regras segurança'
+0097 A                                 06025'135 = existência líquidos inflamáv-
+0097 A                                      eis (até 100 litros)'
+0097 A                                 07025'136 = existência prod inflamáveis -
+0097 A                                      (até 400 Kg ou litros)'
+0097 A                                 08025'137 = lotarias'
+0097 A                                 24001'ENTER'
+0097 A                                      DSPATR(HI)
+0098 A                                 24007'para voltar'
+0098 A**************************************************************************
+0098 A*HELP DOS ECRANS COBERTURAS, CONDIÇÕES E CLAUSULAS DO RAMO CONDOMINIO
+0098 A**************************************************************************
+0098 A                                 24075'2/2'
+0098 A                                      DSPATR(HI)
+0098 A                                 24025'PageUp/PageDown'
+0098 A                                      DSPATR(HI)
+0098 A          R HELPC001
+0098 A                                      HLPSEQ(HELPC0   01)
+0098 A                                      DSPMOD(*DS3)
+0098 A                                      PRINT
+0098 A                                      INVITE
+0098 A                                      SLNO(01)
+0098 A                                      CLRL(*ALL)
+0098 A                                      BLINK
+0098 A                                      ALWROL
+0098 A                                      HELP
+0098 A*-------------------------------------------------------------------------
+0098 A                                 01031'  CONDOMINIO  '
+0098 A                                      DSPATR(RI)
+0099 A                                 04001'Coberturas Facultativas:'
+0099 A                                      DSPATR(HI UL)
+0099 A                                 04026'01 = greves, tumultos e alterações-
+0099 A                                       da ordem pública'
+0099 A                                 05026'02 = actos de vandalismo ou malici-
+0099 A                                      osos'
+0099 A                                 06026'03 = equipamento informático do co-
+0099 A                                      ndomínio'
+0099 A                                 07026'04 = perda de rendas'
+0099 A                                 08026'05 = aluimento de terras'
+0100 A                                 09026'06 = riscos eléctricos'
+0100 A                                 10026'07 = fenómenos sísmicos'
+0100 A                                 11026'08 = avaria de máquinas'
+0100 A                                 12026'13 = Actos de Terrorismo'
+0100 A                                 14001'Condições Especiais:'
+0100 A                                      DSPATR(HI UL)
+0100 A                                 14025'001 = Assistência ao condomínio'
+0100 A                                 15025'003 = Actualização indexada de cap-
+0100 A                                      itais'
+0101 A                                 17001'Cláusulas Aplicáveis:'
+0101 A                                      DSPATR(HI UL)
+0101 A                                 17025'030 = Apólice em regime de co-segu-
+0101 A                                      ro'
+0101 A                                 18025'031 = Actualização convencionada d-
+0101 A                                      e capitais'
+0101 A                                 19025'100 = Credor hipotecário'
+0101 A                                 20025'101 = Descontos por sistemas prote-
+0101 A                                      cção contra incêndio'
+0102 A                                 21025'102 = Exclusão da actualização ind-
+0102 A                                      exada de capitais'
+0102 A**************************************************************************
+0102 A          R HELPAP01
+0102 A                                      HLPSEQ(HELPAP   01)
+0102 A                                      DSPMOD(*DS3)
+0102 A                                      PRINT
+0102 A                                      INVITE
+0102 A                                      SLNO(01)
+0102 A                                      CLRL(*ALL)
+0102 A                                      BLINK
+0102 A                                      ALWROL
+0102 A                                      HELP
+0102 A*-------------------------------------------------------------------------
+0102 A                                 01030'  ACIDENTES PESSOAIS  '
+0102 A                                      DSPATR(RI)
+0102 A                                 03033'CÓDIGOS DE GRUPO'
+0102 A                                      DSPATR(HI UL)
+0102 A                                 05032'1 = Individual'
+0102 A                                 06032'2 = Familiar'
+0102 A                                 07032'3 = Grupo'
+0102 A                                 08032'4 = Escolar'
+0103 A                                 09032'5 = Ocupantes Viaturas'
+0103 A**************************************************************************
+0103 A*ECRAN PARA INDICAR QUE APOLICE É MULTIRISCOS CONDOMINIO
+0103 A**************************************************************************
+0103 A          R CONDOM
+0103 A                                      DSPMOD(*DS3)
+0103 A                                      PRINT
+0103 A                                      INVITE
+0103 A                                      SLNO(01)
+0103 A                                      CLRL(*ALL)
+0103 A                                      BLINK
+0103 A                                      ALWROL
+0103 A                                      CF07
+0103 A                                      HELP
+0103 A*-------------------------------------------------------------------------
+0103 A            FL0001         1   I 01004DFT('O')
+0103 A                                      DSPATR(PR ND MDT)
+0103 A                                 06016'Criação Apólice MULTIRRISCOS  '
+0103 A                                      DSPATR(HI)
+0104 A                                 09016'A Apólice é para CONDOMÍNIO ? '
+0104 A            SIMNAO         3   B 09049DSPATR(UL PC MDT)
+0104 A                                 09055'(SIM/NAO)'
+0104 A                                 23016'F7=voltar atrás'
+0104 A                                 23063'Opção Invalida'
+0104 A                                      DSPATR(HI BL)
+0104 A  96                                  DSPATR(ND)

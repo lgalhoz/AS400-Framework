@@ -1,0 +1,15 @@
+     A*===============================================================
+     A* Ficheiro...: FCOBP024
+     A* Descrição..: Ficheiro de envio de ADC
+     A* Original...: TBADCFF
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCOBP024                  TEXT('Ficheiros de envio de ADC')
+     A
+     A            TFFENV        10S 0       COLHDG('Fich.Envio')
+     A                                      EDTWRD('          ')
+     A            TFNLIN         3S 0       COLHDG('NºLinha')
+     A            TFTEXT        63A         COLHDG('Texto')
+     A
+     A          K TFFENV
+     A          K TFNLIN

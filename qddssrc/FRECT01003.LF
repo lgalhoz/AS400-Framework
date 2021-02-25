@@ -1,0 +1,9 @@
+     A***************************************************************
+     A* Tabela....: FRECT01003
+     A* Descrição.: Ordenado por Apólice
+     A***************************************************************
+     A          R RRECT010                  PFILE(FRECT010)
+     A
+     A          K CRAMO
+     A          K NUMAPOL
+     A          K NNUMREC

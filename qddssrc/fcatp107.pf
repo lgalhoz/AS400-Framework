@@ -1,0 +1,29 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP107
+     A* Descrição..: Texto das Coberturas
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP107
+     A
+     A            CDPROD         5S 0       TEXT('Código Produto')
+     A            CDCOBERT       5S 0       TEXT('Código')
+     A            CDDOCUM        5S 0       TEXT('Código Documento')
+     A            NUSEQU         5S 0       TEXT('Sequência')
+     A            NUORDEM        5S 0       TEXT('Ordem do Texto')
+     A            CDIDENT        2A         TEXT('Tipo Identação')
+     A            TEXTO        500A         VARLEN(10)
+     A
+     A*==> Campos de Controlo
+     A            CAT10701        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT10702        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT10703       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT10704      10A         TEXT('Quem Criou')
+     A            CAT10705      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD
+     A          K CDCOBERT
+     A          K CDDOCUM
+     A          K NUSEQU

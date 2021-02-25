@@ -1,0 +1,13 @@
+     A***************************************************************
+     A* Tabela....: FSECP053
+     A* Descrição.: Comentários sobre a transacção
+     A*
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP053
+     A            SQLOG          5S 0       TEXT('Registo de Operação')
+     A            NUSEQ          5S 0       TEXT('Sequência')
+     A            TEXTO        240A         TEXT('Texto')
+     A
+     A          K SQLOG
+     A          K NUSEQ

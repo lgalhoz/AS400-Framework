@@ -1,0 +1,15 @@
+     A***************************************************************
+     A* Tabela....: FSECP021
+     A* Descrição.: Relação utilizadores com Grupos
+     A*
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP021
+     A            CDUSER        10A         TEXT('Código de Utilizador')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            CDDEPART       3A         TEXT('Departamento')
+     A            DTINICIO        L         TEXT('Inicio do Acesso')
+     A            DTTERMO         L         TEXT('Termo do Acesso')
+     A
+     A          K CDUSER
+     A          K NUSEQU

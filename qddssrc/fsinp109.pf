@@ -1,0 +1,135 @@
+     A*================================================================
+     A* Tabela....: FSINP109
+     A* Alias.....: Tab_Envio_DM_DC
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A                                      UNIQUE
+     A          R RSINP109                  TEXT('Tab_Envio_DM_DC')
+     A            NR             9S 0       COLHDG('Código')
+     A            CODEMP         4A         TEXT('Código da Empresa')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DATA           8A         TEXT('Data')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            NRPROC        50A         TEXT('Nº do Processo')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            NORDEM         2A         TEXT('Nº Ordem do Lesado')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10901       1A         ALIAS(INTERVENCERRADO)
+     A                                      TEXT('Interv. Encerrado (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DATAPART       8A         TEXT('Data da Participação')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10902      50A         ALIAS(EXISTEDAAA)
+     A                                      TEXT('Existe DAAA (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10903       1A         ALIAS(APLICLEIPORT)
+     A                                      TEXT('Fora do Território Nacional')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10904       1A         ALIAS(FACTCLIMEXCEP)
+     A                                      TEXT('Factores Climatérico Excep.')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10905       1A         ALIAS(SUSPFRAUDE)
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10906       8A         ALIAS(DATA1PEDIDOREGDM)
+     A                                      TEXT('Data 1º Contacto para autoriz+
+     A                                            ação Reg.DM')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10907       8A         ALIAS(DATAASSRESP)
+     A                                      TEXT('Assunção ou não de Responsab+
+     A                                            ilidade')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10908       1A         ALIAS(NOVADILIGREGDM)
+     A                                      TEXT('Nova deilgência para autoriza+
+     A                                            ção de regularização DM')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10909       8A         ALIAS(DATAAUTOREGDM)
+     A                                      TEXT('Data da autor.Reg. DM')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10910       8A         ALIAS(DATAAPINFADINTER)
+     A                                      TEXT('Data das Inform.adicionais')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10911       8A         ALIAS(DATADECFINALSEG)
+     A                                      TEXT('Data da comunicação Final')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10912       8A         ALIAS(DATAULTPAGINDEMINTEROFIC)
+     A                                      TEXT('Data do último Pagamento')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10913       8A         ALIAS(DATA1CONTACTO)
+     A                                      TEXT('Data 1º.Contacto')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10914       1A         ALIAS(DIREFECTREP)
+     A                                      TEXT('Direcção Efectiva da Repara+
+     A                                            ção (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10915       1A         ALIAS(NECDESMVEICULO)
+     A                                      TEXT('Necessidade de desmontagem +
+     A                                            do Veiculo (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10916       8A         ALIAS(DATADISPOFICINTERV)
+     A                                      TEXT('Data disponibilidade da ofici+
+     A                                            na e Segurado')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10917       8A         ALIAS(DATACONCPERITAGEM)
+     A                                      TEXT('Conclusão da Peritagem')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10918       8A         ALIAS(DATADISPRELATPERIT)
+     A                                      TEXT('Disponibilização do Relatóri+
+     A                                            o de Peritagem')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10919      50A         ALIAS(INFADRELEVAPRECPRZ12)
+     A                                      TEXT('Informações P12')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10920      50A         ALIAS(INFADRELEVAPRECPRZ13)
+     A                                      TEXT('Informações P13')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10921      50A         ALIAS(INFADRELEVAPRECPRZ14)
+     A                                      TEXT('Informações P14')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10922      50A         ALIAS(INFADRELEVAPRECPRZ15)
+     A                                      TEXT('Informações P15')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10923      50A         ALIAS(INFADRELEVAPRECPRZ16)
+     A                                      TEXT('Informações P16')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10924      50A         ALIAS(INFADRELEVAPRECPRZ17)
+     A                                      TEXT('Informações P17')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10925      50A         ALIAS(INFADRELEVAPRECPRZ18)
+     A                                      TEXT('Informações P18')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            ASSRESPONS    50A         TEXT('Assunção Responsabilidade+
+     A                                            pelo Segurador')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A
+     A          K NR

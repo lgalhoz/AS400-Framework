@@ -1,0 +1,101 @@
+     A*==============================================================================
+     A* Ficheiro..: FSINT100
+     A* Descrição.: Processos de Sinistros
+     A*             Este ficheiro é actualizado a partir de ficheiros de produção,
+     A*             e contém a informação normalizada.
+     A*
+     A* Origens...: Lista de Ficheiros Originais de onde foram extraídos os dados:
+     A*             [x] QS36F/G.SINPRO     = Processos de Sinistro Automóvel
+     A*             [x] QS36F/O.SINPRO     = Processos de Sinistro Outros Ramos
+     A*             [x] QS36F/IDSPRO       = Processos de Sinistro IDS
+     A*             [x] QS36F/FICI<AAMMDD> = Interface de Sinistros IDS Lusitânia
+     A*
+     A*==============================================================================
+     A                                      UNIQUE
+     A          R RSINT100
+     A            IPROC          1A         COLHDG('Identif.' 'Processo')
+     A            AAPROC         2S 0       COLHDG('Ano' 'Processo')
+     A            NSEQ           4S 0       COLHDG('Nº' 'Processo')
+     A            SPROC          1S 0       COLHDG('Situação' 'Processo')
+     A            DTINIC         8S 0       COLHDG('Data' 'Abertura')
+     A            DTRINI         8S 0       COLHDG('Data' 'Reabertura')
+     A            DTFIM          8S 0       COLHDG('Data' 'Encerramento')
+     A            TOTEST         9P 2       COLHDG('Total' 'Estimado')
+     A            PROV           9P 2       COLHDG('Valor Provisões')
+     A            PAGAM          9P 2       COLHDG('Valor Pagamentos')
+     A            RECUP          9P 2       COLHDG('Valor Recuperações')
+     A            DESPQP         9P 2       COLHDG('Despesas Q.P.')
+     A            RECUPQ         9P 2       COLHDG('Recuperações Q.P.')
+     A            CAUSA          2A         COLHDG('Causa Sinistro')
+     A            DTSIN          8S 0       COLHDG('Data Sinistro')
+     A            LOCSIN        50A         COLHDG('Local Sinistro')
+     A            CODCON         3S 0       COLHDG('Concelho')
+     A            FERID          1A         COLHDG('Feridos')
+     A            TESTM          1A         COLHDG('Testemunhas')
+     A            AUTORI         1A         COLHDG('Autoridade')
+     A            DTPART         8S 0       COLHDG('Data Participação')
+     A            FPART          1A         COLHDG('Forma Participação')
+     A            NOMPAR        40A         COLHDG('Nome Participante')
+     A            NSEG           5S 0       COLHDG('Nº Segurado')
+     A            TIPOAP         1S 0       COLHDG('Tipo Apólice')
+     A            SITAP          1S 0       COLHDG('Situação Apólice')
+     A            RM             2S 0       COLHDG('Ramo')
+     A            CPLSIN         7P 0       COLHDG('C.Postal' 'local sinistro')
+     A            AP             7S 0       COLHDG('Apólice')
+     A            DTAPOL         8S 0       COLHDG('Data Apólice')
+     A            DATMAT         8S 0       COLHDG('Data Matricula')
+     A            CAPINI         9P 0       COLHDG('Cap.Inicial')
+     A            QIVSN          1A         COLHDG('Qiv.(S/N)')
+     A            CAPQIV         5P 0       COLHDG('Cap.Qiv.')
+     A            PRIV           1A         COLHDG('Priv.Uso')
+     A            CAPPRV         5P 2       COLHDG('Cap.Priv.')
+     A            VEXTRA         5P 0       COLHDG('Valor Extras')
+     A            DUR            1S 0       COLHDG('Dur')
+     A            FRAC           1S 0       COLHDG('Frac')
+     A            FILL2          1A         COLHDG('Espaço disponivel')
+     A            R1             2S 0       COLHDG('Risco-1')
+     A            CAP1           9P 0       COLHDG('Cap-1')
+     A            FRQ1           9P 0       COLHDG('Frq-1')
+     A            R2             2S 0       COLHDG('Risco-2')
+     A            CAP2           9P 0       COLHDG('Cap-2')
+     A            FRQ2           9P 0       COLHDG('Frq-2')
+     A            R3             2S 0       COLHDG('Risco-3')
+     A            CAP3           9P 0       COLHDG('Cap-3')
+     A            FRQ3           9P 0       COLHDG('Frq-3')
+     A            TIPBON         1A         COLHDG('Tipo Bonus')
+     A            VALBON         9P 2       COLHDG('Valor Bonus')
+     A            TIPOPR         1A         COLHDG('Tipo Processo')
+     A            ACORDO         1A         COLHDG('DL83/2006')
+     A            REGSIN         1A         COLHDG('Regista Sinistro')
+     A            AGRAVA         1A         COLHDG('Agravamento')
+     A            NRPROC         6A         COLHDG('Nº Processo' 'de Abertura')
+     A            FLAG1          1A         COLHDG('Asterisco')
+     A            NNPROC         6A         COLHDG('Nº Proc')
+     A            FLAG2          1A         COLHDG('Asterisco')
+     A            FILL3          2A         COLHDG('FILLER')
+     A            AJFIN          1A         COLHDG('Ajuste Final')
+     A            NPARTI         6A         COLHDG('Nº Participação')
+     A            AJUDIC         1A         COLHDG('Acção Judicial')
+     A            DTRJUD         6S 0       COLHDG('Data Acção Judicial')
+     A            NMED           4S 0       COLHDG('Nº Mediador')
+     A            TMED           1A         COLHDG('Tipo Mediador')
+     A            CODFRQ         2S 0       COLHDG('Cod.Franquia')
+     A            MARC1         14A         COLHDG('Marca 1')
+     A            MATR1         11A         COLHDG('Matr.1')
+     A            CATV1          4S 0       COLHDG('Cat.Veiculo 1')
+     A            AAV1           2S 0       COLHDG('Ano Veiculo 1')
+     A            MARC2         14A         COLHDG('Marca 2')
+     A            MATR2         11A         COLHDG('Matr.2')
+     A            CATV2          4S 0       COLHDG('Cat.Veiculo 2')
+     A            AAV2           2S 0       COLHDG('Ano Veiculo 2')
+     A            IDS            1A         COLHDG('Ids')
+     A            CRDR           1A         COLHDG('Credor')
+     A            TPR            2S 0       COLHDG('Tabela')
+     A            PRESP          3P 0       COLHDG('% Resp.')
+     A            DTUACT         6S 0       COLHDG('Data Alteração')
+     A            USERID         8A         COLHDG('Utilizador')
+     A
+     A          K IPROC
+     A          K AAPROC
+     A          K NSEQ
+     A          K RAMO

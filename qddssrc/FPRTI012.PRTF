@@ -1,0 +1,84 @@
+     A*%%TS  DD  20140121  124037  lgalhoz     REL-V5.0.1  WDSc
+     A*%%PR 1066090I
+     A*%%FD Cobertura 05
+     A*%%EC
+     A          R RPRTI01201
+     A*%%TS  DD  20140121  124037  lgalhoz     REL-V5.0.1  WDSc
+     A*%%RI 00000
+     A                                      SKIPB(1)
+     A            MORAD         40A  O    51SPACEA(1)
+     A            SEG           40A  O    51SPACEA(1)
+     A            CPOST          7S 0O    51EDTWRD('    -   ')
+     A            DESCP         20A  O    61SPACEA(3)
+     A                                     2'Lisboa,'
+     A            FIELD1        30   O    +1SPACEA(4)
+     A                                     2'SEGURO DE MULTIRRISCOS RESIDENTIA'
+     A                                      SPACEA(1)
+     A                                     2'ALTERAÇÃO À APÓLICE Nº'
+     A                                      HIGHLIGHT
+     A            APOL           7S 0O    25SPACEA(5)
+     A                                      EDTWRD('       ')
+     A                                    39'ACTA ADICIONAL Nº'
+     A                                      HIGHLIGHT
+     A            ACTA           3S 0O    57EDTCDE(3)
+     A                                      SPACEA(3)
+     A                                     2'Estimado Cliente,'
+     A                                      SPACEA(2)
+     A                                     2'Com os nossos cumprimentos, enviam-
+     A                                      os, em  anexo, o Aviso de Cobrança -
+     A                                      relativo à renovação'
+     A                                      SPACEA(1)
+     A                                     2'da apólice acima indicada.'
+     A                                      SPACEA(2)
+     A                                     2'Temos ainda o prazer de informar q-
+     A                                      ue melhoramos o produto Multirrisco-
+     A                                      s Residentia e que a'
+     A                                      SPACEA(1)
+     A                                     2'partir do próximo vencimento do  c-
+     A                                      ontrato,  a  franquia  aplicável em-
+     A                                       caso de sinistro na'
+     A                                      SPACEA(1)
+     A                                     2'cobertura de Aluimento de  Terras -
+     A                                       será  reduzida  para  o  valor  a -
+     A                                      seguir indicados sem'
+     A                                      SPACEA(1)
+     A                                     2'qualquer aumento de prémio:'
+     A                                      SPACEA(3)
+     A                                    10'COBERTURA'
+     A                                      HIGHLIGHT
+     A                                    35'FRANQUIA POR SINISTRO'
+     A                                      HIGHLIGHT
+     A                                    72'ANTES'
+     A                                      HIGHLIGHT
+     A                                    84'PROXIMA'
+     A                                      SPACEA(1)
+     A                                      HIGHLIGHT
+     A                                    83'ANUIDADE'
+     A                                      SPACEA(1)
+     A                                      HIGHLIGHT
+     A                                     5'Aluimento de Terras'
+     A                                    27'10% dos Prejuízos Indemnizáveis no-
+     A                                       mínimo'
+     A                                    71'€ 750,00'
+     A                                    83'€ 250,00'
+     A                                      SPACEA(4)
+     A                                     2'Esperando que  estas  condições  m-
+     A                                      ereçam a sua satisfação e agradecen-
+     A                                      do a preferência com'
+     A                                      SPACEA(1)
+     A                                     1' que V.Exa.  nos  tem  distinguido-
+     A                                      ,  reiteramos  os nosso cumprimento-
+     A                                      s de elevada estima e'
+     A                                      SPACEA(1)
+     A                                     2'consideração.'
+     A                                      SPACEA(3)
+     A                                     9'LUSITANIA COMPANHIA DE SEGUROS,S.A-
+     A                                      .'
+     A                                      SPACEA(1)
+     A                                      HIGHLIGHT
+     A                                    17'p.p. José Mata, Lda'
+     A                                      SPACEA(1)
+     A                                      HIGHLIGHT
+     A                                     3'Processado por computador não care-
+     A                                      ce de assinatura'
+     A*%%GP REPORT1    01

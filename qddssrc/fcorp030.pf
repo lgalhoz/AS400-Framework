@@ -1,0 +1,15 @@
+     A*===============================================================
+     A* Ficheiro...: FCORP030
+     A* Descrição..:                      eis
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCORP030
+ #0  A            CDDOCUM        9S 0       TEXT('Código do Documento')
+ #1  A            NMDOCUM      100A         TEXT('Nome do Documento')
+ #2  A            LOCALIZA     100A         TEXT('Localização do Documento')
+ #3  A            CODTEMPL       9S 0       TEXT('Código de Template')
+ #4  A            CODUSER       10A         TEXT('Utilizador')
+ #5  A            DTCRIA          L
+ #6  A            HRCRIA          T
+     A
+     A          K CDDOCUM

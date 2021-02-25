@@ -1,0 +1,18 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP027
+     A* Descrição..: Definição dos Campos nos Ficheiros
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLP027
+     A            CDFIELD        9S 0       TEXT('Código')
+     A            NOFIELD       15A         TEXT('Nome do Campo')
+     A            DSFIELD       40A         TEXT('Descrição do Campos')
+     A            DIMFIELD       4S 0       TEXT('Dimensão')
+     A            DECFIELD       4S 0       TEXT('Decimais')
+     A            TPFIELD        2A         TEXT('Tipo de Campo')
+     A
+     A*-----> Campos de Controlo
+     A            GRL02701        L         TEXT('Data de Criação')
+     A            GRL02702        L         TEXT('Data de Alteração')
+     A
+     A          K CDFIELD

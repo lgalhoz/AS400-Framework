@@ -1,0 +1,22 @@
+     A*================================================================
+     A* Tabela....: FCOBP022
+     A* Descrição.: Registo do Contacto por mail
+     A*
+     A*================================================================
+     A                                      UNIQUE
+     A          R RCOBP022
+     A            CDCONT         9S 0       TEXT('Código de Contacto')
+     A            CDMAIL         3S 0       TEXT('Sequencia do Contacto')
+     A
+     A            CDTEMPL        3S 0       TEXT('Template da Mensagem')
+     A            VARIAVEIS    300A         TEXT('Variáveis: "CCCC";"XXXX"')
+     A            CODERRO        7A         TEXT('Código de Erro')
+     A            CODFORM        7A         TEXT('Código de Formulário')
+     A
+     A            ICENVIO        1S 0       TEXT('Email enviado')
+     A            DTENVIO        8S 0       TEXT('Data de Envio')
+     A            DTERRO         8S 0       TEXT('Erro no envio')
+     A            DTRESPO        8S 0       TEXT('Data de Resposta')
+     A
+     A          K CDCONT
+     A          K CDMAIL

@@ -1,0 +1,8 @@
+     A*===============================================================
+     A* Ficheiro.: FPRDP12401
+     A* Descrição: Validar se o programa está em execução
+     A*
+     A*===============================================================
+     A          R RPRDP124                  PFILE(FPRDP124)
+     A
+     A          K CDSTATUS

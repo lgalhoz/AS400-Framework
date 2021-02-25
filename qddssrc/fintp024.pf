@@ -1,0 +1,30 @@
+     A*================================================================
+     A* Tabela....: FINTP024
+     A* Descrição.: Excepções localizadas ao nível das Comissões
+     A*
+     A*             Aqui são controladas as diferenças no comissionamento,
+     A*             aquando da criação do recibo, porque o Segurador não
+     A*             calcolou o valor correcto, ou então no pagamento porque
+     A*             tem de abatar a comissão de cobrança.
+     A*
+     A*             Esta informação vai ter de gerar um recibo adicional
+     A*             para acerto das comissões, fechando desta forma a
+     A*             informação de excepção.
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP024
+     A            CDEXCEPT       9S 0       TEXT('Código de Excepçao')
+     A
+     A*==> Controlo de diferenças nas Comissões
+     A            TPCALC         3A         TEXT('Tipo de Calculo')
+     A            IMCOMIS1      11S 2       TEXT('Comissão Cobrança')
+     A            IMCOMIS2      11S 2       TEXT('Comissão Mediação')
+     A            IMCOMIS3      11S 2       TEXT('Comissão Corretagem')
+     A            DFTOCOM        9S 3       TEXT('Dif.Total Comissão')
+     A
+     A*==> Informação do Recibo de regularização
+     A            NURECIBO       9S 0       TEXT('Recibo de Regularização')
+     A            DTREGULA        L         TEXT('Data de Regularização')
+     A            USRREGUL      10A         TEXT('data de Regularização')
+     A
+     A          K CDEXCEPT

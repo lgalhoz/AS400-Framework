@@ -1,0 +1,28 @@
+     A*===============================================================
+     A* Ficheiro...: FPRDP015
+     A* Descrição..: Detalhe do Item Generico
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP015
+     A            CDRAMO         2S 0       TEXT('Ramo')
+     A            NUAPOL         7S 0       TEXT('Número da Apólice')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            NUSEQHST       5S 0       TEXT('Histórico')
+     A            DSITEM       200A         TEXT('Descrição do Item')
+     A            CDRISCO01      1A
+     A            CDRISCO02      1A
+     A            CDRISCO03      1A
+     A            DSOBSERV1     71A         TEXT('Linha Observação')
+     A            DSOBSERV2     71A         TEXT('Linha Observação')
+     A
+     A*==> Campos de controlo do Registo
+     A            PRD01501        L         TEXT('Data de Inicio')
+     A            PRD01502        L         TEXT('Data de Termo')
+     A            PRD01503       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A            PRD01504      10A         TEXT('Quem Criou')
+     A            PRD01505      10A         TEXT('Quem Alterou')
+     A
+     A          K CDRAMO
+     A          K NUAPOL
+     A          K NUSEQU
+     A          K NUSEQHST

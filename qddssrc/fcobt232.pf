@@ -1,0 +1,7 @@
+     A*===============================================================
+     A* Ficheiro...: FCOBT232
+     A* Descrição..: Estrutura do ficheiro de Texto
+     A*===============================================================
+     A          R RCOBT232                  TEXT('Estrutura do Ficheiro Texto')
+     A
+     A            TXTXML       130A         TEXT('Instrução XML')

@@ -1,0 +1,58 @@
+     A*==============================================================================
+     A* Ficheiro..: FSINT120
+     A* Descrição.: Pagamentos de Sinistros
+     A*             Este ficheiro é actualizado a partir de ficheiros de produção,
+     A*             e contém a informação normalizada.
+     A*
+     A* Origens...: Lista de Ficheiros Originais de onde foram extraídos os dados:
+     A*             [x] QS36F/G.SINPAG     = Processos de Sinistro Automóvel
+     A*             [x] QS36F/O.SINPAG     = Processos de Sinistro Outros Ramos
+     A*             [x] QS36F/IDSPAG       = Processos de Sinistro IDS
+     A*             [x] QS36F/FICI<AAMMDD> = Interface de Sinistros IDS Lusitânia
+     A*
+     A*==============================================================================
+     A                                      UNIQUE
+     A          R RSINT128
+     A            NORDSIN        9S 0       COLHDG('Número de Ordem')
+     A            NLINHA         3S 0       COLHDG('Nº Linha')
+     A
+     A            TIPMOV         3S 0       COLHDG('Tipo' 'Movimt.')
+     A            DTMOV          8S 0       COLHDG('Data' 'Movimt.')
+     A            DESCR         30A         COLHDG('Descrição')
+     A            VALOR          9S 2       COLHDG('Valor')
+     A            VALR1          9S 2       COLHDG('Valor' 'Risco1')
+     A            VALR3          9S 2       COLHDG('Valor' 'Risco3')
+     A            VALR45         9S 2       COLHDG('Valor' 'Risco4+5')
+     A            VLMIP          9S 2       COLHDG('Valor' 'MIP')
+     A            VLDTRA         9S 2       COLHDG('Valor' 'D/Tratam.')
+     A            CTAIND        10A         COLHDG('Conta Indemnização')
+     A            PAGFIN         1A         COLHDG('Pag.' 'Final?')
+     A            P100           1A         COLHDG('100%?')
+     A            FORPAG         1A         COLHDG('Forma' 'Pagmto')
+     A            DTPAG          8S 0       COLHDG('Data' 'Pagmto')
+     A            DOCREF        10A         COLHDG('Doc.' 'Ref.')
+     A            CD08           2A         COLHDG('      ')
+     A            BANCO          2S 0       COLHDG('Banco')
+     A            DEPEN          3S 0       COLHDG('Dependencia')
+     A            TIPENT         2S 0       COLHDG('Tipo' 'Entidade')
+     A            NUMENT         5S 0       COLHDG('Num.' 'Entidade')
+     A            NOMBEN        40A         COLHDG('Nome' 'Benef.')
+     A            NORBEN        40A         COLHDG('Morada' 'Benef.')
+     A            LOCBEN        20A         COLHDG('Local.' 'Benef.')
+     A            CPBEN          7S 0       COLHDG('Cod.Post' 'Benef.')
+     A            DTFACT         8S 0       COLHDG('Data' 'Factura')
+     A            AASIN          4S 0       COLHDG('Ano' 'Sinistro')
+     A            MMSIN          2S 0       COLHDG('Mês' 'Sinistro')
+     A            NODOC         15A         COLHDG('Nº Documento')
+     A            VLDMAT         9S 2       COLHDG('Danos' 'Materiais')
+     A            VLDCOR         9S 2       COLHDG('Danos' 'Corporais')
+     A            NRECIB         5A         COLHDG('Nº Recibo')
+     A            RECEMI         1A         COLHDG('Rec.Emitido?')
+     A            ENVIO          1A         COLHDG('Envio?')
+     A            CHEMI          1A         COLHDG('CH Emitido?')
+     A
+     A            DTUACT         8S 0       COLHDG('Data' 'Alteração')
+     A            USERID        10A         COLHDG('Utilizador')
+      *
+     A          K NORDSIN
+     A          K NLINHA

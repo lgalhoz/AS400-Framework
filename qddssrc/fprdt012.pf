@@ -1,0 +1,16 @@
+     A*===============================================================
+     A* Ficheiro...: FPRDP012
+     A* Descrição..: Textos das notas descritivas
+     A* Observação.: Parameterizado manualmente.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP012
+     A            CDPROD         5S 0       TEXT('Código')
+     A            NUAPOL         7S 0       TEXT('Número da Apólice')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            DSDETAIL     150A         TEXT('Texto de detalho')
+     A            ICDETAIL       1A         TEXT('Existe mais detalhe')
+     A
+     A          K CDPROD
+     A          K NUAPOL
+     A          K NUSEQU

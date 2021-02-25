@@ -1,0 +1,3 @@
+     A          R REGADC                    TEXT('Recepção ADC')
+      *
+     A            TIADC         63A         COLHDG('Reg. ADC')

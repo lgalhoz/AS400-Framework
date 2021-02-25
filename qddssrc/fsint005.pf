@@ -1,0 +1,8 @@
+     A                                      UNIQUE
+     A          R RSINT010
+     A            RAMO           1A
+     A            MODALIDADE     2A
+     A            SUBMODALID     2A         ALIAS(SUBMODALIDADE)
+     A
+     A          K RAMO
+     A          K MODALIDADE

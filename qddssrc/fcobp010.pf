@@ -1,0 +1,30 @@
+     A*================================================================
+     A* Tabela....: FCOBP010
+     A* Descrição.: Gestão de Contactos
+     A*
+     A*             Sempre que seja detectada uma excepção ao nível
+     A*             do calculo da comissão do Recibo, ou então ao nível
+     A*             do valor do prémio, atraso no pagamento do recibo
+     A*             ou recibo em falta para a apólice, é gerado um registo.
+     A*================================================================
+     A                                      UNIQUE
+     A          R RCOBP010
+     A            CDCONT         9S 0       TEXT('Código de Contacto')
+     A            MTCONT         2A         TEXT('Motivo do Contacto')
+     A
+     A*==> Ligação ao Recibos/Apólices
+     A            TPENTID        1A         TEXT('Tipo de Entidade')
+     A            NUORDEM        9S 0       TEXT('Número de Ordem')
+     A
+     A*==> Agendamento de Contactos
+     A            DTPXCNT        8S 0       TEXT('Data próximo Contacto')
+     A            HRPXCNT        6S 0       TEXT('Hora do próximo Contacto')
+     A
+     A*==> Controlo de Contactos
+     A            ICESTAD        1A         TEXT('Estado do Contacto')
+     A            CDUSER        10A         TEXT('Utilizador Responsável')
+     A            NUOPERA        5S 0       TEXT('Número de Operação')
+     A            DTINICIO       8S 0       TEXT('Data de Inicio')
+     A            DTTERMO        8S 0       TEXT('Data de Termo')
+     A
+     A          K CDCONT

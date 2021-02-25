@@ -1,0 +1,175 @@
+     A*%%TS  SD  20140422  124440  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      CF01(01 'F01')
+     A                                      CF02(02 'F02')
+     A                                      CF03(03 'F03')
+     A                                      CF04(04 'F04')
+     A                                      CF05(05 'F05')
+     A                                      CF06(06 'F06')
+     A                                      CF07(07 'F07')
+     A                                      CF08(08 'F08')
+     A                                      CF09(09 'F09')
+     A                                      CF10(10 'F10')
+     A                                      CF11(11 'F11')
+     A                                      CF12(12 'F12')
+     A                                      CF13(13 'F13')
+     A                                      CF14(14 'F14')
+     A                                      CF15(15 'F15')
+     A                                      CF16(16 'F16')
+     A                                      CF17(17 'F17')
+     A                                      CF18(18 'F18')
+     A                                      CF19(19 'F19')
+     A                                      CF20(20 'F20')
+     A                                      CF21(21 'F21')
+     A                                      CF22(22 'F22')
+     A                                      CF23(23 'F23')
+     A                                      CF24(24 'F24')
+     A          R RCOBE20000
+     A*%%TS  SD  20120224  154940  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                  1 71USER
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A            S#PGM         10A  O  2 71
+     A            DS#FNC        57A  O  2 12DSPATR(HI)
+     A            DS#PGM        57A  O  1 12DSPATR(HI)
+     A          R RCOBE20002                SFL
+     A*%%TS  SD  20140327  151726  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            CDFILE         9S 0H
+     A            CDREGIS        9S 0H
+     A            CDEXCEPT       9S 0H
+     A            NUMORDAP       9S 0H
+     A            OPTION         1A  I  9  3
+     A            LST#DET       76   O  9  5
+     A  62                                  COLOR(WHT)
+     A  60                                  COLOR(RED)
+     A  64                                  COLOR(BLU)
+     A*           CURS#          4Y 0H      SFLRCDNBR(CURSOR)
+     A          R RCOBE20003                SFLCTL(RCOBE20002)
+     A*%%TS  SD  20140327  151726  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      SFLSIZ(0013)
+     A                                      SFLPAG(0012)
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A            RRN            4S 0H      SFLRCDNBR(CURSOR *TOP)
+     A            LST#HDR       76A  O  8  5DSPATR(HI)
+     A                                      DSPATR(RI)
+     A            DS#OPT01      76A  O  5  4COLOR(BLU)
+     A            DSCRITER      12A  O  7  2
+     A            CRITERIA      40A  B  7 15
+     A                                  8  2'Op'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(RI)
+     A                                  4  2'Escolha a Opção'
+     A            DS#OPT02      76A  O  6  4COLOR(BLU)
+     A          R RCOBE20005
+     A*%%TS  SD  20140321  112058  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      RTNCSRLOC(*WINDOW &CM#CROW &CM#CCOL)
+     A                                      RTNCSRLOC(&CM#NMREC &CM#NMFLD)
+     A                                      CSRLOC(CM#ROW     CM#COL)
+     A                                      OVERLAY
+     A            CM#CROW        3S 0H
+     A            CM#ROW         3S 0H
+     A            CM#CCOL        3S 0H
+     A            CM#COL         3S 0H
+     A            CM#NMREC      10A  H
+     A            CM#NMFLD      10A  H
+     A                                  5  2'Informação do Ficheiro de Interfac-
+     A                                      e'
+     A                                      COLOR(BLU)
+     A                                  6  4'Ficheiro..:'
+     A            CDFILE         9S 0O  6 16DSPATR(UL)
+     A            NOFILE        40A  O  6 26DSPATR(UL)
+     A                                  7  4'Companhia.:'
+     A            CCOMP          3S 0O  7 16DSPATR(UL)
+     A            DSCOMP        40A  O  7 20DSPATR(UL)
+     A                                 11  4'Nom.Orig..:'
+     A            ORNAME        40A  O 11 16DSPATR(UL)
+     A                                 15  4'Data......:'
+     A            DTFILE         8Y 0O 15 16EDTWRD('  -  -    ')
+     A                                      DSPATR(UL)
+     A                                 15 31'Registos..:'
+     A            QTDREGIS       5S 0O 15 43DSPATR(UL)
+     A                                 12  4'Conta.....:'
+     A            CDCONTA        5S 0O 12 16DSPATR(UL)
+     A                                  8  4'Tipo......:'
+     A            TPFILE         3A  O  8 16DSPATR(UL)
+     A            DSTIPO        40A  O  8 20DSPATR(UL)
+     A                                 14  2'Informação de Controlo'
+     A                                      COLOR(BLU)
+     A                                 10  2'Informação especifica das Companhi-
+     A                                      as'
+     A                                      COLOR(BLU)
+     A            DSESTAD       15   O  4 66DSPATR(HI)
+     A          R RCOBE20006
+     A*%%TS  SD  20140422  124440  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      RTNCSRLOC(*WINDOW &CM#CROW &CM#CCOL)
+     A                                      RTNCSRLOC(&CM#NMREC &CM#NMFLD)
+     A                                      CSRLOC(CM#ROW     CM#COL)
+     A                                      OVERLAY
+     A            CM#CROW        3S 0H
+     A            CM#ROW         3S 0H
+     A            CM#CCOL        3S 0H
+     A            CM#COL         3S 0H
+     A            CM#NMREC      10A  H
+     A            CM#NMFLD      10A  H
+     A                                  5  2'Informação da Excepção'
+     A                                      COLOR(BLU)
+     A                                  6  4'Excepção..:'
+     A            CDEXCEPT       9S 0O  6 16DSPATR(UL)
+     A                                  7  4'Companhia.:'
+     A            CCOMP          3S 0O  7 16DSPATR(UL)
+     A            DSCOMP        40A  O  7 20DSPATR(UL)
+     A                                  8  4'Data Reg..:'
+     A            DTEXCEPT       8Y 0O  8 16EDTWRD('  -  -    ')
+     A                                      DSPATR(UL)
+     A                                  9  4'Registos..:'
+     A            QTREGIS        5Y 0O  9 16DSPATR(UL)
+     A                                      EDTCDE(1)
+     A            DSTIPO        40A  O  6 26DSPATR(UL)
+     A            DSESTAD       15A  O  4 66DSPATR(HI)
+     A  65                             15  4'Data Resol:'
+     A  65        DTREGULA       8Y 0O 15 16EDTWRD('  -  -    ')
+     A                                      DSPATR(UL)
+     A  65                             12  4'Val.Total.:'
+     A  65        DFTCOM         9Y 2O 12 16DSPATR(UL)
+     A                                      EDTWRD(' .   .  0,  -')
+     A  65                             14  2'Informação Sobre Correcção'
+     A                                      COLOR(BLU)
+     A  65                             16  4'Recibo....:'
+     A  65        NURECIBO       9S 0O 16 16DSPATR(UL)
+     A  65                             17  4'Utilizador:'
+     A  65        USRREGUL      10A  O 17 16DSPATR(UL)
+     A  65                             11  2'Valor apurador para corrigir as di-
+     A                                      ferenças'
+     A                                      COLOR(BLU)
+     A          R RCOBE20098
+     A*%%TS  SD  20130903  114317  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A                                 12  9'|              NÃO EXISTEM REGISTO-
+     A                                      S               |'
+     A                                      DSPATR(HI)
+     A                                 10  9'+----------------------------------
+     A                                      ----------------+'
+     A                                      DSPATR(HI)
+     A                                 13  9'|                                 -
+     A                                                      |'
+     A                                      DSPATR(HI)
+     A                                 14  9'+----------------------------------
+     A                                      ----------------+'
+     A                                      DSPATR(HI)
+     A                                 11  9'|                                 -
+     A                                                      |'
+     A                                      DSPATR(HI)
+     A          R RCOBE20099
+     A*%%TS  SD  20130910  124026  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            DS#KEY01      78A  O 22  2COLOR(BLU)
+     A            DS#KEY02      78A  O 23  2COLOR(BLU)
+     A            ERR#MSG       78A  O 24  2COLOR(RED)

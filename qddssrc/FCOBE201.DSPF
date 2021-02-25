@@ -1,0 +1,317 @@
+     A*%%TS  SD  20140801  170429  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      CF01(01 'F01')
+     A                                      CF02(02 'F02')
+     A                                      CF03(03 'F03')
+     A                                      CF04(04 'F04')
+     A                                      CF05(05 'F05')
+     A                                      CF06(06 'F06')
+     A                                      CF07(07 'F07')
+     A                                      CF08(08 'F08')
+     A                                      CF09(09 'F09')
+     A                                      CF10(10 'F10')
+     A                                      CF11(11 'F11')
+     A                                      CF12(12 'F12')
+     A                                      CF13(13 'F13')
+     A                                      CF14(14 'F14')
+     A                                      CF15(15 'F15')
+     A                                      CF16(16 'F16')
+     A                                      CF17(17 'F17')
+     A                                      CF18(18 'F18')
+     A                                      CF19(19 'F19')
+     A                                      CF20(20 'F20')
+     A                                      CF21(21 'F21')
+     A                                      CF22(22 'F22')
+     A                                      CF23(23 'F23')
+     A                                      CF24(24 'F24')
+     A          R RCOBE20100
+     A*%%TS  SD  20120224  154940  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                  1 71USER
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A            S#PGM         10A  O  2 71
+     A            DS#FNC        57A  O  2 12DSPATR(HI)
+     A            DS#PGM        57A  O  1 12DSPATR(HI)
+     A          R RCOBE20105
+     A*%%TS  SD  20140724  115342  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      RTNCSRLOC(*WINDOW &CM#CROW &CM#CCOL)
+     A                                      RTNCSRLOC(&CM#NMREC &CM#NMFLD)
+     A                                      CSRLOC(CM#ROW     CM#COL)
+     A                                      OVERLAY
+     A            CM#CROW        3S 0H
+     A            CM#ROW         3S 0H
+     A            CM#CCOL        3S 0H
+     A            CM#COL         3S 0H
+     A            CM#NMREC      10A  H
+     A            CM#NMFLD      10A  H
+     A                                  4  2'Registo...:'
+     A                                      DSPATR(HI)
+     A            CDREGIS        9S 0O  4 14DSPATR(UL)
+     A            CCOMP          3S 0O  6 16DSPATR(UL)
+     A                                  6  4'Companhia.:'
+     A            DSCOMP        40A  O  6 23DSPATR(UL)
+     A                                  7  4'Ramo/Apól.:'
+     A                                 18  2'Valores originais do Recibo '
+     A                                      COLOR(BLU)
+     A                                      DSPATR(RI)
+     A                                  5  2'Informação original do Recibo     -
+     A                                                                         -
+     A                                                '
+     A                                      COLOR(BLU)
+     A                                      DSPATR(RI)
+     A            CDRMORG       10A  O  7 16DSPATR(UL)
+     A                                  7 27'/'
+     A            NUAPOLOR      10A  O  7 29DSPATR(UL)
+     A                                  7 46'Recibo....:'
+     A                                  9  4'Segurado..:'
+     A            NOMSEG        60A  O  9 16DSPATR(UL)
+     A            NUMRECOR      15A  O  7 58DSPATR(UL)
+     A                                  8  4'Periodo...:'
+     A*----
+     A*
+     A  60                             10  2'Correspondência do Recibo com o Co-
+     A                                      rretor                             -
+     A                                                '
+     A  60                                  COLOR(BLU)
+     A                                      DSPATR(RI)
+     A  60                             11  4'Ramo/Apól.:'
+     A  60        CDRAMO         3S 0O 11 16DSPATR(UL)
+     A  60                             11 20'/'
+     A  60        NUAPOL        10A  O 11 22DSPATR(UL)
+     A  60        DSRAMO        48A  O 11 33DSPATR(UL)
+     A  60                             12  4'Segurado..:'
+     A  60        NUMSEG         8S 0O 12 16DSPATR(UL)
+     A  60        NOME          40A  O 12 25DSPATR(UL)
+     A  62        NUMORDEM       8  0O 14 49DSPATR(UL)
+     A                                      COLOR(WHT)
+     A  62        DTPAGAAN       8Y 0O 14 58DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A                                      COLOR(WHT)
+     A  62                             14 69'/'
+     A  62        DSSTREC       10A  O 14 71DSPATR(UL)
+     A                                      COLOR(WHT)
+     A  62                             15  4'Recibo.Cor:'
+     A  62        NUMREC         9A  O 15 16DSPATR(UL)
+     A*
+     A*----
+     A            DTINICIO       8Y 0O  8 16DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A            DTTERMO        8Y 0O  8 29DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A                                  8 27'a'
+     A                                  8 46'Entr/Limit:'
+     A            DTENTRAD       8Y 0O  8 58DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A                                 20  4'Pr.Comerc.:'
+     A            IMPRCOM       11Y 2O 20 16DSPATR(UL)
+     A                                      EDTWRD('   .   .  0,  ')
+     A                                 19  4'Pr.Total..:'
+     A            IMTOTREC      11Y 2O 19 16DSPATR(UL)
+     A                                      EDTWRD('   .   .  0,  ')
+     A            DSESTADO      28A  O  4 53DSPATR(UL)
+     A            DSCOM2        11A  O 18 37
+     A            DSCOM1        11A  O 17 37
+     A            DSCOM3        11A  O 19 37
+     A            COMJM1         7Y 2O 17 71DSPATR(UL)
+     A                                      EDTWRD('  .  0,  -')
+     A            COMJM2         7Y 2O 18 71DSPATR(UL)
+     A                                      EDTWRD('  .  0,  -')
+     A            COMJM3         7Y 2O 19 71DSPATR(UL)
+     A                                      EDTWRD('  .  0,  -')
+     A            IMCOMIS3       7Y 2O 19 49DSPATR(UL)
+     A                                      EDTWRD('  .  0,  -')
+     A            IMCOMIS2       7Y 2O 18 49DSPATR(UL)
+     A                                      EDTWRD('  .  0,  -')
+     A            IMCOMIS1       7Y 2O 17 49DSPATR(UL)
+     A                                      EDTWRD('  .  0,  -')
+     A            DTLIMITE       8Y 0O  8 71DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A                                  8 69'/'
+     A            DSTPREC       20A  O  4 24DSPATR(UL)
+     A                                 20 37'Val.total.:'
+     A                                      DSPATR(RI)
+     A                                      COLOR(WHT)
+     A            IMCOMTOT       7Y 2O 20 49EDTWRD('  .  0,  -')
+     A                                      DSPATR(UL)
+     A                                      COLOR(WHT)
+     A            IMCOMJM        7Y 2O 20 71EDTWRD('  .  0,  -')
+     A                                      DSPATR(UL)
+     A                                      COLOR(WHT)
+     A            PERCOM02       5Y 3O 21 74DSPATR(UL)
+     A                                      EDTWRD('  ,   %')
+     A                                      COLOR(WHT)
+     A                                 15 35'Comissão do Recibo (recebida e cal-
+     A                                      culada)     '
+     A                                      COLOR(BLU)
+     A                                      DSPATR(RI)
+     A                                 16 37'              Original| Diferença|-
+     A                                        Esperado'
+     A                                      DSPATR(RI)
+     A                                      COLOR(WHT)
+     A            PERCOM01       5Y 3O 21 52DSPATR(UL)
+     A                                      EDTWRD('  ,   %')
+     A                                      COLOR(WHT)
+     A                                 21 37'Perc.total:'
+     A                                      COLOR(WHT)
+     A                                      DSPATR(RI)
+     A            DIFCOM1        7Y 2O 17 60DSPATR(UL)
+     A                                      EDTWRD('  .  0,  -')
+     A            DIFCOM2        7Y 2O 18 60DSPATR(UL)
+     A                                      EDTWRD('  .  0,  -')
+     A            DIFCOM3        7Y 2O 19 60DSPATR(UL)
+     A                                      EDTWRD('  .  0,  -')
+     A            IMCOMDIF       7Y 2O 20 60DSPATR(UL)
+     A                                      EDTWRD('  .  0,  -')
+     A                                      COLOR(WHT)
+     A  60                             13  4'Med.C/Cob.:'
+     A  60        CODMEDIACC     3Y 0O 13 16DSPATR(UL)
+     A                                      EDTWRD('   ')
+     A  60        NOMMEDIACC    10A  O 13 20DSPATR(UL)
+     A                                 21  4'Capital...:'
+     A            IMCAPITAL     11Y 2O 21 16DSPATR(UL)
+     A                                      EDTWRD('   .   .  0,  ')
+     A  60                             14  4'Med.S/cob.:'
+     A  60        CODMEDIASC     3Y 0O 14 16DSPATR(UL)
+     A                                      EDTWRD('   ')
+     A  60        NOMMEDIASC    10A  O 14 20DSPATR(UL)
+     A  60        TAXMEDIACC     5  5O 13 31DSPATR(UL)
+     A                                      EDTWRD('  ,   %')
+     A  60        TAXMEDIASC     5  5O 14 31DSPATR(UL)
+     A                                      EDTWRD('  ,   %')
+     A  60        COMMEDCC       7  2O 13 39DSPATR(UL)
+     A                                      EDTWRD('  .   ,  ')
+     A  60        COMMEDSC       7  2O 14 39DSPATR(UL)
+     A                                      EDTWRD('  .   ,  ')
+     A  62                             13 49' N.Ordem|Dt.Cobrança|   Estado  '
+     A                                      DSPATR(RI)
+     A                                      COLOR(WHT)
+     A          R RCOBE20107
+     A*%%TS  SD  20140801  170429  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(4 10 13 60)
+     A                                  1 16'Criar Relação com José Mata'
+     A                                      DSPATR(HI)
+     A                                  3  2'Informação do Recibo '
+     A                                      COLOR(BLU)
+     A                                  4  5'Companhia....:'
+     A                                  5  5'Ramo/Apólice.:'
+     A                                  7  2'Informação José Mata '
+     A                                      COLOR(BLU)
+     A                                  8  5'Companhia....:'
+     A                                  9  5'Ramo/Apólice.:'
+     A            FLD001         3  0O  4 20
+     A            FLD004         3Y 0B  8 20EDTWRD('   ')
+     A                                      DSPATR(HI)
+     A            FLD005         3Y 0B  9 20EDTWRD('   ')
+     A                                      DSPATR(HI)
+     A                                  9 24'/'
+     A            FLD003        10   O  5 20
+     A                                  5 31'/'
+     A            FLD007        15   O  5 33
+     A                                 12  2'F03=Sair  F12=Cancelar'
+     A                                      COLOR(BLU)
+     A                                 10  5'Número Ordem.:'
+     A            FLD008         6Y 0B 10 20DSPATR(HI)
+     A                                      EDTWRD('      ')
+     A            FLD009        10Y 0B  9 26DSPATR(HI)
+     A                                      EDTWRD('          ')
+     A          R RCOBE20108
+     A*%%TS  SD  20140429  154522  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      RTNCSRLOC(*WINDOW &CM#CROW &CM#CCOL)
+     A                                      RTNCSRLOC(&CM#NMREC &CM#NMFLD)
+     A                                      CSRLOC(CM#ROW     CM#COL)
+     A                                      OVERLAY
+     A            CM#CROW        3S 0H
+     A            CM#ROW         3S 0H
+     A            CM#CCOL        3S 0H
+     A            CM#COL         3S 0H
+     A            CM#NMREC      10A  H
+     A            CM#NMFLD      10A  H
+     A                                  4  2'Registo...:'
+     A                                      DSPATR(HI)
+     A            CDREGIS        9S 0O  4 14DSPATR(UL)
+     A            CCOMP          3S 0O  6 16DSPATR(UL)
+     A                                  6  4'Companhia.:'
+     A            DSCOMP        40A  O  6 23DSPATR(UL)
+     A                                  7  4'Ramo/Apól.:'
+     A                                 16  2'Valores originais do Recibo '
+     A                                      COLOR(BLU)
+     A                                      DSPATR(RI)
+     A                                  5  2'Informação original do Recibo     -
+     A                                                                         -
+     A                                                '
+     A                                      COLOR(BLU)
+     A                                      DSPATR(RI)
+     A            CDRMORG       10A  O  7 16DSPATR(UL)
+     A                                  7 27'/'
+     A            NUAPOLOR      10A  O  7 29DSPATR(UL)
+     A                                  7 46'Recibo....:'
+     A                                  9  4'Benefic...:'
+     A            NOMBENEF      40A  O  9 26DSPATR(UL)
+     A            NUMRECOR      15A  O  7 58DSPATR(UL)
+     A                                  8  4'Periodo...:'
+     A*----
+     A*
+     A  60                             10  2'Correspondência do Recibo com o Co-
+     A                                      rretor                             -
+     A                                                '
+     A  60                                  COLOR(BLU)
+     A                                      DSPATR(RI)
+     A  60                             12  4'Ramo/Apól.:'
+     A  60        CDRAMO         3S 0O 12 16DSPATR(UL)
+     A  60                             12 20'/'
+     A  60        NUAPOL        10A  O 12 22DSPATR(UL)
+     A  60        DSRAMO        48A  O 12 33DSPATR(UL)
+     A  60                             11  4'Segurado..:'
+     A  60        NUMSEG         8S 0O 11 16DSPATR(UL)
+     A  60        NOME          40A  O 11 26DSPATR(UL)
+     A*----
+     A*
+     A  62                             13  4'Num.Ordem.:'
+     A  62        NUMORDEM       8S 0O 13 16DSPATR(UL)
+     A  62        DTPAGAAN       8Y 0O 13 26DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A  62                             13 37'/'
+     A  62        DSSTREC       10A  O 13 39DSPATR(UL)
+     A  62                             14  4'Recibo....:'
+     A  62        NUMREC         9A  O 14 16DSPATR(UL)
+     A*
+     A*----
+     A            DTINICIO       8Y 0O  8 16DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A            DTTERMO        8Y 0O  8 29DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A                                  8 27'a'
+     A                                  8 46'Entr/Limit:'
+     A            DTENTRAD       8Y 0O  8 58DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A                                 18  4'Data......:'
+     A                                 17  4'Valor tot.:'
+     A            IMTOTREC      11Y 2O 17 16DSPATR(UL)
+     A                                      EDTWRD('   .   .  0,  ')
+     A            DSESTADO      28A  O  4 53DSPATR(UL)
+     A            DTLIMITE       8Y 0O  8 71DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A                                  8 69'/'
+     A            DSTPREC       20A  O  4 24DSPATR(UL)
+     A                                 19  4'Capital...:'
+     A            IMCAPITAL     11Y 2O 19 16DSPATR(UL)
+     A                                      EDTWRD('   .   .  0,  ')
+     A                                 16 50'Informação do Processo Sinistro'
+     A                                      COLOR(BLU)
+     A                                      DSPATR(RI)
+     A                                 17 52'Número....:'
+     A                                 18 52'Data......:'
+     A  60        BENEFNIF       9S 0O  9 16DSPATR(UL)
+     A  60        NUPROCES       7S 0O 17 64DSPATR(UL)
+     A  62        DTPROCES       8Y 0O 18 64DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A  62        DATRECIB       8Y 0O 18 16DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A          R RCOBE20199
+     A*%%TS  SD  20130910  124026  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            DS#KEY01      78A  O 22  2COLOR(BLU)
+     A            DS#KEY02      78A  O 23  2COLOR(BLU)
+     A            ERR#MSG       78A  O 24  2COLOR(RED)

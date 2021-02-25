@@ -1,0 +1,9 @@
+     A***************************************************************
+     A* Tabela....: FTBLP01201
+     A* Descrição.: Código das Tabelas Ordenado por Descriçao
+     A*
+     A***************************************************************
+     A          R RTBLP012                  PFILE(FTBLP012)
+     A
+     A          K CDINDICE
+     A          K CODIGO

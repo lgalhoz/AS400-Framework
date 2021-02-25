@@ -1,0 +1,29 @@
+     A*===============================================================
+     A* Ficheiro...: FPRTP003
+     A* Descrição..: Relação dos Contratos Seleccionados
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RRPTP003
+     A            CDREPORT       5S 0       TEXT('Código de Reporting')
+     A            NUPERIOD       3S 0       TEXT('Período')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A
+     A            NUSEGU         8S 0       TEXT('Código de Segurado')
+     A            CDRAMO         2S 0       TEXT('Ramo')
+     A            NUAPOL         7S 0       TEXT('Apólice')
+     A            NUACTA         3S 0       TEXT('Acta')
+     A            NOME          40A         TEXT('Nome')
+     A            MORADA        40A         TEXT('Morada')
+     A            CDPOST         7S 0       TEXT('Cód.Postal')
+     A            LOCALID       25A         TEXT('Localidade')
+     A            CODFORM        6A         TEXT('Código do Formulário')
+     A            EXTDATA      100A         TEXT('Dados Extra')
+     A*           CF05           1A         TEXT('Cobertura 05')
+     A*           CF06           1A         TEXT('Cobertura 06')
+     A
+     A            RPT00301        L
+     A            RPT00302        L
+     A
+     A          K CDREPORT
+     A          K NUPERIOD
+     A          K NUSEQU

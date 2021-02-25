@@ -1,0 +1,9 @@
+     A*================================================================
+     A* Tabela....: FPRDP100
+     A* Alias.....: AViagem
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A          R RPRDP100                  TEXT('AViagem')
+     A            OPCAOAV        3A
+     A
+     A          K OPCAOAV

@@ -1,0 +1,11 @@
+     A*================================================================
+     A* Tabela....: FSINP100
+     A* Alias.....: Entidades Credoras
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A                                      UNIQUE
+     A          R RSINP100                  TEXT('Entidades Credoras')
+     A            CODENT         6S 0       COLHDG('Código Entidade')
+     A            ENTIDADE      50A         COLHDG('Entidade')
+     A
+     A          K CODENT

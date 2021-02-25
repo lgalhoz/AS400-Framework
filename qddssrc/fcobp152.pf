@@ -1,0 +1,20 @@
+     A*========================================================================
+     A* FICHEIRO..: FCOBP148
+     A* DESCRIÇÃO.: APÓLICE COM DESCONTO EM VENCIMENTO
+     A*========================================================================
+     A                                      UNIQUE
+     A          R RCOBP148
+     A            CODRAMO        2S 0       TEXT('Código do Ramo')
+     A            NUAPOL         7S 0       TEXT('Número da Apólice')
+     A            AMDESC         6S 0       TEXT('Ano/Mes do Desconto')
+     A            NUMREC        10S 0       TEXT('Número do Recibo')
+     A            CODSEG         8S 0       TEXT('Código de Segurado')
+     A            NUPREST        3S 0       TEXT('Número da Prestação')
+     A
+     A*===> Informação do Registo
+     A            VALOR         13S 2       TEXT('Valor a desconto')
+     A            DATREG         8S 0       TEXT('Data da folha')
+     A
+     A          K CODRAMO
+     A          K NUAPOL
+     A          K AMDESC

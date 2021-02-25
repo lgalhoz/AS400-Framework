@@ -1,0 +1,19 @@
+     A*===============================================================
+     A* Ficheiro...: FTECP012
+     A* Descrição..: Inventário de Campos do Ficheiro
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RTECP012
+     A            CDFILE         5S 0       TEXT('Código de Ficheiro')
+     A            CDFMT          5S 0       TEXT('Código do Formato')
+     A            CDFIELD        5S 0       TEXT('Código do Campo')
+     A            NOFIELD       10A         TEXT('Nome do Campo')
+     A            CDDICT         5S 0       TEXT('Dicionario de dados')
+     A            CDUTILIZ       1A         TEXT('[I]nput, [O]utput, [B]oth')
+     A            POSROW         3S 0       TEXT('Posição da Linha')
+     A            POSCOL         3S 0       TEXT('Posição da Coluna')
+     A            PFIELD        10A         TEXT('Campo P-Field')
+     A
+     A          K CDFILE
+     A          K CDFMT
+     A          K CDFIELD

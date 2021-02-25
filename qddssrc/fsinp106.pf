@@ -1,0 +1,22 @@
+     A*================================================================
+     A* Tabela....: FSINP106
+     A* Alias.....: Tab_Envio_CAB
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A                                      UNIQUE
+     A          R RSINP106                  TEXT('Tab_Envio_CAB')
+     A            NR            50A         TEXT('Número do Ficheiro')
+     A            DATA            L         TEXT('Data de Criação')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DTINI           L         TEXT('Data da Inicio')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DTFIM           L         TEXT('Data de Fim')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            ESTADO        50A         TEXT('Estado')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A
+     A          K NR

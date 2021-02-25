@@ -1,0 +1,15 @@
+     A*================================================================
+     A* Tabela....: FINTP022
+     A* Descrição.: Informação Complementar Recibos Indemnização
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP022
+     A            CDREGIS        9S 0       TEXT('Código do Registo')
+     A
+     A*==> Identificação Original
+     A            DTRECIBO        L         TEXT('Data do Recibo')
+     A            NUPROCES       7S 0       TEXT('Número do Processo')
+     A            DTPROCES        L         TEXT('Data do Processo')
+     A            NUNIF          9S 0       TEXT('Número Identificação')
+     A
+     A          K CDREGIS

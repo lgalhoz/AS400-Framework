@@ -1,0 +1,24 @@
+     A*%%TS  SD  20131205  145341  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R RGRLE01705
+     A*%%TS  SD  20131205  145341  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                      OVERLAY
+     A                                      PRINT
+     A                                      WINDOW(5 10 10 50)
+     A                                      WDWBORDER((*CHAR '+-+||+-+'))
+     A            DSLINE02      50A  O  4  1
+     A            DSLINE01      50A  O  3  1
+     A            DSLINE03      50A  O  5  1
+     A            DSLINE04      50A  O  6  1
+     A            DSLINE05      50A  O  7  1
+     A                                  9  1'F03=Sair   F12=Cancelar'
+     A                                      COLOR(BLU)
+     A            DSHEAD        50A  O  1  1DSPATR(HI)
+     A  50                              8 17'Opção.:'
+     A                                      DSPATR(HI)
+     A  50        OPTION         1A  B  8 25DSPATR(HI)
+     A  50        DSOPT         10A  O  8 27DSPATR(HI)
+     A            MSGERRO        7A  O  9 44COLOR(BLU)

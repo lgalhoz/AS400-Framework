@@ -1,0 +1,9 @@
+     A***************************************************************
+     A* Tabela....: FPRDP00901
+     A* Descrição.: Ordenado por Código de Cláusula
+     A***************************************************************
+     A          R RPRDP009                  PFILE(FPRDP009)
+     A
+     A          K CDRAMO
+     A          K NUAPOL
+     A          K CDITEM

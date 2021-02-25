@@ -1,0 +1,19 @@
+     A*===============================================================
+     A* Ficheiro.: FPRDP200
+     A* Descrição: Controlo do Comando. Não executar mais do que
+     A*            uma vez em simultâneo.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP200                  TEXT('Tabela desvalorização Auto')
+     A            CODREGIS       5S 0       TEXT('Código')
+     A            MESINICIO      5S 0       TEXT('Mes Inicio')
+     A            MESTERMO       5S 0       TEXT('Mes Termo')
+     A            CATEGORI       1A         TEXT('Categoria')
+     A            VALTAXA        7S 3       TEXT('Taxa de Desvalorização')
+     A            VALACUM        7S 3       TEXT('Valor Acumulado')
+     A
+     A*==> Campos de controlo
+     A            PRD20001        L
+     A            PRD20002        L
+     A
+     A          K CODREGIS

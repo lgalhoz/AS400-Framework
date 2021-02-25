@@ -1,0 +1,71 @@
+     A*================================================================
+     A* Tabela....: FSINP105
+     A* Alias.....: Sinistros
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A                                      UNIQUE
+     A          R RSINP105                  TEXT('Sinistros')
+     A            NRPROC        50A         TEXT('Número Processo')
+     A            EXISTEDAAA    50A         TEXT('Existe DAAA (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DATAPART        L         TEXT('Data da Participação')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            TIPODOC       20A         TEXT('Tipo de Documento')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10501      20A         ALIAS(MEIOCOMUNIC)
+     A                                      TEXT('Meio de Comunicação')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10502       1A         ALIAS(APLICLEIPORT)
+     A                                      TEXT('Aplica-se lei Portuguesa +
+     A                                            (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10503       1A         ALIAS(SUSPFRAUDE)
+     A                                      TEXT('Suspeita de Fraude (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10504       1A         ALIAS(FACTCLIMEXCEP)
+     A                                      TEXT('Factores Climatéricos Excepci+
+     A                                            nais (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10505       1S 0       ALIAS(PROCENCERRADO)
+     A                                      TEXT('Processo Encerrado (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10506        L         ALIAS(DATAENCERPROC)
+     A                                      TEXT('Data encerramento Processo')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10507     300A         ALIAS(INFADICIONAL)
+     A                                      TEXT('Informação adicional')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10508       1S 0       ALIAS(DL832006)
+     A                                      TEXT('Pertence ao decreto 83/2006')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10509       1S 0       ALIAS(ENVIADOS)
+     A                                      TEXT('Enviado em quadrimetre +
+     A                                            anterior')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10510       1A         ALIAS(ASSRESPONS)
+     A                                      TEXT('Assunção de Responsabilidad +
+     A                                            pelo Segurado')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10511       9S 0       ALIAS(ENVIO)
+     A                                      TEXT('Número de Envio')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10512        L         ALIAS(DATALTERA)
+     A                                      TEXT('Data de Alteracao')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A
+     A          K NRPROC

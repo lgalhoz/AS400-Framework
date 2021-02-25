@@ -1,0 +1,26 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP205
+     A* Descrição..: Identificação dos Campos nos Parametros
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLP205
+     A
+     A            CDSESS         5S 0       TEXT('Código de Sessão')
+     A            NUSEQU         5S 0       TEXT('Sequência da Chave')
+     A
+     A*==> Informação do Campo a substituir na query
+     A*------->   CDFIELD        5S 0       TEXT('Código do Campo')
+     A            NOFIELD       15A         TEXT('Nome do Campo')
+     A            DSFIELD       50A         TEXT('Descrição do Campo')
+     A            TPFIELD        1A         TEXT('Tipo de Campo')
+     A
+     A            POSINI         3S 0       TEXT('Posição Inicial')
+     A            QTDE           3S 0       TEXT('Quantidade')
+     A            VARNAME       10A         TEXT('Nome do Campo a Substituir')
+     A
+     A*==> Campos de controlo do Registo
+     A            GRL20501        L         TEXT('Data de Criação')
+     A            GRL20502        L         TEXT('Data de Alteração')
+     A
+     A          K CDSESS
+     A          K NUSEQU

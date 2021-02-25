@@ -1,0 +1,24 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP103
+     A* Descrição..: Limites e Franquias
+     A* Observação.: Parameterizado manualmente.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP103
+     A
+     A            CDPROD         5S 0       TEXT('Código Produto')
+     A            CDCOBERT       5S 0       TEXT('Código')
+     A            CDSEQ          5S 0       TEXT('Sequencia')
+     A            NUORDEM        5S 0       TEXT('Ordem')
+     A            DSLIMITE     100A         TEXT('Descricao')
+     A            CDNATURA       1A         TEXT('Natureza')
+     A            VLMAX         11S 2       TEXT('Valor Máximo')
+     A            VLFRANQ       11S 2       TEXT('Valor da Franquia')
+     A            ALIAS         10A         TEXT('Código Alternativo')
+     A            CONVERSAO     10A         TEXT('Conversão')
+     A            DTINICIO        L         TEXT('Data de Inicio')
+     A            DTTERMO         L         TEXT('Data de Termo')
+     A
+     A          K CDPROD
+     A          K CDCOBERT
+     A          K CDSEQ

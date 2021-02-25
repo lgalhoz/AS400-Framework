@@ -1,0 +1,77 @@
+     A*===============================================================
+     A* Ficheiro...: FINTT006
+     A* Descrição..: (OPLESAD) Interface de Intervinientes do Processo
+     A*===============================================================
+     A          R RINTT006
+     A            LRAMO          2A         TEXT('Ramo                        ')
+     A            LMOD           2A         TEXT('Modalidade do Seguro        ')
+     A            LSMOD          2A         TEXT('Sub-Modalidade              ')
+     A            LANO           4A         TEXT('Ano                         ')
+     A            LNPROC         5S 0       TEXT('Processo                    ')
+     A            LESADO        10S 0       TEXT('Código do Lesado            ')
+     A            ESTCIVDANO     1A         TEXT('Estado dos Danos            ')
+     A            MATRICULA2    12A         TEXT('MATRICULA VIATURA LESADO    ')
+     A            MARCA         20A         TEXT('MARCA DA VIATURA DO LESADO  ')
+     A            CONDLESADO    10S 0       TEXT('CONDUTOR VEICUL.  NÚMERO DE ')
+     A            APOLCONGEN     7A         TEXT('APÓLICE DO TERCEIRO         ')
+     A            PESSOACARG     1A         TEXT('                            ')
+     A            NIB           21A         TEXT('NIB LESADO                  ')
+     A            RECLAMACAO     1A         TEXT('RECLAMAÇÃO JUDICIAL         ')
+     A            MODELO        40A         TEXT('MODELO VEICULO              ')
+     A            RESPONSAB      3S 0       TEXT('PERCENTAGEM DE RESPONSABILID')
+     A            NUMDIASALU    10S 0       TEXT('NÚMERO DIAS ALUGUER CARRO SU')
+     A            IMPOSSCONT     1A         TEXT('SIM CASO NÃO TENHA SIDO POSS')
+     A            DATPRCONTA     8S 0       TEXT('DATA DO PRIMEIRO CONTACTO   ')
+     A            MEIOSCONTA     1S 0       TEXT('VIA DE PRIMEIRO CONTACO.    ')
+     A            DATPEDPART     8S 0       TEXT('                            ')
+     A            DATRECPART     8S 0       TEXT('data em que o lesado apresen')
+     A            PENALIZACA     1A         TEXT('penalização na apólice - não')
+     A            COMASSUNCR     8S 0       TEXT('data da comunicação assunção')
+     A            POSICAOSEG     1          TEXT('responsabilidade apresentada')
+     A            COMDESACOR     8S 0       TEXT('data em que o lesado apresen')
+     A            COMPOSFINA     8S 0       TEXT('Comunicação da decisão final')
+     A            PAGAMOFICI     1A         TEXT('Pagamento à oficina (S)im / ')
+     A            DATPAGIND1     8S 0       TEXT('Data pagamento indemnização ')
+     A            DATENTRDES     8S 0       TEXT('Data entrada despesa        ')
+     A            SEQUENCIA     10S 0       TEXT('Sequencia do registo na tabe')
+     A            DANACARGA      1A         TEXT('existem danos à carga       ')
+     A            LOGIN          8A         TEXT('login de utilizador que regi')
+     A            DATA           8S 0       TEXT('data de alteração ou insert ')
+     A            DATDESPES      8S 0       TEXT('data da despesa             ')
+     A            DATRECLVA      8S 0       TEXT('data reclamação valores     ')
+     A            EPS            1A         TEXT('Enviar as peritagens à EPS  ')
+     A            DATPEDIND      8S 0       TEXT('quando o lesado faz pedido d')
+     A            DATSOLEXA      8S 0       TEXT('Data de solititação de exame')
+     A*
+     A*---> Informação Danos Corporais (DC)
+     A            DATRECEXAM     8S 0       TEXT('Data de recepção exame DC   ')
+     A            DATDISEXAM     8S 0       TEXT('Data de disponibilização exa')
+     A            DATEMISALT     8S 0       TEXT('data emissão alta clinica   ')
+     A            DATDCQUANT     8S 0       TEXT('Data em que o DC é totalment')
+     A            ACEITPROPP     1A         TEXT('Aceitação da Proposta provis')
+     A            DATASSRESC     8S 0       TEXT('data em que é assumida a res')
+     A            DATPRIMPED     8S 0       TEXT('Data 1º Contacto Autorização')
+     A            DATPEDREG      8S 0       TEXT('Data Autorização para Regula')
+     A            DATULTIMPE     8S 0       TEXT('Data Último Pedido Autorizaç')
+     A            ASSUNCRESP     1A         TEXT('                            ')
+     A            NECESSEXAM     1A         TEXT('                            ')
+     A            DATPAGIND2     8S 0       TEXT('Data pagamento indemnização ')
+     A*
+     A*----> Informação Geral
+     A            COMASSRESP     8S 0       TEXT('data da comunicação assunção')
+     A            DATENCERRA     8S 0       TEXT('data de encerramento do lesa')
+     A            MOTENCERRA     2A         TEXT('motivo encerramento lesado. ')
+     A*
+     A*----> Informação FSA
+     A            FSANC          2S 0       TEXT('Código de Não conformidade  ')
+     A            DRECUP         8S 0       TEXT('Obrigatório a informação se ')
+     A            FSATD          2S 0       TEXT('Tipo de Danos               ')
+     A            FSARESP        3S 0       TEXT('Responsabilidade do Lesado  ')
+     A
+     A
+     A          K LRAMO
+     A          K LMOD
+     A          K LSMOD
+     A          K LANO
+     A          K LNPROC
+     A          K LESADO

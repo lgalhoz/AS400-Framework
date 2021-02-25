@@ -1,0 +1,13 @@
+     A*===============================================================
+     A* Ficheiro...: FENTP002
+     A* Descrição..: Complementar de Empresas
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RENTP002
+     A            CODIGO         9S 0       TEXT('Código de Entidade')
+     A            CDCAE          6A         TEXT('Código de Activid.')
+     A            NUEMPREG       5S 0       TEXT('Número de Empreg.')
+     A            VLNEGOC        5S 0       TEXT('volume Negócios')
+     A            CDGRUPO        9S 0       TEXT('Código de Grupo')
+     A
+     A          K CODIGO

@@ -1,0 +1,24 @@
+     A*===============================================================
+     A* Ficheiro...: FENTP001
+     A* Descrição..: Mestre de Entidades
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RENTP001
+     A            CODIGO         9S 0       TEXT('Código de Entidade')
+     A            NOME          80A         TEXT('Nome')
+     A            APELIDO       25A         TEXT('Apelido ou Sigla')
+     A            DTNASC         8S 0       TEXT('Data de Consituição')
+     A            NUNIF          9S 0       TEXT('Identificação Fiscal')
+     A            TPENTID        1A         TEXT('Tipo de Entidade')
+     A            ICESPEC        1A         TEXT('Especial')
+     A            NUTELEF       15A         TEXT('Número de Telefone')
+     A            NUFAX         15A         TEXT('Número de FAX')
+     A            EMAIL        150A         TEXT('Endereço de Mail')
+     A
+     A            CDRELAC        9S 0       TEXT('Relação com origem')
+     A
+     A            ENT00101        L         TEXT('Data de Criação')
+     A            ENT00102        L         TEXT('Data de Alteração')
+     A            ENT00103      10A         TEXT('Utilizador')
+     A
+     A          K CODIGO

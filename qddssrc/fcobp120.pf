@@ -1,0 +1,11 @@
+     A                                      UNIQUE
+     A          R RCOBP020
+     A            NUMRECIBO     10S 0
+     A            SEQUENCIA     10S 0
+     A            CODOPERA       3A
+     A            DATREGISTO      L
+     A            ESTADO         3A
+     A            DATESTADO       L
+     A
+     A          K NUMRECIBO
+     A          K SEQUENCIA

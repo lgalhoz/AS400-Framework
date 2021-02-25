@@ -1,0 +1,25 @@
+     A*===============================================================
+     A* Ficheiro...: FPRDP018
+     A* Descrição..: Parametros do Edificio da Apólice condominio
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP018
+     A            CDRAMO         2S 0       TEXT('Ramo')
+     A            NUAPOL         7S 0       TEXT('Número da Apólice')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            CPEDIFIC      11S 2       TEXT('Capital do Edificio')
+     A            IMPREMIO      11S 2       TEXT('Prémio')
+     A            PRCOBERT       6S 0       TEXT('%Cobert.do Edificio')
+     A            QTDFRAC        6S 0       TEXT('Quantidade')
+     A            TXCLCPRM       6S 0       TEXT('Taxa para o calculo')
+     A
+     A*==> Campos de controlo do Registo
+     A            PRD01801        L         TEXT('Data de Inicio')
+     A            PRD01802        L         TEXT('Data de Termo')
+     A            PRD01803       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A            PRD01804      10A         TEXT('Quem Criou')
+     A            PRD01805      10A         TEXT('Quem Alterou')
+     A
+     A          K CDRAMO
+     A          K NUAPOL
+     A          K NUSEQU

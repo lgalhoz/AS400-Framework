@@ -1,0 +1,16 @@
+     A*===============================================================
+     A* Ficheiro..: FMEDP100
+     A* Objectivo.: Controlar a leitura dos ficheiros temporários
+     A*             do Carregamento e dos Continuados.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RMEDP100                  TEXT('Controlo Fich.Processado')
+     A
+     A            CODREG         5S 0       TEXT('Código de Registo')
+     A            NOMLIB        10A         TEXT('Nome da Biblioteca')
+     A            NOMFILE       10A         TEXT('Nome do Ficheiro')
+     A            ICPROC         1A         TEXT('Processado (S/N)')
+     A                                      VALUES('S' 'N')
+     A            DTPROC          L         TEXT('Data em que foi Processado')
+     A
+     A          K CODREG

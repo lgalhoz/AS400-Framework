@@ -1,0 +1,15 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP012
+     A* Descrição..: Parameterizar controlo de Bloqueios
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLO012
+     A
+     A            CDBLOCK        5S 0       TEXT('Código de Bloqueio')
+     A            DSBLOCK       40A         TEXT('Descrição')
+     A            CDSUPER        5S 0       TEXT('Bloqueio Superior')
+     A            CDSTATUS       1A         TEXT('Estado do Bloqueio')
+     A            GRL01201        L
+     A            GRL01202        L
+     A
+     A          K CDBLOCK

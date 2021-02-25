@@ -1,0 +1,13 @@
+     A***************************************************************
+     A* Tabela....: FSECP014
+     A* Descrição.: Definição de Menus
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP014
+     A            CDMENU         5S 0       TEXT('Código Menu Superior')
+     A            NUSEQU         5S 0       TEXT('Sequencia Menu')
+     A            NUOPTION       2S 0       TEXT('Opção')
+     A            CDITEM         5S 0       TEXT('Código de Item')
+     A
+     A          K CDMENU
+     A          K NUSEQU

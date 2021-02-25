@@ -1,0 +1,26 @@
+     A*========================================================================
+     A* FICHEIRO..: FCOBP143
+     A* DESCRIÇÃO.: Recibos com Desconto em Vencimento
+     A*========================================================================
+     A                                      UNIQUE
+     A          R RCOBP143
+     A            NUMRECIBO     10S 0       TEXT('Número do Recibo')
+     A            NUMORDEM       8S 0       TEXT('Número de Ordem da Apólice')
+     A            CODSEG         8S 0       TEXT('Código de Segurado')
+     A            TIPREC         1S 0       TEXT('Tipo Continuado ou Novo')
+     A
+     A            MACONT         6S 0       TEXT('Ano e Mês do Continuado')
+     A            DATEMISSAO      L         TEXT('Data de Emissão')
+     A            ESTADO         1S 0       TEXT('Estado do Recibo')
+     A            DATESTADO       L         TEXT('Data do Estado')
+     A            IMREAL        13S 2       TEXT('Valor do Recibo')
+     A
+     A            NUMPLANO       8S 0       TEXT('Número Plano Desc. Vencim.')
+     A            ISTOSELECT     1A         TEXT('Recibo Seleccionado ?')
+     A
+     A**==> Campos de Controlo
+     A            COB14301        L
+     A            COB14302        L
+     A
+     A          K NUMRECIBO
+     A          K NUMORDEM

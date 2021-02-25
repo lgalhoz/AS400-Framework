@@ -1,0 +1,19 @@
+     A*========================================================================
+     A* FICHEIRO..: FCOBP147
+     A* DESCRIÇÃO.: Detalhe das Guias de Pagamento
+     A*========================================================================
+     A                                      UNIQUE
+     A          R RCOBP147
+     A            NUMGUIA        8S 0       TEXT('Número da Guia')
+     A            NUMSEQ         8S 0       TEXT('Sequência da Guia')
+     A
+     A            NUMPLANO       8S 0       TEXT('Número do Plano')
+     A            NUMMOVIM       3S 0       TEXT('Número do Movimento')
+     A            IMMOVIM       13S 2       TEXT('Total do Movimento')
+     A
+     A**==> Campos de Controlo
+     A            COB14701        L
+     A            COB14702        L
+     A
+     A          K NUMGUIA
+     A          K NUMSEQ

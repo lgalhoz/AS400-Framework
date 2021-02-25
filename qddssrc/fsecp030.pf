@@ -1,0 +1,17 @@
+     A***************************************************************
+     A* Tabela....: FSECP030
+     A* Descrição.: Controlo de Acesso ao Sistema
+     A*
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP030
+     A            CDPROGR        5S 0       TEXT('Código de Programa')
+     A            CDFUNCT        5S 0       TEXT('Código da Função')
+     A            CDOPERA        5S 0       TEXT('Código de Operação')
+     A            CDUSER        10A         TEXT('Código Utilizador')
+     A            TPACCES        1A         TEXT('Tipo Acesso')
+     A
+     A          K CDPROGR
+     A          K CDFUNCT
+     A          K CDOPERA
+     A          K CDUSER

@@ -1,0 +1,17 @@
+     A*================================================================
+     A* Tabela....: FPRDP106
+     A* Alias.....: Utilizador
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A          R RPRDP106                  TEXT('Utilizador')
+     A            USERID        11S 2       TEXT('Id de Utilizador')
+     A            USERNAME      50A         TEXT('Nome do Utilizador')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            PASSWORD      10A         TEXT('Palavra Chave')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            CDDRUPAL       5S 0       TEXT('Código Drupal')
+     A            CDMEDIAR       6S 0       TEXT('Resterição Mediador')
+     A
+     A          K USERID

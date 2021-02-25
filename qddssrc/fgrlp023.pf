@@ -1,0 +1,27 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP023
+     A* Descrição..: Ficheiros Temporários Gerados
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLP023
+     A
+     A            CDBATCH        9S 0       TEXT('Código')
+     A            NUSEQU         5S 0       TEXT('Sequência do ficheiro')
+     A            NUANO          4S 0       TEXT('Ano do Registo')
+     A            NOFILE        10A         TEXT('Nome do Ficheiro')
+     A            NOLIBL        10A         TEXT('Nome da biblioteca')
+     A            CDSTATUS       1A         TEXT('Registo Activo')
+     A            CDFILE         5S 0       TEXT('Código de Template')
+     A            DTCRIA          L
+     A            HRCRIA          T
+     A            ICHISTOR       1A         TEXT('Actualizado Histórico')
+     A            ICMDADOS       1A         TEXT('Actualizado Meta Dados')
+     A            DTREGIS         L         TEXT('Data do Registo')
+     A            DTACTUA         L         TEXT('Data da Actualização')
+     A
+     A*-----> Campos de Controlo
+     A            GRL02301        L         TEXT('Data de Inicio')
+     A            GRL02302        L         TEXT('Data de Termo')
+     A
+     A          K CDBATCH
+     A          K NUSEQU

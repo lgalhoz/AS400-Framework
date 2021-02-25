@@ -1,0 +1,18 @@
+     A*===============================================================
+     A* Ficheiro...: FCORP023
+     A* Descrição..: Inventário das Variáveis
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCORP023
+ #0  A            CODVAR         9S 0       TEXT('Código da Variável')
+ #1  A            NOME          50A         TEXT('Nome da Variável')
+ #2  A            LABEL         50A         TEXT('Label')
+ #3  A            OBSERVACAO   255A         TEXT('Observação')
+ #4  A            PROTEGIDO      1S 0       TEXT('Valor protegido  alterações')
+ #5  A            MANDATOR       1S 0       TEXT('Prenchimento Obrigatório')
+ #6  A            MASCARA       10A         TEXT('Mascara de Edição')
+ #7  A            TIPFORMA      30A         TEXT('Função de Transformação')
+ #8  A            ISHIDDEN       1S 0       TEXT('Esconder')
+ #9  A            VALDEF       255A         TEXT('Valor defeito')
+     A
+     A          K CODVAR

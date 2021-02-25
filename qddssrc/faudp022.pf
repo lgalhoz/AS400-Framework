@@ -1,0 +1,44 @@
+     A*===============================================================
+     A* Ficheiro...: FAUDP022
+     A* Descrição..: Registo convertido
+     A*===============================================================
+     A          R RAUDP022
+     A*==> Identificação do Recibo
+     A            NUMREC         9S 0       TEXT('Número do Recibo')
+     A            NUAPOL         7S 0       TEXT('Apólice')
+     A            CDRAMO         2S 0       TEXT('Ramo')
+     A            NUSEGU         8S 0       TEXT('Segurado')
+     A            MSGERRO        7A         TEXT('Código de Erro')
+     A
+     A*==> Situação do Recibo
+     A            TIPMOV         2S 0       TEXT('Tipo Movimento')
+     A            SITMOV         2S 0       TEXT('Situação Movimento')
+     A            DTOPER         8S 0       TEXT('Data Lusitania')
+     A            DTMOVI         8S 0       TEXT('Data Movimento')
+     A
+     A*==> Informação Reconstruida
+     A            LSCHAVE        9S 0       TEXT('Chave de ligação')
+     A            LSNREC         9S 0       TEXT('Número do Recibo')
+     A            LSAPOL         7S 0       TEXT('Apólice')
+     A            LSRAMO         2S 0       TEXT('Ramo')
+     A            TOTREC        13S 2       TEXT('Total Recibo')
+     A            TOTCOM        13S 2       TEXT('Total Comissão')
+     A            OTHERS        13S 2       TEXT('Outros')
+     A            REFERENC      50A         TEXT('Referência Recibo')
+     A
+     A*==> Informação Existente nos Recibos Lusitânia Azul
+     A            GCTIPR         1S 0       TEXT('Tipo em JM')
+     A            GCSITR         1S 0       TEXT('Situação em JM')
+     A            GCTREC        13S 2       TEXT('Total Recibo JM')
+     A            GCCMED        13S 2       TEXT('Comissão JM')
+     A
+     A*==> Informação Constante do Interface
+     A            QTDEREG        3S 0       TEXT('Quantidade Registos')
+     A            INTRAMO        2S 0       TEXT('Código do Ramo')
+     A            INTAPOL        7S 0       TEXT('Número da Apólice')
+     A            INTTREC       13S 2       TEXT('Total enviado')
+     A            INTTCOM       13S 2       TEXT('Comissão enviada')
+     A
+     A          K NUMREC
+     A          K NUAPOL
+     A          K DTOPER

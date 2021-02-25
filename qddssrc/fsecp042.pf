@@ -1,0 +1,21 @@
+     A***************************************************************
+     A* Tabela....: FSECP042
+     A* Descrição.: Informação dos Campos do Registo
+     A*
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP042
+     A            SQREGRA        5S 0       TEXT('Sequência da Regra')
+     A            NUSEQU         5S 0       TEXT('Sequência do Campo')
+     A            NUORDEM        5S 0       TEXT('Ordem do Campo')
+     A            CDFIELD        5S 0       TEXT('Código do Campo')
+     A            ISKEY          1A         TEXT('Campo de Chave')
+     A            POSINI         3S 0       TEXT('Posição Inicial')
+     A            POSFIM         3S 0       TEXT('Posição Final')
+     A
+     A*==> Campos de Controlo de Registo
+     A            SEC04201        L         TEXT('Criação do Registo')
+     A            SEC04202        L         TEXT('alteração')
+     A
+     A          K SQREGRA
+     A          K NUSEQU

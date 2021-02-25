@@ -1,0 +1,36 @@
+     A*===============================================================
+     A* Ficheiro...: FCOBP010
+     A* Descrição..: Ficheiro Principal IDD
+     A* Original...: TBIDDPF
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCOBP010                  TEXT('Principal de IDD')
+     A
+     A            NUMREC         9S 0       COLHDG('Recibo')
+     A                                      EDTWRD('         ')
+     A            DTLANC         8S 0       COLHDG('Data Lanç.')
+     A                                      EDTWRD('    -  -  ')
+     A            NUMADC        11S 0       COLHDG('Nº ADC')
+     A                                      EDTWRD('         _  ')
+     A            NUMNIB        21S 0       COLHDG('NIB')
+     A                                      EDTWRD('    -    -           -  ')
+     A            NUMSEG         8S 0       COLHDG('NºSeg.')
+     A                                      EDTWRD('        ')
+     A            IDCCOB         5S 0       COLHDG('M.c/Cob')
+     A                                      EDTWRD('     ')
+     A            IMVALOR       13S 2       COLHDG('Valor')
+     A                                      EDTWRD('  .   .   .   ,  ')
+     A            CDSIT          1A         COLHDG('Sit')
+     A            USAPPRV       10A         COLHDG('Aprov.por')
+     A            DTAPPRV        8S 0       COLHDG('Data aprov')
+     A                                      EDTWRD('    -  -  ')
+     A            USAPPAG       10A         COLHDG('Aprov.Pag')
+     A            DTAPPAG        8S 0       COLHDG('Dt aprov.pag')
+     A                                      EDTWRD('    -  -  ')
+     A            CODFILE       10S 0       COLHDG('Fich.Envio')
+     A                                      EDTWRD('          ')
+     A            CODRET         2S 0       COLHDG('Cod.Ret.')
+     A            IDNAGR         7S 0       COLHDG('NºAgrad')
+     A                                      EDTWRD('       ')
+     A
+     A          K NUMREC                    DESCEND

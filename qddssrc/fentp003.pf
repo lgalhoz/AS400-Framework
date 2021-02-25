@@ -1,0 +1,13 @@
+     A*===============================================================
+     A* Ficheiro...: FENTP003
+     A* Descrição..: Complementar de Pessoas
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RENTP003
+     A            CODIGO         9S 0       TEXT('Código de Entidade')
+     A            TPDOCUM        3A         TEXT('Tipo de Documento')
+     A            NUDOCUM        9S 0       TEXT('Número do Documento')
+     A            CDPROFIS       3S 0       TEXT('Profissão')
+     A            CDTITULO       6A         TEXT('Titulo ou tratamento')
+     A
+     A          K CODIGO

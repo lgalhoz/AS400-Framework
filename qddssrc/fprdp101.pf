@@ -1,0 +1,66 @@
+     A*================================================================
+     A* Tabela....: FPRDP101
+     A* Alias.....: Certificados
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A          R RPRDP101                  TEXT('Certificados')
+     A            PRD10101       9S 0       ALIAS(NCERTIFICADO)
+     A                                      TEXT('Num.Certificado')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            NOME          70A         TEXT('Nome')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            MORADA        60A         TEXT('Morada')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            CPOSTAL        8A         TEXT('Cód.Postal')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            LOCALIDADE    25A         TEXT('Localidade')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            APOLICE       10A         TEXT('Apólice')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            MARCA         20A         TEXT('Marca')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            MODELO        15A         TEXT('Modelo')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            MATRICULA     12A         TEXT('Matricula')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            RCIVIL        11S 2       TEXT('Capital RCG')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DINICIO         L         TEXT('Data Inicio')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            HINICIO         T         TEXT('Hora de Inicio')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DTERMO          L         TEXT('Data Termo')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DATA            L         TEXT('Data Registo')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            HORA            T         TEXT('Hora Registo')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            AVIAGEM        3A         TEXT('Cod. Assist. Viagem')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DPROPRIOS      3A         TEXT('Cod. Danos Próprios')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            CONTADOR       9S 0       TEXT('Contador')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            UTILIZADOR    10A         TEXT('Utilizador')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A
+     A          K PRD10101

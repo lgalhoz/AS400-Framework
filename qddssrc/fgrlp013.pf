@@ -1,0 +1,16 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP013
+     A* Descrição..: Detalhe das Operações
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLO013
+     A
+     A            CDBLOCK        5S 0       TEXT('Código de Bloqueio')
+     A            NUSEQU         8S 0       TEXT('Sequencia')
+     A            CDMOTIV        3A         TEXT('Motivo')
+     A            CDSTATUS       1A         TEXT('Estado do Bloqueio')
+     A            GRL01201        L
+     A            GRL01202        L
+     A
+     A          K CDBLOCK
+     A          K NUSEQU

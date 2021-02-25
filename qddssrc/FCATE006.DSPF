@@ -1,0 +1,204 @@
+     A*%%TS  SD  20140807  110555  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R RCATE00600
+     A*%%TS  SD  20120224  154940  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                  1 71USER
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A            S#PGM         10A  O  2 71
+     A            DS#FNC        57A  O  2 12DSPATR(HI)
+     A            DS#PGM        57A  O  1 12DSPATR(HI)
+     A          R RCATE00602                SFL
+     A*%%TS  SD  20121017  160631  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            CDPROD         5Y 0H
+     A            CDSUPER        5Y 0H
+     A            CDLIMITE       5Y 0H
+     A            CDCOBERT       5Y 0H
+     A            DSCOBERT      50A  H
+     A            OPTION         2A  B  9  2
+     A  47                                  DSPATR(PR)
+     A  49                                  DSPATR(HI)
+     A N47                                  DSPATR(UL)
+     A            TEXTABRV      75A  O  9  6
+     A N48                                  DSPATR(HI)
+     A  49                                  DSPATR(RI)
+     A          R RCATE00603                SFLCTL(RCATE00602)
+     A*%%TS  SD  20130711  110126  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF05(05 'Mudar')
+     A                                      CF06(06 'Gravar')
+     A                                      CF12(12 'Cancelar')
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A                                      SFLSIZ(0013)
+     A                                      SFLPAG(0012)
+     A                                  8  1'Opt.'
+     A                                      COLOR(WHT)
+     A                                  8  6'Texto'
+     A                                      DSPATR(HI)
+     A                                  4  2'Seleccione uma das opções e pressi-
+     A                                      one a tecla enter'
+     A                                      COLOR(BLU)
+     A            DS#OPT01      76A  O  5  4COLOR(BLU)
+     A            DS#OPT02      76A  O  6  4COLOR(BLU)
+     A                                  8 53'Limites'
+     A                                      DSPATR(HI)
+     A                                  8 68'Franquias'
+     A                                      DSPATR(HI)
+     A          R RCATE00605
+     A*%%TS  SD  20140807  110555  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      RTNCSRLOC(&CM#NMREC &CM#NMFLD)
+     A                                      CSRLOC(CM#ROW     CM#COL)
+     A                                      CF03(03 'Sair')
+     A                                      CF04(04 'Pop-Up')
+     A                                      CF07(07 'Textos')
+     A                                      CF08(08 'Cobert.')
+     A                                      CF09(09 'Riscos')
+     A                                      CF10(10 'Claus.')
+     A                                      CF11(11 'Limites')
+     A                                      CF12(12 'Cancelar')
+     A                                      CF21(21 'Alterar')
+     A                                      CF22(22 'Apagar')
+     A                                      OVERLAY
+     A            CM#ROW         3S 0H
+     A            CM#COL         3S 0H
+     A            CM#NMREC      10A  H
+     A            CM#NMFLD      10A  H
+     A            CDLIMITE       5Y 0H
+     A                                  4  2'Produto...:'
+     A                                      DSPATR(HI)
+     A            CDPROD         5S 0O  4 14
+     A            DSPROD        50A  O  4 20
+     A                                  5  2'Cobertura.:'
+     A                                      DSPATR(HI)
+     A            CDCOBERT       5S 0O  5 14
+     A            DSCOBERT      50A  O  5 20
+     A                                  6  2'Superior..:'
+     A                                      DSPATR(HI)
+     A            CDSUPER        5Y 0O  6 14EDTWRD('     ')
+     A                                 17  2'Parâmetros da Franquia'
+     A                                      COLOR(BLU)
+     A                                      DSPATR(HI)
+     A            DSSUPER       50A  O  6 20
+     A                                  9  4'Risco.....:'
+     A                                 11  4'Descrição.:'
+     A            DSLIMITE     100A  B 11 16CHGINPDFT(LC)
+     A                                      DSPATR(UL)
+     A N45N48                               DSPATR(PR)
+     A  45 48                               DSPATR(HI)
+     A            CDRISCO        5Y 0B  9 16
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A                                      EDTWRD('     ')
+     A                                  8  2'Parametros do Limite e Franquia'
+     A                                      COLOR(BLU)
+     A                                 13  2'Parâmetros de Indemnização'
+     A                                      COLOR(BLU)
+     A            DSRISCO       40A  O  9 22
+     A                                 14  4'Incidência:'
+     A                                 15  4'Percentag.:'
+     A            VLPERIND       5Y 2B 15 16EDTWRD('   ,  ')
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A                                 15 25'Máximo....:'
+     A            VLMAXIND      11Y 2B 15 37EDTWRD('         ,  ')
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A            CDINCIND       2A  B 14 16
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A            DSINCIND      40A  O 14 22
+     A                                 14 64'Escrever..:'
+     A            ICESCIND       1A  B 14 76
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A                                 18  4'Incidência:'
+     A            CDINCFRQ       2A  B 18 16
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A            DSINCFRQ      40A  O 18 22
+     A                                 19  4'Percentag.:'
+     A            VLPERFRQ       5Y 2B 19 16EDTWRD('   ,  ')
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A                                 19 25'Mínimo....:'
+     A            VLMINFRQ      11Y 2B 19 37EDTWRD('         ,  ')
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A                                 18 64'Escrever..:'
+     A            ICESCFRQ       1A  B 18 76
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A                                 10  4'Alterável.:'
+     A            ICSELECT       1A  B 10 16
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A                                 15 52'Cabeçalho.:'
+     A                                 19 52'Cabeçalho.:'
+     A            CDHDRIND       1A  B 15 64
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A            CDHDRFRQ       1A  B 19 64
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A            CDTPLIND      65A  B 16 16CHGINPDFT(LC)
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A                                 16  4'Template..:'
+     A                                 20  4'Template..:'
+     A            CDTPLFRQ      65A  B 20 16CHGINPDFT(LC)
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A            FLD006        15A  O 15 66
+     A            FLD007        15A  O 19 66
+     A            FLD008         3A  O 18 78
+     A            FLD009         3A  O 14 78
+     A          R RCATE00622
+     A*%%TS  SD  20120313  114737  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(5 10 8 50)
+     A                                      CF12(12 'Cancelar')
+     A                                      OVERLAY
+     A                                      USRRSTDSP
+     A                                  1  8'Atenção - Opção para eliminar acti-
+     A                                      va'
+     A                                      COLOR(WHT)
+     A                                  3  2'Está seleccionada a opção para eli-
+     A                                      minar este '
+     A                                  4  7'registo, deseja continuar (S/N).'
+     A                                  6 19'Continuar:'
+     A            OPTION         2A  B  6 30COLOR(WHT)
+     A                                  7  2'F12=Cancelar'
+     A                                      COLOR(WHT)
+     A          R RCATE00698
+     A*%%TS  SD  20120801  093808  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF06(06 'Pop-Up')
+     A                                      CF12(12 'Cancelar')
+     A                                      OVERLAY
+     A                                 12  9'|   NÃO EXISTEM REGISTOS, POR FAVO-
+     A                                      R PRESSIONE A   |'
+     A                                      DSPATR(HI)
+     A                                 11  9'+----------------------------------
+     A                                      ----------------+'
+     A                                      DSPATR(HI)
+     A                                 13  9'|       TECLA F06 PARA ADICIONAR U-
+     A                                      M REGISTO       |'
+     A                                      DSPATR(HI)
+     A                                 14  9'+----------------------------------
+     A                                      ----------------+'
+     A                                      DSPATR(HI)
+     A          R RCATE00699
+     A*%%TS  SD  20120713  115338  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            DS#KEY01      78   O 22  2COLOR(BLU)
+     A            DS#KEY02      78   O 23  2COLOR(BLU)
+     A            ERR#MSG       78   O 24  2DSPATR(HI)

@@ -1,0 +1,10 @@
+     A***************************************************************
+     A* Tabela....: FSECP015
+     A* Descrição.: Bilbioteca
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP015
+     A            CDPROGR        5S 0       TEXT('Código do Progr.')
+     A            DSCOMANDO    100A         TEXT('Comando OS400')
+     A
+     A          K CDPROGR

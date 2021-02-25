@@ -1,0 +1,8 @@
+     A*===============================================================
+     A* Ficheiro...: FINTP01201
+     A* Descrição..: Registos de Penhoras por NIF
+     A*===============================================================
+     A          R RINTP012                  PFILE(FINTP012)
+     A
+     A          K NUMNIF
+     A          K DATINI                    DESCEND

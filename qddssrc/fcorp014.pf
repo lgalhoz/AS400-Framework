@@ -1,0 +1,17 @@
+     A*===============================================================
+     A* Ficheiro...: FCORP014
+     A* Descrição..: Relação dos Campos com as Querys
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCORP014
+ #0  A            CDQUERY        9S 0       TEXT('Consulta')
+ #1  A            CDFIELD        9S 0       TEXT('Código')
+ #2  A            SEQFIELD       4S 0       TEXT('Sequencia')
+ #3  A            ISKEY          1S 0       TEXT('É Campo Chave')
+ #4  A            SEQKEY         3S 0       TEXT('Sequencia da Chave')
+ #5  A            ISSEARCH       1S 0       TEXT('É campo de Pesquisa')
+ #6  A            ISREQUER       1S 0       TEXT('É obrigatório')
+ #7  A            CDFORMAT       6A         TEXT('Formato do Campo')
+     A
+     A          K CDQUERY
+     A          K CDFIELD

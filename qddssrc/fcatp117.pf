@@ -1,0 +1,29 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP117
+     A* Descrição..: Documentos das Coberturas
+     A* Observação.:
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP117
+     A
+     A            CDPROD         5S 0       TEXT('Código Produto')
+     A            CDCOBERT       5S 0       TEXT('Código')
+     A            CDDOCUM        5S 0       TEXT('Código de Documento')
+     A            DSDOCUM      100A         TEXT('Descricao')
+     A            ICESCREVE      1A         TEXT('Escrever')
+     A            CDPAGINA       5S 0       TEXT('Código da Página')
+     A            TPDOCUM        2A         TEXT('Tipo Documento')
+     A
+     A*==> Campos de Controlo
+     A            CAT11701        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT11702        L         TEXT('Data De Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT11703       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT11704      10A         TEXT('Quem Criou')
+     A            CAT11705      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD
+     A          K CDCOBERT
+     A          K CDDOCUM

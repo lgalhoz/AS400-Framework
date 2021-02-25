@@ -1,0 +1,20 @@
+     A***************************************************************
+     A* Tabela....: FSECP051
+     A* Descrição.: Campos da Transacção
+     A*
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP051
+     A            SQLOG          5S 0       TEXT('Registo de Operação')
+     A            NUSEQ          5S 0       TEXT('Sequência')
+     A
+     A*==> Informação do Campo do Registo
+     A            CDFIELD        5S 0       TEXT('Código do Campo')
+     A            VLFIELD       40A         TEXT('Valor')
+     A
+     A*==> Campos de Controlo de Registo
+     A            SEC05101        L         TEXT('Criação do Registo')
+     A            SEC05102        L         TEXT('alteração')
+     A
+     A          K SQLOG
+     A          K NUSEQ

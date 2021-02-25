@@ -1,0 +1,8 @@
+     A          R RECF1                     TEXT('Recibos ANTRAL              ')
+     A            GCNREC         9S 0       COLHDG('Nº Recibo')
+     A            GCTREC         9P 2       COLHDG('Valor' 'Recibo')
+     A            GCCMED         8P 2       COLHDG('Comissão')
+     A            GCDINI         6S 0       COLHDG('Data' 'Início')
+     A            GCDFIM         6S 0       COLHDG('Data' 'Fim')
+     A            GCDLIM         6S 0       COLHDG('Data' 'Limite')
+     A            GCNOM         40A         COLHDG('Nome')

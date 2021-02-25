@@ -1,0 +1,22 @@
+     A*========================================================================
+     A* FICHEIRO..: FCOBP147
+     A* DESCRIÇÃO.: Comentários e Referência de movimentos
+     A*========================================================================
+     A                                      UNIQUE
+     A          R RCOBP147
+     A            NUMORDEM       8S 0       TEXT('Número de Ordem da Apólice')
+     A            NUMPLANO       8S 0       TEXT('Número do Plano')
+     A            NUMMOVIM       3S 0       TEXT('Número do Movimento')
+     A            NUMDOCUM       3S 0       TEXT('Número do documento')
+     A            REFERENC     100A         TEXT('Referencia do movimento')
+     A            URLDOCUM     100A         TEXT('URL do documento')
+     A
+     A
+     A**==> Campos de Controlo
+     A            COB14701        L
+     A            COB14702        L
+     A
+     A          K NUMORDEM
+     A          K NUMPLANO
+     A          K NUMMOVIM
+     A          K NUMDOCUM

@@ -1,0 +1,22 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP021
+     A* Descrição..: Controlo DE Numerações
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLP021
+     A
+     A            CDCARREGA      7S 0       TEXT('Código')
+     A            NUSEQU         5S 0       TEXT('Itens Numerados')
+     A            CDITEM         5S 0       TEXT('Tipo de Item')
+     A            DTINI           L
+     A            HRINI           T
+     A            DTFIM           L
+     A            HRFIM           T
+     A            ICESTADO       1A
+     A
+     A*-----> Campos de Controlo
+     A            GRL02101        L         TEXT('Data de Criação')
+     A            GRL02102        L         TEXT('Data de Alteração')
+     A
+     A          K CDCARREGA
+     A          K NUSEQU

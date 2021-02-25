@@ -1,0 +1,57 @@
+     A*%%TS  SD  20130507  170912  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R RPRDE10000
+     A*%%TS  SD  20120224  154940  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                  1 71USER
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A            S#PGM         10A  O  2 71
+     A            DS#FNC        57A  O  2 12DSPATR(HI)
+     A            DS#PGM        57A  O  1 12DSPATR(HI)
+     A          R RPRDE10005
+     A*%%TS  SD  20130507  170912  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF14(14 'Pré-visualizar')
+     A                                      CF12(12 'Cancelar')
+     A                                      OVERLAY
+     A                                  4  2'Apólice:'
+     A                                      DSPATR(HI)
+     A            RAMO           2S 0O  4 11
+     A            APOLICE        7S 0O  4 14
+     A                                 20 12'Opção:'
+     A                                      DSPATR(HI)
+     A            OPTION         2A  I 20 19
+     A            NOMSEG        40A  O  4 22
+     A                                  8  2'Seleccione uma das seguintes opçõe-
+     A                                      s:'
+     A                                      COLOR(BLU)
+     A            DSRISC001     19A  O  5  2DSPATR(HI)
+     A            DSRISC002     19A  O  5 40DSPATR(HI)
+     A            DSRISC003     19A  O  6  2DSPATR(HI)
+     A            CPRISC001     11Y 2O  5 22EDTWRD('   .   .   ,  -')
+     A            CPRISC002     11Y 2O  5 60EDTWRD('   .   .   ,  -')
+     A            CPRISC003     11Y 2O  6 22EDTWRD('   .   .   ,  -')
+     A            DSOPT01       50A  O  9  8
+     A            DSOPT02       50A  O 10  8
+     A            DSOPT03       50A  O 11  8
+     A            DSOPT04       50A  O 12  8
+     A            DSOPT05       50A  O 13  8
+     A            DSOPT06       50A  O 14  8
+     A            DSOPT07       50A  O 15  8
+     A            DSOPT08       50A  O 16  8
+     A            DSOPT09       50A  O 17  8
+     A            DSOPT10       50A  O 18  8
+     A N45                             20 60'Data...:'
+     A N45        DTSELECT       8Y 0B 20 69EDTWRD('    /  /  ')
+     A            DSRISC004     19A  O  6 40DSPATR(HI)
+     A            CPRISC004     11Y 2O  6 60EDTWRD('   .   .   ,  -')
+     A          R RPRDE10099
+     A*%%TS  SD  20120726  144424  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            DS#KEY01      78   O 22  2COLOR(BLU)
+     A            DS#KEY02      78   O 23  2COLOR(BLU)
+     A            ERR#MSG       78   O 24  2COLOR(RED)

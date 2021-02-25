@@ -1,0 +1,26 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP020
+     A* Descrição..: Controlo Automático de Trabalhos Batch
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLP020
+     A
+     A            CDBATCH        9S 0       TEXT('Código')
+     A            CDGRUPO       10A         TEXT('Código de Grupo')
+     A            CDLETRA        1A         TEXT('Letra')
+     A            ANOMES         6S 0       TEXT('Ano/Mes')
+     A
+     A*-----> Fonte de escrita
+     A            DTINICIO        L         TEXT('Data Inicio')
+     A            HRINICIO        T         TEXT('Hora de Inicio')
+     A            DTTERMO         L         TEXT('Data Termo')
+     A            HRTERMO         T         TEXT('Hora de Termo')
+     A            CDESTADO       1A         TEXT('Estado da Execução')
+     A            USBATCH       10A         TEXT('Utilizador')
+     A
+     A
+     A*-----> Campos de Controlo
+     A            GRL02001        L         TEXT('Data de Criação')
+     A            GRL02002        L         TEXT('Data de Alteração')
+     A
+     A          K CDBATCH

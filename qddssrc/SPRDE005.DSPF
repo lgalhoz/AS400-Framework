@@ -1,0 +1,56 @@
+     A*%%TS  SD  20130430  095814  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A*                                     CA03(03 'Fim')
+     A          R RPRDE00500
+     A*%%TS  SD  20120919  124803  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(2 1 21 76 *NOMSGLIN)
+     A                                      WDWBORDER((*DSPATR HI))
+     A                                  1 19'Pré-Visualização do Output nas Act-
+     A                                      as '
+     A                                      DSPATR(HI)
+     A          R RPRDE00502                SFL
+     A*%%TS  SD  20130430  095814  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            TEXTO         76A  O  3  1
+     A          R RPRDE00501                SFLCTL(RPRDE00502)
+     A*%%TS  SD  20130430  095814  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      SFLSIZ(0017)
+     A                                      SFLPAG(0016)
+     A                                      WINDOW(RPRDE00500)
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      CA03(03 'Sair')
+     A                                      CA12(12 'Cancelar')
+     A                                      CA05(05 'Re-Ordenar')
+     A                                      CA19(19 'Esquerda')
+     A                                      CA20(20 'Direita')
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A                                  2  1'Coluna...:'
+     A                                      COLOR(BLU)
+     A            CURSOR         2Y 0B  2 12EDTWRD('  ')
+     A          R RPRDE00598
+     A*%%TS  SD  20120920  115311  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(RPRDE00500)
+     A                                      OVERLAY
+     A                                 10 18'| NÃO EXISTEM REGISTOS, PRESSIONE -
+     A                                      A |'
+     A                                      DSPATR(HI)
+     A                                 11 18'|    TECLA F03 ou F12 PARA SAIR   -
+     A                                        |'
+     A                                      DSPATR(HI)
+     A                                  9 18'+----------------------------------
+     A                                      --+'
+     A                                      DSPATR(HI)
+     A                                 12 18'+----------------------------------
+     A                                      --+'
+     A                                      DSPATR(HI)
+     A          R RPRDE00599
+     A*%%TS  SD  20130430  095814  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(RPRDE00500)
+     A                                      OVERLAY
+     A            DS#KEY01R     76A  O 20  1COLOR(BLU)
+     A            DS#KEY02R     76A  O 21  1COLOR(BLU)

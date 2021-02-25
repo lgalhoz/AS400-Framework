@@ -1,0 +1,14 @@
+     A*===============================================================
+     A* Ficheiro...: FCORP010
+     A* Descrição..: Grupo de Pesquisas
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RAUDP010
+ #0  A            CDSEARCH       9S 0       TEXT('Código de Pesquisa')
+ #1  A            DSSEARCH      50A         TEXT('Descrição da Pesquisa')
+ #2  A            QTDEQRY        3S 0       TEXT('Quantidade de Querys')
+ #3  A            LOCALIZA     100A         TEXT('Regra de Classificação')
+ #4  A*           DTCRIA          Z
+ #5  A*           DTALTERA        Z
+     A
+     A          K CDSEARCH

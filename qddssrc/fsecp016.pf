@@ -1,0 +1,13 @@
+     A***************************************************************
+     A* Tabela....: FSECP016
+     A* Descrição.: Lista de Bibliotecas
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP016
+     A            CDLIBL         5S 0       TEXT('Código da Lista')
+     A            SQLIB          5S 0       TEXT('Sequencia')
+     A            NMLIB         10A         TEXT('Nome da Biblioteca')
+     A            DSLIB         10A         TEXT('Nome da Biblioteca')
+     A
+     A          K CDLIBL
+     A          K SQLIB

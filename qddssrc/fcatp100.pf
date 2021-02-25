@@ -1,0 +1,29 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP100
+     A* Descrição..: Produtos
+     A* Observação.: Parameterizado manualmente.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP100
+     A
+     A            CDPROD         5S 0       TEXT('Código')
+     A            DSPROD        50A         TEXT('Descricao')
+     A            CDRAMO         6S 0       TEXT('Código de Ramo')
+     A            CDVARIA        3S 0       TEXT('Código de Variante')
+     A            CDFUNCT        5S 0       TEXT('Função a Chamar')
+     A            ALIAS         10A         TEXT('Código Alternativo')
+     A            CDSEGURA       3S 0       TEXT('Seguradora')
+     A            CONVERSAO     10A         TEXT('Conversão')
+     A            ICMIGRAR       1A         TEXT('Converter do Sistema Antigo')
+     A
+     A*==> Campos de Controlo
+     A            CAT10001        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT10002        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT10003       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT10004      10A         TEXT('Quem Criou')
+     A            CAT10005      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD

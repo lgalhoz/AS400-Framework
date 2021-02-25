@@ -1,0 +1,72 @@
+     A*===============================================================
+     A* Ficheiro...: FTMPP020
+     A* Descrição..: Temporario usado para produzir o mapa MGP040
+     A* Observação.: Retirado do ficheiro GC884 (Anulações)
+     A*===============================================================
+     A          R RTMPP020
+     A            NREC           9S 0
+     A            RR             2S 0
+     A            APOL           7S 0
+     A            NOME          40A
+     A            MOR01         40A
+     A            FILL00         3A
+     A            LOC01         20A
+     A            MOR02         40A
+     A            FILL01         3A
+     A            LOC02         17A
+     A            FILL02         3A
+     A            TREG           1S 0
+     A            FILL03        13A
+     A            CAP           11P 0
+     A            CAPRC          5P 0
+     A            PRS            9P 2
+     A            BONUS          7P 2
+     A            ENC            7P 2
+     A            CUSTAA         3P 2
+     A            CRC            3P 2
+     A            PJUR           1A
+     A            CR1            1S 0
+     A            SELOS          7P 2
+     A            SNA            7P 2
+     A            SNB            7P 2
+     A            PRTOT          9P 2
+     A            FILL04         2A
+     A            CONC           3P 0
+     A            MED1           3S 0
+     A            COM1           9P 2
+     A            MED2           5P 0
+     A            COM2           9P 2
+     A            FILL05       106A
+     A            TIPCS          1S 0
+     A            FILL06         5A
+     A            FGAFAT         7P 2
+     A            FILL07        23A
+     A            VLNOVO         7P 0
+     A            VLEXTR         5P 0
+     A            CAPDPI         7P 0
+     A            ARTG5          1A
+     A            CODFRQ         2A
+     A            FRANQ          5S 0
+     A            DESCTO         3P 1
+     A            CATV           1S 0
+     A            CL             1S 0
+     A            PB             1S 0
+     A            CATR           3A
+     A            PRSAGR         9P 2
+     A            CAPOCU         5P 0
+     A            PROCU          9P 2
+     A            PROCUA         9P 2
+     A            FILL08        41A
+     A            CAPFAT        11P 0
+     A            CDCAE          6A
+     A            MOD            1A
+     A            TPT            1A
+     A            JMM1           3S 0
+     A            JMC1           5P 3
+     A            JMM2           3S 0
+     A            JMC2           5P 3
+     A            FILL09        28A
+     A            CPMOR1         7P 0
+     A            CPLCB1         7P 0
+     A
+     A          K NREC

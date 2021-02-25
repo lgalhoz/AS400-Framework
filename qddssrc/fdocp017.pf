@@ -1,0 +1,30 @@
+     A*==============================================================
+     A* Ficheiro...: FDOCP017
+     A* Objectivo..: Filas de Outq
+     A* Observação.: Relação das filas de Outq a escutar para proces.
+     A*              os ficheiros, com o envio automático, ou então
+     A*              para serem movidos automáticamente.
+     A*              Associada a cada fila existe uma acção programada.
+     A*
+     A* CODACT   N = Nulo
+     A*          A = Arquivar
+     A*          M = Mover um ficheiro conhecido (registado no
+     A*              FDOCP030), ao fim de (n) minutos (MINESP).
+     A*
+     A* CODSTS   A = Activo
+     A*          D = Desactivo
+     A*==============================================================
+     A                                      UNIQUE
+     A          R RDOCP017                  TEXT('Relação das filas')
+     A            CODFILA       11S 0       TEXT('Código de Fila')
+     A            NOMFILA       10A         TEXT('Nome da Fila')
+     A            NOMLIB        10A         TEXT('Biblioteca da Fila')
+     A            CODACT         1A         TEXT('Acção a Executar')
+     A            OUTQSUC       11S 0       TEXT('Mover se Sucesso')
+     A            OUTQERR       11S 0       TEXT('Mover se Erro')
+     A            MINESP         5S 0       TEXT('Minutos espera')
+     A            CODSTS         1A         TEXT('Estado da Fila')
+     A            DATSTS          L         TEXT('Data de Situação')
+     A            DATREG          T         TEXT('Data do Registo')
+     A
+     A          K CODFILA

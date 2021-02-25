@@ -1,0 +1,38 @@
+     A*%%TS  DD  20140121  174050  lgalhoz     REL-V5.0.1  WDSc
+     A*%%PR 1066105I
+     A*%%FD Controlo das Cartas emitidas
+     A*%%EC
+     A          R RPRTI00000
+     A*%%TS  DD  20140121  174050  lgalhoz     REL-V5.0.1  WDSc
+     A*%%RI 00000
+     A                                      PAGRTT(0)
+     A            DATREP          L  O     1
+     A                                    +0'/'
+     A            HORREP          T  O    +0
+     A                                    46'Cartas Emitidas - Costa Duarte'
+     A                                      SPACEA(4)
+     A                                    65'Cobertura     Cobertura      Quant-
+     A                                      idade'
+     A                                      SPACEA(1)
+     A                                     1'Apólice  Segurado                 -
+     A                                                       Ano/Mes    Riscos -
+     A                                      Elect.  Aluim.Terras    Sinistros'
+     A                                      SPACEA(1)
+     A                                     1'-----------------------------------
+     A                                      ------------------------------------
+     A                                      ------------------------------------
+     A                                      -'
+     A*%%GP UNTITLED   01
+     A          R RPRTI00001
+     A*%%TS  DD  20140121  172023  lgalhoz     REL-V5.0.1  WDSc
+     A*%%RI 00000
+     A                                      SPACEB(1)
+     A                                      SPACEA(1)
+     A            APOL           7S 0O     1EDTWRD('       ')
+     A            SEG           40   O    10
+     A            CF06           3   O    69
+     A            MES            2S 0O    57EDTWRD('0  ')
+     A            QTDE           4S 0O   +39EDTWRD('0 .   ')
+     A            ANO            4S 0O    52EDTCDE(3)
+     A                                    +0'/'
+     A            CF05           3   O    82

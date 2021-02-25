@@ -1,0 +1,40 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP112
+     A* Descrição..: Parameterizar estilos de Parágrafo
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP112
+     A
+     A            CDPROD         5S 0       TEXT('Código Produto')
+     A            CDTIPO         2A         TEXT('Tipo de Parágrafo')
+     A            DSTIPO        40A         TEXT('Descrição')
+     A            ISEXCEPT       1A         TEXT('Não Aplicar estilo')
+     A
+     A*-----> Fonte de escrita
+     A            NMFONTE       15A         TEXT('Nome da Fonte')
+     A            DIMFONTE       2S 0       TEXT('Dimensão da Fonte')
+     A            ISBOLD         1A         TEXT('Texto em Bold')
+     A            ISUNDERLIN     1A         TEXT('Sublinhado')
+     A            ISUPPER        1A         TEXT('Maiúsculas')
+     A
+     A*-----> Bullets
+     A            DFTBULL        8A         TEXT('Bullet')
+     A            DIMBULL        2S 0       TEXT('Dimensão')
+     A
+     A*-----> Outras opções do Parágrafo
+     A            QTDEIDENT      5S 0       TEXT('Identação')
+     A            TXTALIGN       1A         TEXT('Alinhamento')
+     A            TXTSIZE        5S 0       TEXT('Largura')
+     A
+     A*-----> Campos de Controlo
+     A            CAT11201        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT11202        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT11203       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT11204      10A         TEXT('Quem Criou')
+     A            CAT11205      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD
+     A          K CDTIPO

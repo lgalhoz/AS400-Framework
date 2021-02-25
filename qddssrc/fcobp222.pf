@@ -1,0 +1,25 @@
+     A*===============================================================
+     A* Ficheiro...: FCOBP222
+     A* Descrição..: Acções sobre a ADC e NIB
+     A* Original...: TBADCAF
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCOBP222                  TEXT('Acções sobre ADC')
+     A
+     A            CDNADC         9S 0       COLHDG('Código da ADC')
+     A            NUNADC        11S 0       COLHDG('Nº ADC')
+     A                                      EDTWRD('         _  ')
+     A            CDNIB          3S 0       COLHDG('Nº Alt')
+     A            NUOPERA        3S 0
+     A
+     A            DATALT         8S 0       COLHDG('Data')
+     A            NOFILE        10S 0       COLHDG('Fich.Envio')
+     A                                      EDTWRD('          ')
+     A            CDRET          3S 0       COLHDG('Cod.Ret.')
+     A            CDSIT          1A         COLHDG('Sit')
+     A            CDUSER        10A         COLHDG('Aprov.por')
+     A            DTAPROV        8S 0       COLHDG('Data aprov')
+     A
+     A          K CDNADC
+     A          K CDNIB
+     A          K NUOPERA

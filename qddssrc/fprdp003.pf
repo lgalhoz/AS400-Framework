@@ -1,0 +1,24 @@
+     A*===============================================================
+     A* Ficheiro...: FPRDP003
+     A* Descrição..: Informação complementar Automóvel
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP003
+     A            CDRAMO         2S 0       TEXT('Código de Ramo')
+     A            NUAPOL         7S 0       TEXT('Número Apólice')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            NMSEGNET      10A         TEXT('Número SegurNet')
+     A
+     A*==> Campos de Controlo
+     A            PRD00301        L         TEXT('Data Inicio')
+     A                                      DFT('2000-01-01')
+     A            PRD00302        L         TEXT('Data Termo')
+     A                                      DFT('9999-12-31')
+     A            PRD00303       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            PRD00304      10A         TEXT('Quem Criou')
+     A            PRD00305      10A         TEXT('Quem Alterou')
+     A
+     A          K CDRAMO
+     A          K NUAPOL
+     A          K NUSEQU

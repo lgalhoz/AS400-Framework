@@ -1,0 +1,19 @@
+     A***************************************************************
+     A* Tabela....: FSECP081
+     A* Descrição.: Chave de Acesso aos Registos.
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP081
+     A            CDPEDIDO       9S 0       TEXT('Código do Pedido')
+     A            NUSEQU         5S 0       TEXT('Sequência')
+     A
+     A*==> Informação sobre os Campos de Chave
+     A            CDFIELD        9S 0       TEXT('Campo')
+     A            VLCAMPO       45A         TEXT('Valor')
+     A
+     A*==> Campos de Controlo
+     A            SEC08101        L
+     A            SEC08102        L
+     A
+     A          K CDPEDIDO
+     A          K NUSEQU

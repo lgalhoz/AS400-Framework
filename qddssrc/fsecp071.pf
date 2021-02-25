@@ -1,0 +1,12 @@
+     A***************************************************************
+     A* Tabela....: FSECP071
+     A* Descrição.: Itens, invocados pela Cadeia Batch.
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP071
+     A            CDBATCH        5S 0       TEXT('Código da Cadeia Batch')
+     A            NUSEQU         5S 0       TEXT('Sequência de Execução')
+     A            CDPROGR        5S 0       TEXT('Código de Programa')
+     A
+     A          K CDBATCH
+     A          K NUSEQU

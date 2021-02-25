@@ -1,0 +1,67 @@
+     A*===============================================================
+     A* Ficheiro...: FINTT008
+     A* Descrição..: (OPPERIT) Interface de Peritagens
+     A*===============================================================
+     A          R RINTT008
+     A            RAMO           2A         TEXT('Ramo                        ')
+     A            MODALIDADE     2A         TEXT('Modalidade do Seguro        ')
+     A            SUBMODALID     2S 0       TEXT('Sub-Modalidade              ')
+     A            ANO            4S 0       TEXT('Ano                         ')
+     A            NUMSINISTR     5S 0       TEXT('Processo                    ')
+     A            INTERVENIE    10S 0       TEXT('Interveniente               ')
+     A
+     A            DATAPEDIDO     8S 0       TEXT('Data do Pedido              ')
+     A            ENVIADAPER     1A         TEXT('Enviada Peritagem           ')
+     A            TIPOPERITA     3A         TEXT('Tipo Peritagem              ')
+     A            OFICINAREP    10S 0       TEXT('Oficina de Reparação        ')
+     A            PERITO        10S 0       TEXT('Perito                      ')
+     A            OBSERVACOE    50A         TEXT('Observações                 ')
+     A            DATAENVIOP     8S 0       TEXT('Data de Envio Peritagem     ')
+     A            NUMDIASREP    10S 0       TEXT('Número de dias de reparação ')
+     A            DATAINICIO     8S 0       TEXT('Data inicio da Reparação    ')
+     A            MOTIVOSPER     1A         TEXT('Motivos Peritagem           ')
+     A            ORDEMREPAR     1A         TEXT('Ordem de Reparação          ')
+     A            DATAORDEMR     8S 0       TEXT('Data da Ordem de Reparação  ')
+     A            PERIODOPER     1A         TEXT('Periodo de Peritagem        ')
+     A            TIPOVISTOR     1A         TEXT('Tipo de Vistoria            ')
+     A            TIPOSINIST     4A         TEXT('Tipo de Sinistro            ')
+     A            VALORLIMPE    10S 0       TEXT('Valor lim. Perda def.       ')
+     A            CONDICIONA     1S 0       TEXT('Condicional                 ')
+     A            APOLICE        7S 0       TEXT('Apólice                     ')
+     A            COBERTURA      3A         TEXT('Cobertura                   ')
+     A            MATRICULA     12A         TEXT('Matricula                   ')
+     A            MARCA          7A         TEXT('Marca                       ')
+     A            VEICULOIMO     1A         TEXT('Veiculo Imobilizado         ')
+     A            CAPITSEGDT    10S 0       TEXT('Capital Seguro à data Sinist')
+     A            FRANQUIA      10S 0       TEXT('Franquia                    ')
+     A            DESCRICAOD    50A         TEXT('Descrição do Danos          ')
+     A            DOSSIER       32A         TEXT('Dossier                     ')
+     A            IDPERITAGE    32A         TEXT('ID Peritagem                ')
+     A            LOGIN          8A         TEXT('Login                       ')
+     A            TIPOVEICUL     6A         TEXT('Tipo Veiculo                ')
+     A            TIPOINTERV     1A         TEXT('Tipo Interveniente          ')
+     A            MODELO        40A         TEXT('Modelo                      ')
+     A            DATARECEPC     8S 0       TEXT('Data da Recepção            ')
+     A            DATARESPOS     8S 0       TEXT('Data da Resposta            ')
+     A            VALORREPAR    10S 0       TEXT('Valor da Reparação          ')
+     A            OFICINAREC     1A         TEXT('Oficina Recomendada         ')
+     A            PEDAUTORIZ     1A         TEXT('Pedido autorização desmontag')
+     A            DATPEDAUTD     8S 0       TEXT('Data do Pedido Autorização  ')
+     A            DATAUTORIZ     8S 0       TEXT('Data Autorização Desmonstage')
+     A            NUMDIASALU    10S 0       TEXT('Número dias aluguer         ')
+     A            PERDATOTAL     1A         TEXT('Perda Total                 ')
+     A            AQUISICAOS     1A         TEXT('Aquisição Salvado           ')
+     A            DATRECEPDO     8S 0       TEXT('Data Recepção documento veic')
+     A            DATCONPERI     8S 0       TEXT('Data Conclusão Peritagem    ')
+     A            DATDISPREL     8S 0       TEXT('Data disponibilização relat.')
+     A            PERITAGEMC     1A         TEXT('Peritagem Cancelada         ')
+     A            DATNOTCONC     8S 0       TEXT('Data notificação concl.perit')
+     A            DATAPERITA     8S 0       TEXT('Data Peritagem              ')
+     A            MODELODESC    40A         TEXT('Modelo Descritivo           ')
+     A
+     A          K RAMO
+     A          K MODALIDADE
+     A          K SUBMODALID
+     A          K ANO
+     A          K NUMSINISTR
+     A          K INTERVENIE

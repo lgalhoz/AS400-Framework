@@ -1,0 +1,109 @@
+     A*%%TS  SD  20140905  160806  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      CF01(01 'F01')
+     A                                      CF02(02 'F02')
+     A                                      CF03(03 'F03')
+     A                                      CF04(04 'F04')
+     A                                      CF05(05 'F05')
+     A                                      CF06(06 'F06')
+     A                                      CF07(07 'F07')
+     A                                      CF08(08 'F08')
+     A                                      CF09(09 'F09')
+     A                                      CF10(10 'F10')
+     A                                      CF11(11 'F11')
+     A                                      CF12(12 'F12')
+     A                                      CF13(13 'F13')
+     A                                      CF14(14 'F14')
+     A                                      CF15(15 'F15')
+     A                                      CF16(16 'F16')
+     A                                      CF17(17 'F17')
+     A                                      CF18(18 'F18')
+     A                                      CF19(19 'F19')
+     A                                      CF20(20 'F20')
+     A                                      CF21(21 'F21')
+     A                                      CF22(22 'F22')
+     A                                      CF23(23 'F23')
+     A                                      CF24(24 'F24')
+     A          R RINTE05400
+     A*%%TS  SD  20120224  154940  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                  1 71USER
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A            S#PGM         10A  O  2 71
+     A            DS#FNC        57A  O  2 12DSPATR(HI)
+     A            DS#PGM        57A  O  1 12DSPATR(HI)
+     A          R RINTE05402                SFL
+     A*%%TS  SD  20140905  160806  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            OPTION         2A  I  9  2
+     A            LST#DET       76A  O  9  5
+     A  62                                  COLOR(WHT)
+     A  60                                  COLOR(RED)
+     A  64                                  COLOR(BLU)
+     A*           CURS#          4Y 0H      SFLRCDNBR(CURSOR)
+     A            NUSEQU         5S 0H
+     A            CDPROCE        5S 0H
+     A            CDMEDIA        9S 0H
+     A            CDINTER        5S 0H
+     A          R RINTE05403                SFLCTL(RINTE05402)
+     A*%%TS  SD  20140905  160806  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      SFLSIZ(0013)
+     A                                      SFLPAG(0012)
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A            RRN            4S 0H      SFLRCDNBR(CURSOR *TOP)
+     A            LST#HDR       76A  O  8  5DSPATR(HI)
+     A                                      DSPATR(RI)
+     A            DS#OPT01      76A  O  5  4COLOR(BLU)
+     A            DSCRITER      12A  O  7  2
+     A            CRITERIA      40A  B  7 15
+     A                                  8  2'Op'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(RI)
+     A                                  4  2'Escolha a Opção'
+     A            DS#OPT02      76A  O  6  4COLOR(BLU)
+     A          R RINTE05405
+     A*%%TS  SD  20140828  094639  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      RTNCSRLOC(*WINDOW &CM#CROW &CM#CCOL)
+     A                                      RTNCSRLOC(&CM#NMREC &CM#NMFLD)
+     A                                      CSRLOC(CM#ROW     CM#COL)
+     A                                      OVERLAY
+     A            CM#CROW        3S 0H
+     A            CM#ROW         3S 0H
+     A            CM#CCOL        3S 0H
+     A            CM#COL         3S 0H
+     A            CM#NMREC      10A  H
+     A            CM#NMFLD      10A  H
+     A                                  5  2'Informação do Mediador'
+     A                                      COLOR(BLU)
+     A                                  6  4'Código....:'
+     A          R RINTE05498
+     A*%%TS  SD  20130903  114317  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A                                 12  9'|              NÃO EXISTEM REGISTO-
+     A                                      S               |'
+     A                                      DSPATR(HI)
+     A                                 10  9'+----------------------------------
+     A                                      ----------------+'
+     A                                      DSPATR(HI)
+     A                                 13  9'|                                 -
+     A                                                      |'
+     A                                      DSPATR(HI)
+     A                                 14  9'+----------------------------------
+     A                                      ----------------+'
+     A                                      DSPATR(HI)
+     A                                 11  9'|                                 -
+     A                                                      |'
+     A                                      DSPATR(HI)
+     A          R RINTE05499
+     A*%%TS  SD  20130910  124026  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            DS#KEY01      78A  O 22  2COLOR(BLU)
+     A            DS#KEY02      78A  O 23  2COLOR(BLU)
+     A            ERR#MSG       78A  O 24  2COLOR(RED)

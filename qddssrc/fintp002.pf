@@ -1,0 +1,16 @@
+     A*===============================================================
+     A* Ficheiro...: FINTP002
+     A* Descrição..: Input usado para a produção dos Interfaces
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RINTP002
+     A            CDREMESSA      9S 0       TEXT('Código Remessa')
+     A            CDBATCH        9S 0       TEXT('Processo Batch')
+     A            CDFUNCAO       5S 0       TEXT('Programa gerador')
+     A            CDSTATUS       1A
+     A
+     A            INT00201        Z         TEXT('Data Criação')
+     A            INT00202        Z         TEXT('Data Alteração')
+     A
+     A          K CDREMESSA
+     A          K CDBATCH

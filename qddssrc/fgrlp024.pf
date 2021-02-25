@@ -1,0 +1,21 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP024
+     A* Descrição..: Templates dos Ficheiros Temporários
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLP024
+     A
+     A            CDFILE         9S 0       TEXT('Código')
+     A            PREFIXO       10A         TEXT('Prefixo')
+     A            TEMPLATE      50A         TEXT('Template')
+     A            DESCRICAO     50A         TEXT('D')
+     A            CDGRUPO       10A         TEXT('Grupo')
+     A            DIMMIN         2S 0       TEXT('Dim. minima')
+     A            DIMMAX         2S 0       TEXT('Dim. maxima')
+     A            CDSTATUS       1A         TEXT('Situação')
+     A
+     A*-----> Campos de Controlo
+     A            GRL02401        L         TEXT('Data de Criação')
+     A            GRL02402        L         TEXT('Data de Alteração')
+     A
+     A          K CDFILE

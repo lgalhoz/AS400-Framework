@@ -1,0 +1,27 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP113
+     A* Descrição..: Comissões
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP113
+     A            CDPROD         5S 0       TEXT('Código')
+     A            NUSEQU         5S 0       TEXT('Número de Sequência')
+     A            ICTIPO         1A         TEXT('Tipo de registo')
+     A
+     A*----> Comissões Normais Sem fenomenos Sismicos
+     A            VLCOMCORR      5S 3       TEXT('Comissão sobre Corretagem')
+     A            VLCOMANGA      5S 3       TEXT('Comissão sobre Angariação')
+     A            VLCOMCOBR      5S 3       TEXT('Comissão sobre Cobrança')
+     A
+     A*-----> Campos de Controlo
+     A            CAT11301        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT11302        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT11303       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT11304      10A         TEXT('Quem Criou')
+     A            CAT11305      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD
+     A          K NUSEQU

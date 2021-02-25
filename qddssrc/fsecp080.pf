@@ -1,0 +1,25 @@
+     A***************************************************************
+     A* Tabela....: FSECP080
+     A* Descrição.: Pedidos Especiais.
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP080
+     A            CDPEDIDO       9S 0       TEXT('Código do Pedido')
+     A            TPPEDIDO       5S 0       TEXT('Tipo de Pedido')
+     A            CDPROGR        5S 0       TEXT('Função onde foi executada')
+     A
+     A*==> Informação sobre quem fez o pedido
+     A            DTPEDIDO        L         TEXT('Data do Pedido')
+     A            HRPEDIDO        T         TEXT('Hora do Pedido')
+     A            CDUSRPED      10A         TEXT('Utilizador do Pedido')
+     A
+     A*==> Informação sobre quem autorizou
+     A            DTAUTORIZA      L         TEXT('Data da Autorização')
+     A            HRAUTORIZA      T         TEXT('Hora da Autorização')
+     A            CDUSRAUTO     10A         TEXT('Utilizador da Autorização')
+     A
+     A*==> Campos de Controlo
+     A            SEC08001        L
+     A            SEC08002        L
+     A
+     A          K CDPEDIDO

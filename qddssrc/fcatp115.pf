@@ -1,0 +1,22 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP115
+     A* Descrição..: Classificação de Zonas de Risco
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP115
+     A            CDPROD         5S 0       TEXT('Código Produto')
+     A            CDLOCAL        9S 0       TEXT('Código de Local')
+     A            CDZONA         1A         TEXT('Código da Zona')
+     A
+     A*==> Campos de Controlo
+     A            CAT11501        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT11502        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT11503       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT11504      10A         TEXT('Quem Criou')
+     A            CAT11505      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD
+     A          K CDLOCAL

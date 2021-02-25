@@ -1,0 +1,15 @@
+     A*================================================================
+     A* Tabela....: FINTP057
+     A* Descrição.: Temporários a Processar
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP057
+     A            CDINTER        3S 0       TEXT('Código de Interface')
+     A            CDFILE         5S 0       TEXT('Código do Temporário')
+     A
+     A*==> Campos de Controlo do Registo
+     A            INT05701        L
+     A            INT05702        L
+     A
+     A          K CDINTER
+     A          K CDFILE

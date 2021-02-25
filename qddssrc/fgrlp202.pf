@@ -1,0 +1,12 @@
+     A*================================================================
+     A* Tabela....: FGRLP202
+     A* Descrição.: Servidores FTP
+     A*================================================================
+     A                                      UNIQUE
+     A          R RGRLP202
+     A
+     A            CDSERVER       5S 0       TEXT('Código do Servidor')
+     A            NMSOPER       40A         TEXT('Sistema Operativo')
+     A            DSSERV       120A         TEXT('Descrição do Servidor FTP')
+     A
+     A          K CDSERVER

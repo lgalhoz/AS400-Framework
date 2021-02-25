@@ -1,0 +1,13 @@
+     A*================================================================
+     A* Tabela....: FINTP010
+     A* Descrição.: Ficheiros de Interface Recebidos
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP010
+     A            CDFILE         7S 0       TEXT('Código Ficheiro')
+     A            NOMFILE       40A         TEXT('Nome Ficheiro')
+     A            QTDEREG        3S 0       TEXT('Quantidade Registos Novos')
+     A            DTFILE          L         TEXT('Data do Ficheiro')
+     A            DTPROC          L         TEXT('Data em que foi Processado')
+     A
+     A          K CDFILE

@@ -1,0 +1,33 @@
+     A*===================================================================
+     A* Ficheiro..: FTMPP005
+     A* Descrição.: Temporário para conter o extracto dos movimentos JM
+     A*===================================================================
+     A          R RTMPP005
+     A            CDREGIS        8S 0
+     A            CDAGENT        5S 0
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DATA           8S 0
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            REFERENC     100A
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            CODIGO         2A
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DESCRITIVO   100A
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            VLDEBIT       13S 2
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            VLCREDIT      13S 2
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            VALOR         13S 2
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            TOMADOR      100A
+     A                                      ALWNULL
+     A                                      DFT(*NULL)

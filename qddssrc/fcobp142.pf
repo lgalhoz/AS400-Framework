@@ -1,0 +1,34 @@
+     A*========================================================================
+     A* FICHEIRO..: FCOBP142
+     A* DESCRIÇÃO.: APÓLICE COM DESCONTO EM VENCIMENTO
+     A*========================================================================
+     A                                      UNIQUE
+     A          R RCOBP142
+     A            NUMORDEM       8S 0       TEXT('Número de Ordem da Apólice')
+     A            CODCOMP        3S 0       TEXT('Codigo de Companhia')
+     A            CODRAMO        3S 0       TEXT('Código do Ramo')
+     A            NUAPOL        10A         TEXT('Número da Apólice')
+     A
+     A            CODSEG         8S 0       TEXT('Código de Segurado')
+     A            CODSTAT        1A         TEXT('Situação Contrato')
+     A            DATINICIO       L         TEXT('Data de Inicio')
+     A            DATTERMO        L         TEXT('Data de Termo')
+     A            MACONT         6S 0       TEXT('Próximos Continuados')
+     A            FRACCIO        1S 0       TEXT('Fraccionamento')
+     A            OBJECTO       60A         TEXT('Objecto Seguro')
+     A
+     A*==> Controlo último recibo
+     A            ULTCONTI      13S 2       TEXT('Último Recibo Continuado')
+     A            QTDEREC        5S 0       TEXT('Quantidade Recibos')
+     A
+     A*==> Controlo das prestações
+     A            IMSALDO       13S 2       TEXT('Saldo da Apólice')
+     A            ISTOSELECT     1A         TEXT('É para seleccionar')
+     A            INIPREV        6S 0       TEXT('Inicio Previsto')
+     A            PRESTACOES     3S 0       TEXT('Número Prestações')
+     A
+     A**==> Campos de Controlo
+     A            COB14201        L
+     A            COB14202        L
+     A
+     A          K NUMORDEM

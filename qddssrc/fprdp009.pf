@@ -1,0 +1,21 @@
+     A*===============================================================
+     A* Ficheiro...: FPRDP009
+     A* Descrição..: Clausulas e Condições
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP009
+     A            CDRAMO         2S 0       TEXT('Ramo')
+     A            NUAPOL         7S 0       TEXT('Apólice')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            CDITEM         3A         TEXT('Código de Item')
+     A
+     A*==> Campos de controlo do Registo
+     A            PRD00901        L         TEXT('Data Inicio')
+     A            PRD00902        L         TEXT('Data Termo')
+     A            PRD00903       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A            PRD00904      10A         TEXT('Quem Criou')
+     A            PRD00905      10A         TEXT('Quem Alterou')
+     A
+     A          K CDRAMO
+     A          K NUAPOL
+     A          K NUSEQU

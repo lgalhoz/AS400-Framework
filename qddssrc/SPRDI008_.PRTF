@@ -1,0 +1,88 @@
+     A*%%***********************************************************************
+     A*%%TS  RD  20120419  180235  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%FI+10660100000000000000000000000000000000000000000000000000
+     A*%%FI       0000000000000000000000000000000000000000000000000
+     A*%%***********************************************************************
+     A          R HEADER
+     A*%%***********************************************************************
+     A*%%RI 00000
+     A*%%FS 006
+     A*%%***********************************************************************
+     A                                      DRAWER(2)
+     A                                      SPACEB(006)
+     A                                      SPACEA(005)
+     A                                      SKIPB(001)
+     A            TIPO          10A  O     7
+     A                                      SPACEB(001)
+     A            CDSEG          6S  O    24
+     A            CDMED1         3S  O    +1
+     A            CDMED2         3S  O    +1
+     A            INTCODE        6S  O    11
+     A                                      SPACEB(002)
+     A                                      EDTWRD('  .  .  ')
+     A            DSRAMO        33A  O    11
+     A                                      SPACEB(002)
+     A            CDRAMO         2S  O    13
+     A                                      SPACEB(003)
+     A                                    15
+     A                                      '-'
+     A            NUAPOL         7S  O    16
+     A            NUACTA         3S  O    33
+     A            NMSEGUR       40A  O   +15
+     A            MRSEGUR       40A  O    51
+     A                                      SPACEB(001)
+     A            CDPOST         7S  O    51
+     A                                      EDTWRD('    -   ')
+     A                                      SPACEB(001)
+     A            DSPOSTAL      25A  O    61
+     A            DTEMISSAO      8S  O    14
+     A                                      SPACEB(001)
+     A                                      EDTWRD('  /  /    ')
+     A            DSTIPACTA     20A  O    25
+     A                                     6
+     A                                      'Inicio:'
+     A                                      SPACEB(002)
+     A            DTINICIO       8S  O    14
+     A                                      EDTWRD('  /  /    ')
+     A            DSTIPAPOL     25A  O    +1
+     A                                     6
+     A                                      'FORMA PAG.:'
+     A                                      SPACEB(002)
+     A            FORMPAGAM     20A  O    18
+     A            NUMRECIBO      9S  O     2
+     A                                      SPACEB(003)
+     A                                    +2
+     A                                      'PRÉMIO COMERCIAL'
+     A            PREMCOM       11S 2O    +3
+     A                                      EDTWRD('   .   .   ,  ')
+     A                                    +7
+     A                                      'PRÉMIO TOTAL'
+     A            PREMTOT       11S 2O    +4
+     A                                      EDTWRD('   .   .   ,  ')
+     A*%%***********************************************************************
+     A*%%SS
+     A*%%CL 001
+     A*%%CL 002
+     A*%%CL 002
+     A*%%CL 003
+     A*%%CL 001
+     A*%%CL 001
+     A*%%CL 001
+     A*%%CL 002
+     A*%%CL 002
+     A*%%CL 003
+     A*%%CL 005
+     A*%%***********************************************************************
+     A          R DETAIL
+     A*%%***********************************************************************
+     A*%%RI 00000
+     A*%%***********************************************************************
+     A                                      SPACEB(001)
+     A            LINHA         90A  O     2
+     A*%%***********************************************************************
+     A*%%SS
+     A*%%CP+999CRTPRTF
+     A*%%CP+    FILE(SOAPSERV/FPRDI120)
+     A*%%CP+    DEVTYPE(*SCS)
+     A*%%CP     PAGESIZE(*N       150      *N     )
+     A*%%***********************************************************************

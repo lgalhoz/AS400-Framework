@@ -1,0 +1,27 @@
+     A*================================================================
+     A* Tabela....: FSINP001
+     A* Alias.....: Inventário de Processos de Sinistro
+     A*================================================================
+     A                                      UNIQUE
+     A          R RSINP001                  TEXT('Todos os Processos')
+     A            AAPROC         4S 0       TEXT('Ano do Processo')
+     A            NUPROC         4S 0       TEXT('Número do Processo')
+     A            CDRAMO         2S 0       TEXT('Código do Ramo')
+     A            NUAPOL         7S 0       TEXT('Apólice')
+     A            TPPROC         1A         TEXT('Tipo de Processo')
+     A            STPROC         1S 0       TEXT('Situação do Processo')
+     A            DTINIC          L         TEXT('Data de inicio')
+     A            DTTERM          L         TEXT('Data de Termo')
+     A            DTREAB          L         TEXT('Data de Reabertura')
+     A            NUSEG          8S 0       TEXT('Número Segurado')
+     A            NOSEG         40A         TEXT('Nome do Segurado')
+     A            NUNIF          9S 0       TEXT('NIF')
+     A            MATRIC        15A         TEXT('Matricula')
+     A            APELID        25A         TEXT('Apelido')
+     A            AARELA         4S 0       TEXT('Ano Processo relacionado')
+     A            NURELA         4S 0       TEXT('Numero Processo Relacionado')
+     A
+     A          K AAPROC
+     A          K NUPROC
+     A          K CDRAMO
+     A          K NUAPOL

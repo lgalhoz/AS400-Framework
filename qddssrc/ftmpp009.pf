@@ -1,0 +1,15 @@
+     A*===================================================================
+     A* Ficheiro..: FTMPP007
+     A* Descrição.: Sinistros Automóvel - Informar sobre o Dec.Lei 2006
+     A*===================================================================
+     A                                      UNIQUE
+     A          R RTMPP007
+     A            ANO            4S 0
+     A            NUSEQ          4S 0
+     A            NRPROC         7A
+     A            DTENC          8S 0
+     A            ICDECLEI       1A
+     A            DTENCTR        8S 0
+     A
+     A          K ANO
+     A          K NUSEQ

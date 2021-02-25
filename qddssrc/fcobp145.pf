@@ -1,0 +1,40 @@
+     A*========================================================================
+     A* FICHEIRO..: FCOBP145
+     A* DESCRIÇÃO.: Movimentos dos Planos
+     A*
+     A* REGRAS....:
+     A*    CODMOV   -> {100=Desconto em Vencimento;102=Anulação ...;
+     A*                 110=Pagamento em dinheiro;112=Anulação ...;
+     A*                 120=Pagamento em Cheque;122=Anulação ...;
+     A*                 130=Pagamento transferência bancária;132=Anulação ...;
+     A*                 140=Pagamento acerto (Saldo);142=Anulação ...}
+     A*
+     A*    ESTMOV   -> {E=Emitido;S=Enviado;P=Processado;A=Anulado}
+     A*
+     A*    NUMPREST -> {0=Unica;[1..48]Prestação;99=Inválido
+     A*
+     A*========================================================================
+     A                                      UNIQUE
+     A          R RCOBP145
+     A            NUMORDEM       8S 0       TEXT('Número de Ordem da Apólice')
+     A            NUMPLANO       8S 0       TEXT('Número do Plano')
+     A            NUMMOVIM       3S 0       TEXT('Número do Movimento')
+     A
+     A**==> Caracterização do Movimento
+     A            CODMOV         3A         TEXT('Código do Movimento')
+     A            ESTMOV         1A         TEXT('Estado do Movimento')
+     A            DATVALOR        L         TEXT('Data Valor')
+     A            DATOPERA        L         TEXT('Data de Operação')
+     A            IMMOVIM       13S 2       TEXT('Valor do movimento')
+     A
+     A**==> Controlo das Prestações
+     A            NUMPREST       3S 0
+     A            AMDESCON       6S 0
+     A
+     A**==> Campos de Controlo
+     A            COB14501        L
+     A            COB14502        L
+     A
+     A          K NUMORDEM
+     A          K NUMPLANO
+     A          K NUMMOVIM

@@ -1,0 +1,19 @@
+     A*===============================================================
+     A* Ficheiro...: FENTP005
+     A* Descrição..: Informações diversas
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RENTP005
+     A            CODIGO         9S 0       TEXT('Código de Entidade')
+     A            CORSEL         1A         TEXT('Nome')
+     A            PILOTO         1A         TEXT('Apelido ou Sigla')
+     A            ICDVEN         1A         TEXT('Descontos em Vencimento')
+     A            CDEMPREG      50A         TEXT('Código de Empregado')
+     A            GEST           1A         TEXT('Gestor')
+     A            TECN           1A         TEXT('Técnico')
+     A            CONTEN         1A         TEXT('Escluir Contencioso')
+     A            STESP          1A         TEXT('Tratamento Especial')
+     A
+     A            CDRELAC        9S 0       TEXT('Relação com Origem')
+     A
+     A          K CODIGO

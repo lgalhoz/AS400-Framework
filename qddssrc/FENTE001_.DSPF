@@ -1,0 +1,180 @@
+     A*%%TS  SD  20110506  092015  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R FMTNUMC
+     A*%%TS  SD  20110505  170134  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CA12(12 'Sair')
+     A                                      CA04(04 'Consulta')
+     A                                      CA06(06 'Adicionar')
+     A                                      WINDOW(3 15 10 52)
+     A                                      RMVWDW
+     A                                  1 19'Alterar Segurado'
+     A                                      COLOR(WHT)
+     A                                  8  2'F12=Sair'
+     A                                      COLOR(PNK)
+     A                                  4  2'Código . :'
+     A            WSEG      R        B  4 13REFFLD(FSEGF1/NSEG *LIBL/GFSEG)
+     A                                      EDTWRD('     ')
+     A                                      COLOR(WHT)
+     A  30                                  DSPATR(HI)
+     A                                  4 19'+'
+     A                                  8 12'F4=Consulta'
+     A                                      COLOR(PNK)
+     A            WKMSG         40A  O  9  1COLOR(RED)
+     A            NOM       R        O  5 13REFFLD(FSEGF1/NOM *LIBL/GFSEG)
+     A                                  8 25'F6=Adicionar'
+     A                                      COLOR(PNK)
+     A          R FMTUPD
+     A*%%TS  SD  20110506  092015  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CA03(03 'Fim')
+     A                                  1  2'OP0300E'
+     A                                      COLOR(BLU)
+     A                                  1 32'DETALHE DA PESSOA '
+     A                                      COLOR(WHT)
+     A                                  2 71USER
+     A                                  4  3'Segurado. :'
+     A                                  2 37'ALTERAR'
+     A            NSEG      R        O  4 15REFFLD(FSEGF1/NSEG *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A            NOME          36A  B  4 21
+     A  70                                  DSPATR(RI)
+     A  70                                  DSPATR(PC)
+     A                                      TEXT('Nome segurado')
+     A                                      COLOR(WHT)
+     A            APELID    R        B  5 21REFFLD(FSEGF1/APELID *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A  71                                  DSPATR(RI)
+     A  71                                  DSPATR(PC)
+     A                                  9  3'Morada. . :'
+     A            MORAD     R        B  9 15REFFLD(FSEGF1/MORAD *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A  74                                  DSPATR(RI)
+     A  74                                  DSPATR(PC)
+     A            DESCP     R        O 10 24REFFLD(FSEGF1/DESCP *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A                                 19  3'Excluir Contencioso:'
+     A            CONTEN    R        B 19 24REFFLD(FSEGF1/CONTEN *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A  79                                  DSPATR(RI)
+     A  79                                  DSPATR(PC)
+     A  86                                  DSPATR(PR)
+     A                                 19 32'CORSEL:'
+     A            CORSEL    R        B 19 40REFFLD(FSEGF1/CORSEL *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A  80                                  DSPATR(RI)
+     A  80                                  DSPATR(PC)
+     A                                 19 50'Piloto ou Familiar:'
+     A            PILOTO    R        B 19 70REFFLD(FSEGF1/PILOTO *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A  81                                  DSPATR(RI)
+     A  81                                  DSPATR(PC)
+     A                                 16  3'Gestor. . :'
+     A            GEST      R        B 16 15REFFLD(FSEGF1/GEST *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A  77                                  DSPATR(RI)
+     A  77                                  DSPATR(PC)
+     A                                 17  3'Grupo . . :'
+     A                                 12  3'Telefone. :'
+     A            TELEF     R        B 12 15REFFLD(FSEGF1/TELEF *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A                                 12 33'Fax:'
+     A            NFAX      R        B 12 38REFFLD(FSEGF1/NFAX *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A                                 12 53'Telemóvel:'
+     A                                 13  3'Email . . :'
+     A            WEMAIL        60A  B 13 15TEXT('e-mail')
+     A                                      COLOR(WHT)
+     A                                      CHECK(LC)
+     A*                                     CHGINPDFT(LC)
+     A                                  7  3'Nº'
+     A                                  7  6'Contrib:'
+     A            NIF       R        B  7 15REFFLD(FSEGF1/NIF *LIBL/GFSEG)
+     A                                      EDTWRD('         ')
+     A  72                                  DSPATR(RI)
+     A  72                                  DSPATR(PC)
+     A                                      COLOR(WHT)
+     A                                  7 27'B.I.:'
+     A            BI        R        B  7 33REFFLD(FSEGF1/BI *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A                                      EDTWRD('        ')
+     A  73                                  DSPATR(RI)
+     A  73                                  DSPATR(PC)
+     A            CDBI      R        B  7 42REFFLD(FSEGF1/CDBI *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A  73                                  DSPATR(RI)
+     A                                  7 46'Data Nascimento:'
+     A            TECN      R        B 17 15REFFLD(FSEGF1/TECN *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A  78                                  DSPATR(RI)
+     A  78                                  DSPATR(PC)
+     A                                 15  3'Tipo. . . :'
+     A            TIPO      R        B 15 15REFFLD(FSEGF1/TIPO *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A  76                                  DSPATR(RI)
+     A  76                                  DSPATR(PC)
+     A  85                                  DSPATR(PR)
+     A                                 23  3'F3=Sair'
+     A                                      COLOR(PNK)
+     A            MSGT          40A  O 22  3COLOR(RED)
+     A            TLM       R        B 12 64REFFLD(FSEGF1/TLM *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A                                      EDTWRD('         ')
+     A            DTNASC    R        B  7 63REFFLD(FSEGF1/DTNASC *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A                                      EDTWRD('  /  /    ')
+     A  84                                  DSPATR(RI)
+     A  84                                  DSPATR(PC)
+     A            CPOST     R        B 10 15REFFLD(FSEGF1/CPOST *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A                                      EDTWRD('    -   ')
+     A  75                                  DSPATR(RI)
+     A  75                                  DSPATR(PC)
+     A                                  5  3'Apelido . :'
+     A                                 15 17'(S-Sociedade;I-Individ.;E-Empreg.)'
+     A                                 19 42'(S/N)'
+     A                                 19 72'(S/N)'
+     A                                 19 26'(S/N)'
+     A                                 21  3'Última alteração:'
+     A            USERID    R        O 21 21REFFLD(FSEGF1/USERID *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A            DATALT    R        O 21 31REFFLD(FSEGF1/DATALT *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A                                      EDTWRD('    /  /  ')
+     A            TIMALT    R        O 21 43REFFLD(FSEGF1/TIMALT *LIBL/GFSEG)
+     A                                      EDTWRD('  :  :  ')
+     A                                      COLOR(WHT)
+     A                                 20  3'Especial . . :'
+     A            STESP     R        B 20 18REFFLD(FSEGF1/STESP *LIBL/GFSEG)
+     A                                      COLOR(WHT)
+     A  83                                  DSPATR(RI)
+     A  83                                  DSPATR(PC)
+     A  87                                  DSPATR(PR)
+     A                                 20 44'Código Emp.:'
+     A            WCODEMP       20A  B 20 57
+     A  89                                  DSPATR(RI)
+     A  89                                  DSPATR(PC)
+     A                                      COLOR(WHT)
+     A                                 20 28'Desc.Venc.:'
+     A            WICDVEN        1A  B 20 40
+     A  88                                  DSPATR(RI)
+     A  88                                  DSPATR(PC)
+     A                                      COLOR(WHT)
+     A          R FMTINFO
+     A*%%TS  SD  20080602  153732  PFONSECA    REL-V5R1M0  5722-WDS
+     A                                      CA10(10 'Voltar')
+     A                                      CA05(05 'Aceitar')
+     A                                      CA12(12 'Sair')
+     A                                      WINDOW(3 20 9 43)
+     A                                      RMVWDW
+     A                                  1 19'Aviso'
+     A                                      COLOR(WHT)
+     A                                      DSPATR(BL)
+     A                                  8  2'F5=Gravar'
+     A                                      COLOR(PNK)
+     A                                  3  3'O Nº de contribuinte é obrigatório'
+     A                                  4  3'por lei, quer gravar sem esta'
+     A                                  5  3'informação ?'
+     A                                  8 13'F10=Voltar'
+     A                                      COLOR(PNK)
+     A                                  8 25'F12=Sair s/Gravar'
+     A                                      COLOR(PNK)

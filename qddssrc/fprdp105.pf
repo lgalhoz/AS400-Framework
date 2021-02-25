@@ -1,0 +1,9 @@
+     A*================================================================
+     A* Tabela....: FPRDP105
+     A* Alias.....: RCivil
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A          R RPRDP105                  TEXT('RCivil')
+     A            RC            11S 2       TEXT('Capital RC')
+     A
+     A          K RC

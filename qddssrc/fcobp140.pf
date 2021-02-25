@@ -1,0 +1,18 @@
+     A*========================================================================
+     A* FICHEIRO..: FCOBP140
+     A* DESCRIÇÃO.: SEGURADOS COM DESCONTOS EM VENCIMENTO
+     A*========================================================================
+     A                                      UNIQUE
+     A          R RCOBP140
+     A            CDEMPRESA      3S 0       TEXT('Código de Empresa')
+     A            CODIGO        20A         TEXT('Código de Empresa')
+     A            ALIAS         20A         TEXT('Estado do Registo')
+     A            CDGRUPO        3A         TEXT('Código de Grupo')
+     A            DTINICIO        L         TEXT('Inicio')
+     A            DTTERMO         L         TEXT('Termo')
+     A
+     A**==> Campos de Controlo
+     A            COB14001        L
+     A            COB14002        L
+     A
+     A          K CDEMPRESA

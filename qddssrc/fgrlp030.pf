@@ -1,0 +1,16 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP030
+     A* Descrição..: Parameterizar de Feriados
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLP030
+     A
+     A            CDFERIADO      5S 0       TEXT('Código da Feriado')
+     A            CDLOCAL        5S 0       TEXT('Local do Feriado')
+     A            CDDESC        40A         TEXT('Descrição')
+     A            CDTIPO         1A         TEXT('Tipo de Feriado')
+     A            DTINICIO        L         TEXT('Data de Inicio')
+     A            DTETERMO        L         TEXT('Data de Termo')
+     A            MESDIA         4S 0       TEXT('Mes/Dia ou Deslocamento')
+     A
+     A          K CDFERIADO

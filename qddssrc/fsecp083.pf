@@ -1,0 +1,18 @@
+     A***************************************************************
+     A* Tabela....: FSECP083
+     A* Descrição.: Utilizadores Autorizados
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP083
+     A            TPPEDIDO       5S 0       TEXT('Tipo de Pedido')
+     A            NUSEQU         5S 0       TEXT('Sequência')
+     A
+     A*==> Informação sobre quem fez o pedido
+     A            CDUSER        10A         TEXT('Utilizadore Autorizado')
+     A
+     A*==> Campos de Controlo
+     A            SEC08301        L
+     A            SEC08302        L
+     A
+     A          K TPPEDIDO
+     A          K NUSEQU

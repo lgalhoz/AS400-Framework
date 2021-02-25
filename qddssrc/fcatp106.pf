@@ -1,0 +1,35 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP106
+     A* Descrição..: Riscos
+     A* Observação.: Parameterizado manualmente.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP106
+     A
+     A            CDPROD         5S 0       TEXT('Código Produto')
+     A            CDTEXTO        5S 0       TEXT('Código de Texto')
+     A            CDSUPER        5S 0
+     A            NUORDEM        5S 0       TEXT('Ordem')
+     A            CDGRUPO        5S 0       TEXT('Grupo')
+     A            DSTEXTO      100A         TEXT('Descricao')
+     A            ICOBRIGA       1A         TEXT('Obrigatório')
+     A            ALIAS         10A         TEXT('Código Alternativo')
+     A            CONVERSAO     10A         TEXT('Conversão')
+     A            ICRESERV       1A         TEXT('Reservado')
+     A            ICESCREV       1A         TEXT('Escrever')
+     A            CDFUNCT        5S 0       TEXT('Função Especial')
+     A            ICDETAIL       1A         TEXT('Detalhado')
+     A            ICINDEX        1A         TEXT('Indexável')
+     A
+     A*==> Campos de Controlo
+     A            CAT10601        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT10602        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT10603       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT10604      10A         TEXT('Quem Criou')
+     A            CAT10605      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD
+     A          K CDTEXTO

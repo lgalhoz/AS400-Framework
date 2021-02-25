@@ -1,0 +1,33 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP108
+     A* Descrição..: Clausulas e Condições Especiais
+     A* Observação.: Parameterizado manualmente.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP108
+     A
+     A            CDPROD         5S 0       TEXT('Código Produto')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            TPITEM         1A         TEXT('Tipo de Item')
+     A            CDRISCO        5S 0       TEXT('Código de Risco')
+     A            NUORDEM        5S 0       TEXT('Ordem')
+     A            CDITEM         3A         TEXT('Código de Item')
+     A            DSITEM       100A         TEXT('Descricao')
+     A            CDVAR          5S 0
+     A            ICOBRIGA       1A         TEXT('Obrigatória')
+     A            ICDEFEITO      1A         TEXT('Defeito')
+     A            ALIAS         10A         TEXT('Código Alternativo')
+     A            CONVERSAO     10A         TEXT('Conversão')
+     A
+     A*==> Campos de Controlo
+     A            CAT10801        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT10802        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT10803       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT10804      10A         TEXT('Quem Criou')
+     A            CAT10805      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD
+     A          K NUSEQU

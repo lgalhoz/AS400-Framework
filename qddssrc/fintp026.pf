@@ -1,0 +1,19 @@
+     A*================================================================
+     A* Tabela....: FINTP026
+     A* Descrição.: Controlo de Operações sobre as Comissões
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP026
+     A            CDEXCEPT       9S 0       TEXT('Código de Excepçao')
+     A            CDREGIS        9S 0       TEXT('Código do Registo')
+     A            NUSEQU         5S 0       TEXT('Sequência')
+     A
+     A*==> Controlo de diferenças nas Comissões
+     A            CDESTAD        1A         TEXT('Situação da Relação')
+     A            DTESTAD        8S 0       TEXT('Data do Estado')
+     A            USESTAD       10A         TEXT('Utilizador')
+     A            CDOPER         3A         TEXT('Operação')
+     A
+     A          K CDEXCEPT
+     A          K CDREGIS
+     A          K NUSEQU

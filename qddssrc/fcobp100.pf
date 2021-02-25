@@ -1,0 +1,19 @@
+     A                                      UNIQUE
+     A          R RCOBP010
+     A            NUMRECIBO     10S 0
+     A            DATEMISSAO      L
+     A            ESTADO         3A
+     A            DATESTADO       L
+     A            CODCOMP        5S 2
+     A            PRMSIMPL       9S 2       ALIAS(PREMSIMPLES)
+     A            PRMCOMER       9S 2       ALIAS(PREMCOMERCIAL)
+     A            MALBONUS       9S 2
+     A            TIPMEDIA       1A
+     A            CODMEDIA       6S 0
+     A            VALCOMIS       9S 2       ALIAS(VALCOMISSAO)
+     A            CANCOBR        3A
+     A            CODSEGUR       6S 0       ALIAS(CODSEGURADO)
+     A            CODRAMO        2S 0
+     A            NUMAPOLIC     10A
+     A
+     A          K NUMRECIBO

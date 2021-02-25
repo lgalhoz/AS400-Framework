@@ -1,0 +1,21 @@
+     A                                      UNIQUE
+     A          R RTMPP001
+     A            RAMO           2S 0
+     A            APOLICE        7S 0
+     A            SITUA          1S 0
+     A            CODSEG         6S 0
+     A            NOSEG         40A
+     A            MACONT         4S 0
+     A            ANOVIAT        4S 0
+     A            CATEG          3A
+     A
+     A            BONUS          1S 0
+     A            VIAGEM         1A
+     A            OCUPA          1A
+     A            PJURID         1A
+     A            DTJURI         6S 0
+     A            QUIV           1A
+     A            DESCONT        5S 2
+     A
+     A          K RAMO
+     A          K APOLICE

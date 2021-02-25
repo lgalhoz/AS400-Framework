@@ -1,0 +1,8 @@
+     A***************************************************************
+     A* Tabela....: FCATP11001
+     A* Descrição.: Ordenação por Produto/Função
+     A***************************************************************
+     A          R RCATP110                  PFILE(FCATP110)
+     A
+     A          K CDPROD
+     A          K CDGRUPO

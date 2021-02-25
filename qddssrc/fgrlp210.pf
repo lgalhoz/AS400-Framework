@@ -1,0 +1,30 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP210
+     A* Descrição..: Indice de rotinas para tratar ficheiros Lusitania
+     A*              Contém informação que possibilitar controlar se
+     A*              um dado interface está a ser tratado dentro da
+     A*              Periodicidade prevista.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLP210
+     A
+     A            CDINTER        9S 0       TEXT('Código de Interface')
+     A            DSINTER       40A         TEXT('Descrição da Rotina')
+     A
+     A*==> Informação do Ficheiro Interface
+     A            CDTEMPL        5S 0       TEXT('Template de Transferência')
+     A            CODDIRE        1A         TEXT('Sentido do Interface')
+     A            NOMFILE       20A         TEXT('Primeiros Caracteres do Nome')
+     A
+     A*==> Rotina de Tratamento e execução
+     A            CDPROGR        5S 0       TEXT('Código da Rotina')
+     A            ICERRO         1A         TEXT('Registo com erros')
+     A            CDPERIO        1A         TEXT('Periodicidade')
+     A            LASTPROC        L         TEXT('Data do último Processamento')
+     A            QTDTOLER       3S 0       TEXT('Dias de Tolerancia')
+     A
+     A*==> Campos de Controlo
+     A            GRL05001        L         TEXT('Data de Inicio')
+     A            GRL05002        L         TEXT('Data de Termo')
+     A
+     A          K CDINTER

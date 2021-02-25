@@ -1,0 +1,24 @@
+     A*==============================================================
+     A* Ficheiro..: FDOCP030
+     A* Objectivo.: Inventário de Templates
+     A*==============================================================
+     A                                      UNIQUE
+     A          R RDOCP030                  TEXT('Inventário de Templates')
+     A            DOC03001      11S 0       ALIAS(CODTEMPLATE)
+                                            TEXT('Codigo de Template')
+     A            DESIGNACAO    45A
+     A            DOC03002      20A         ALIAS(NOMABREVIADO)
+                                            TEXT('Nome Abreviado')
+     A            NOME          45A
+     A            DOC03003      11S 0       ALIAS(CODATRIBUTO)
+                                            TEXT('Codigo de Atributo')
+     A            PARSER        45A
+     A            DESTINO       45A
+     A            CODESTADO      1A
+     A            DATREGISTO      L
+     A            DATESTADO       L
+     A            ICTESTES       1S 0
+     A            ICLOCKED       1S 0
+     A            RESULTADO     10A
+     A
+     A          K DOC03001

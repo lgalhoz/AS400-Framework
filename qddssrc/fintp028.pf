@@ -1,0 +1,46 @@
+     A*================================================================
+     A* Tabela....: FINTP028
+     A* Descrição.: Informação de Recibo Standard
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP028
+     A            CDREGIS        9S 0       TEXT('Código do Registo')
+     A            ICORIG         1A         TEXT('Origem do Recibo')
+     A            CDESTAD        1A         TEXT('Situação do Registo')
+     A            DTHSTAT         Z         TEXT('Data e Hora do Estado')
+     A
+     A*==> Identificação Original
+     A            CCOMP          3S 0       TEXT('Código de Companhia')
+     A            CDRMORG       10A         TEXT('Código de Ramo Original')
+     A            NUAPOLOR      10A         TEXT('Número de Apólice Original')
+     A            NUMRECOR      15A         TEXT('Número de Recibo Original')
+     A            CDCANAL        1A         TEXT('Canal Cobrança')
+     A
+     A*==> Correspondência com José Mata (Corretor)
+     A            NUMORDAP       8S 0       TEXT('Número de Ordem Apólice')
+     A            NUMORDRC       8S 0       TEXT('Número de Ordem Recibo')
+     A            CDRAMO         3S 0       TEXT('Código de Ramo Corretor')
+     A            NUAPOL        10A         TEXT('Número de Apólice')
+     A            NUMSEG         8S 0       TEXT('Código do Segurado')
+     A            NOMSEG        60A         TEXT('Nome do Segurado')
+     A            NUMREC         9A         TEXT('Número Recibo')
+     A            TPRECIB        1A         TEXT('Tipo de Recibo')
+     A            STRECIB        1A         TEXT('Situação do Recibo')
+     A
+     A*==> Valores do Recibos (Datas e Importâncias)
+     A            DTINICIO        L         TEXT('Data de Inicio')
+     A            DTTERMO         L         TEXT('Data de Termo')
+     A            DTENTRAD        L         TEXT('Data de Entrada')
+     A            DTLIMITE        L         TEXT('Data Limite')
+     A            DTPAGAAN        L         TEXT('Data Pagamento/Anulação')
+     A            IMPRCOM       11S 2       TEXT('Prémio Comercial')
+     A            IMPRSIM       11S 2       TEXT('Prémio Simples')
+     A            IMTOTREC      11S 2       TEXT('Total do Recibo')
+     A
+     A*==> Valores de Comissão
+     A            TPCALC         3A         TEXT('Tipo de Calculo')
+     A            IMCOMIS1      11S 2       TEXT('Comissão Cobrança')
+     A            IMCOMIS2      11S 2       TEXT('Comissão Mediação')
+     A            IMCOMIS3      11S 2       TEXT('Comissão Corretagem')
+     A
+     A          K CDREGIS

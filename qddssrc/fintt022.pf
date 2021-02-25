@@ -1,0 +1,39 @@
+     A*===============================================================
+     A* Ficheiro...: FINTT022
+     A* Descrição..: Recibos da Lusitânia Verde - Emitidos
+     A*===============================================================
+     A          R RINTT022
+     A            RAMO           5A         TEXT('Ramo')
+     A            MODAL          5A         TEXT('Modalidade')
+     A            SUBMOD         5A         TEXT('Sub-Modalidade')
+     A            APOL          10A         TEXT('Apólice')
+     A            RECIBO        10A         TEXT('Recibo')
+     A            TOMADOR       40A         TEXT('Tomador')
+     A            TIPO          25A         TEXT('Tipo')
+     A            DTEMIS        12A         TEXT('Data de Emissão')
+     A            DTINIC        12A         TEXT('Data de Inicio')
+     A            DTTERMO       12A         TEXT('Data de Termo')
+     A            DTLIMIT       12A         TEXT('Data Limite')
+     A            PREMIO        13A         TEXT('Prémio Comercial')
+     A            BONUS         13A         TEXT('Bónus')
+     A            ECARG         13A         TEXT('Encargos')
+     A            FUNDOS        13A         TEXT('Fundo/FGA')
+     A            ACTA          13A         TEXT('Apólice/Acta')
+     A            CVERDE        13A         TEXT('Carta Verde')
+     A            INEM          13A         TEXT('INEM')
+     A            SNB           13A         TEXT('SNB')
+     A            SELO          13A         TEXT('Selo')
+     A            TOTAL         13A         TEXT('Total')
+     A            COMISS1       13A         TEXT('Comissão Cobrança')
+     A            COMISS2       13A         TEXT('Comissão Mediação+Protocolo')
+     A            COMISS3       13A         TEXT('Comissão Corretagem')
+     A            COBRSDD        1A         TEXT('Cobrança SDD')
+     A            CAPRC         13A         TEXT('Capital RC Auto')
+     A            CAPDP         13A         TEXT('Capital RC DP')
+     A            CAPREC        13A         TEXT('Capital Recibo')
+     A
+     A          K RAMO
+     A          K MODAL
+     A          K SUBMOD
+     A          K APOL
+     A          K RECIBO

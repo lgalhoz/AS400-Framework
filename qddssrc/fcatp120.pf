@@ -1,0 +1,31 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP120
+     A* Descrição..: Regras para Agravamentos e Descontos
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP120
+     A
+     A            CDPROD         5S 0       TEXT('Código Produto')
+     A            CDITEM         5S 0       TEXT('Código de Item')
+     A*--->       NUSEQU         5S 0       TEXT('Sequencia')
+     A            DSITEM       100A         TEXT('Descrição do Item')
+     A            TPITEM         1A         TEXT('[D]esconto,[A]gravamento')
+     A            CDRISCO        5S 0       TEXT('Código de Risco')
+     A            TXVALOR        5S 4       TEXT('Valor')
+     A            ICDEFEITO      1A         TEXT('[S]im,[N]ão')
+     A            CDMANUT        1A         TEXT('[A]automatica, [M]anual')
+     A            CDREGRA        5S 0       TEXT('Codigo de Regra')
+     A
+     A*==> Campos de Controlo
+     A            CAT12001        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT12002        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT12003       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT12004      10A         TEXT('Quem Criou')
+     A            CAT12005      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD
+     A          K CDITEM
+     A*--->     K NUSEQU

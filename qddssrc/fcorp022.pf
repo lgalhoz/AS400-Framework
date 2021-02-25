@@ -1,0 +1,16 @@
+     A*===============================================================
+     A* Ficheiro...: FCORP022
+     A* Descrição..: Relação Variáveis com os formulários
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCORP022
+ #0  A            CODFORMUL      9S 0       TEXT('Formulário')
+ #1  A            CODVAR         9S 0       TEXT('Variável')
+ #2  A            CODESTADO      1A         TEXT('Estado da Relação')
+ #3  A            PROTEGIDO      1S 0       TEXT('Valor protegido  alterações')
+ #4  A            ORIGEM         1A         TEXT('Origem da Realação')
+ #5  A            DTREGIST        Z         TEXT('Data Registo')
+ #6  A            DTACTUAL        Z         TEXT('Data da Actualização')
+     A
+     A          K CODFORMUL
+     A          K CODVAR

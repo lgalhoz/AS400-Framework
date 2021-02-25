@@ -1,0 +1,24 @@
+     A*================================================================
+     A* Tabela....: FINTP023
+     A* Descrição.: Tratamento de Excepções/Anomalias
+     A*
+     A*             Aqui são controladas as diferenças no comissionamento,
+     A*             aquando da criação do recibo, porque o Segurador não
+     A*             calcolou o valor correcto, ou então no pagamento porque
+     A*             tem de abatar a comissão de cobrança.
+     A*
+     A*             Esta informação vai ter de gerar um recibo adicional
+     A*             para acerto das comissões, fechando desta forma a
+     A*             informação de excepção.
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP023
+     A            CDEXCEPT       9S 0       TEXT('Código de Excepçao')
+     A            CCOMP          3S 0       TEXT('Código de Companhia')
+     A            TPEXCEPT       1A         TEXT('Tipo de Excepção')
+     A            CDESTADO       1A         TEXT('Situação da Excepção')
+     A            CDERRO         7A         TEXT('Código de Erro')
+     A            DTEXCEP        8S 0       TEXT('Data da Excepção')
+     A            QTREGIS        5S 0       TEXT('Quantidade de Recibos')
+     A
+     A          K CDEXCEPT

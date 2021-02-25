@@ -1,0 +1,17 @@
+     A*===============================================================
+     A* Ficheiro...: FCORP021
+     A* Descrição..: Inventário de Formulários
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCORP021
+ #0  A            CODFORMUL      9S 0       TEXT('Código Formulário')
+ #1  A            DESCRICAO    100A         TEXT('Breve descrição ')
+ #2  A            NOME         100A         TEXT('Nome do Formulário')
+ #3  A            ALIAS         10A         TEXT('Alias')
+ #4  A            CODFOLDER      9S 0       TEXT('Localização (Folder)')
+ #5  A            CODGRUPO       5A         TEXT('Grupo do Formulário')
+ #6  A            ISEDIT         1S 0       TEXT('Pode ser Editado')
+ #7  A            ISAUTH         1S 0       TEXT('Está Autorizado')
+ #8  A            DTALTERA        Z
+     A
+     A          K CODFORMUL

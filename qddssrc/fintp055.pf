@@ -1,0 +1,19 @@
+     A*================================================================
+     A* Tabela....: FINTP055
+     A* Descrição.: Controlo do Processo Interrfaces Mediadores
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP055
+     A            CDPROCE        5S 0       TEXT('Código do Processo')
+     A
+     A*==> Identificação Original
+     A            CDESTADO       3A         TEXT('Situação do Processamento')
+     A            DTINICIO       8S 0       TEXT('Data de Inicio')
+     A            DTTERMO        8S 0       TEXT('Data de Termo')
+     A            DTULTPRC       8S 0       TEXT('Data do último Processamento')
+     A
+     A*==> Campos de Controlo do Registo
+     A            INT05501        L
+     A            INT05502        L
+     A
+     A          K CDPROCE

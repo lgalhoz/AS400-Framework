@@ -1,0 +1,32 @@
+     A*================================================================
+     A* Tabela....: FGRLP200
+     A* Descrição.: Template de Transferência de ficheiros
+     A*================================================================
+     A                                      UNIQUE
+     A          R RGRLP200
+     A            CDTEMPL        5S 0       TEXT('Código Transferência')
+     A            DSTEMPL       50A         TEXT('Descrição')
+     A
+     A*==> Informação para o Servidor FTP
+     A            CDSERVER       5S 0       TEXT('Servidor FTP')
+     A            IPSERVER      15A         TEXT('IP do Servidor')
+     A            ISSFTP         1A         TEXT('FTP Seguro')
+     A            CDUSER        20A         TEXT('Código do User')
+     A            CDPASSW       20A         TEXT('Palavra Passe')
+     A            NOPASTA       40A         TEXT('Pasta por defeito')
+     A            FORMATO        6A         TEXT('Formato')
+     A
+     A*==> Informação do ficheiro do Servidor
+     A            TPFILE         4A         TEXT('Tipo de Ficheiro')
+     A            DLCHAR         1A         TEXT('Caracter delimitador')
+     A            LTCHAR         1A         TEXT('Caracteres Latinos')
+     A            UPCHAR         1A         TEXT('Texto em Maiusculas')
+     A
+     A*==> Informação do ficheiro no AS400
+     A            ISS36FILE      1A         TEXT('Ficheiro do Sistema 36')
+     A            LENRECORD      3S 0       TEXT('Largura do Registo')
+     A            SRCREPOS      21A         TEXT('Biblioteca e Ficheiro')
+     A            SRCMBR        10A         TEXT('Source')
+     A            DFTLIB        10A         TEXT('Biblitoteca por defeito')
+     A
+     A          K CDTEMPL

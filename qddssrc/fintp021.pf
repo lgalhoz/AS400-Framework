@@ -1,0 +1,23 @@
+     A*================================================================
+     A* Tabela....: FINTP021
+     A* Descrição.: Correspondência com Apólices J.Mata
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP021
+     A            CCOMP          3S 0       TEXT('Código de Companhia')
+     A            CDRMORG       10A         TEXT('Código de Ramo Original')
+     A            NUAPOL        10A         TEXT('Número de Apólice')
+     A
+     A*==> Correspondencia
+     A            CDCOMP         3S 0       TEXT('Código Companhia')
+     A            NUMORDAP       8S 0       TEXT('Número de Ordem Apólice')
+     A            CDRAMO         3S 0       TEXT('Código de Ramo Corretor')
+     A            NUAPOLJM      10A
+     A            ISARCHIV       1A         TEXT('Registo Arquivado')
+     A
+     A*==> Informação de Débito Directo
+     A            ISDEBDIR       1A         TEXT('É Débito Directo S/N')
+     A
+     A          K CCOMP
+     A          K CDRMORG
+     A          K NUAPOL

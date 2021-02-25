@@ -1,0 +1,17 @@
+     A*===============================================================
+     A* Ficheiro...: FSECP033
+     A* Descrição..: Controlo de Utilizadores
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RSECP033
+     A
+     A            CDUSER        10A         TEXT('Utlizador')
+     A            PASSW         10A         TEXT('Password')
+     A            ISPASS         1A         TEXT('Precisa Passw')
+     A            ISACESS        1A         TEXT('Tipo Acesso A/R')
+     A            NUTENTA        5S 0       TEXT('Tentativas falhadas')
+     A
+     A            SEC03301        L
+     A            SEC03302        L
+     A
+     A          K CDUSER

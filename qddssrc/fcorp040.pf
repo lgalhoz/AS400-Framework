@@ -1,0 +1,23 @@
+     A*===============================================================
+     A* Ficheiro...: FCORP040
+     A* Descrição..: Utilizadores
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCORP040
+ #0  A            CDUSER         9S 0       TEXT('Código de Utilizador')
+ #1  A            ASUSER        10A         TEXT('Perfil do AS400')
+ #2  A            NOME          50A         TEXT('Nome do Utilizador')
+ #3  A            EMAIL        100A         TEXT('Endereço de Mail')
+ #4  A            SIGLA          5A         TEXT('Sigla ou Iniciais do nome')
+     A
+     A*==> Acesso aos Documentos
+ #5  A            ISDOCPA        1S 0       TEXT('Produção Automóvel')
+ #6  A            ISDOCPO        1S 0       TEXT('Produção Outros Ramos')
+ #7  A            ISDOCSA        1S 0       TEXT('Sinistros Automóvel')
+ #8  A            ISDOCSO        1S 0       TEXT('Sinistros Outros Ramos')
+ #9  A            ISDOCTS        1S 0       TEXT('Tesouraria')
+     A
+     A*==> Parameterização do Sistema
+ #10 A            ISPRMTEC       1S 0       TEXT('Parameterização Técnica')
+     A
+     A          K CDUSER

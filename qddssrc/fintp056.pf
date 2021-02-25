@@ -1,0 +1,22 @@
+     A*================================================================
+     A* Tabela....: FINTP056
+     A* Descrição.: Ficheiros Temporários Processados
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP056
+     A            CDPROCE        5S 0       TEXT('Código do Processo')
+     A            NUSEQU         5S 0       TEXT('Ficheiros Processados')
+     A
+     A*==> Temporários
+     A            CDBATCH        9S 0       TEXT('Código da Cadeia Batch')
+     A            CDFILE         5S 0       TEXT('Código do Ficheiro')
+     A            NOLIBL        10A         TEXT('Biblioteca do ficheiro')
+     A            DTPROCES       8S 0       TEXT('Data do Processamento')
+     A            CDERRO         7A         TEXT('Estado do Erro')
+     A
+     A*==> Campos de Controlo do Registo
+     A            INT05601        L
+     A            INT05602        L
+     A
+     A          K CDPROCE
+     A          K NUSEQU

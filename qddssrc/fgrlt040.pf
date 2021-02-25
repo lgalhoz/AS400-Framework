@@ -1,0 +1,28 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP040
+     A* Descrição..: Relação dos Certificados Provisórios
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLT040
+     A
+     A            CDCPROV        9S 0       TEXT('Certificado Provisórios')
+     A            APOLICE       10A         TEXT('Apólice')
+     A            TPSEGURO      30A         TEXT('Tipo de Seguro')
+     A            MATRICULA     15A         TEXT('Matricula')
+     A            MARCA         20A         TEXT('Grupo')
+     A            CODNIF         9S 0       TEXT('Dim. minima')
+     A            TOMADOR       80A         TEXT('Dim. maxima')
+     A            LOCALIDADE    25A         TEXT('Situação')
+     A            DTEMISSAO       L         TEXT('Data de Emissão')
+     A            CDLOGIN       40A         TEXT('Código de Login')
+     A            ESTADO        15A         TEXT('Estado')
+     A            CDCUSTO       40A         TEXT('Centro de Custos')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            CDAGENTE       9S 0       TEXT('Código do Agente')
+     A            CDPRORR        1S 0       TEXT('Prorrogado')
+     A            ICREGULA       1S 0       TEXT('Regularizado')
+     A            ICALTAPOL      1A         TEXT('Apólice Alterada')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A          K CDCPROV

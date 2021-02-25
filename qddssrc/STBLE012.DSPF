@@ -1,0 +1,102 @@
+     A*%%TS  SD  20121001  233207  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A*                                     CA03(03 'Fim')
+     A          R RTBLE01200
+     A*%%TS  SD  20120326  161055  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(2 10 18 60 *NOMSGLIN)
+     A                                      KEEP
+     A                                      OVERLAY
+     A                                      WDWBORDER((*DSPATR HI))
+     A            DS#FNCR       60   O  2  1DSPATR(HI)
+     A            DS#PGMR       60   O  1  1DSPATR(HI)
+     A          R RTBLE01202                SFL
+     A*%%TS  SD  20120509  115643  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            SELECT         1A  B  6  1
+     A            CODIGO    R        O  6  3REFFLD(RTBLP012/CODIGO *LIBL/FTBLP0-
+     A                                      12)
+     A            DSCOD01       42A  O  6 19
+     A          R RTBLE01201                SFLCTL(RTBLE01202)
+     A*%%TS  SD  20120725  114257  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      SFLSIZ(0011)
+     A                                      SFLPAG(0010)
+     A                                      WINDOW(RTBLE01200)
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      CA03(03 'Sair')
+     A                                      CA12(12 'Cancelar')
+     A                                      CA05(05 'Re-Ordenar')
+     A                                      CA06(06 'Adicionar')
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A                                  5  3'Codigo'
+     A                                      COLOR(WHT)
+     A                                  5 19'Descrição'
+     A                                      COLOR(WHT)
+     A            LABEL         10A  O  3  1DSPATR(HI)
+     A            CRITERIA      30A  I  3 12CHGINPDFT(LC)
+     A                                      DSPATR(UL)
+     A          R RTBLE01206
+     A*%%TS  SD  20120509  115643  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CA03(03 'Sair')
+     A                                      CA12(12 'Cancelar')
+     A                                      ENTFLDATR
+     A                                      OVERLAY
+     A                                      WINDOW(RTBLE01200)
+     A                                  6  2'Tabela.....:'
+     A            CDINDICE  R        O  6 15REFFLD(RTBLP012/CDINDICE *LIBL/FTBL-
+     A                                      P012)
+     A                                  7  2'Código.....:'
+     A            CODIGO    R        B  7 15REFFLD(RTBLP012/CODIGO *LIBL/FTBLP0-
+     A                                      12)
+     A N46                                  DSPATR(PR)
+     A  46                                  DSPATR(HI UL)
+     A                                  8  2'Descrição..:'
+     A            DSCOD01       42A  B  8 15CHECK(LC)
+     A          R RTBLE01208
+     A*%%TS  SD  20121001  233207  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(RTBLE01200)
+     A                                      CA03(03 'Sair')
+     A                                      CA12(12 'Cancelar')
+     A                                      ENTFLDATR
+     A                                      OVERLAY
+     A                                  7  4'Código.....:'
+     A                                      DSPATR(HI)
+     A            CODIGO    R        O  7 17REFFLD(RTBLP012/CODIGO *LIBL/FTBLP0-
+     A                                      12)
+     A                                  8  4'Descrição..:'
+     A                                      DSPATR(HI)
+     A            DSCOD01       42A  O  8 17
+     A            TEXTO01       60A  O 11  1
+     A            TEXTO02       60A  O 12  1
+     A            TEXTO03       60A  O 13  1
+     A            TEXTO04       60A  O 14  1
+     A                                 10  1'Descrição da Tabela'
+     A                                      DSPATR(HI)
+     A                                  6  1'Informação do Código'
+     A                                      DSPATR(HI)
+     A          R RTBLE01298
+     A*%%TS  SD  20120801  125543  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(RTBLE01200)
+     A                                      OVERLAY
+     A                                 10 12'| NÃO EXISTEM REGISTOS, PRESSIONE -
+     A                                      A |'
+     A                                      DSPATR(HI)
+     A                                 11 12'|      TECLA F06, PARA INSERIR    -
+     A                                        |'
+     A                                      DSPATR(HI)
+     A                                  9 12'+----------------------------------
+     A                                      --+'
+     A                                      DSPATR(HI)
+     A                                 12 12'+----------------------------------
+     A                                      --+'
+     A                                      DSPATR(HI)
+     A          R RTBLE01299
+     A*%%TS  SD  20120725  115805  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(RTBLE01200)
+     A                                      OVERLAY
+     A            DS#KEY01R     60   O 17  1COLOR(BLU)
+     A            DS#KEY02R     60   O 18  1COLOR(BLU)

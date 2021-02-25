@@ -1,0 +1,16 @@
+     A*===============================================================
+     A* Ficheiro...: FENTP006
+     A* Descrição..: Relação com as Tabelas Originais
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RENTP006
+     A            CDRELAC        9S 0       TEXT('Código da Relação')
+     A            NUSEQU         5S 0       TEXT('Sequência')
+     A            TABELA        20A         TEXT('Biblioteca/ficheiro')
+     A            CHAVE          6S 0       TEXT('Número Original')
+     A            DTALTE         8S 0       TEXT('Data Alteração')
+     A            HRALTE         6S 0       TEXT('Hora Alteração')
+     A            USALTE        10A         TEXT('Utilizador Alteração')
+     A
+     A          K CDRELAC
+     A          K NUSEQU

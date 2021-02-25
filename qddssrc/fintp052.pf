@@ -1,0 +1,24 @@
+     A*================================================================
+     A* Tabela....: FINTP052
+     A* Descrição.: Definição das Interfaces
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP052
+     A            CDMEDIA        9S 0       TEXT('Código do Mediador')
+     A            CDINTER        3S 0       TEXT('Código de Interface')
+     A            NUSEQU         3S 0       TEXT('Sequencia do Campo')
+     A
+     A*==> Informação do Campos da Interface
+     A            CDFIELD        3S 0       TEXT('Código do Campo')
+     A            CVTCODE        2A         TEXT('Código de Conversão')
+     A            ISTODSC        1A         TEXT('Incluir descrição se existir')
+     A            LBLFIELD      20A         TEXT('Label do Campo')
+     A            LBLDESC       20A         TEXT('Label da Descrição')
+     A
+     A*==> Campos de Controlo do Registo
+     A            INT05201        L
+     A            INT05202        L
+     A
+     A          K CDMEDIA
+     A          K CDINTER
+     A          K NUSEQU

@@ -1,0 +1,24 @@
+     A*===============================================================
+     A* Ficheiro...: FRPTP001
+     A* Descrição..: Controlo da Emissão de Cartas/Actas
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RRPTP001
+     A            CDREPORT       5S 0       TEXT('Código de Reporting')
+     A            DSREPORT      40A         TEXT('Descrição')
+     A            CDPROGR        5S 0       TEXT('Programa')
+     A            PERIODIC       2A         TEXT('Periodicidade')
+     A
+     A            ANOMES         6S 0       TEXT('Última execução')
+     A            PERACTUA       3S 0       TEXT('Período Actual')
+     A            CDESTADO       1A         TEXT('Estado')
+     A            DTINICIO        L         TEXT('Data de Inicio')
+     A            DTTERMO         L         TEXT('Data de Termo')
+     A
+     A            TIPPAPEL       1A         TEXT('Tipo de papel')
+     A            CODTICKET      7S 0       TEXT('Código do Ticket')
+     A            USRRESP       10A         TEXT('Utilizador Responsável')
+     A
+     A
+     A
+     A          K CDREPORT

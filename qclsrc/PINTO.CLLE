@@ -1,0 +1,144 @@
+/* PROC        : TRSF05C - TODAS AS APÓLICES E COBERTURAS DO MÊS       */
+/*                                                                     */
+/*  APLICAÇÃO  :  PRODUÇAO GUARDIAN (EXPLORAÇAO TODOS OS RAMOS)        */
+/*  FUNÇÃO     :  - CRIAÇÃO DE FICHEIRO PARA TRANSFERÊNCIA DE          */
+/*             :    INFORMAÇÃO (DADOS) PARA A LUSITANIA "VERDE"        */
+/*                                                                     */
+/*  DADOS      :  FICHEIRO DE APÓLICES / COBERTURAS / CAPITAIS         */
+/*                Este programa corre em dois modos Batch e On-Line    */
+/*                                                                     */
+/*  AUTOR      : LUIS GALHOZ                                           */
+/*  DATA       : 2010-11-02                                            */
+/*=====================================================================*/
+/* REGISTO DE ALTERAÇÕES:                                              */
+/*                                                                     */
+/*=====================================================================*/
+             PGM     /* PARM(&ANOC  &MESC)  */
+             DCL        VAR(&ANO) TYPE(*CHAR) LEN(2)
+             DCL        VAR(&ANON) TYPE(*DEC) LEN(2 0)
+             DCL        VAR(&ANOC) TYPE(*CHAR) LEN(2) VALUE('10')
+
+             DCL        VAR(&MES) TYPE(*CHAR) LEN(2)
+             DCL        VAR(&MESN) TYPE(*DEC) LEN(2 0)
+             DCL        VAR(&MESC) TYPE(*CHAR) LEN(2) VALUE('12')
+             DCL        VAR(&FILNAMA) TYPE(*CHAR) LEN(10)
+             DCL        VAR(&FILNAMO) TYPE(*CHAR) LEN(10)
+             DCL        VAR(&OWNER) TYPE(*CHAR) LEN(10)
+
+             DCLF       FILE(LTLUSIT/TRSF05DSPF)
+
+             /*****************************************************/
+             /* Solicitar o ano e mês de processamento            */
+             /*****************************************************/
+/*           CHGVAR     VAR(&ANO) VALUE(&ANOC)                  */
+/*           MONMSG     MSGID(MCH3601) EXEC(GOTO CMDLBL(ECRA))  */
+/*           CHGVAR     VAR(&MES) VALUE(&MESC)                  */
+/*           MONMSG     MSGID(MCH3601) EXEC(GOTO CMDLBL(ECRA))  */
+/*           GOTO       CMDLBL(SEGUIR)                          */
+
+ ECRA:       SNDRCVF    DEV(*FILE) RCDFMT(TRSF05ECR)
+             IF         COND(&IN03 = '1') THEN(RETURN)
+             IF         COND(&IN12 = '1') THEN(RETURN)
+             CHGVAR     VAR(&MSGERRO) VALUE('Mês ou ano inválidos')
+/*           IF         COND(&MES > '12') THEN(GOTO CMDLBL(ECRA)) */
+/*           IF         COND(&MES < '1') THEN(GOTO CMDLBL(ECRA)) */
+
+             /*****************************************************/
+             /* Criar ficheiro de Interface                       */
+             /*****************************************************/
+ SEGUIR:     CHKOBJ     OBJ(QS36F/LFCOBE) OBJTYPE(*FILE)
+             MONMSG     MSGID(CPF9801) EXEC(DO)
+             CRTPF      FILE(QS36F/LFCOBE) SRCFILE(LTLUSIT/QDDSSRC) +
+                          SRCMBR(LFCOBE)
+             GOTO       CMDLBL(CHKAPL)
+             ENDDO
+
+ CHKAPL:     CHKOBJ     OBJ(QS36F/LFAPOL) OBJTYPE(*FILE)
+             MONMSG     MSGID(CPF9801) EXEC(DO)
+             CRTPF      FILE(QS36F/LFAPOL) SRCFILE(LTLUSIT/QDDSSRC) +
+                          SRCMBR(LFAPOL)
+             GOTO       CMDLBL(NEXT)
+             ENDDO
+
+             /*****************************************************/
+             /* Obter ficheiros diários no mês                    */
+             /*****************************************************/
+ NEXT:       CHGVAR     VAR(&ANOC) VALUE(&ANO)
+             CHGVAR     VAR(&MESC) VALUE(&MES)
+
+             CHGVAR     VAR(&FILNAMA) VALUE('GBDIA' *CAT &MESC *CAT '*')
+             CHGVAR     VAR(&FILNAMO) VALUE('GBDIO' *CAT &MESC *CAT '*')
+             DSPFD      FILE(QS36F/&FILNAMA) TYPE(*BASATR) +
+                          OUTPUT(*OUTFILE) OUTFILE(QTEMP/REGMESA)
+             DSPFD      FILE(QS36F/&FILNAMO) TYPE(*BASATR) +
+                          OUTPUT(*OUTFILE) OUTFILE(QTEMP/REGMESO)
+
+             /*****************************************************/
+             /* Obter Apólices Anuladas no mês, decrementar 2     */
+             /* meses, para localizar o ficheiro gerado           */
+             /*****************************************************/
+             CHGVAR     VAR(&ANON) VALUE(&ANO)
+             CHGVAR     VAR(&MESN) VALUE(&MES)
+             CHGVAR     VAR(&MESN) VALUE(&MESN - 2)
+             IF         COND(&MESN < 0) THEN(DO)
+               CHGVAR     VAR(&MESN) VALUE(12 + &MESN)
+               CHGVAR     VAR(&ANON) VALUE(&ANON - 1)
+             ENDDO
+             CHGVAR     VAR(&ANOC) VALUE(&ANON)
+             CHGVAR     VAR(&MESC) VALUE(&MESN)
+
+             CHGVAR     VAR(&FILNAMA) VALUE('AGRA' *CAT &ANOC *CAT &MESC)
+             CHGVAR     VAR(&FILNAMO) VALUE('AGRO' *CAT &ANOC *CAT &MESC)
+             DSPFD      FILE(QS36F/&FILNAMA) TYPE(*BASATR) +
+                          OUTPUT(*OUTFILE) OUTFILE(QTEMP/REGMESA) +
+                          OUTMBR(*FIRST *ADD)
+             DSPFD      FILE(QS36F/&FILNAMO) TYPE(*BASATR) +
+                          OUTPUT(*OUTFILE) OUTFILE(QTEMP/REGMESO) +
+                          OUTMBR(*FIRST *ADD)
+
+             /*****************************************************/
+             /* Obter Continuados gerados no mês, incrementar 2   */
+             /* unidades ao mês, para localizar o ficheiro gerado */
+             /*****************************************************/
+             CHGVAR     VAR(&ANON) VALUE(&ANO)
+             CHGVAR     VAR(&MESN) VALUE(&MES)
+             CHGVAR     VAR(&MESN) VALUE(&MESN + 2)
+             IF         COND(&MESN > 12) THEN(DO)
+               CHGVAR     VAR(&MESN) VALUE(&MESN - 12)
+               CHGVAR     VAR(&ANON) VALUE(&ANON + 1)
+             ENDDO
+             CHGVAR     VAR(&ANOC) VALUE(&ANON)
+             CHGVAR     VAR(&MESC) VALUE(&MESN)
+
+             CHGVAR     VAR(&FILNAMA) VALUE('CGRA' *CAT &ANOC *CAT &MESC)
+             CHGVAR     VAR(&FILNAMO) VALUE('CGRO' *CAT &ANOC *CAT &MESC)
+             DSPFD      FILE(QS36F/&FILNAMA) TYPE(*BASATR) +
+                          OUTPUT(*OUTFILE) OUTFILE(QTEMP/REGMESA) +
+                          OUTMBR(*FIRST *ADD)
+             DSPFD      FILE(QS36F/&FILNAMO) TYPE(*BASATR) +
+                          OUTPUT(*OUTFILE) OUTFILE(QTEMP/REGMESO) +
+                          OUTMBR(*FIRST *ADD)
+
+             /*****************************************************/
+             /* Processar os ficheiros do mês                     */
+             /*****************************************************/
+             CALL       PGM(LTLUSIT/TRSF05P2)
+
+             /*****************************************************/
+             /* Renomear os ficheiros de acordo com o Standard    */
+             /*****************************************************/
+             /*=> Renomear ficheiro de Apólices                     */
+             CHGVAR     VAR(&MESC) VALUE(&MES)
+             CHGVAR     VAR(&ANOC) VALUE(&ANO)
+             CHGVAR     VAR(&FILNAMA) VALUE('LFAPOL' *CAT &ANOC +
+                          *CAT &MESC)
+             RNMOBJ     OBJ(QS36F/LFAPOL) OBJTYPE(*FILE) +
+                          NEWOBJ(&FILNAMA)
+
+             /*=> Renomear ficheiro de Coberturas                   */
+             CHGVAR     VAR(&FILNAMA) VALUE('LFCOBE' *CAT &ANOC +
+                          *CAT &MESC)
+             RNMOBJ     OBJ(QS36F/LFCOBE) OBJTYPE(*FILE) +
+                          NEWOBJ(&FILNAMA)
+
+             ENDPGM

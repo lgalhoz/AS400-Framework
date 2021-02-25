@@ -1,0 +1,18 @@
+     A*===============================================================
+     A* Ficheiro...: FSECP031
+     A* Descrição..: Controlo de sessões HTTP
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RSECP031
+     A
+     A            CDSESSAO       5S 0       TEXT('Código')
+     A            CDUSER        10A         TEXT('Itens Numerados')
+     A            SSID           5S 0
+     A            IP            15A
+     A            ICESTADO       1A
+     A            DTINI           L
+     A            HRINI           T
+     A            DTACT           L
+     A            HRACT           T
+     A
+     A          K CDSESSAO

@@ -1,0 +1,12 @@
+     A                                      UNIQUE
+     A          R RCOBP014
+     A            NUMRECIBO     10S 0
+     A            SEQUENCIA     10S 0
+     A            CODMOVIM       4A
+     A            VALMOVIM       9S 2
+     A            DATREGISTO      L
+     A            ESTADO         3A
+     A            DATESTADO       L
+     A
+     A          K NUMRECIBO
+     A          K SEQUENCIA

@@ -1,0 +1,22 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP116
+     A* Descrição..: Classificação dos Items
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP116
+     A            CDITEM         2A         TEXT('Código de Item')
+     A            DSITEM        40A         TEXT('Descrição')
+     A            CDPAGINA       5S 0       TEXT('Código de Página')
+     A            CDFUNCT        5S 0       TEXT('Código de Função')
+     A
+     A*==> Campos de Controlo
+     A            CAT11601        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT11602        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT11603       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT11604      10A         TEXT('Quem Criou')
+     A            CAT11605      10A         TEXT('Quem Alterou')
+     A
+     A          K CDITEM

@@ -1,0 +1,18 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP204
+     A* Descrição..: Sessão de Exportação para Excel
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLP204
+     A
+     A            CDSESS         5S 0       TEXT('Código de Sessão')
+     A            DSSESS        50A         TEXT('Descrição da Sessão')
+     A            CDTEMPL        5S 0       TEXT('Código Transferência')
+     A            FILES        100A         TEXT('Lista de Ficheiros')
+     A            CRITER       100A         TEXT('Criteria')
+     A
+     A*-----> Campos de Controlo
+     A            GRL20401        L         TEXT('Data de Criação')
+     A            GRL20402        L         TEXT('Data de Alteração')
+     A
+     A          K CDSESS

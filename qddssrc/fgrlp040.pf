@@ -1,0 +1,25 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP040
+     A* Descrição..: Relação dos Certificados Provisórios
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLP040
+     A
+     A            CDCPROV        9S 0       TEXT('Certificado Provisórios')
+     A            NUAPOL         7S 0       TEXT('Código da Apólice')
+     A            NUSEGNET      10A         TEXT('Número SegurNet')
+     A            TPSEGURO       2A         TEXT('Tipo de Seguro')
+     A            MATRICULA     15A         TEXT('Matricula')
+     A            MARCA         30A         TEXT('Grupo')
+     A            NUSEGU         6S 0       TEXT('Número do Segurado')
+     A            CDNIF          9S 0       TEXT('Número de Contribuinte')
+     A            TOMADOR       80A         TEXT('Nome do Tomador')
+     A            LOCALIDADE    25A         TEXT('Localidade')
+     A            DTINICIO        L         TEXT('Data de Inicio')
+     A            CDMEDIA        6S 0       TEXT('Código de Mediador')
+     A
+     A*-----> Campos de Controlo
+     A            GRL04001        L         TEXT('Data de Criação')
+     A            GRL04002        L         TEXT('Data de Alteração')
+     A
+     A          K CDCPROV

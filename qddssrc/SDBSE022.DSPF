@@ -1,0 +1,104 @@
+     A*%%TS  SD  20130512  230245  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A*                                     CA03(03 'Fim')
+     A          R RDBSO02200
+     A*%%TS  SD  20110513  094845  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A                                      PUTRETAIN
+     A                                      WINDOW(2 10 18 60 *NOMSGLIN)
+     A                                      WDWBORDER((*DSPATR HI))
+     A            DS#FNCR       60   O  2  1DSPATR(HI)
+     A            DS#PGMR       60   O  1  1DSPATR(HI)
+     A          R RDBSO02205
+     A*%%TS  SD  20130512  230245  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(RDBSO02200)
+     A                                      CA03(03 'Sair')
+     A                                      CA12(12 'Cancelar')
+     A                                      OVERLAY
+     A                                  3  1'Estimado'
+     A                                  3 10'Utilizador,'
+     A                                  3 22'existem'
+     A                                  3 30'alterações'
+     A                                  3 41'pendentes'
+     A                                  3 51'em'
+     A                                  3 54'outros'
+     A                                  4  1'ecrãs.'
+     A                                  4  8'As'
+     A                                  4 11'razões'
+     A                                  4 18'para'
+     A                                  4 23'estar'
+     A                                  4 29'a'
+     A                                  4 31'receber'
+     A                                  4 39'esta'
+     A                                  4 44'mensagem:'
+     A                                  5  1'1.'
+     A                                  5  4'Está'
+     A                                  5  9'em'
+     A                                  5 12'modo'
+     A                                  5 17'de'
+     A                                  5 20'Alteração'
+     A                                  5 30'e'
+     A                                  5 32'acedeu'
+     A                                  5 39'ao'
+     A                                  5 42'Menu'
+     A                                  5 47'de'
+     A                                  5 50'opções'
+     A                                  6  4'adicionais'
+     A                                  6 15'disponível'
+     A                                  6 26'através'
+     A                                  6 34'da'
+     A                                  6 37'tecla'
+     A                                  6 43'de'
+     A                                  6 46'função'
+     A                                  6 53'F05,'
+     A                                  6 58'e'
+     A                                  7  4'alterou'
+     A                                  7 12'alguma'
+     A                                  7 19'informação.'
+     A                                  8  1'2.'
+     A                                  8  4'Pediu'
+     A                                  8 10'para'
+     A                                  8 15'visualizar'
+     A                                  8 26'alguma'
+     A                                  8 33'informação'
+     A                                  8 44'através'
+     A                                  8 52'da'
+     A                                  8 55'tecla'
+     A                                  9  4'de'
+     A                                  9  7'função'
+     A                                  9 14'F05,'
+     A                                  9 19'e'
+     A                                  9 21'por'
+     A                                  9 25'este'
+     A                                  9 30'motivo'
+     A                                  9 37'foi'
+     A                                  9 41'reconstruída'
+     A                                  9 54'a'
+     A                                 10  4'a'
+     A                                 10  6'informação'
+     A                                 10 17'para'
+     A                                 10 22'a'
+     A                                 10 24'Apólice'
+     A                                 10 32'(no'
+     A                                 10 36'Modo'
+     A                                 10 41'de'
+     A                                 10 44'Consulta'
+     A                                 10 53'ou'
+     A                                 10 56'de'
+     A                                 11  4'alteração).'
+     A                                 13  1'Seleccione a opção (S), se pretend-
+     A                                      er tornar efectivas as'
+     A                                 14  1'alterações, ou então (N), para dar-
+     A                                       sem efeito.'
+     A                                 16 16'Opção..:'
+     A                                      COLOR(BLU)
+     A            OPCAO          1A  B 16 25DSPATR(HI)
+     A                                 16 27'(N=desfazer Alterações)'
+     A                                      COLOR(BLU)
+     A          R RDBSO02299
+     A*%%TS  SD  20110511  152934  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(RDBSO02200)
+     A                                      OVERLAY
+     A            DS#KEY01R     60   O 17  1COLOR(BLU)
+     A            DS#KEY02R     60   O 18  1COLOR(BLU)

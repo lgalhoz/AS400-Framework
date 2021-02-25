@@ -1,0 +1,17 @@
+     A*===============================================================
+     A* Ficheiro...: FINTT011
+     A* Descrição..: (LFCOS) Interface de CO-SEGURO
+     A*===============================================================
+     A          R RINTT011
+     A            LRAMO          2S 0       TEXT('Ramo                        ')
+     A            LAPOL          7S 0       TEXT('Apólice                     ')
+     A            LDATA          8S 0       TEXT('Data efeito                 ')
+     A            LNSEG          5S 0       TEXT('Nº Seguradora               ')
+     A            LQPER          5S 3       TEXT('Percentagem                 ')
+     A            LLIDER         1A         TEXT('É a Lider?                  ')
+     A            LTGEST        11S 2       TEXT('Taxa Gestão                 ')
+     A            LTGESS        11S 2       TEXT('Taxa Gestão Sinistro        ')
+     A            LAPLDR        15A         TEXT('Apólice Lider               ')
+     A
+     A          K LRAMO
+     A          K LAPOL

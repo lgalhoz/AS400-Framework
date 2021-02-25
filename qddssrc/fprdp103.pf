@@ -1,0 +1,9 @@
+     A*================================================================
+     A* Tabela....: FPRDP103
+     A* Alias.....: Contador
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A          R RPRDP103                  TEXT('Dproprios')
+     A            OPCAODP        3A         TEXT('Opção de Danos Próprios')
+     A
+     A          K OPCAODP

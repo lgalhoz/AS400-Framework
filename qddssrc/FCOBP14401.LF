@@ -1,0 +1,8 @@
+     A***************************************************************
+     A* Tabela....: FCOBP14401
+     A* Descrição.: Ligação do Continuado por mes e ano
+     A***************************************************************
+     A          R RCOBP144                  PFILE(FCOBP144)
+     A
+     A          K NUMORDEM
+     A          K MACONT

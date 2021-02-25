@@ -1,0 +1,29 @@
+     A*===============================================================
+     A* Ficheiro...: FINTT028
+     A* Descrição..: Recibos da ZURICH VIDA
+     A*===============================================================
+     A          R RINTT028
+     A
+     A            TOMADOR       60A         TEXT('Tomador')
+     A            MORADA        60A         TEXT('Morada')
+     A            TIPREC         3A         TEXT('Tipo de Recibo')
+     A            RAMO           8A         TEXT('Código de Ramo')
+     A            CDAGCOB        8A         TEXT('Agente Angariador')
+     A            CDAGANG        8A         TEXT('Agente Cobrador')
+     A            NUAPOL        10A         TEXT('Número da Apólice')
+     A            NURECIB       10A         TEXT('Número de Recibo')
+     A            DATINI         8A         TEXT('Data de Inicio')
+     A            DATFIM         8A         TEXT('Data de Termo')
+     A            DATEMI         8A         TEXT('Data de Emissão')
+     A            DATVENC        8A         TEXT('Data de Vencimento/Pagamento')
+     A            CAPSEG        13A         TEXT('Capital Seguro')
+     A            RISCO         40A         TEXT('Objecto de Risco')
+     A            PRCOMER       13A         TEXT('Prémio Comercial')
+     A            APOLACTA      13A         TEXT('Apólice/Acta')
+     A            PRTOTAL       13A         TEXT('Prémio Total')
+     A            COMCOB        13A         TEXT('Comissão Cobrança')
+     A            COMANG        13A         TEXT('Comissão Angariação')
+     A
+     A          K RAMO
+     A          K NUAPOL
+     A          K NURECIB

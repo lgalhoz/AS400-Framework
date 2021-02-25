@@ -1,0 +1,18 @@
+     A*===============================================================
+     A* Ficheiro...: FENTP011
+     A* Descrição..: Comentários
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RENTP011
+     A            CDREGIS        9S 0       TEXT('Código de Registo')
+     A            NUSEQU         3S 0       TEXT('Sequencia')
+     A            OBSERVA       77A         TEXT('Linha de Comentários')
+     A
+     A*==> Campos de Controlo
+     A            ENT01104      10A         TEXT('Utilizador Criação')
+     A            ENT01105      10A         TEXT('Utilizador Eliminação')
+     A            ENT01106        L         TEXT('Data de Criação')
+     A            ENT01107        L         TEXT('Data de Alteração')
+     A
+     A          K CDREGIS
+     A          K NUSEQU

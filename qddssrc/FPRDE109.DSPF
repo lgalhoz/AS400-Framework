@@ -1,0 +1,63 @@
+     A*%%TS  SD  20120928  103936  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R RPRDE10900
+     A*%%TS  SD  20120928  102700  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                  2  2TIME
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  1 71USER
+     A            S#PGM         10A  O  2 71
+     A            DS#PGM        57   O  1 12DSPATR(HI)
+     A            DS#FNC        57   O  2 12DSPATR(HI)
+     A          R RPRDE10905
+     A*%%TS  SD  20120928  103936  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF04(04 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                      CF14(14 'Cancelar')
+     A                                      OVERLAY
+     A                                 14  2'Vencimento'
+     A                                      DSPATR(HI)
+     A                                 10  2'Base'
+     A                                      DSPATR(HI)
+     A                                 11  4'Ano/Trim.:'
+     A                                 12  4'Valor....:'
+     A            VALVENC        9Y 2O 16 15EDTCDE(1)
+     A            VALBASE        9Y 2O 12 15EDTCDE(1)
+     A            ANOBASE        6Y 0B 11 15EDTWRD('    /  ')
+     A N60                                  DSPATR(PR)
+     A  60                                  DSPATR(HI)
+     A            ANOVENC        6Y 0B 15 15EDTWRD('    /  ')
+     A N60                                  DSPATR(PR)
+     A  60                                  DSPATR(HI)
+     A                                  6  2'Incidência'
+     A                                      DSPATR(HI)
+     A            DESCINC       30A  O  7 15
+     A                                 15  4'Ano/Trim.:'
+     A                                 16  4'Valor....:'
+     A                                  4  2'Apólice:'
+     A                                      DSPATR(HI)
+     A            RAMO           2S 0O  4 11
+     A            APOLICE        7S 0O  4 14
+     A                                  7  4'Descrição:'
+     A                                  8  4'Valor....:'
+     A            VALINDICE      5Y 4O  8 15EDTCDE(1)
+     A            DESCVENC      60A  O 15 23
+     A            DESCBASE      60A  O 11 23
+     A                                  8 22'%'
+     A            NOMSEG        40A  O  4 22
+     A                                 18  2'Observações'
+     A                                      DSPATR(HI)
+     A            OBS1          45   B 19  5
+     A N60                                  DSPATR(PR)
+     A  60                                  DSPATR(HI)
+     A            OBS2          45   B 20  5
+     A N60                                  DSPATR(PR)
+     A  60                                  DSPATR(HI)
+     A          R RPRDE10999
+     A*%%TS  SD  20120726  144647  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            DS#KEY01      78   O 22  2COLOR(BLU)
+     A            DS#KEY02      78   O 23  2COLOR(BLU)
+     A            ERR#MSG       78   O 24  2COLOR(RED)

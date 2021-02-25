@@ -1,0 +1,395 @@
+     H Option( *SrcStmt )  BndDir( 'QC2LE' )  DatEdit( *DMY/ )  DFTACTGRP(*NO)
+     **-- Printer file:  -----------------------------------------------------**
+     FQSYSPRT   O    F  132        Printer  InfDs( PrtLinInf )  OflInd( *InOf )
+     **-- Printer file information:  -----------------------------------------**
+     D PrtLinInf       Ds
+     D  PlOvfLin                      5i 0  Overlay( PrtLinInf: 188 )
+     D  PlCurLin                      5i 0  Overlay( PrtLinInf: 367 )
+     D  PlCurPag                      5i 0  Overlay( PrtLinInf: 369 )
+     **-- System information:  -----------------------------------------------**
+     D                SDs
+     D  PsPgmNam         *Proc
+     **-- API error data structure:  -----------------------------------------**
+     D ApiError        Ds
+     D  AeBytPrv                     10i 0 Inz( %Size( ApiError ))
+     D  AeBytAvl                     10i 0
+     **-- Global variables:  -------------------------------------------------**
+     D Idx             s             10i 0
+     D EntDta          s           4096a   Varying
+     **
+     D Time            s              6s 0
+     D NbrRcds         s             10u 0
+     D JrnEntDts       s             20a   Inz( *All'0' )
+     D JrnDta          s             24a
+     **-- Retrieve journal entry data:  --------------------------------------**
+     D JeRcvVar        Ds                  Align
+     D  JhJrnHdr
+     D   JhBytRtn                    10i 0 Overlay( JhJrnHdr: 1 )
+     D   JhOfsHdrJrnE                10i 0 Overlay( JhJrnHdr: *Next )
+     D   JhNbrEntRtv                 10i 0 Overlay( JhJrnHdr: *Next )
+     D   JhConInd                     1a   Overlay( JhJrnHdr: *Next )
+     D   JhConRcvStr                 10a   Overlay( JhJrnHdr: *Next )
+     D   JhConLibStr                 10a   Overlay( JhJrnHdr: *Next )
+     D   JhConSeqNbr                 20s 0 Overlay( JhJrnHdr: *Next )
+     D                               11a   Overlay( JhJrnHdr: *Next )
+     D  JeData                    32754a
+     **-- Entry header:
+     D JeEntHdr        Ds                  Based( pEntHdr )
+     D  JeOfsHdrJrnE                 10u 0
+     D  JeOfsNulValI                 10u 0
+     D  JeOfsEntDta                  10u 0
+     D  JeOfsTrnId                   10u 0
+     D  JeOfsLglUoW                  10u 0
+     D  JeOfsRcvInf                  10u 0
+     D  JeSeqNbr                     20u 0
+     D  JeTimStp                     20u 0
+     D  JeTimStpC                     8a   Overlay( JeTimStp )
+     D  JeThrId                      20u 0
+     D  JeSysSeqNbr                  20u 0
+     D  JeCntRrn                     20u 0
+     D  JeCmtCclId                   20u 0
+     D  JePtrHdl                     10u 0
+     D  JeRmtPort                     5u 0
+     D  JeArmNbr                      5u 0
+     D  JePgmLibAsp                   5u 0
+     D  JeRmtAdr                     16a
+     D  JeJrnCde                      1a
+     D  JeEntTyp                      2a
+     D  JeJobNam                     10a
+     D  JeUsrNam                     10a
+     D  JeJobNbr                      6a
+     D  JePgmNam                     10a
+     D  JePgmLib                     10a
+     D  JePgmLibAspDv                10a
+     D  JeObject                     30a
+     D  JeUsrPrf                     10a
+     D  JeJrnId                      10a
+     D  JeAdrFam                      1a
+     D  JeSysNam                      8a
+     D  JeIndFlg                      1a
+     D  JeObjNamInd                   1a
+     D  JeBitFld                      1a
+     D  JeRsv                         9a
+     **
+     ** JeBitFld:
+     D                 Ds
+     D   JbRefCst                     1s 0
+     D   JbTrg                        1s 0
+     D   JbIncDta                     1s 0
+     D   JbIgnApyRmvJ                 1s 0
+     D   JbMinEntDta                  1s 0
+     D   JbRsv                        3a
+     **-- Null values - *VARLEN:
+     D JeNulValVar     Ds                  Based( pNulVal )
+     D  JnNulValLen                  10i 0
+     D  JnNulValIndV                512a
+     **-- Null values - length:
+     D JeNulValLen     Ds                  Based( pNulVal )
+     D  JnNulValIndL                512a
+     **-- Entry data:
+     D JeEntDta        Ds                  Based( pEntDta )
+     D  JdEntDtaLen                   5s 0
+     D                               11a
+     D  JdEntDta                   4096a
+     **-- Logical unit of work:
+     D JeLglUoW        Ds                  Based( pLglUow )
+     D  JuLglUoW                     39a
+     **-- Receiver information:
+     D JeRcvInf        Ds                  Based( pRcvInf )
+     D  JrRcvNam                     10a
+     D  JrRcvLib                     10a
+     D  JrRcvLibAspDv                10a
+     D  JrRcvLibAspNb                 5i 0
+     **
+     **-- Retrieve journal entry selection records:  -------------------------**
+     D JrnEntRtv       Ds
+     D  JeNbrVarRcd                  10i 0
+     **-- RCVRNG - *CURRENT, *CURCHAIN
+     D JrnVarR01       Ds
+     D  JvR01RcdLen                  10i 0 Inz( %Size( JrnVarR01 ))
+     D  JvR01Key                     10i 0 Inz( 1 )
+     D  JvR01DtaLen                  10i 0 Inz( %Size( JvR01Dta ))
+     D  JvR01Dta                     40a   Inz( '*CURCHAIN' )
+     D   JvR01RcvStr                 10a   Overlay( JvR01Dta: 1 )
+     D   JvR01LibStr                 10a   Overlay( JvR01Dta: *Next )
+     D   JvR01RcvEnd                 10a   Overlay( JvR01Dta: *Next )
+     D   JvR01LibEnd                 10a   Overlay( JvR01Dta: *Next )
+     **-- FROMENT - *FIRST
+     D JrnVarR02       Ds
+     D  JvR02RcdLen                  10i 0 Inz( %Size( JrnVarR02 ))
+     D  JvR02Key                     10i 0 Inz( 2 )
+     D  JvR02DtaLen                  10i 0 Inz( %Size( JvR02Dta ))
+     D  JvR02Dta                     20a   Inz( '*FIRST' )
+     D  JvR02SeqNbr                  20s 0 Overlay( JvR02Dta )
+     **-- FROMTIME
+     D JrnVarR03       Ds
+     D  JvR03RcdLen                  10i 0 Inz( %Size( JrnVarR03 ))
+     D  JvR03Key                     10i 0 Inz( 3 )
+     D  JvR03DtaLen                  10i 0 Inz( %Size( JvR03Dta ))
+     D  JvR03Dta                     26a
+     **-- TOENT - *LAST
+     D JrnVarR04       Ds
+     D  JvR04RcdLen                  10i 0 Inz( %Size( JrnVarR04 ))
+     D  JvR04Key                     10i 0 Inz( 4 )
+     D  JvR04DtaLen                  10i 0 Inz( %Size( JvR04Dta ))
+     D  JvR04Dta                     20a   Inz( '*LAST' )
+     **-- TOTIME
+     D JrnVarR05       Ds
+     D  JvR05RcdLen                  10i 0 Inz( %Size( JrnVarR05 ))
+     D  JvR05Key                     10i 0 Inz( 5 )
+     D  JvR05DtaLen                  10i 0 Inz( %Size( JvR05Dta ))
+     D  JvR05Dta                     26a
+     **-- NBRENT
+     D JrnVarR06       Ds
+     D  JvR06RcdLen                  10i 0 Inz( %Size( JrnVarR06 ))
+     D  JvR06Key                     10i 0 Inz( 6 )
+     D  JvR06DtaLen                  10i 0 Inz( %Size( JvR06Dta ))
+     D  JvR06Dta                     10i 0 Inz( 1000 )
+     **-- JRNCDE - *ALL, *CTL / *ALLSLT, *IGNFILSLT
+     D JrnVarR07       Ds
+     D  JvR07RcdLen                  10i 0 Inz( %Size( JrnVarR07 ))
+     D  JvR07Key                     10i 0 Inz( 7 )
+     D  JvR07DtaLen                  10i 0 Inz( %Size( JvR07Dta ))
+     D  JvR07Dta
+     D   JcNbrCod                    10i 0 Overlay( JvR07Dta: 1 )
+     D   JcJrnCod                    20a   Overlay( JvR07Dta: *Next ) Dim( 16 )
+     D    JcJrnCodVal                10a   Overlay( JcJrnCod: 1 )
+     D    JcJrnCodSlt                10a   Overlay( JcJrnCod: *Next )
+     **-- ENTTYP - *ALL, *RCD
+     D JrnVarR08       Ds
+     D  JvR08RcdLen                  10i 0 Inz( %Size( JrnVarR08 ))
+     D  JvR08Key                     10i 0 Inz( 8 )
+     D  JvR08DtaLen                  10i 0 Inz( %Size( JvR08Dta ))
+     D  JvR08Dta
+     D   JcNbrTyp                    10i 0 Overlay( JvR08Dta: 1 )
+     D   JcEntTyp                    10a   Overlay( JvR08Dta: *Next )  DIM(16)
+     **-- JOB - *ALL
+     D JrnVarR09       Ds
+     D  JvR09RcdLen                  10i 0 Inz( %Size( JrnVarR09 ))
+     D  JvR09Key                     10i 0 Inz( 9 )
+     D  JvR09DtaLen                  10i 0 Inz( %Size( JvR09Dta ))
+     D  JvR09Dta
+     D   JcJobName                   10a   Overlay( JvR09Dta: 1 )
+     D   JcUserName                  10a   Overlay( JvR09Dta: *Next )
+     D   JcJobNumber                  6a   Overlay( JvR09Dta: *Next )
+     **-- PGM - *ALL
+     D JrnVarR10       Ds
+     D  JvR10RcdLen                  10i 0 Inz( %Size( JrnVarR10 ))
+     D  JvR10Key                     10i 0 Inz( 10 )
+     D  JvR10DtaLen                  10i 0 Inz( %Size( JvR10Dta ))
+     D  JvR10Dta                     10a   Inz( '*ALL' )
+     **-- USRPRF * *ALL
+     D JrnVarR11       Ds
+     D  JvR11RcdLen                  10i 0 Inz( %Size( JrnVarR11 ))
+     D  JvR11Key                     10i 0 Inz( 11 )
+     D  JvR11DtaLen                  10i 0 Inz( %Size( JvR11Dta ))
+     D  JvR11Dta                     10a   Inz( '*ALL' )
+     **-- CMTCYCID - *ALL
+     D JrnVarR12       Ds
+     D  JvR12RcdLen                  10i 0 Inz( %Size( JrnVarR12 ))
+     D  JvR12Key                     10i 0 Inz( 12 )
+     D  JvR12DtaLen                  10i 0 Inz( %Size( JvR12Dta ))
+     D  JvR12Dta                     20a   Inz( '*ALL' )
+     **-- DEPENT - *ALL, *NONE
+     D JrnVarR13       Ds
+     D  JvR13RcdLen                  10i 0 Inz( %Size( JrnVarR13 ))
+     D  JvR13Key                     10i 0 Inz( 13 )
+     D  JvR13DtaLen                  10i 0 Inz( %Size( JvR13Dta ))
+     D  JvR13Dta                     10a   Inz( '*ALL' )
+     **-- INCENT - *CONFIRMED, *ALL
+     D JrnVarR14       Ds
+     D  JvR14RcdLen                  10i 0 Inz( %Size( JrnVarR14 ))
+     D  JvR14Key                     10i 0 Inz( 14 )
+     D  JvR14DtaLen                  10i 0 Inz( %Size( JvR14Dta ))
+     D  JvR14Dta                     10a   Inz( '*CONFIRMED' )
+     **-- NULLINDLEN - *VARLEN
+     D JrnVarR15       Ds
+     D  JvR15RcdLen                  10i 0 Inz( %Size( JrnVarR15 ))
+     D  JvR15Key                     10i 0 Inz( 15 )
+     D  JvR15DtaLen                  10i 0 Inz( %Size( JvR15Dta ))
+     D  JvR15Dta                     10a   Inz( '*VARLEN' )
+     **-- FILE - *ALLFILE, *ALL
+     D JrnVarR16       Ds
+     D  JvR16RcdLen                  10i 0 Inz( %Size( JrnVarR16 ))
+     D  JvR16Key                     10i 0 Inz( 16 )
+     D  JvR16DtaLen                  10i 0 Inz( %Size( JvR01Dta ))
+     D  JvR16Dta
+     D   JcNbrFil                    10i 0 Overlay( JvR16Dta: 1 )
+     D   JcFilNamQ                   30a   Overlay( JvR16Dta: *Next )
+     D                                     Dim( 16 )
+     D    JfFilNam                   10a   Overlay( JcFilNamQ: 1 )
+     D    JfLibNam                   10a   Overlay( JcFilNamQ: *Next )
+     D    JfMbrNam                   10a   Overlay( JcFilNamQ: *Next )
+     **-- Retrieve journal entries:  -----------------------------------------**
+     D RtvJrnE         Pr                  ExtProc( 'QjoRetrieveJournalEntries')
+     D  RjRcvVar                  32767a          Options( *VarSize )
+     D  RjRcvVarLen                  10i 0 Const
+     D  RjJrnNamQ                    20a   Const
+     D  RjRcvInfFmt                   8a   Const
+     D  RjSltInf                  32767a   Const  Options( *NoPass: *VarSize )
+     D  RjError                   32767a          Options( *NoPass: *VarSize )
+     **-- Delete pointer handle:  --------------------------------------------**
+     D DltPtrHdl       Pr                  ExtProc( 'QjoDeletePointerHandle' )
+     D  DhPtrHdl                     10u 0 Const
+     D  DhError                   32767a          Options( *NoPass: *VarSize )
+     **-- Test bit in string:  -----------------------------------------------**
+     D tstbts          Pr            10i 0 ExtProc( 'tstbts' )
+     D  String                         *   Value
+     D  BitOfs                       10u 0 Value
+     **-- Convert date & time:  ----------------------------------------------**
+     D CvtDtf          Pr                  ExtPgm( 'QWCCVTDT' )
+     D  CdInpFmt                     10a   Const
+     D  CdInpVar                     17a   Const  Options( *VarSize )
+     D  CdOutFmt                     10a   Const
+     D  CdOutVar                     17a          Options( *VarSize )
+     D  CdError                      10i 0 Const
+     **
+     **-- Mainline:  ---------------------------------------------------------**
+     **
+     C                   Time                    Time
+     C                   Except    Header
+     **
+     **-- Setup entry type selection criteria - replace values and number
+     **-- of values if applicable for your test purposes:
+     C                   Eval      JcNbrTyp    = 1
+     C*                  Eval      JcEntTyp(1) = 'PT'
+     C                   Eval      JcJobName   = 'QPADEV0027'
+     C                   Eval      JcUserName  = 'LGALHOZ'
+     C                   Eval      JcJobNumber = '300973'
+     **
+     **-- Replace journal name and library if appropriate for your
+     **-- environment.  Journal selection entries can be added and
+     **-- removed as necessary - just set JeNbrVarRcd accordingly:
+     C                   Eval      JeNbrVarRcd = 4
+     **
+     C                   DoU       JhConInd    = '0'           Or
+     C                             AeBytAvl    > *Zero
+     **
+     C                   CallP     RtvJrnE( JeRcvVar
+     C                                    : %Size( JeRcvVar )
+     C                                    : 'JMDBS     #JMPRDDBS'
+     C                                    : 'RJNE0200'
+     C                                    : JrnEntRtv  +
+     C                                      JrnVarR01  +
+     C                                      JrnVarR02  +
+     C                                      JrnVarR06  +
+     C                                      JrnVarR08  +
+     C                                      JrnVarR09
+     C                                    : ApiError
+     C                                    )
+     **
+     C                   If        AeBytAvl    = *Zero
+     C                   Eval      pEntHdr     = %Addr( JeRcvVar ) +
+     C                                           JhOfsHdrJrnE
+     **
+     C                   For       Idx = 1  to JhNbrEntRtv
+     **
+     C                   ExSr      PrcLstEnt
+     **
+     C                   If        JePtrHdl    > *Zero
+     C                   CallP(e)  DltPtrHdl( JePtrHdl )
+     C                   EndIf
+     **
+     C                   If        Idx         < JhNbrEntRtv
+     C                   Eval      pEntHdr     = pEntHdr + JeOfsHdrJrnE
+     C                   EndIf
+     **
+     C                   EndFor
+     **
+     C                   If        JhConInd    = '1'
+     C                   Eval      JvR01RcvStr = JhConRcvStr
+     C                   Eval      JvR01LibStr = JhConLibStr
+     C                   Eval      JvR01RcvEnd = '*CURRENT'
+     C                   Eval      JvR02SeqNbr = JhConSeqNbr
+     C                   EndIf
+     C                   EndIf
+     **
+     C                   EndDo
+     **
+     C                   If        NbrRcds    =  *Zero
+     C                   Except    NoRcds
+     C                   EndIf
+     **
+     C                   Eval      *InLr       = *On
+     C                   Return
+     **
+     **-- Process list entry:  -----------------------------------------------**
+     C     PrcLstEnt     BegSr
+     **
+     C                   Eval      JbRefCst     = tstbts( %Addr( JeBitFld ): 0 )
+     C                   Eval      JbTrg        = tstbts( %Addr( JeBitFld ): 1 )
+     C                   Eval      JbIncDta     = tstbts( %Addr( JeBitFld ): 2 )
+     C                   Eval      JbIgnApyRmvJ = tstbts( %Addr( JeBitFld ): 3 )
+     C                   Eval      JbMinEntDta  = tstbts( %Addr( JeBitFld ): 4 )
+     **
+     C                   Eval      pEntDta      = pEntHdr + JeOfsEntDta
+     C                   Eval      EntDta       = %SubSt( JdEntDta
+     C                                                  : 1
+     C                                                  : JdEntDtaLen
+     C                                                  )
+     **
+     C                   If        JeOfsNulValI > *Zero
+     C                   Eval      pNulVal      = pEntHdr + JeOfsNulValI
+     C                   EndIf
+     **
+     C                   If        JeOfsLglUoW  > *Zero
+     C                   Eval      pLglUow      = pEntHdr + JeOfsLglUoW
+     C                   EndIf
+     **
+     C                   If        JeOfsRcvInf  > *Zero
+     C                   Eval      pRcvInf      = pEntHdr + JeOfsRcvInf
+     C                   EndIf
+     **
+     C                   If        PlCurLin    > PlOvfLin - 3
+     C                   Except    Header
+     C                   EndIf
+     **
+     C                   Eval      NbrRcds    =  NbrRcds + 1
+     C                   Eval      JrnDta     =  EntDta
+     **
+     C                   CallP     CvtDtf( '*DTS'
+     C                                   : JeTimStpC
+     C                                   : '*YYMD'
+     C                                   : JrnEntDts
+     C                                   : 0
+     C                                   )
+     **
+     C                   Except    Detail
+     **
+     C                   EndSr
+     **-- Print file definition:  --------------------------------------------**
+     OQSYSPRT   EF           Header         2  3
+     O                       UDATE         Y      8
+     O                       Time                18 '  :  :  '
+     O                                           75 'Print journal entries -
+     O                                              report'
+     O                                          107 'Program:'
+     O                       PsPgmNam           118
+     O                                          126 'Page:'
+     O                       PAGE             +   1
+     OQSYSPRT   EF           Header         1
+     O                                           20 'Journal seq. nbr.'
+     O                                           25 'Code'
+     O                                           30 'Type'
+     O                                           40 'Timestamp'
+     O                                           56 'Job'
+     O                                           69 'User'
+     O                                           82 'Number'
+     O                                           91 'Program'
+     O                                          103 'User id'
+     O                                          123 'Entry data 1-24'
+     **
+     OQSYSPRT   EF           Detail         1
+     O                       JeSeqNbr      3     20
+     O                       JeJrnCde            24
+     O                       JeEntTyp            29
+     O                       JrnEntDts           51
+     O                       JeJobNam            63
+     O                       JeUsrNam            75
+     O                       JeJobNbr            82
+     O                       JePgmNam            94
+     O                       JeUsrPrf           106
+     O                       JrnDta             132
+     **
+     OQSYSPRT   EF           NoRcds      1
+     O                                           26 '(No entries found)'

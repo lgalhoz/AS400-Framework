@@ -1,0 +1,14 @@
+     A*===============================================================
+     A* Ficheiro...: FPRTP005
+     A* Descrição..: Inventário de formulários
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RRPTP005
+     A            CODFORM        6A         TEXT('Código do Formulário')
+     A            CDGAVETA       5S 0       TEXT('Código de Gaveta')
+     A            DSCOMENT     100A         TEXT('Comentários')
+     A
+     A            RPT00501        L
+     A            RPT00502        L
+     A
+     A          K CODFORM

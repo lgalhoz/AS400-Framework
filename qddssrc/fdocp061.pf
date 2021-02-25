@@ -1,0 +1,19 @@
+     A                                      UNIQUE
+     A          R RDOCP061                  TEXT('Historico de Cartas Verdes')
+     A            NCV            9S 0       TEXT('Numero Carta Verde')
+     A            ANNCV          4S 0       TEXT('Ano da Carta Verde')
+     A
+     A            ICFLDMA        1A         TEXT('Marrocos')
+     A            ICFLDMD        1A         TEXT('Moldavia')
+     A            ICFLDMK        1A         TEXT('F.Y.R.O.M.')
+     A            ICFLDUA        1A         TEXT('Ucrãnia')
+     A            ICFLDXX        1A         TEXT('Turquia,M.Negro,Bosn.,Alban.')
+     A
+     A*==> Campos de Controlo
+     A            DOC06104      10A         TEXT('Utilizador que Criou')
+     A            DOC06105      10A         TEXT('Utilizador que Alterou')
+     A            DOC06106        L         TEXT('Data de Criação')
+     A            DOC06107        L         TEXT('Data de Alteração')
+     A
+     A          K NCV
+     A          K ANNCV

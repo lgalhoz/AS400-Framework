@@ -1,0 +1,28 @@
+     A*===============================================================
+     A* Ficheiro...: FPRDP010
+     A* Descrição..: Limites e Franquias
+     A* Observação.: Parameterizado manualmente.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP014
+     A            CDRAMO         2S 0       TEXT('Ramo')
+     A            NUAPOL         7S 0       TEXT('Apólice')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            CDLIMITE       5S 0       TEXT('Código do Limite')
+     A            CDINCIND       2A         TEXT('Incidência')
+     A            VLPERIND       5S 2       TEXT('Percentagem Indemniza')
+     A            VLMAXIND      11S 2       TEXT('Máximo Indemniza')
+     A            CDINCFRQ       2A         TEXT('Incidência')
+     A            VLPERFRQ       5S 2       TEXT('Percentagem Franquia')
+     A            VLMINFRQ      11S 2       TEXT('Minimo Franquia')
+     A
+     A*==> Campos de controlo do Registo
+     A            PRD01401        L         TEXT('Data de Inicio')
+     A            PRD01402        L         TEXT('Data de Termo')
+     A            PRD01403       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A            PRD01404      10A         TEXT('Quem Criou')
+     A            PRD01405      10A         TEXT('Quem Alterou')
+     A
+     A          K CDRAMO
+     A          K NUAPOL
+     A          K NUSEQU

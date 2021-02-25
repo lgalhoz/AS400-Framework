@@ -1,0 +1,18 @@
+     A*===============================================================
+     A* Ficheiro...: FCOBP023
+     A* Descrição..: Ficheiro de envio de ADC
+     A* Original...: TBADCEF
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCOBP023                  TEXT('Ficheiros de envio de ADC')
+     A
+     A            TEFENV        10S 0       COLHDG('Fich.Envio')
+     A                                      EDTWRD('          ')
+     A            TEDATE         8S 0       COLHDG('Data envio')
+     A                                      EDTWRD('  -  -    ')
+     A            TEDATR         8S 0       COLHDG('Data retorno')
+     A                                      EDTWRD('  -  -    ')
+     A            TETREG         4S 0       COLHDG('Tot. registos')
+     A                                      EDTWRD(' .   ')
+     A
+     A          K TEFENV                    DESCEND

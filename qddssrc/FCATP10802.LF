@@ -1,0 +1,9 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP108
+     A* Descrição..: Clausulas e Condições Especiais
+     A* Observação.: Parameterizado manualmente.
+     A*===============================================================
+     A          R RCATP108                  PFILE(FCATP108)
+     A
+     A          K CDPROD
+     A          K ALIAS

@@ -1,0 +1,18 @@
+  #-------------------------------------------------------
+  # Criar uma nova Tabela
+  #-------------------------------------------------------
+  CREATE TABLE #JMPRDDBS/FCORP041 ( CDUSER DEC(9, 0), IMGFOTO
+  Blob(1M), IMGASS BLob(1M), Primary Key (CDUSER))
+
+  #-------------------------------------------------------
+  # Eliminar um campo de uma tabela
+  #-------------------------------------------------------
+  ALTER TABLE #JMPRDDBS/FCORP041 DROP COLUMN IMGFOTO
+
+  #-------------------------------------------------------
+  # Alterar um campo de uma tabela
+  #-------------------------------------------------------
+  ALTER TABLE #JMPRDDBS/FCORP041 MODIFY COLUMN IMGASS Blob(100K)
+
+
+

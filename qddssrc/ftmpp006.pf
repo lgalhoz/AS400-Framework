@@ -1,0 +1,20 @@
+     A*===================================================================
+     A* Ficheiro..: FTMPP006
+     A* Descrição.: Temporário RECIBOS
+     A*===================================================================
+     A                                      UNIQUE
+     A          R RTMPP006
+     A            NURECIBO       9S 0
+     A            CDRAMO         2S 0
+     A            NUAPOL         7S 0
+     A            NUSEGU         8S 0
+     A            NOME          40A
+     A            TOTPREM       13S 2
+     A            TOTCOMI       13S 2
+     A            TIPRECIB       1S 0
+     A            SITRECIB       1S 0
+     A            CDORIG01       7S 0
+     A            CDORIG02       7S 0
+     A            CDORIG03       7S 0
+     A
+     A          K NURECIBO

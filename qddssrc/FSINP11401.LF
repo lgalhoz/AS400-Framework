@@ -1,0 +1,10 @@
+     A***************************************************************
+     A* Tabela....: FSINP11401
+     A* Descrição.: Ordenado pelas chaves do AS/400
+     A***************************************************************
+     A          R RSINP114                  PFILE(FSINP114)
+     A
+     A          K AAPROC
+     A          K NUPROC
+     A          K ASTPINT
+     A          K ASSQINT

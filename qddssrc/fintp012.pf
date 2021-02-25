@@ -1,0 +1,15 @@
+     A*================================================================
+     A* Tabela....: FINTP012
+     A* Descrição.: Registos de Penhoras
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP012
+     A            CDFILE         7S 0       TEXT('Código Ficheiro')
+     A            NUSEQU         5S 0       TEXT('Registos novos e Alterados')
+     A            DATFILE        8S 0       TEXT('Data do Ficheiro            ')
+     A            NUMNIF         9S 0       TEXT('Número de Contribuinte      ')
+     A            NOME          50A         TEXT('Data do Ficheiro            ')
+     A            DATINI         8S 0       TEXT('Data de Inicio              ')
+     A
+     A          K CDFILE
+     A          K NUSEQU

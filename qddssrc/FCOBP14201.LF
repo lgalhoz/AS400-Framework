@@ -1,0 +1,7 @@
+     A***************************************************************
+     A* Tabela....: FCOBP14201
+     A* Descrição.: Ligação do Continuado por mes e ano
+     A***************************************************************
+     A          R RCOBP142                  PFILE(FCOBP142)
+     A
+     A          K CODSEG

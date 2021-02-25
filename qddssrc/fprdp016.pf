@@ -1,0 +1,31 @@
+     A*===============================================================
+     A* Ficheiro...: FPRDP016
+     A* Descrição..: Caracterização do Risco
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP016
+     A            CDRAMO         2S 0       TEXT('Ramo')
+     A            NUAPOL         7S 0       TEXT('Número da Apólice')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            CDPOST         7S 0
+     A            CDESTCONS      1A         TEXT('Estado Conservação')
+     A            CDTIPCONS      3A         TEXT('Tipo de Construção')
+     A            CDTIPCOB       3A         TEXT('Tipo Cobertura')
+     A            CDEDIADJ       5A         TEXT('Edificio Adjacente')
+     A            CDCREDHIP      5S 0       TEXT('Credor Hipotecário')
+     A            TXINDEX        3S 1       TEXT('Taxa de Indexação')
+     A            CDIDXBASE      3S 0       TEXT('Indice Base')
+     A            CDIDXVENC      3S 0       TEXT('Indice Vencimento')
+     A            OBS1          45A         TEXT('Observações - Linha 01')
+     A            OBS2          45A         TEXT('Observações - Linha 02')
+     A
+     A*==> Campos de controlo do Registo
+     A            PRD01601        L         TEXT('Data de Inicio')
+     A            PRD01602        L         TEXT('Data de Termo')
+     A            PRD01603       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A            PRD01604      10A         TEXT('Quem Criou')
+     A            PRD01605      10A         TEXT('Quem Alterou')
+     A
+     A          K CDRAMO
+     A          K NUAPOL
+     A          K NUSEQU

@@ -1,0 +1,114 @@
+     A*%%TS  SD  20121025  092350  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R RPRDE00600
+     A*%%TS  SD  20120224  154940  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                  1 71USER
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A            S#PGM         10A  O  2 71
+     A            DS#FNC        57A  O  2 12DSPATR(HI)
+     A            DS#PGM        57A  O  1 12DSPATR(HI)
+     A          R RPRDE00605
+     A*%%TS  SD  20121022  154820  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                      CF21(21 'ALTERAR')
+     A                                      OVERLAY
+     A                                  4  2'Parametros da Indexação:'
+     A                                      DSPATR(HI)
+     A                                      COLOR(BLU)
+     A                                  5  5'Ano...:'
+     A                                  6  5'Mês...:'
+     A            ANOCONT        4Y 0B  5 13EDTWRD('    ')
+     A                                      DSPATR(HI)
+     A            MESCONT        2Y 0B  6 13EDTWRD('  ')
+     A                                      DSPATR(HI)
+     A                                  5 19'(Ano dos próximos Continuados)'
+     A                                  6 19'(Mês dos próximos Continuados)'
+     A                                  8  2'Modo de Execução:'
+     A                                      DSPATR(HI)
+     A                                      COLOR(BLU)
+     A                                  9  5'Simulação.:'
+     A            MODO           1A  B  9 17DFTVAL('S')
+     A                                      DSPATR(UL)
+     A N45                                  DSPATR(PR)
+     A  45                                  DSPATR(HI)
+     A                                  9 19'(S/N)'
+     A          R RPRDO00602                SFL
+     A*%%TS  SD  20121019  123233  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            CDINDICE       5Y 0H
+     A            OPTION         2A  B  9  2
+     A            LSTDET        75A  O  9  6
+     A            CDTABELA       5Y 0H
+     A            CDCODIGO       5Y 0H
+     A          R RPRDO00603                SFLCTL(RPRDO00602)
+     A*%%TS  SD  20121019  164807  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      SFLSIZ(0013)
+     A                                      SFLPAG(0012)
+     A                                      CF03(03 'Sair')
+     A                                      CF04(04 'Pop-Up')
+     A                                      CF05(05 'Mudar')
+     A                                      CF06(06 'Adicionar')
+     A                                      CF12(12 'Cancelar')
+     A                                      CF21(21 'Alterar')
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A            CRITERIA      40A  B  7 14CHGINPDFT(LC)
+     A                                      DSPATR(UL)
+     A            DSCRITER      12A  O  7  1DSPATR(HI)
+     A            CDFUNCT        5S 0H
+     A            LSTHDR        75A  O  8  6DSPATR(HI)
+     A                                  4  2'Seleccione uma das opções e pressi-
+     A                                      one a tecla enter'
+     A                                      COLOR(BLU)
+     A            DS#OPT01      76   O  5  4COLOR(BLU)
+     A            DS#OPT02      76   O  6  4COLOR(BLU)
+     A          R RPRDO00622
+     A*%%TS  SD  20120313  114737  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(5 10 8 50)
+     A                                      CF12(12 'Cancelar')
+     A                                      OVERLAY
+     A                                      USRRSTDSP
+     A                                  1  8'Atenção - Opção para eliminar acti-
+     A                                      va'
+     A                                      COLOR(WHT)
+     A                                  3  2'Está seleccionada a opção para eli-
+     A                                      minar este '
+     A                                  4  7'registo, deseja continuar (S/N).'
+     A                                  6 19'Continuar:'
+     A            OPTION         2A  B  6 30COLOR(WHT)
+     A                                  7  2'F12=Cancelar'
+     A                                      COLOR(WHT)
+     A          R RPRDO00698
+     A*%%TS  SD  20120801  104013  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF06(06 'Pop-Up')
+     A                                      CF12(12 'Cancelar')
+     A                                      OVERLAY
+     A                                 12  9'|   NÃO EXISTEM REGISTOS, POR FAVO-
+     A                                      R PRESSIONE AS  |'
+     A                                      DSPATR(HI)
+     A                                 11  9'+----------------------------------
+     A                                      ----------------+'
+     A                                      DSPATR(HI)
+     A                                 13  9'|    TECLAS F21 e F06 PARA ADICION-
+     A                                      AR UM REGISTO   |'
+     A                                      DSPATR(HI)
+     A                                 14  9'+----------------------------------
+     A                                      ----------------+'
+     A                                      DSPATR(HI)
+     A          R RPRDO00699
+     A*%%TS  SD  20121002  144253  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            DS#KEY01      78A  O 22  2COLOR(BLU)
+     A            DS#KEY02      78A  O 23  2COLOR(BLU)
+     A            ERR#MSG       78A  O 24  2DSPATR(HI)

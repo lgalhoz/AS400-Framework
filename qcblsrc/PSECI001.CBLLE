@@ -1,0 +1,295 @@
+       IDENTIFICATION DIVISION.
+      ***************************************************************
+      ***************************************************************
+      *
+      *  Program:      List objects that adopt owner authority
+      *
+      *  Language:     COBOL
+      *
+      *  Description:  This program prints a report showing all objects
+      *                that adopt owner authority.  The two parameters
+      *                passed to the program are the profile to be
+      *                checked and the type of objects to be listed.
+      *                The parameter values are the same as those
+      *                accepted by the QSYLOBJP API.
+      *
+      *  APIs Used:    QSYLOBJP - List Objects that Adopt Owner Authority
+      *                QUSCRTUS - Create User Space
+      *                QUSPTRUS - Retrieve Pointer to User Space
+      *                QUSROBJD - Retrieve Object Description
+      *
+      ***************************************************************
+      ***************************************************************
+      *
+       PROGRAM-ID. LISTADOPT.
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+         SOURCE-COMPUTER. IBM-AS400.
+         OBJECT-COMPUTER. IBM-AS400.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+           SELECT LISTING ASSIGN TO PRINTER-QPRINT
+                          ORGANIZATION IS SEQUENTIAL.
+       DATA DIVISION.
+       FILE SECTION.
+       FD  LISTING RECORD CONTAINS 132 CHARACTERS
+                   LABEL RECORDS ARE STANDARD
+                   DATA RECORD IS LIST-LINE.
+       01  LIST-LINE        PIC X(132).
+      *
+       WORKING-STORAGE SECTION.
+      *
+      * Error Code parameter include.  As this sample program
+      * uses COPY to include the error code structure, only the first
+      * 16 bytes of the error code structure are available.  If the
+      * application program needs to access the variable length
+      * exception data for the error, the developer should physically
+      * copy the QSYSINC include and modify the copied include to
+      * define additional storage for the exception data.
+      *
+       COPY QUSEC OF QSYSINC-QLBLSRC.
+      *
+      * Listing text
+      *
+       01  OBJ-ENTRY.
+           05  OBJECT.
+               09  TEXT1         PIC  X(08) VALUE "Object: ".
+               09  NAME          PIC  X(10).
+               09  TEXT2         PIC  X(10) VALUE " Library: ".
+               09  LIBRARY       PIC  X(10).
+           05  TEXT3         PIC  X(07) VALUE " Type: ".
+           05  OBJECT-TYPE   PIC  X(10).
+           05  TEXT4         PIC  X(07) VALUE " Text: ".
+           05  OBJECT-TEXT   PIC  X(50).
+       01  END-LIST.
+           05  TEXT1         PIC  X(15) VALUE "*** End of List".
+      *
+       01  MISC.
+           05  SPC-NAME      PIC  X(20) VALUE "ADOPTS    QTEMP     ".
+           05  SPC-SIZE      PIC S9(09) VALUE 1 BINARY.
+           05  SPC-INIT      PIC  X(01) VALUE X"00".
+           05  SPCPTR        POINTER.
+           05  RCVVAR        PIC  X(08).
+           05  RCVVARSIZ     PIC S9(09) VALUE 8 BINARY.
+           05  LST-STATUS    PIC  X(01).
+           05  MBR-LIST      PIC  X(08) VALUE "OBJP0200".
+           05  CONTIN-HDL    PIC  X(20).
+           05  APINAM        PIC  X(10).
+           05  ROBJD-FMT     PIC  X(08) VALUE "OBJD0100".
+           05  SPC-TYPE      PIC  X(10) VALUE "*USRSPC".
+           05  EXT-ATTR      PIC  X(10) VALUE "QSYLOBJP".
+           05  SPC-AUT       PIC  X(10) VALUE "*ALL".
+           05  SPC-TEXT      PIC  X(50).
+           05  SPC-REPLAC    PIC  X(10) VALUE "*YES".
+           05  SPC-DOMAIN    PIC  X(10) VALUE "*USER".
+      *
+       LINKAGE SECTION.
+      *
+      * Input parameters.
+      *
+       01  USR-PRF         PIC  X(10).
+       01  OBJ-TYPE        PIC  X(10).
+      *
+      * String to map User Space offsets into
+      *
+       01  STRING-SPACE    PIC  X(32000).
+      *
+      * User Space Generic Header include.  These includes will be
+      * mapped over a User Space.
+      *
+       COPY QUSGEN OF QSYSINC-QLBLSRC.
+      *
+      * List Objects that Adopt API include.  These includes will be
+      * mapped over a User Space.
+      *
+       COPY QSYLOBJP OF QSYSINC-QLBLSRC.
+      *
+      * Beginning of mainline
+      *
+       PROCEDURE DIVISION USING USR-PRF, OBJ-TYPE.
+       MAIN-LINE.
+           PERFORM INIT.
+           PERFORM PROCES.
+           PERFORM DONE.
+      *
+      * Start of subroutines
+      *
+      *****************************************************************
+       PROCES.
+      *
+      * Do until the list is complete
+      *
+           MOVE INFORMATION-STATUS OF QUS-GENERIC-HEADER-0100 TO
+                                      LST-STATUS.
+      *
+           PERFORM PROCES1 WITH TEST AFTER UNTIL LST-STATUS = "C".
+      *
+       PROCES1.
+      *
+      * This subroutine processes each entry returned by QSYLOBJP
+      *
+      *
+      * If valid information was returned
+      *
+           IF (INFORMATION-STATUS OF QUS-GENERIC-HEADER-0100 = "C"
+              OR INFORMATION-STATUS OF QUS-GENERIC-HEADER-0100 = "P")
+            IF NUMBER-LIST-ENTRIES OF QUS-GENERIC-HEADER-0100 > 0
+      *
+      * increment to the first list entry
+      *
+              SET ADDRESS OF QSY-OBJP0200-LIST TO
+                 ADDRESS OF STRING-SPACE(
+                 (OFFSET-LIST-DATA OF QUS-GENERIC-HEADER-0100 + 1):1), (5)
+              SET ADDRESS OF STRING-SPACE TO ADDRESS OF
+                 QSY-OBJP0200-LIST,
+      *
+      * and process all of the entries
+      *
+              PERFORM PROCES2
+                 NUMBER-LIST-ENTRIES OF QUS-GENERIC-HEADER-0100 TIMES, (6)
+      *
+      * If all entries in this User Space have been processed, check
+      * if more entries exist than can fit in one User Space
+      *
+              IF INFORMATION-STATUS OF QUS-GENERIC-HEADER-0100 = "P"
+      *
+      * by addressing the input parameter header
+      *
+                 SET ADDRESS OF STRING-SPACE TO SPCPTR,
+                 SET ADDRESS OF QSY-OBJP-INPUT TO
+                    ADDRESS OF STRING-SPACE((OFFSET-INPUT-PARAMETER
+                    OF QUS-GENERIC-HEADER-0100 + 1):1),
+      *
+      * If the continuation handle in the Input Parameter Header is
+      * blank, then set the List status to Complete
+      *
+                 IF CONTINUATION-HANDLE OF QSY-OBJP-INPUT = SPACES
+                    MOVE "C" TO LST-STATUS
+                    ELSE
+      *
+      * Else, call QSYLOBJP reusing the User Space to get more
+      * List entries
+      *
+                    MOVE CONTINUATION-HANDLE OF QSY-OBJP-INPUT
+                         TO CONTIN-HDL OF MISC,            (2)
+                    PERFORM GETLST,
+                    MOVE INFORMATION-STATUS OF QUS-GENERIC-HEADER-0100
+                         TO LST-STATUS,
+                    END-IF,
+              END-IF,
+            END-IF,
+           ELSE
+      *
+      * And if an unexpected status, log an error (not shown) and exit
+      *
+           PERFORM DONE,
+           END-IF.
+      *
+       PROCES2.
+           MOVE CORRESPONDING QSY-OBJP0200-LIST TO OBJ-ENTRY.
+           WRITE LIST-LINE FROM OBJ-ENTRY.
+      *
+      * after each entry, increment to the next entry
+      *
+           SET ADDRESS OF QSY-OBJP0200-LIST TO ADDRESS OF
+              STRING-SPACE(
+               (SIZE-EACH-ENTRY OF QUS-GENERIC-HEADER-0100 + 1):1). (7)
+           SET ADDRESS OF STRING-SPACE TO ADDRESS OF QSY-OBJP0200-LIST.
+      *****************************************************************
+       GETLST.
+      *
+      * Call QSYLOBJP to generate a list
+      * The continuation handle is set by the caller of this
+      * subroutine.
+           MOVE "OBJP0200" TO MBR-LIST.
+      *
+           CALL "QSYLOBJP" USING SPC-NAME, MBR-LIST, USR-PRF,
+                                 OBJ-TYPE, CONTIN-HDL, QUS-EC. (3)
+      *
+      * Check for errors on QSYLOBJP
+      *
+           IF BYTES-AVAILABLE OF QUS-EC > 0
+                                 MOVE "QSYLOBJP" TO APINAM,
+                                 PERFORM APIERR.
+      *****************************************************************
+       INIT.
+      *
+      * One time initialization code for this program
+      *
+      * Open LISTING file
+      *
+           OPEN OUTPUT LISTING.
+      *
+      * Set Error Code structure to not use exceptions
+      *
+           MOVE LENGTH OF QUS-EC TO BYTES-PROVIDED OF QUS-EC.
+      *
+      * Check to see if the User Space was previously created in
+      * QTEMP.  If it was, simply reuse it.
+      *
+           CALL "QUSROBJD" USING RCVVAR, RCVVARSIZ, ROBJD-FMT,
+                                 SPC-NAME, SPC-TYPE, QUS-EC.
+      *
+      * Check for errors on QUSROBJD
+      *
+           IF BYTES-AVAILABLE OF QUS-EC > 0
+      *
+      * If CPF9801, then User Space was not found
+      *
+              IF EXCEPTION-ID OF QUS-EC = "CPF9801"
+      *
+      * So create a User Space for the List generated by QSYLOBJP
+      *
+                 CALL "QUSCRTUS" USING SPC-NAME, EXT-ATTR, SPC-SIZE,
+                                 SPC-INIT, SPC-AUT, SPC-TEXT,
+                                 SPC-REPLAC, QUS-EC, SPC-DOMAIN
+      *
+      * Check for errors on QUSCRTUS
+      *
+                 IF BYTES-AVAILABLE OF QUS-EC > 0
+                                   MOVE "QUSCRTUS" TO APINAM,
+                                   PERFORM APIERR,
+                                   ELSE
+                                   CONTINUE,
+              ELSE
+      *
+      * Else, an error occurred accessing the User Space
+      *
+                 MOVE "QUSROBJD" TO APINAM,
+                 PERFORM APIERR.
+      *
+      * Set QSYLOBJP (via GETLST) to start a new list
+      *
+           MOVE SPACES TO CONTIN-HDL.
+           PERFORM GETLST.
+      *
+      * Get a resolved pointer to the User Space for performance
+      *
+           CALL "QUSPTRUS" USING SPC-NAME, SPCPTR, QUS-EC.
+      *
+      * Check for errors on QUSPTRUS
+      *
+           IF BYTES-AVAILABLE OF QUS-EC > 0
+                                MOVE "QUSPTRUS" TO APINAM,
+                                PERFORM APIERR.
+      *
+      * If no error, then set addressability to User Space
+      *
+           SET ADDRESS OF QUS-GENERIC-HEADER-0100 TO SPCPTR.
+           SET ADDRESS OF STRING-SPACE TO SPCPTR.
+      *
+      *****************************************************************
+       APIERR.
+      *
+      * Log any error encountered, and exit the program
+      *
+           DISPLAY APINAM.
+           DISPLAY EXCEPTION-ID OF QUS-EC.
+           PERFORM DONE.
+      *****************************************************************
+       DONE.
+      *
+      * Exit the program
+      *
+           WRITE LIST-LINE FROM END-LIST.
+           STOP RUN.

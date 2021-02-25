@@ -1,0 +1,16 @@
+     A*===============================================================
+     A* Ficheiro...: FPRTP006
+     A* Descrição..: Gavetas das Impressoras
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RRPTP006
+     A            CDGAVETA       5S 0       TEXT('Código de Gaveta')
+     A            DSGAVETA      20A         TEXT('Descrição da Gaveta')
+     A
+     A            NOMPRINT      10A         TEXT('Nome da Impressora')
+     A            OUTQ          10A         TEXT('Fila de impressão')
+     A
+     A            RPT00601        L
+     A            RPT00602        L
+     A
+     A          K CDGAVETA

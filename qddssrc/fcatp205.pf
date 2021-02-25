@@ -1,0 +1,37 @@
+     A*================================================================
+     A* Tabela....: FCATP205
+     A* Descrição.: Plano de Comissionamento
+     A*================================================================
+     A                                      UNIQUE
+     A          R RCATP205
+     A            CDCOMP         5S 0       TEXT('Código de Companhia')
+     A            CDRAMO         5S 0       TEXT('Código de Ramo')
+     A            NUSEQU         5S 0       TEXT('Sequencia do registo do Ramo')
+     A            DSRAMO        50A         TEXT('Descrição do Ramo')
+     A
+     A*==> Calculo do Comissionamento
+     A            DTINICIO       8S 0       TEXT('Data de Inicio')
+     A            DTTERMO        8S 0       TEXT('Data de Termo')
+     A
+     A*==> Calculo do Comissionamento
+     A            PRANGA         7S 4       TEXT('Percentagem de Angariação')
+     A            PRCOBR         7S 4       TEXT('Percentagem de Cobrança')
+     A            PRCORR         7S 4       TEXT('Percentagem de Corretagem')
+     A
+     A*==> Calculo das restantes Parcelas
+     A            IMSELO         7S 4       TEXT('Imposto de Selo')
+     A            IMANPC         7S 4       TEXT('Serviço Protecção Civil')
+     A            IMINEM         7S 4       TEXT('INEM')
+     A            IMFGA          7S 4       TEXT('Fundo Garantia Automovel')
+     A            COEFIC         7S 4       TEXT('Coeficiente')
+     A            ENFIXO         7S 4       TEXT('Encargos Fixos')
+     A
+     A*==> Informação de Controlo
+     A            CAT20501        L         TEXT('Data de Criação do Registo')
+     A            CAT20502        L         TEXT('Data de Alteração do Registo')
+     A            CAT20503       1A         TEXT('Situação do Rgisto')
+     A            CAT20504      10A         TEXT('Utilizador Criação')
+     A
+     A          K CDCOMP
+     A          K CDRAMO
+     A          K NUSEQU

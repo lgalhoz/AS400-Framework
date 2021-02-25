@@ -1,0 +1,18 @@
+     A*==============================================================
+     A* Ficheiro..: FSINT010
+     A* Objectivo.: Repetir o envio para os processos de Sinistros
+     A*             Existentes na Listagem
+     A*==============================================================
+     A                                      UNIQUE
+     A          R RSINT010
+     A            CDPROC         7A
+     A            ANPROC         2S 0
+     A            NUSEQU         4S 0
+     A            QTDENVI        3S 0
+     A            IC22           1A
+     A            IC23           1A
+     A            IC24           1A
+     A            IC25           1A
+     A            IC26           1A
+     A
+     A          K CDPROC

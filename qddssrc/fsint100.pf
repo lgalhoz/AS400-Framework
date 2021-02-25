@@ -1,0 +1,58 @@
+     A*==============================================================================
+     A* Ficheiro..: FSINT100
+     A* Descrição.: Processos de Sinistros
+     A*             Este ficheiro é actualizado a partir de ficheiros de produção,
+     A*             e contém a informação normalizada.
+     A*
+     A* Origens...: Lista de Ficheiros Originais de onde foram extraídos os dados:
+     A*             [x] QS36F/G.SINPRO     = Processos de Sinistro Automóvel
+     A*             [x] QS36F/O.SINPRO     = Processos de Sinistro Outros Ramos
+     A*             [x] QS36F/IDSPRO       = Processos de Sinistro IDS
+     A*             [x] QS36F/FICI<AAMMDD> = Interface de Sinistros IDS Lusitânia
+     A*
+     A*==============================================================================
+     A                                      UNIQUE
+     A          R RSINT100
+     A            NORDSIN        9S 0       COLHDG('Número de Ordem')
+     A            IPROC          1A         COLHDG('Identif.' 'Processo')
+     A            AAPROC         4S 0       COLHDG('Ano' 'Processo')
+     A            NSEQ           8S 0       COLHDG('Nº' 'Processo')
+     A            SPROC          1S 0       COLHDG('Situação' 'Processo')
+     A            DTINIC         8S 0       COLHDG('Data' 'Abertura')
+     A            DTRINI         8S 0       COLHDG('Data' 'Reabertura')
+     A            DTFIM          8S 0       COLHDG('Data' 'Encerramento')
+     A
+     A*---> Informação Financeira do Processo
+     A            TOTEST         9S 2       COLHDG('Total' 'Estimado')
+     A            PROV           9S 2       COLHDG('Valor Provisões')
+     A            PAGAM          9S 2       COLHDG('Valor Pagamentos')
+     A            RECUP          9S 2       COLHDG('Valor Recuperações')
+     A            DESPQP         9S 2       COLHDG('Despesas Q.P.')
+     A            RECUPQ         9S 2       COLHDG('Recuperações Q.P.')
+     A
+     A*--> Informação do Processo
+     A            CAUSA          2A         COLHDG('Causa Sinistro')
+     A            DTSIN          8S 0       COLHDG('Data Sinistro')
+     A            LOCSIN        50A         COLHDG('Local Sinistro')
+     A            CODCON         3S 0       COLHDG('Concelho')
+     A            FERID          1A         COLHDG('Feridos')
+     A            TESTM          1A         COLHDG('Testemunhas')
+     A            AUTORI         1A         COLHDG('Autoridade')
+     A            DTPART         8S 0       COLHDG('Data Participação')
+     A            FPART          1A         COLHDG('Forma Participação')
+     A            NOMPAR        40A         COLHDG('Nome Participante')
+     A
+     A*---> Indetificação da Apólice e Segurado
+     A            TIPOAP         1S 0       COLHDG('Tipo Apólice')
+     A            SITAP          1S 0       COLHDG('Situação Apólice')
+     A            RAMO           2S 0       COLHDG('Ramo')
+     A            APOLICE        7S 0       COLHDG('Apólice')
+     A            NSEGUR         8S 0       COLHDG('Número do Segurado')
+     A            CDMED          8S 0       COLHDG('Código de Mediador')
+     A            DTAPOL         8S 0       COLHDG('Data Apólice')
+     A
+     A*----> Campos de Controlo do Registo
+     A            DTUACT         8S 0       COLHDG('Data Alteração')
+     A            USERID        10A         COLHDG('Utilizador')
+     A
+     A          K NORDSIN

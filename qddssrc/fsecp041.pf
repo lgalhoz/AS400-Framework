@@ -1,0 +1,17 @@
+     A***************************************************************
+     A* Tabela....: FSECP041
+     A* Descrição.: Utilizadores com a permissões especiais
+     A*
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP041
+     A            SQREGRA        5S 0       TEXT('Sequência da Regra')
+     A            CDUSER        10A         TEXT('Utilizador')
+     A            CDNIVEL        3S 0       TEXT('Nivel')
+     A
+     A*==> Campos de Controlo de Registo
+     A            SEC04101        L         TEXT('Criação do Registo')
+     A            SEC04102        L         TEXT('alteração')
+     A
+     A          K SQREGRA
+     A          K CDUSER

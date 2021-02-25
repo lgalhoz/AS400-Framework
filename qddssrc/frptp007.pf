@@ -1,0 +1,18 @@
+     A*===============================================================
+     A* Ficheiro...: FPRTP007
+     A* Descrição..: Texto dos Formulários
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RRPTP007
+     A            CODFORM        6A         TEXT('Código do Formulário')
+     A            NUSEQU         5S         TEXT('Sequencia')
+     A            TISEGMENT      1A         TEXT('Tipo de Segmento')
+     A
+     A
+     A            CDGAVETA       5S 0       TEXT('Código de Gaveta')
+     A            DSCOMENT     100A         TEXT('Comentários')
+     A
+     A            RPT00701        L
+     A            RPT00702        L
+     A
+     A          K CODFORM

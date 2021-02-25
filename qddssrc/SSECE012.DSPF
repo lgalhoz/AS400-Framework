@@ -1,0 +1,62 @@
+     A*%%TS  SD  20120723  150420  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A*                                     CA03(03 'Fim')
+     A          R RSECE01200
+     A*%%TS  SD  20120326  161055  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(2 10 18 60 *NOMSGLIN)
+     A*                                     OVERLAY
+     A                                      WDWBORDER((*DSPATR HI))
+     A            DS#FNCR       60   O  2  1DSPATR(HI)
+     A            DS#PGMR       60   O  1  1DSPATR(HI)
+     A          R RSECE01202                SFL
+     A*%%TS  SD  20120723  150420  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            CDPROGR        5Y 0H
+     A            SELECT         1A  B  6  1
+     A            NMPROGR       10A  O  6  3
+     A            DSPROGR       40A  O  6 14
+     A            CDTIPO         1   O  6 57
+     A          R RSECE01201                SFLCTL(RSECE01202)
+     A*%%TS  SD  20120723  150420  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      SFLSIZ(0011)
+     A                                      SFLPAG(0010)
+     A                                      WINDOW(RSECE01200)
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      CA03(03 'Sair')
+     A                                      CA12(12 'Cancelar')
+     A                                      CA05(05 'Re-Ordenar')
+     A                                      CA06(06 'Adicionar')
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A                                  5  3'Codigo'
+     A                                      COLOR(WHT)
+     A                                  5 14'Descrição'
+     A                                      COLOR(WHT)
+     A            LABEL         10A  O  3  1DSPATR(HI)
+     A            OPTION        30A  I  3 12CHGINPDFT(LC)
+     A                                      DSPATR(UL)
+     A                                  5 55'Tipo'
+     A                                      DSPATR(HI)
+     A          R RSECE01298
+     A*%%TS  SD  20120801  143748  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(RSECE01200)
+     A                                      OVERLAY
+     A                                 10 12'|       NAO EXISTEM REGISTOS      -
+     A                                        |'
+     A                                      DSPATR(HI)
+     A                                  9 12'+----------------------------------
+     A                                      --+'
+     A                                      DSPATR(HI)
+     A                                 11 12'+----------------------------------
+     A                                      --+'
+     A                                      DSPATR(HI)
+     A          R RSECE01299
+     A*%%TS  SD  20120327  154534  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      WINDOW(RSECE01200)
+     A                                      OVERLAY
+     A            DS#KEY01R     60A  O 17  1COLOR(WHT)
+     A            DS#KEY02R     60A  O 18  1COLOR(WHT)

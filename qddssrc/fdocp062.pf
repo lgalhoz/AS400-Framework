@@ -1,0 +1,19 @@
+     A                                      UNIQUE
+     A          R RDOCP062                  TEXT('Historico de Cartas Verdes')
+     A            NCV            9S 0       TEXT('Numero Carta Verde')
+     A            ANNCV          4S 0       TEXT('Ano da Carta Verde')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A
+     A*==> Campos de Controlo
+     A            ICEXCEPT       1A         TEXT('Excepção')
+     A            ICREBOQUE      1A         TEXT('Só Reboque')
+     A            ICVIATURA      1A         TEXT('Só Viatura')
+     A            ICPAGA         1A         TEXT('A Apólice está paga')
+     A
+     A*==> Campos de Controlo
+     A            DOC06204      10A         TEXT('Utilizador que Criou')
+     A            DOC06206        L         TEXT('Data de Criação')
+     A
+     A          K NCV
+     A          K ANNCV
+     A          K NUSEQU

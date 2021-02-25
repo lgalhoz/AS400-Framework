@@ -1,0 +1,118 @@
+     A*================================================================
+     A* Tabela....: FSINP108
+     A* Alias.....: TAb_Envio_DM
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A                                      UNIQUE
+     A          R RSINP108                  TEXT('Tab_Envio_DM')
+     A            NR             9S 0       COLHDG('Código')
+     A            CODEMP         4A         TEXT('Código da Empresa')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DATA           8A         TEXT('Data')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            NRPROC        50A         TEXT('Nº do Processo')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            NORDEM         2A         TEXT('Nº Ordem do Lesado')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10801       1A         ALIAS(INTERVENCERRADO)
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DATAPART       8A         TEXT('Data da Participação')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10802      50A         ALIAS(EXISTEDAAA)
+     A                                      TEXT('Existe DAAA (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10803       8A         ALIAS(DATA1CONTACTO)
+     A                                      TEXT('Data 1º.Contacto')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10804       1A         ALIAS(DIREFECTREP)
+     A                                      TEXT('Direcção Efectiva da Repara+
+     A                                            ção (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10805       1A         ALIAS(NECDESMVEICULO)
+     A                                      TEXT('Necessidade de desmontagem +
+     A                                            do Veiculo (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10806       8A         ALIAS(DATADISPOFICINTERV)
+     A                                      TEXT('Data disponibilidade da ofici+
+     A                                            na e Segurado')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10807       8A         ALIAS(DATACONCPERITAGEM)
+     A                                      TEXT('Conclusão da Peritagem')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10808       8A         ALIAS(DATADISPRELATPERIT)
+     A                                      TEXT('Disponibilização do Relatóri+
+     A                                            o de Peritagem')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10809       8A         ALIAS(DATAASSRESP)
+     A                                      TEXT('Data da Assunção ou não de +
+     A                                            Responsabilidade')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10810       8A         ALIAS(DATAAPINFADINTER)
+     A                                      TEXT('Apresentação Informações adi+
+     A                                            cionais pelo Interviniente')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10811       8A         ALIAS(DATADECFINALSEG)
+     A                                      TEXT('Decisão  final P/Segurador')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10812       8A         ALIAS(DATAULTPAGINDEMINTEROFIC)
+     A                                      TEXT('Ultimo pagamento Indemniza+
+     A                                            ção ao Interviniente/Oficina')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10813       1A         ALIAS(APLICLEIPORT)
+     A                                      TEXT('Fora do Território Nacional')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10814       1A         ALIAS(FACTCLIMEXCEP)
+     A                                      TEXT('Factores Climatérico Excep.')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10815       1A         ALIAS(SUSPFRAUDE)
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10816      50A         ALIAS(INFADRELEVAPRECPRZ1)
+     A                                      TEXT('Informações P1')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10817      50A         ALIAS(INFADRELEVAPRECPRZ2)
+     A                                      TEXT('Informações P2')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10819      50A         ALIAS(INFADRELEVAPRECPRZ3)
+     A                                      TEXT('Informações P3')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10820      50A         ALIAS(INFADRELEVAPRECPRZ4)
+     A                                      TEXT('Informações P4')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10821      50A         ALIAS(INFADRELEVAPRECPRZ5)
+     A                                      TEXT('Informações P5')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10822      50A         ALIAS(INFADRELEVAPRECPRZ6)
+     A                                      TEXT('Informações P6')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            ASSRESPONS    50A         TEXT('Assunção Responsabilidade+
+     A                                            pelo Segurador')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A
+     A          K NR

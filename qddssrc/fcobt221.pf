@@ -1,0 +1,3 @@
+     A          R TBADCO                    TEXT('Envio de ADC')
+      *
+     A            TOADC         63A         COLHDG('Reg. ADC')

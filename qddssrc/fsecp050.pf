@@ -1,0 +1,21 @@
+     A***************************************************************
+     A* Tabela....: FSECP050
+     A* Descrição.: Registo de Operações Especiais
+     A*
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP050
+     A            SQLOG          5S 0       TEXT('Registo de Operação')
+     A            SQREGRA        5S 0       TEXT('Sequência da Regra')
+     A            CDUSER        10A         TEXT('Responsável pela Criação')
+     A            DTLIMITE        L         TEXT('Data Limite')
+     A
+     A*==> Informação do Estado
+     A            CDSTATUS       1A         TEXT('Estado da Operação')
+     A            DTSTATUS        L         TEXT('Data do Estado')
+     A
+     A*==> Campos de Controlo de Registo
+     A            SEC05001        L         TEXT('Criação do Registo')
+     A            SEC05002        L         TEXT('alteração')
+     A
+     A          K SQLOG

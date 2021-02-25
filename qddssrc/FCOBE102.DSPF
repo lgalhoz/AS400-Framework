@@ -1,0 +1,80 @@
+     A*%%TS  SD  20140214  160939  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      CF03(03 'Sair')
+     A                                      CF05(05 'Gravar')
+     A                                      CF06(06 'Gravar')
+     A                                      CF07(07 'PrintP')
+     A                                      CF08(08 'PrintP')
+     A                                      CF09(09 'PrintP')
+     A                                      CF10(10 'Cancelar')
+     A                                      CF12(12 'Cancelar')
+     A                                      CF15(15 'Texto')
+     A                                      CF21(21 'Texto')
+     A          R RCOBE10200
+     A*%%TS  SD  20120224  154940  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                  1 71USER
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A            S#PGM         10A  O  2 71
+     A            DS#FNC        57A  O  2 12DSPATR(HI)
+     A            DS#PGM        57A  O  1 12DSPATR(HI)
+     A          R RCOBE10202                SFL
+     A*%%TS  SD  20140103  102055  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            TEFENV        10S 0H
+     A            TEDATP         8S 0H
+     A            TEDATR         8S 0H
+     A            CODERRO        7A  H
+     A            OPTION         2A  I  9  2
+     A            LST#DET       76A  O  9  5
+     A  80                                  COLOR(WHT)
+     A  81                                  COLOR(RED)
+     A  82                                  COLOR(YLW)
+     A*           CURS#          4Y 0H      SFLRCDNBR(CURSOR)
+     A          R RCOBE10203                SFLCTL(RCOBE10202)
+     A*%%TS  SD  20130924  113229  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      SFLSIZ(0013)
+     A                                      SFLPAG(0012)
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A            RRN            4S 0H      SFLRCDNBR(CURSOR *TOP)
+     A            LST#HDR       76   O  8  5DSPATR(HI)
+     A                                      DSPATR(RI)
+     A            DS#OPT01      76A  O  5  4COLOR(BLU)
+     A            DSCRITER      12A  O  7  2
+     A            CRITERIA      40A  B  7 15
+     A                                  8  2'Op'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(RI)
+     A                                  4  2'Escolha a Opção'
+     A            DS#OPT02      76A  O  6  4COLOR(BLU)
+     A          R RCOBE10298
+     A*%%TS  SD  20130903  114317  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A                                 12  9'|              NÃO EXISTEM REGISTO-
+     A                                      S               |'
+     A                                      DSPATR(HI)
+     A                                 10  9'+----------------------------------
+     A                                      ----------------+'
+     A                                      DSPATR(HI)
+     A                                 13  9'|                                 -
+     A                                                      |'
+     A                                      DSPATR(HI)
+     A                                 14  9'+----------------------------------
+     A                                      ----------------+'
+     A                                      DSPATR(HI)
+     A                                 11  9'|                                 -
+     A                                                      |'
+     A                                      DSPATR(HI)
+     A          R RCOBE10299
+     A*%%TS  SD  20130910  124026  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            DS#KEY01      78A  O 22  2COLOR(BLU)
+     A            DS#KEY02      78A  O 23  2COLOR(BLU)
+     A            ERR#MSG       78A  O 24  2COLOR(RED)

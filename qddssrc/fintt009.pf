@@ -1,0 +1,24 @@
+     A*===============================================================
+     A* Ficheiro...: FINTT009
+     A* Descrição..: (OPLSEG) Interface de Pessoas/Empresas
+     A*===============================================================
+     A          R RINTT009
+     A            LNSEG          6S 0       TEXT('Número de Segurado          ')
+     A            LNOME         50A         TEXT('Nome do Segurado            ')
+     A            LTITUL         2A         TEXT('Título                      ')
+     A            LTIPO          1A         TEXT('Tipo                        ')
+     A            LPROF          6A         TEXT('Profissão                   ')
+     A            LMORA         40A         TEXT('Morada                      ')
+     A            LLOCAL        30A         TEXT('Localidade                  ')
+     A            LCPOST         4A         TEXT('Código Postal               ')
+     A            LSPOST         3A         TEXT('Código do Sufixo Postal     ')
+     A*
+     A*---> Reservado
+     A            FILLER        44A         TEXT(' --- RESERVADO ---          ')
+     A*
+     A*--> Restante Informação
+     A            LDTTRF         8S 0       TEXT('Data Transferência          ')
+     A            LNIF           9S 0       TEXT('Nº Contribuinte             ')
+     A            LDTNAS         8S 0       TEXT('Data Nascimento             ')
+     A
+     A          K LNSEG

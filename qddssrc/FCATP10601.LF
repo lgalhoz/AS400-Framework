@@ -1,0 +1,9 @@
+     A***************************************************************
+     A* Tabela....: FCATP10601
+     A* Descrição.: Lógico de Riscos
+     A***************************************************************
+     A          R RCATP106                  PFILE(FCATP106)
+     A
+     A          K CDPROD
+     A          K CDSUPER
+     A          K NUORDEM

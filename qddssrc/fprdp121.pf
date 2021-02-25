@@ -1,0 +1,15 @@
+     A*===============================================================
+     A* Ficheiro.: FPRDP121
+     A* Descrição: Operações sobre indexação
+     A*
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP121                  TEXT('Controlo')
+     A            CODIDX         5S 0       TEXT('Código')
+     A            NUSEQU         5S 0       TEXT('Sequência')
+     A            CDSTATUS       1A         TEXT('Estado da Operação')
+     A            CDUSER        10A         TEXT('Utilizador')
+     A            DATEXEC         L         TEXT('Data Estado')
+     A
+     A          K CODIDX
+     A          K NUSEQU

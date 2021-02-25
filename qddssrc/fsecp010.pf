@@ -1,0 +1,20 @@
+     A***************************************************************
+     A* Tabela....: FSECP010
+     A* Descrição.: Mestre de Programas e Rotinas
+     A*
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP010
+     A            CDPROGR        5S 0       TEXT('Código de Programa')
+     A            CDLIBL         5S 0       TEXT('Lista de Biblioteca')
+     A            NMPROGR       10A         TEXT('Nome')
+     A            DSPROGR       40A         TEXT('Descrição')
+     A            CDOMIN         3A         TEXT('Dominio')
+     A            CDTIPO         1A         TEXT('Tipo')
+     A            CDTMPLT        5S 0       TEXT('Template')
+     A            CMITEM         6A         TEXT('Comando')
+     A            NOFRAME       10A         TEXT('Frame')
+     A            CDBLOCK        5S 0       TEXT('Bloqueio')
+     A            DFACESS        1A         TEXT('Acesso por defeito')
+     A
+     A          K CDPROGR

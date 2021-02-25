@@ -1,0 +1,43 @@
+     A*%%TS  SD  20130530  112503  LGALHOZ     REL-V6R1M0  5761-WDS
+0000 A*0IGC 0DS4  V6R1M0                    910710
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3                  -
+     A                                             27 132 *DS4)
+0042 A**************************************************************************
+0042 A*ECRAN CONSULTA DADOS DA APOLICE DE QUALQUER RAMO
+0043 A**************************************************************************
+     A          R RPRDE00700
+     A*%%TS  SD  20120224  154940  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                  1 71USER
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A            S#PGM         10A  O  2 71
+     A            DS#FNC        57A  O  2 12DSPATR(HI)
+     A            DS#PGM        57A  O  1 12DSPATR(HI)
+     A          R RPRDE00799
+     A*%%TS  SD  20120906  165033  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            DS#KEY01      78   O 22  2COLOR(BLU)
+     A            DS#KEY02      78   O 23  2COLOR(BLU)
+     A            ERR#MSG       78   O 24  2COLOR(RED)
+     A          R RPRDE00705
+     A*%%TS  SD  20130530  112503  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                  5  4'Apólice...:'
+     A            FLD001         2   O  5 16
+     A            FLD002         7   O  5 19
+     A            FLD003        40   O  6 29
+     A                                  4  2'Informação da Apólice'
+     A                                      COLOR(BLU)
+     A                                  6  4'Segurado..:'
+     A            FLD004         6   O  6 16
+     A                                  8  2'Morada'
+     A                                      COLOR(BLU)
+     A                                  9  4'Morada...:'
+     A                                 10  4'Localidade.:'
+     A                                 11  4'Cod.Postal.:'
+     A                                 11 29'Concelho.:'
+     A                                  5 42'Situação.:'
+     A            FLD005        10   O  5 53

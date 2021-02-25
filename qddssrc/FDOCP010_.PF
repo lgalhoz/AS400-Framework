@@ -1,0 +1,23 @@
+     A*==============================================================
+     A* Ficheiro..: FDOCP015
+     A* Objectivo.: Guardar a informação dos ficheiros de Spool
+     A*==============================================================
+     A                                      UNIQUE
+     A          R RDOCP015                  TEXT('Relação dos ficheiros Spool')
+     A            DOC01501      11S 0       ALIAS(CODDOCUMENTO)
+     A            NOMDOC        45A         TEXT('Nome do Documento')
+     A            FILENAME      10A         TEXT('Nome do Ficheiro')
+     A            USER          10A         TEXT('Perfil do Utilizador')
+     A            USRDATA       10A         TEXT('Informação adicional')
+     A            STATUS         3A         TEXT('Estado')
+     A            SPOOL#         4S 0       TEXT('Numero do Spool')
+     A            COPIES         4S 0       TEXT('Numero de Copias')
+     A            TYPE           4A         TEXT('Tipo de Formulario')
+     A            PRTY           2S 0       TEXT('Prioridade')
+     A            PAGES          4S 0       TEXT('Numero de Páginas')
+     A            JOBNAME       10A         TEXT('Nome do Job')
+     A            JOB#           6A         TEXT('Numero do Job')
+     A            DATE            L         TEXT('Data do Job')
+     A            HOUR            T         TEXT('Hora do Job')
+     A
+     A          K DOC01501

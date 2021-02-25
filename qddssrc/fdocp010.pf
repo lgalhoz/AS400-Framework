@@ -1,0 +1,24 @@
+     A*==============================================================
+     A* Ficheiro..: FDOCP010
+     A* Objectivo.: Guardar a informação dos ficheiros de Spool
+     A*==============================================================
+     A                                      UNIQUE
+     A          R RDOCP010                  TEXT('Relação dos ficheiros Spool')
+     A            CODDOCUM      11S 0       ALIAS(CODDOCUMENTO)
+     A            CODORIGEM      1A
+     A            NUMORIGEM     11S 0
+     A            CODTEMPLAT    11S 0
+     A            LOCALIZA      80A
+     A            NOMDOCUM      45A
+     A            CODUSER       20A
+     A            ICARQUIVO      1S 0
+     A            ICENVIADO      1S 0
+     A            ICRETER        1S 0
+     A            CODSTATUS      1A
+     A            DATREGISTO      Z
+     A            DATSTATUS       Z
+     A            DATENVIO        Z
+     A            DATERRO         Z
+     A
+     A
+     A          K CODDOCUM

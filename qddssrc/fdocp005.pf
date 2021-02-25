@@ -1,0 +1,10 @@
+     A                                      UNIQUE
+     A          R RDOCP005
+     A            CDATRIB        5S 0       TEXT('Código Atributo')
+     A            CDATRIBSU      5S 0       TEXT('Superior')
+     A            NOME          45A         TEXT('Nome')
+     A            DESINGA       45A         TEXT('Designacao')
+     A            CDDOMINIO      2A         TEXT('Dominio')
+     A            VALOR         45A         TEXT('Valor')
+     A
+     A          K CDATRIB

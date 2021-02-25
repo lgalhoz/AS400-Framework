@@ -1,0 +1,20 @@
+     A***************************************************************
+     A* Tabela....: FTBLP010
+     A* Descrição.: Agregas as Tabelas de Código através do
+     A*             Indice.
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RTBLP010
+     A            CDINDICE       5S 0       TEXT('Indice de Tabelas')
+     A            DSINDICE      40A         TEXT('Descrição do Índice')
+     A            CDMODULO       3A         TEXT('Módulo da Tabela')
+     A            DOMINIO        1A         TEXT('Dominio')
+     A            DIMMIN         5S 0       TEXT('Dimensão Minima')
+     A            DIMMAX         5S 0       TEXT('Dimensão Maxima')
+     A            CDINCREM       5S 0       TEXT('Regras de auto incremento')
+     A            ICEMPTY        1A         TEXT('Aceita vazio')
+     A            ICRESERV       1A         TEXT('Reservada')
+     A            TBL01001        L
+     A            TBL01002        L
+     A
+     A          K CDINDICE

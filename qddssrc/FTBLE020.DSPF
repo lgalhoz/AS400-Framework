@@ -1,0 +1,155 @@
+     A*%%TS  SD  20110511  160851  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R RTBLE02000
+     A*%%TS  SD  20110511  155329  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A                                      KEEP
+     A                                  1 27'Códigos das Tabelas'
+     A                                      COLOR(WHT)
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A                                  1 71USER
+     A            WOPERACAO     50A  O  2 15COLOR(WHT)
+     A          R RTBLE02099
+     A*%%TS  SD  20110510  135754  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            FNCKEY02      78   O 23  2
+     A            FNCKEY01      78   O 22  2
+     A            ERRMSG        78   O 24  2
+     A          R RTBLE02002                SFL
+     A*%%TS  SD  20110511  160139  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            WSELECT        1A  B  8  2
+     A            CDINDICE  R        H      REFFLD(RTBLP012/CDINDICE *LIBL/FTBL-
+     A                                      P012)
+     A            CDCODIGO  R        H      REFFLD(RTBLP012/CDCODIGO *LIBL/FTBL-
+     A                                      P012)
+     A            CODIGO    R        O  8  6REFFLD(RTBLP012/CODIGO *LIBL/FTBLP0-
+     A                                      12)
+     A            ALIAS     R        O  8 22REFFLD(RTBLP012/ALIAS *LIBL/FTBLP01-
+     A                                      2)
+     A            DESCCOD   R        O  8 38REFFLD(RTBLP012/DESCCOD *LIBL/FTBLP-
+     A                                      012)
+     A          R RTBLE02003                SFLCTL(RTBLE02002)
+     A*%%TS  SD  20110511  160139  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      SFLSIZ(0013)
+     A                                      SFLPAG(0012)
+     A                                      CF03(03 'Sair')
+     A                                      CF06(06 'Gravar')
+     A                                      CF12(12 'Cancelar')
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A                                  7  1'Opt.'
+     A                                      COLOR(WHT)
+     A                                  7 38'Descrição'
+     A                                      COLOR(WHT)
+     A                                  7  6'Codigo'
+     A                                      COLOR(WHT)
+     A                                  7 22'Alias'
+     A                                      COLOR(WHT)
+     A                                  4  1'Tabela....:'
+     A                                  5  1'Descrição.:'
+     A            CDINDICE  R        O  4 13REFFLD(RTBLP012/CDINDICE *LIBL/FTBL-
+     A                                      P012)
+     A          R RTBLE02005
+     A*%%TS  SD  20110511  155629  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                      CF21(21 'Alterar')
+     A                                      CF22(22 'Eliminar')
+     A                                      CF10(10 'Listar Códigos das Tabelas-
+     A                                      ')
+     A                                      CF05(05 'Actualizar')
+     A                                      OVERLAY
+     A                                  5  2'Tabela.....:'
+     A                                  6  2'Código.....:'
+     A                                  7  2'Alias......:'
+     A                                  8  2'Descrição..:'
+     A            CDINDICE  R        O  5 15REFFLD(RTBLP012/CDINDICE *LIBL/FTBL-
+     A                                      P012)
+     A                                      COLOR(WHT)
+     A            CODIGO    R        O  6 15REFFLD(RTBLP012/CODIGO *LIBL/FTBLP0-
+     A                                      12)
+     A                                      COLOR(WHT)
+     A            ALIAS     R        O  7 15REFFLD(RTBLP012/ALIAS *LIBL/FTBLP01-
+     A                                      2)
+     A                                      COLOR(WHT)
+     A            DESCCOD   R        O  8 15REFFLD(RTBLP012/DESCCOD *LIBL/FTBLP-
+     A                                      012)
+     A                                      COLOR(WHT)
+     A          R RTBLE02022
+     A*%%TS  SD  20110511  115834  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF12(12 'Cancelar')
+     A                                      OVERLAY
+     A                                      WINDOW(5 10 8 50)
+     A                                      USRRSTDSP
+     A                                  1  8'Atenção - Opção para eliminar acti-
+     A                                      va'
+     A                                      COLOR(WHT)
+     A                                  3  2'Está seleccionada a opção para eli-
+     A                                      minar este '
+     A                                  4  7'registo, deseja continuar (S/N).'
+     A                                  6 19'Continuar:'
+     A            WOPTION        1A  B  6 30COLOR(WHT)
+     A                                  7  2'F12=Cancelar'
+     A                                      COLOR(WHT)
+     A          R RTBLE02021
+     A*%%TS  SD  20110511  160851  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                      CF21(21 'Alterar')
+     A                                      CF22(22 'Eliminar')
+     A                                      CF10(10 'Listar Códigos das Tabelas-
+     A                                      ')
+     A                                      CF05(05 'Actualizar')
+     A                                      OVERLAY
+     A                                  5  2'Tabela.....:'
+     A                                  6  2'Código.....:'
+     A                                  7  2'Alias......:'
+     A                                  8  2'Descrição..:'
+     A            CDINDICE  R        O  5 15REFFLD(RTBLP012/CDINDICE *LIBL/FTBL-
+     A                                      P012)
+     A                                      COLOR(WHT)
+     A            WCODIGO   R        B  6 15REFFLD(RTBLP012/CODIGO *LIBL/FTBLP0-
+     A                                      12)
+     A                                      COLOR(WHT)
+     A            WALIAS    R        B  7 15REFFLD(RTBLP012/ALIAS *LIBL/FTBLP01-
+     A                                      2)
+     A                                      COLOR(WHT)
+     A            WDESCCOD  R        B  8 15REFFLD(RTBLP012/DESCCOD *LIBL/FTBLP-
+     A                                      012)
+     A                                      COLOR(WHT)
+     A                                      CHGINPDFT(LC)
+     A          R RTBLE02006
+     A*%%TS  SD  20110511  155629  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                      CF21(21 'Alterar')
+     A                                      CF22(22 'Eliminar')
+     A                                      CF10(10 'Listar Códigos das Tabelas-
+     A                                      ')
+     A                                      CF05(05 'Actualizar')
+     A                                      OVERLAY
+     A                                  5  2'Tabela.....:'
+     A                                  6  2'Código.....:'
+     A                                  7  2'Alias......:'
+     A                                  8  2'Descrição..:'
+     A            CDINDICE  R        O  5 15REFFLD(RTBLP012/CDINDICE *LIBL/FTBL-
+     A                                      P012)
+     A                                      COLOR(WHT)
+     A            WCODIGO   R        I  6 15REFFLD(RTBLP012/CODIGO *LIBL/FTBLP0-
+     A                                      12)
+     A                                      COLOR(WHT)
+     A            WALIAS    R        I  7 15REFFLD(RTBLP012/ALIAS *LIBL/FTBLP01-
+     A                                      2)
+     A                                      COLOR(WHT)
+     A            WDESCCOD  R        I  8 15REFFLD(RTBLP012/DESCCOD *LIBL/FTBLP-
+     A                                      012)
+     A                                      COLOR(WHT)
+     A                                      CHGINPDFT(LC)

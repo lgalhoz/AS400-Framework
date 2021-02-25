@@ -1,0 +1,31 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP102
+     A* Descrição..: Coberturas
+     A* Observação.: Parameterizado manualmente.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP102
+     A
+     A            CDPROD         5S 0       TEXT('Código Produto')
+     A            CDCOBERT       5S 0       TEXT('Código')
+     A            CDSUPER        5S 0       TEXT('Superior')
+     A            NUORDEM        5S 0       TEXT('Ordem')
+     A            DSCOBERT     100A         TEXT('Descricao')
+     A            CDNATURA       1A         TEXT('Natureza')
+     A            ICOBRIGA       1A         TEXT('Obrigatória')
+     A            ICESCREVE      1A         TEXT('OMITIR')
+     A            ALIAS         10A         TEXT('Código Alternativo')
+     A            CONVERSAO     10A         TEXT('Conversão')
+     A
+     A*==> Campos de Controlo
+     A            CAT10201        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT10202        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT10203       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT10204      10A         TEXT('Quem Criou')
+     A            CAT10205      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD
+     A          K CDCOBERT

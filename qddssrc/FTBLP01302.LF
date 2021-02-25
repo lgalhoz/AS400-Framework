@@ -1,0 +1,9 @@
+     A***************************************************************
+     A* Tabela....: FTBLP01301
+     A* Descrição.: Ordenado por Alias e Tipo
+     A*
+     A***************************************************************
+     A          R RTBLP013                  PFILE(FTBLP013)
+     A
+     A          K DSLOCAL
+     A          K CDSUPER

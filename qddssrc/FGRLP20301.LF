@@ -1,0 +1,8 @@
+     A*================================================================
+     A* Tabela....: FGRLP203
+     A* Descrição.: Separação dos Campos no Servidor FTP
+     A*================================================================
+     A          R RGRLP203                  PFILE(FGRLP203)
+     A
+     A          K CDSERVER
+     A          K TPFIELD

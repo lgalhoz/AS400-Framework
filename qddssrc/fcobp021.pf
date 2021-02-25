@@ -1,0 +1,20 @@
+     A*================================================================
+     A* Tabela....: FCOBP021
+     A* Descrição.: Registo do Contacto por mail
+     A*
+     A*================================================================
+     A                                      UNIQUE
+     A          R RCOBP021
+     A            CDCONT         9S 0       TEXT('Código de Contacto')
+     A            CDMAIL         3S 0       TEXT('Sequencia do Contacto')
+     A            NUSEQU         3S 0       TEXT('Sequencia do Destinatário')
+     A
+     A            TIPDEST        1A         TEXT('T=To; C=CC, B=BCC')
+     A            NUMSEG         6S 0       TEXT('Código do Segurado/Mediador')
+     A            NOME          50A         TEXT('Nome do Segurado/Mediador')
+     A            EMAIL        100A         TEXT('Email do Segurado/Mediador')
+     A            DTRESPO        8S 0       TEXT('Data de Resposta')
+     A
+     A          K CDCONT
+     A          K CDMAIL
+     A          K NUSEQU

@@ -1,0 +1,14 @@
+     A*===============================================================
+     A* Ficheiro...: FCORP019
+     A* Descrição..: Relação das Consultas com as Templates
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCORP019
+ #0  A            CDSEARCH       9S 0       TEXT('Código da Pesquisa')
+ #1  A            CODFORMUL      9S 0       TEXT('Código de Template')
+ #2  A            NUORDEM        3S 0       TEXT('Ordenação')
+ #3  A            ISDEFEITO      1S 0       TEXT('Consulta por defeito')
+ #4  A            ISTOEXCL       1S 0       TEXT('Excluir das Consultas')
+     A
+     A          K CDSEARCH
+     A          K CODFORMUL

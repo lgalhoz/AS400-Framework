@@ -1,0 +1,9 @@
+     A***************************************************************
+     A* Tabela....: FPRDP01101
+     A* Descrição.: Ordenado por Código de Risco
+     A***************************************************************
+     A          R RPRDP011                  PFILE(FPRDP011)
+     A
+     A          K CDRAMO
+     A          K NUAPOL
+     A          K CDRISCO

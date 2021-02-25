@@ -1,0 +1,8 @@
+     A***************************************************************
+     A* Tabela....: FSINP10201
+     A* Descrição.: Intervinientes_DC por processo
+     A***************************************************************
+     A          R RSINP102                  PFILE(FSINP102)
+     A
+     A          K NRPROC
+     A          K NORDEM

@@ -1,0 +1,19 @@
+     A*===============================================================
+     A* Ficheiro...: FSECP035
+     A* Descrição..: Utilizadores do Portal Jose Mata
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RSECP035
+     A
+     A            CDPORTAL       5S 0       TEXT('Código do Portal')
+     A            DSPORTAL      50A         TEXT('Descrição do Portal')
+     A            DSURL        100A         TEXT('Endereço Web do Portal')
+     A            DSCURL       100A         TEXT('Caminho de acesso')
+     A            TPTPORAL       1A         TEXT('Tipo de Portal')
+     A            ICLOCALIZA     1A         TEXT('Localização do Portal')
+     A            CDFORNECE      5S 0       TEXT('Código de fornecedor')
+     A
+     A            SEC03501        L
+     A            SEC03502        L
+     A
+     A          K CDPORTAL

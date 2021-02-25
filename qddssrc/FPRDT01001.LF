@@ -1,0 +1,9 @@
+     A***************************************************************
+     A* Tabela....: FPRDP01001
+     A* Descrição.: Ordenado por Código de Texto
+     A***************************************************************
+     A          R RPRDP010                  PFILE(FPRDT010)
+     A
+     A          K CDPROD
+     A          K NUAPOL
+     A          K CDTEXTO

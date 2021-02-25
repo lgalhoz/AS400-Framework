@@ -1,0 +1,8 @@
+     A***************************************************************
+     A* Tabela....: FCATP10301
+     A* Descrição.: Limites e Franquias
+     A***************************************************************
+     A          R RCATP103                  PFILE(FCATP103)
+     A
+     A          K CDPROD
+     A          K CDSUPER

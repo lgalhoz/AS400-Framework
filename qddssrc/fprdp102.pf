@@ -1,0 +1,9 @@
+     A*================================================================
+     A* Tabela....: FPRDP102
+     A* Alias.....: Contador
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A          R RPRDP102                  TEXT('Contador')
+     A            CONTADOR       9S 0       TEXT('Contador')
+     A
+     A          K CONTADOR

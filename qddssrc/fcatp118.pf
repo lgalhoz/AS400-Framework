@@ -1,0 +1,28 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP118
+     A* Descrição..: Páginas do documento
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP118
+     A
+     A            CDPROD         5S 0       TEXT('Código Produto')
+     A            CDDOCUM        5S 0
+     A            NUSEQU         5S 0       TEXT('Sequencio do Texto')
+     A            NUORDEM        5S 0
+     A            CDFUNCT        5S 0       TEXT('Função Especial')
+     A            CDPAGINA       5S 0       TEXT('Código da Página')
+     A            CDNATURA       2A         TEXT('Natureza')
+     A
+     A*==> Campos de Controlo
+     A            CAT11801        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT11802        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT11803       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT11804      10A         TEXT('Quem Criou')
+     A            CAT11805      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD
+     A          K CDDOCUM
+     A          K NUSEQU

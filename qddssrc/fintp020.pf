@@ -1,0 +1,21 @@
+     A*================================================================
+     A* Tabela....: FINTP020
+     A* Descrição.: Interfaces de Recibos
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP020
+     A            CDFILE         9S 0       TEXT('Código Ficheiro')
+     A            CCOMP          3S 0       TEXT('Código de Companhia')
+     A            CDINTER        9S 0       TEXT('Código Interfaces')
+     A            TPFILE         3A         TEXT('Tipo de Ficheiro')
+     A            CDESTAD        1A         TEXT('Situação da Interface')
+     A            DTESTAD        8S 0       TEXT('Data da situação')
+     A
+     A*==> Informação Original
+     A            CDCONTA        5S 0       TEXT('Código de Conta')
+     A            NOFILE        40A         TEXT('Nome do Ficheiro')
+     A            ORNAME        40A         TEXT('Nome Original do ficheiro')
+     A            DTFILE         8S 0       TEXT('Data do Ficheiro')
+     A            QTREGIS        5S 0       TEXT('Quantidade de Recibos')
+     A
+     A          K CDFILE

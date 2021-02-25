@@ -1,0 +1,33 @@
+     A*========================================================================
+     A* FICHEIRO..: FCOBP144
+     A* DESCRIÇÃO.: Plano de Pagamentos do Recibo por Desconto em Vencimento
+     A*========================================================================
+     A                                      UNIQUE
+     A          R RCOBP144
+     A*==> Informação do Plano
+     A            NUMORDEM       8S 0       TEXT('Número de Ordem da Apólice')
+     A            NUMPLANO       8S 0       TEXT('Número do Plano')
+     A            CODSEG         8S 0       TEXT('Código de Segurado')
+     A            DATINICIO       L         TEXT('Data de inicio do Plano')
+     A            DATTERMO        L         TEXT('Data de termo do Plano')
+     A            CODESTADO      1S 0       TEXT('Estado do Plano')
+     A            DATESTADO       L         TEXT('Data do Estado')
+     A            NUMPREST       3S 0       TEXT('Quantidade de Movimentos')
+     A
+     A*==> Informação do Recibo
+     A            TIPRECIBO      2S 0       TEXT('Tipo de Recibo')
+     A            NUMRECIBO     10S 0       TEXT('Número do Recibo')
+     A            ESTRECIBO      1S 0       TEXT('Estado do Recibo')
+     A            MACONT         6S 0       TEXT('Ano e Mês do Continuado')
+     A
+     A*==> Controlo dos Valores
+     A            IMESTIMAD     13S 2       TEXT('Valor Estimado ou real')
+     A            IMREAL        13S 2       TEXT('Total dos movimentos')
+     A            IMSALDO       13S 2       TEXT('Estimado - Real')
+     A
+     A**==> Campos de Controlo
+     A            COB14401        L
+     A            COB14402        L
+     A
+     A          K NUMORDEM
+     A          K NUMPLANO

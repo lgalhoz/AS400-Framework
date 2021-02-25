@@ -1,0 +1,14 @@
+     A*===============================================================
+     A* Ficheiro...: FCOBT230
+     A* Descrição..: Estrutura do ficheiro XML
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCOBT230                  TEXT('Estrutura do Ficheiro XML')
+     A
+     A            NUSEQU         5S 0       TEXT('Chave do Registo')
+     A            NUSUPER        5S 0       TEXT('Registo Superior')
+     A            TPREGIS        2A         TEXT('Tipo de Registo')
+     A            TXTXML       130A         TEXT('Instrução XML')
+     A            NOMCAR        20A         TEXT('Variável')
+     A
+     A          K NUSEQU

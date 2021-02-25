@@ -1,0 +1,58 @@
+     A*==============================================================================
+     A* Ficheiro..: FSINT101
+     A* Descrição.: Informação Automóvel
+     A*             Informação Específica dos Processos de Sinistros de Automóvel
+     A*
+     A* Origens...: Lista de Ficheiros Originais de onde foram extraídos os dados:
+     A*             [x] QS36F/G.SINPRO     = Processos de Sinistro Automóvel
+     A*             [x] QS36F/IDSPRO       = Processos de Sinistro IDS
+     A*             [x] QS36F/FICI<AAMMDD> = Interface de Sinistros IDS Lusitânia
+     A*
+     A*==============================================================================
+     A                                      UNIQUE
+     A          R RSINT101
+     A            NORDSIN        9S 0       COLHDG('Número de Ordem')
+     A
+     A*--> Informação Específica do Processo
+     A            CAPINI         9S 0       COLHDG('Cap.Inicial')
+     A            QIVSN          1A         COLHDG('Qiv.(S/N)')
+     A            CAPQIV         5S 0       COLHDG('Cap.Qiv.')
+     A            PRIV           1A         COLHDG('Priv.Uso')
+     A            CAPPRV         5S 2       COLHDG('Cap.Priv.')
+     A            VEXTRA         5S 0       COLHDG('Valor Extras')
+     A            DUR            1S 0       COLHDG('Dur')
+     A            FRAC           1S 0       COLHDG('Frac')
+     A            FILL2          1A         COLHDG('Espaço disponivel')
+     A            R1             2S 0       COLHDG('Risco-1')
+     A            CAP1           9S 0       COLHDG('Cap-1')
+     A            FRQ1           9S 0       COLHDG('Frq-1')
+     A            R2             2S 0       COLHDG('Risco-2')
+     A            CAP2           9S 0       COLHDG('Cap-2')
+     A            FRQ2           9S 0       COLHDG('Frq-2')
+     A            R3             2S 0       COLHDG('Risco-3')
+     A            CAP3           9S 0       COLHDG('Cap-3')
+     A            FRQ3           9S 0       COLHDG('Frq-3')
+     A            TIPBON         1A         COLHDG('Tipo Bonus')
+     A            VALBON         9S 2       COLHDG('Valor Bonus')
+     A            TIPOPR         1A         COLHDG('Tipo Processo')
+     A            ACORDO         1A         COLHDG('DL83/2006')
+     A            REGSIN         1A         COLHDG('Regista Sinistro')
+     A            AGRAVA         1A         COLHDG('Agravamento')
+     A            NRPROC         6A         COLHDG('Nº Processo' 'de Abertura')
+     A            FLAG1          1A         COLHDG('Asterisco')
+     A            NNPROC         6A         COLHDG('Nº Proc')
+     A            FLAG2          1A         COLHDG('Asterisco')
+     A            FILL3          2A         COLHDG('FILLER')
+     A            AJFIN          1A         COLHDG('Ajuste Final')
+     A            NPARTI         6A         COLHDG('Nº Participação')
+     A            AJUDIC         1A         COLHDG('Acção Judicial')
+     A            DTRJUD         8S 0       COLHDG('Data Acção Judicial')
+     A            NMED           4S 0       COLHDG('Nº Mediador')
+     A            TMED           1A         COLHDG('Tipo Mediador')
+     A            CODFRQ         2S 0       COLHDG('Cod.Franquia')
+     A            IDS            1A         COLHDG('Ids')
+     A            CRDR           1A         COLHDG('Credor')
+     A            TPR            2S 0       COLHDG('Tabela')
+     A            PRESP          3S 0       COLHDG('% Resp.')
+     A
+     A          K NORDSIN

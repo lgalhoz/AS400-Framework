@@ -1,0 +1,21 @@
+     A*========================================================================
+     A* FICHEIRO..: FCOBP141
+     A* DESCRIÇÃO.: SEGURADOS COM DESCONTOS EM VENCIMENTO
+     A*========================================================================
+     A                                      UNIQUE
+     A          R RCOBP141
+     A            CODSEG         8S 0       TEXT('Código de Segurado')
+     A            CDEMPREGAD    30A         TEXT('Código de Empregado')
+     A            CDEMPRESA      3S 0       TEXT('Código de Empresa')
+     A            QTDEAPOL       3S 0       TEXT('Apólice activas')
+     A            IMSALDO       13S 2       TEXT('Saldo do Segurado')
+     A            COMENTARIO   100A         TEXT('Comentarios')
+     A            ISTOSELECT     1A         TEXT('Seleccionar este registo')
+     A            DTINICIO        L         TEXT('Inicio')
+     A            DTTERMO         L         TEXT('Termo')
+     A
+     A**==> Campos de Controlo
+     A            COB14101        L
+     A            COB14102        L
+     A
+     A          K CODSEG

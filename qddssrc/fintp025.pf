@@ -1,0 +1,26 @@
+     A*================================================================
+     A* Tabela....: FINTP025
+     A* Descrição.: Recibos com anomalias nas Comissões
+     A*
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP025
+     A            CDEXCEPT       9S 0       TEXT('Código de Excepçao')
+     A            CDREGIS        9S 0       TEXT('Código do Registo')
+     A
+     A*==> Controlo de diferenças nas Comissões
+     A            CDESTAD        1A         TEXT('Situação da Relação')
+     A            DTESTAD        8S 0       TEXT('Data da Relação')
+     A
+     A*==> Controlo de diferenças nas Comissões
+     A            PRTOTPR        7S 4       TEXT('Comissão Parametrizada')
+     A            PRTOTCL        7S 4       TEXT('Comissão Calculada')
+     A            DFTOCOM        9S 3       TEXT('Dif. Comissão')
+     A
+     A            TPCALC         3A         TEXT('Tipo de Calculo')
+     A            IMCOMIS1      11S 2       TEXT('Comissão Cobrança')
+     A            IMCOMIS2      11S 2       TEXT('Comissão Mediação')
+     A            IMCOMIS3      11S 2       TEXT('Comissão Corretagem')
+     A
+     A          K CDEXCEPT
+     A          K CDREGIS

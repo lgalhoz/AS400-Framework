@@ -1,0 +1,19 @@
+     A*========================================================================
+     A* FICHEIRO..: FCOBP146
+     A* DESCRIÇÃO.: Comentários e Referência de movimentos
+     A*========================================================================
+     A                                      UNIQUE
+     A          R RCOBP146
+     A            NUMORDEM       8S 0       TEXT('Número de Ordem da Apólice')
+     A            NUMPLANO       8S 0       TEXT('Número do Plano')
+     A            NUMMOVIM       3S 0       TEXT('Número do Movimento')
+     A            OBSERVA      100A         TEXT('Observações do Movimento')
+     A
+     A
+     A**==> Campos de Controlo
+     A            COB14601        L
+     A            COB14602        L
+     A
+     A          K NUMORDEM
+     A          K NUMPLANO
+     A          K NUMMOVIM

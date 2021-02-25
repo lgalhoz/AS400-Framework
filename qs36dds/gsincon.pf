@@ -1,0 +1,13 @@
+     A          R RSINCON
+     A
+     A            ACTREG         1A
+     A            AAPROC         2S 0
+     A            RM             6A
+     A            NPART          4S 0
+     A            NPROC          4S 0
+     A            NRECIB         5S 0
+     A            ICPROC         4S 0
+     A            IDPROC         4S 0
+     A            FILLER       242A
+     A
+     A          K AAPROC

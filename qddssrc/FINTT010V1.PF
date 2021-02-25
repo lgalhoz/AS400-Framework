@@ -1,0 +1,58 @@
+     A*===============================================================
+     A* Ficheiro...: FINTT010
+     A* Descrição..: (LFREC) Interface de Recibos
+     A*===============================================================
+     A          R RINTT010
+     A            LRAMO          2A         TEXT('Ramo                        ')
+     A            LAPOL          7A         TEXT('Apólice                     ')
+     A            LSEG           6A         TEXT('Número de Segurado          ')
+     A            LNREC          6A         TEXT('Número de Recibo            ')
+     A            LEREC          1A         TEXT('Espécie de Recibo           ')
+     A            LCAP          13A         TEXT('Capital                     ')
+     A            LCAPF         13A         TEXT('Capital para FAT            ')
+     A            LPCOM         11A         TEXT('Prémio Comercial            ')
+     A            LFGA          11A         TEXT('Fundo Garantia Auto         ')
+     A            LFFAT         11A         TEXT('Fundos/FAT                  ')
+     A            LCRC          11A         TEXT('Cartão (Carta Verde)        ')
+     A            LCUSTA        11A         TEXT('Custo Apólice               ')
+     A            LSELO         11A         TEXT('Selo - Imposto              ')
+     A            LINEM         11A         TEXT('INEM-Instit. de Emergência M')
+     A            LSNB          11A         TEXT('SNB-Serviço Nacional de Bomb')
+     A            LTREC         11A         TEXT('Total do Recibo             ')
+     A            LPCOMI        11A         TEXT('Prémio para Comissões       ')
+     A            LDTEMI         8A         TEXT('Data de Emissão             ')
+     A            LDTINI         8A         TEXT('Data de Início              ')
+     A            LDTERM         8A         TEXT('Data de Termo               ')
+     A            LCANUL         2A         TEXT('Código de Anulação          ')
+     A            LDTANU         8A         TEXT('Data Anulação/Data de Cobran')
+     A            LNCV1          6A         TEXT('Número Cartão - 1           ')
+     A            LNCV2          6A         TEXT('Número Cartão - 2           ')
+     A            LCDMOV         1A         TEXT('Código Movimento            ')
+     A            LFRAC         11A         TEXT('Valor do Fraccionamento     ')
+     A            LCOM1         11A         TEXT('Valor de Comissão JOSÉ MATA ')
+     A            LPR            5A         TEXT('Valor Prevenção Rodoviária  ')
+     A            LVIAG          1A         TEXT('Indicador Assistência Viagem')
+     A            LPRVGS        11A         TEXT('Prémio Simples Assist.Viagem')
+     A            LRESVG        11A         TEXT('Prémio Resseg.Assist.Viagem ')
+     A            LPRTVG        11A         TEXT('Prémio Total Assist. em Viag')
+     A            LPJUR          1A         TEXT('Indicador Protecção Jurídica')
+     A            LPRPJS        11A         TEXT('Prém. Simples Prot.Jurídica ')
+     A            LRESPJ        11A         TEXT('Prém.Resseg.Protecção Jurídi')
+     A            LPRTPJ        11A         TEXT('Prém.Total Protecção Jurídic')
+     A            LPRSVG        11A         TEXT('Prém.Comerc. Assit.Viagem   ')
+     A            LPRSPJ        11A         TEXT('Prém.Comerc.Protecção Jurídi')
+     A            LCOMLI        11A         TEXT('Valor Comissões Lider       ')
+     A            LCOSLI         5A         TEXT('Coseguradora Lider          ')
+     A            FILLER        13A         TEXT('  --- RESERVADO ---         ')
+     A*           LKEY          25A         TEXT('Chave do Ficheiro           ')
+     A            KRAMO          2S 0
+     A            KAPOL          7S 0
+     A            KCOD           1S 0
+     A            KRECIBO        9S 0
+     A            KSEQ           6S 0
+     A            LDTMOV         8S 0       TEXT('Data da Transferência       ')
+     A
+     A          K LRAMO
+     A          K LAPOL
+     A          K LNREC
+     A          K LSEG

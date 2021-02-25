@@ -1,0 +1,11 @@
+     A*===============================================================
+     A* Ficheiro...: FCORP020
+     A* Descrição..: Localização dos Documentos
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCORP020
+ #0  A            CODFOLDER      9S 0       TEXT('Código Folder')
+ #1  A            NOME         100A         TEXT('Nome da Folder')
+ #2  A            DESCRICAO    100A         TEXT('Descrição da Folder')
+     A
+     A          K CODFOLDER

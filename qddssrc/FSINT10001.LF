@@ -1,0 +1,10 @@
+     A***************************************************************
+     A* Tabela....: FSINT10001
+     A* Descrição.: Indexação igual ao dos Processos Automóvel
+     A***************************************************************
+     A          R RSINT100                  PFILE(FSINT100)
+     A
+     A          K AAPROC
+     A          K NSEQ
+     A          K RAMO
+     A          K APOLICE

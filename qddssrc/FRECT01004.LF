@@ -1,0 +1,8 @@
+     A***************************************************************
+     A* Tabela....: FRECT01004
+     A* Descrição.: Ordenado por Segurado
+     A***************************************************************
+     A          R RRECT010                  PFILE(FRECT010)
+     A
+     A          K CSEGUR
+     A          K NNUMREC

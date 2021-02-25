@@ -1,0 +1,228 @@
+     A*%%TS  SD  20131211  162056  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R RGRLE01000
+     A*%%TS  SD  20120322  115130  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A                                  1 71USER
+     A            DS#FNC        57A  O  2 12COLOR(WHT)
+     A            DS#PGM        57A  O  1 12COLOR(WHT)
+     A            S#PGM         10A  O  2 71
+     A          R RGRLE01099
+     A*%%TS  SD  20120322  115407  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            DS#KEY02      78A  O 23  2COLOR(BLU)
+     A            DS#KEY01      78A  O 22  2COLOR(BLU)
+     A            ERR#MSG       78A  O 24  2COLOR(WHT)
+     A          R RGRLE01005
+     A*%%TS  SD  20131211  162056  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CA03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                      CA05(05 'Mudar')
+     A                                      CA21(21 'Mudar')
+     A                                      PAGEUP(50)
+     A                                      PAGEDOWN(51)
+     A                                      OVERLAY
+     A                                 19  2'*****************************'
+     A                                 18  2'*****************************'
+     A                                  5  2'*****************************'
+     A                                  6  2'*****************************'
+     A                                  7  2'**           *   ********   *'
+     A                                  8  2'**********   *    ******    *'
+     A                                  9  2'**********   *     ****     *'
+     A                                 10  2'**********   *      **      *'
+     A                                 11  2'**********   *   *      *   *'
+     A                                 12  2'**********   *   **    **   *'
+     A                                 13  2'**********   *   ***  ***   *'
+     A                                 14  2'*   ******   *   ********   *'
+     A                                 15  2'*   ******   *   ********   *'
+     A                                 17  2'***        ***   ********   *'
+     A                                 16  2'**   ****   **   ********   *'
+     A                                  4  2'José Mata, Lda.'
+     A                                      COLOR(WHT)
+     A                                  5 34'Opção'
+     A                                      COLOR(WHT)
+     A                                  5 41'Descrição'
+     A                                      COLOR(WHT)
+     A            OPT01          2A  O  6 36
+     A            DES01         26A  O  6 41
+     A            CMD01          6A  O  6 73
+     A            OPT02          2A  O  7 36
+     A            DES02         26A  O  7 41
+     A            CMD02          6A  O  7 73
+     A            OPT03          2A  O  8 36
+     A            DES03         26A  O  8 41
+     A            CMD03          6A  O  8 73
+     A            OPT04          2A  O  9 36
+     A            DES04         26A  O  9 41
+     A            CMD04          6A  O  9 73
+     A            OPT05          2A  O 10 36
+     A            DES05         26A  O 10 41
+     A            CMD05          6A  O 10 73
+     A            OPT06          2A  O 11 36
+     A            DES06         26A  O 11 41
+     A            CMD06          6A  O 11 73
+     A            OPT07          2A  O 12 36
+     A            DES07         26A  O 12 41
+     A            CMD07          6A  O 12 73
+     A            OPT08          2A  O 13 36
+     A            DES08         26A  O 13 41
+     A            CMD08          6A  O 13 73
+     A            OPT09          2A  O 14 36
+     A            DES09         26A  O 14 41
+     A            CMD09          6A  O 14 73
+     A            OPT10          2A  O 15 36
+     A            DES10         26A  O 15 41
+     A            CMD10          6A  O 15 73
+     A            OPT11          2A  O 16 36
+     A            DES11         26A  O 16 41
+     A            CMD11          6A  O 16 73
+     A            OPT12          2A  O 17 36
+     A            DES12         26A  O 17 41
+     A            CMD12          6A  O 17 73
+     A                                 20 35'Opção/Comando.:'
+     A                                      COLOR(WHT)
+     A            OPTION         6A  B 20 51
+     A                                  5 73'Comando'
+     A                                      COLOR(WHT)
+     A            MORE           7A  O 20 73DSPATR(HI)
+     A          R RGRLE01007
+     A*%%TS  SD  20131211  162056  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CA03(03 'Sair')
+     A                                      CA05(05 'Mudar')
+     A                                      CF12(12 'Cancelar')
+     A                                      CA21(21 'Mudar')
+     A                                      PAGEUP(50)
+     A                                      PAGEDOWN(51)
+     A                                      OVERLAY
+     A            OPT13          2A  O  7 43
+     A            DES13         26A  O  7 46
+     A            CMD01          6A  O  7 34
+     A            OPT14          2A  O  8 43
+     A            DES14         26A  O  8 46
+     A            CMD14          6A  O  8 73
+     A            OPT15          2A  O  9 43
+     A            DES15         26A  O  9 46
+     A            CMD15          6A  O  9 73
+     A            OPT16          2A  O 10 43
+     A            DES16         26A  O 10 46
+     A            CMD16          6A  O 10 73
+     A            OPT17          2A  O 11 43
+     A            DES17         26A  O 11 46
+     A            CMD17          6A  O 11 73
+     A            OPT18          2A  O 12 43
+     A            DES18         26A  O 12 46
+     A            CMD18          6A  O 12 73
+     A            OPT19          2A  O 13 43
+     A            DES19         26A  O 13 46
+     A            CMD19          6A  O 13 73
+     A            OPT20          2A  O 14 43
+     A            DES20         26A  O 14 46
+     A            CMD20          6A  O 14 73
+     A            OPT21          2A  O 15 43
+     A            DES21         26A  O 15 46
+     A            CMD21          6A  O 15 73
+     A            OPT22          2A  O 16 43
+     A            DES22         26A  O 16 46
+     A            CMD22          6A  O 16 73
+     A            OPT23          2A  O 17 43
+     A            DES23         26A  O 17 46
+     A            CMD23          6A  O 17 73
+     A            OPT24          2A  O 18 43
+     A            DES24         26A  O 18 46
+     A            CMD24          6A  O 18 73
+     A                                 20 35'Opção/Comando.:'
+     A                                      COLOR(WHT)
+     A            OPTION         6A  B 20 51
+     A            DES01         26A  O  7  7
+     A            OPT02          2A  O  8  4
+     A            CMD13          6A  O  7 73
+     A            CMD02          6A  O  8 34
+     A            CMD03          6A  O  9 34
+     A            CMD04          6A  O 10 34
+     A            CMD05          6A  O 11 34
+     A            CMD06          6A  O 12 34
+     A            CMD07          6A  O 13 34
+     A            CMD08          6A  O 14 34
+     A            CMD09          6A  O 15 34
+     A            CMD10          6A  O 16 34
+     A            CMD11          6A  O 17 34
+     A            CMD12          6A  O 18 34
+     A            DES02         26A  O  8  7
+     A            DES03         26A  O  9  7
+     A            DES04         26A  O 10  7
+     A            DES05         26A  O 11  7
+     A            DES06         26A  O 12  7
+     A            DES07         26A  O 13  7
+     A            DES08         26A  O 14  7
+     A            DES09         26A  O 15  7
+     A            DES10         26A  O 16  7
+     A            DES11         26A  O 17  7
+     A            DES12         26A  O 18  7
+     A            OPT01          2A  O  7  4
+     A            OPT03          2A  O  9  4
+     A            OPT04          2A  O 10  4
+     A            OPT05          2A  O 11  4
+     A            OPT06          2A  O 12  4
+     A            OPT07          2A  O 13  4
+     A            OPT08          2A  O 14  4
+     A            OPT09          2A  O 15  4
+     A            OPT10          2A  O 16  4
+     A            OPT11          2A  O 17  4
+     A            OPT12          2A  O 18  4
+     A                                  6 41'|'
+     A                                  7 41'|'
+     A                                  8 41'|'
+     A                                  9 41'|'
+     A                                 10 41'|'
+     A                                 11 41'|'
+     A                                 12 41'|'
+     A                                 13 41'|'
+     A                                 14 41'|'
+     A                                 15 41'|'
+     A                                 16 41'|'
+     A                                 17 41'|'
+     A                                 18 41'|'
+     A                                 19  2'+----------------------------------
+     A                                      -----+------------------------------
+     A                                      ---------+'
+     A                                  5  2'+----------------------------------
+     A                                      -----+------------------------------
+     A                                      ---------+'
+     A                                  7  2'|'
+     A                                  8  2'|'
+     A                                  6  2'|'
+     A                                  9  2'|'
+     A                                 10  2'|'
+     A                                 11  2'|'
+     A                                 12  2'|'
+     A                                 13  2'|'
+     A                                 14  2'|'
+     A                                 15  2'|'
+     A                                 16  2'|'
+     A                                 17  2'|'
+     A                                 18  2'|'
+     A                                  6 43'Op.Descrição                  Coma-
+     A                                      n.'
+     A                                      DSPATR(HI)
+     A                                  6  4'Op.Descrição                  Coma-
+     A                                      n.'
+     A                                      DSPATR(HI)
+     A                                  7 80'|'
+     A                                  8 80'|'
+     A                                  9 80'|'
+     A                                 10 80'|'
+     A                                 11 80'|'
+     A                                 12 80'|'
+     A                                 13 80'|'
+     A                                 14 80'|'
+     A                                 15 80'|'
+     A                                 16 80'|'
+     A                                 17 80'|'
+     A                                 18 80'|'
+     A                                  6 80'|'
+     A                                  4  2'José Mata, Lda.'
+     A                                      DSPATR(HI)
+     A            MORE           7A  O 20 73DSPATR(HI)

@@ -1,0 +1,28 @@
+     A***************************************************************
+     A* Tabela....: FSECP012
+     A* Descrição.: Operações das Funções, acedidas n caso do
+     A*             AS/400 através de Teclas de Função.
+     A***************************************************************
+     A* Observação: O código de Operação igual a 99999, encontra-se
+     A*             Reservado para o nível de Função, por outras
+     A*             palavras este valor é usado na validação do
+     A*             Acesso ou não a uma Função.
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP012
+     A            CDPROGR        5S 0       TEXT('Código de Programa')
+     A            CDFUNCT        5S 0       TEXT('Códgo da Função')
+     A            CDOPERA        5S 0       TEXT('Códgo de Operação')
+     A            DSOPERA       20A         TEXT('Descrição')
+     A            DFACCESS       1A         TEXT('Acesso por defeito')
+     A            CDTECLA        2S 0       TEXT('Tecla Função')
+     A            NUOPTION       2S 0       TEXT('Opção')
+     A            VLINDICA       5S 0       TEXT('Valor Indicador')
+     A*           CDTIPO         1A         TEXT('Tipo de função')
+     A            ICBLOCK        1A         TEXT('Bloqueada')
+     A            ICSPECIAL      1A
+     A            CDFUNCAO       5S 0
+     A
+     A          K CDPROGR
+     A          K CDFUNCT
+     A          K CDOPERA

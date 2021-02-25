@@ -1,0 +1,27 @@
+     A*================================================================
+     A* Tabela....: FINTP054
+     A* Descrição.: Definição das Interfaces
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP054
+     A            CDINTER        3S 0       TEXT('Código de Interface')
+     A            CDFIELD        3S 0       TEXT('Sequencia do Campo')
+     A
+     A*==> Informação do Campos da Interface
+     A            ISKEY          1A         TEXT('Campo chave')
+     A            NOFIELD       10A         TEXT('Nome do Campo')
+     A            TPFIELD        1A         TEXT('Tipo de Campo')
+     A            FMFIELD        2A         TEXT('Actual formato do campo')
+     A            LBLFIELD      20A         TEXT('Label do Campo')
+     A
+     A*==> Descodificação do Campo
+     A            CVTCODE        2A         TEXT('Código Conversão')
+     A            NUTABL         5S 0       TEXT('Tabela para descrição')
+     A            LBLDESC       20A         TEXT('Descrição')
+     A
+     A*==> Campos de Controlo do Registo
+     A            INT05401        L
+     A            INT05402        L
+     A
+     A          K CDINTER
+     A          K CDFIELD

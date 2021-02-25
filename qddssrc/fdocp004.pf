@@ -1,0 +1,9 @@
+     A                                      UNIQUE
+     A          R RDOCP004
+     A            CDDOCUM        5S 0       TEXT('Código')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            CHAVE         45A         TEXT('Chave')
+     A            VALOR         45A         TEXT('Valor')
+     A
+     A          K CDDOCUM
+     A          K NUSEQU

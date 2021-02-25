@@ -1,0 +1,12 @@
+     A*================================================================
+     A* Tabela....: FSINP110
+     A* Alias.....: Tab_Feriados
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A                                      UNIQUE
+     A          R RSINP110                  TEXT('Tab_Feriados')
+     A            DATA            L         TEXT('Data')
+     A            FERIADO       50A         TEXT('Descrição do Feriado')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A          K DATA

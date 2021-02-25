@@ -1,0 +1,23 @@
+     A*===============================================================
+     A* Ficheiro.: FPRDP122
+     A* Descrição: Apólices seleccionadas para Indexação.
+     A*
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP122                  TEXT('Controlo')
+     A            CODIDX         5S 0       TEXT('Código')
+     A            NUSEQU         5S 0       TEXT('Sequência')
+     A*--> A (Considerar); E (Excluir); M (Manter)
+     A            CDSTATUS       1A         TEXT('Estado do Registo')
+     A            DTSTATUS        L         TEXT('Data do Estado')
+     A
+     A*==> Informação da Apólice
+     A            CDRAMO         2S 0       TEXT('Ramo')
+     A            NUAPOL         7S 0       TEXT('Apólice')
+     A
+     A*==> Informação dos Indices
+     A            CODVENC        3S 0       TEXT('Indice de Vencimento')
+     A            CODBASE        3S 0       TEXT('Indice Base')
+     A
+     A          K CODIDX
+     A          K NUSEQU

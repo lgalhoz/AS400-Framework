@@ -1,0 +1,9 @@
+     A*================================================================
+     A* Tabela....: FPRDP104
+     A* Alias.....: Marca
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A          R RPRDP104                  TEXT('Marca')
+     A            MARCA         15A         TEXT('Marca')
+     A
+     A          K MARCA

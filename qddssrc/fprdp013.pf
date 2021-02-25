@@ -1,0 +1,29 @@
+     A*===============================================================
+     A* Ficheiro...: FPRDP013
+     A* Descrição..: Detalhe do Item Habitação
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP013
+     A            CDRAMO         2S 0       TEXT('Ramo')
+     A            NUAPOL         7S 0       TEXT('Número da Apólice')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            NUSEQHST       5S 0       TEXT('Histórico')
+     A            CDSEGUR        6S 0       TEXT('Código do Segurado')
+     A            MORADA        59A         TEXT('Morada')
+     A            CDPOSTAL       7S 0       TEXT('Código Postal')
+     A            LOCALIDADE    25A         TEXT('Localidade')
+     A            CDCREDOR       6S 0       TEXT('Código do Credor')
+     A            DSOBSERV1     71A         TEXT('Linha Observação')
+     A            DSOBSERV2     71A         TEXT('Linha Observação')
+     A
+     A*==> Campos de controlo do Registo
+     A            PRD01301        L         TEXT('Data de Inicio')
+     A            PRD01302        L         TEXT('Data de Termo')
+     A            PRD01303       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A            PRD01304      10A         TEXT('Quem Criou')
+     A            PRD01305      10A         TEXT('Quem Alterou')
+     A
+     A          K CDRAMO
+     A          K NUAPOL
+     A          K NUSEQU
+     A          K NUSEQHST

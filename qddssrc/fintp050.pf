@@ -1,0 +1,28 @@
+     A*================================================================
+     A* Tabela....: FINTP050
+     A* Descrição.: Informação dos Mediadores
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP050
+     A            CDMEDIA        9S 0       TEXT('Código do Mediador')
+     A            ALIAS          3S 0       TEXT('Código interno')
+     A            NOMMED        50A         TEXT('Nome do Mediador')
+     A
+     A*==> Informação a Disponibilizar
+     A            ISAPOLIC       1A         TEXT('Informação das Apólices')
+     A            ISSEGURA       1A         TEXT('Informação dos Segurados')
+     A            ISRECPND       1A         TEXT('Recibos Gerados')
+     A            ISRECCOB       1A         TEXT('Recibos Cobrados')
+     A            ISRECANL       1A         TEXT('Recibos Anulados')
+     A
+     A*==> Identificação Original
+     A            DTFSTREG       8S 0       TEXT('Data do primeiro Envio')
+     A            DTLSTENV       8S 0       TEXT('Data do ultimo envio')
+     A            DTINISPN       8S 0       TEXT('Data de Inicio da Suspensão')
+     A            DTFIMSPN       8S 0       TEXT('Data de Fim da Suspensão')
+     A
+     A*==> Campos de Controlo do Registo
+     A            INT05001        L
+     A            INT05002        L
+     A
+     A          K CDMEDIA

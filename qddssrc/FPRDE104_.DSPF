@@ -1,0 +1,79 @@
+     A*%%TS  SD  20130510  112543  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R RPRDE10400                ASSUME
+     A*%%TS  SD  20120224  154940  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                  1 71USER
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A            S#PGM         10A  O  2 71
+     A            DS#FNC        57A  O  2 12DSPATR(HI)
+     A            DS#PGM        57A  O  1 12DSPATR(HI)
+     A          R RPRDE10402                SFL
+     A*%%TS  SD  20130510  112543  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            OPTION         1A  I  9  3
+     A  49                                  DSPATR(PR)
+     A  49                                  DSPATR(HI)
+     A N49                                  DSPATR(UL)
+     A            DSCOBERT      42A  O  9  9
+     A N48                                  DSPATR(HI)
+     A            CAPITAL       11Y 0O  9 52EDTWRD('   .   .   ,  ')
+     A N45                                  DSPATR(HI)
+     A N49                                  DSPATR(UL)
+     A            PREMIO        11Y 0O  9 67EDTWRD('   .   .   ,  ')
+     A N45                                  DSPATR(HI)
+     A N49                                  DSPATR(UL)
+     A            CDSELECT       1A  B  9  6
+     A  45                                  DSPATR(PR)
+     A N45                                  DSPATR(HI)
+     A N49                                  DSPATR(UL)
+     A            CDCOBERT       5S 0H
+     A            CDNATURA       1A  H
+     A            ALIAS         10A  H
+     A            ICMORE         1A  H
+     A            NUSEQU         5S 0H
+     A          R RPRDE10403                SFLCTL(RPRDE10402)
+     A*%%TS  SD  20130510  112543  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      SFLSIZ(0013)
+     A                                      SFLPAG(0012)
+     A                                      CF03(03 'Sair')
+     A                                      CF06(06 'Gravar')
+     A                                      CF12(12 'Cancelar')
+     A                                      CF14(14 'TEXTO')
+     A                                      CF21(21 'Alterar')
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A                                  4  2'Apólice:'
+     A                                      DSPATR(HI)
+     A            RAMO           2S 0O  4 11
+     A            APOLICE        7S 0O  4 14
+     A            NOMSEG        40A  O  4 22
+     A            DSRISC001     19A  O  5  2DSPATR(HI)
+     A            DSRISC002     19A  O  5 40DSPATR(HI)
+     A            DSRISC003     19A  O  6  2DSPATR(HI)
+     A            CPRISC001     11Y 2O  5 22EDTWRD('   .   .   ,  -')
+     A            CPRISC002     11Y 2O  5 60EDTWRD('   .   .   ,  -')
+     A            CPRISC003     11Y 2O  6 22EDTWRD('   .   .   ,  -')
+     A                                  8  2'Op.Sel.Cobertura'
+     A                                      DSPATR(HI)
+     A            DSRISC004     19A  O  6 40DSPATR(HI)
+     A            CPRISC004     11Y 2O  6 60EDTWRD('   .   .   ,  -')
+     A                                  8 59'Capital'
+     A                                      DSPATR(HI)
+     A                                  8 75'Prémio'
+     A                                      DSPATR(HI)
+     A          R RPRDE10499
+     A*%%TS  SD  20120726  144256  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      ASSUME
+     A                                      OVERLAY
+     A            DS#KEY01      78   O 22  2COLOR(BLU)
+     A            DS#KEY02      78   O 23  2COLOR(BLU)
+     A            ERR#MSG       78   O 24  2COLOR(RED)

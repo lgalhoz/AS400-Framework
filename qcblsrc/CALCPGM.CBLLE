@@ -1,0 +1,31 @@
+      *================================================
+      * Exemplos:
+      *          [x] 96 + 32 = 128
+      *          [x] 01 + 01 = 002
+      *================================================
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. ADD01.
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+
+       WORKING-STORAGE SECTION.
+       01 FIRST-NUMBER PICTURE IS 99.
+       01 SECOND-NUMBER PICTURE IS 99.
+       01 THE-RESULT PICTURE IS 999.
+       01 THE-NAME PICTURE IS XXXXXXXXXX.
+
+       PROCEDURE DIVISION.
+       PROGRAM-BEGIN.
+           DISPLAY "Enter the first number.".
+           ACCEPT FIRST-NUMBER.
+           DISPLAY "Enter the second number.".
+           ACCEPT SECOND-NUMBER.
+           COMPUTE THE-RESULT = FIRST-NUMBER + SECOND-NUMBER.
+           DISPLAY "The result is:".
+           DISPLAY THE-RESULT.
+
+           DISPLAY "Enter someone's name.".
+           ACCEPT THE-NAME.
+           DISPLAY "Hello " THE-NAME.
+       PROGRAM-DONE.
+           STOP RUN.

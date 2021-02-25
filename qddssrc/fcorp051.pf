@@ -1,0 +1,17 @@
+     A*===============================================================
+     A* Ficheiro...: FCORP051
+     A* Descrição..: Origem dos dados
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCORP051
+ #0  A            CDTABELA       3S 0       TEXT('        ')
+ #1  A            CDFUNCAO       9S 0       TEXT('        ')
+     A            NUSEQU         5S 0
+
+ #2  A            CDQUERY        9S 0       TEXT('Código Consulta')
+ #3  A            CDFIELD        9S 0       TEXT('Código de Campo')
+ #4  A            NOFIELD       50A         TEXT('Nome do Campo')
+     A
+     A          K CDTABELA
+     A          K CDFUNCAO
+     A          K NUSEQU

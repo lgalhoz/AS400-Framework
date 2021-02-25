@@ -1,0 +1,28 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP104
+     A* Descrição..: Clausulas
+     A* Observação.: Parameterizado manualmente.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP104
+     A
+     A            CODPROD        5S 0       TEXT('Código Produto')
+     A            CODCLAUS       5S 0       TEXT('Código')
+     A            ORDEM          5S 0       TEXT('Ordem')
+     A            DESCRICAO    100A         TEXT('Descricao')
+     A            ICOBRIGA       1A         TEXT('Obrigatória')
+     A            ALIAS         10A         TEXT('Código Alternativo')
+     A            CONVERSAO     10A         TEXT('Conversão')
+     A
+     A*==> Campos de Controlo
+     A            CAT10401        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT10402        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT10403       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT10404      10A         TEXT('Quem Criou')
+     A            CAT10405      10A         TEXT('Quem Alterou')
+     A
+     A          K CODPROD
+     A          K CODCLAUS

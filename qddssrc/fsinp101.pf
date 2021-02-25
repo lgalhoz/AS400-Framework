@@ -1,0 +1,29 @@
+     A*================================================================
+     A* Tabela....: FSINP101
+     A* Alias.....: Informações adicionais
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A                                      UNIQUE
+     A          R RSINP101                  TEXT('Informações adicionais')
+     A            COD            2A         COLHDG('Código')
+     A            DESC         255A         COLHDG('Descrição')
+     A            P1             1S 0
+     A            P2             1S 0
+     A            P3             1S 0
+     A            P4             1S 0
+     A            P5             1S 0
+     A            P6             1S 0
+     A            P7             1S 0
+     A            P8             1S 0
+     A            P9             1S 0
+     A            P10            1S 0
+     A            P11            1S 0
+     A            P12            1S 0
+     A            P13            1S 0
+     A            P14            1S 0
+     A            P15            1S 0
+     A            P16            1S 0
+     A            P17            1S 0
+     A            P18            1S 0
+     A
+     A          K COD

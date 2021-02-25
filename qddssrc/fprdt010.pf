@@ -1,0 +1,17 @@
+     A*===============================================================
+     A* Ficheiro...: FPRDP010
+     A* Descrição..: Notas descritivas
+     A* Observação.: Parameterizado manualmente.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP010
+     A            CDPROD         5S 0       TEXT('Código')
+     A            NUAPOL         7S 0       TEXT('Apólice')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            NUSQSUP        5S 0       TEXT('Sequencia Superior')
+     A            CDTEXTO        5S 0       TEXT('Código de Texto')
+     A            CPSEGURO      11S 2       TEXT('Capital Seguro')
+     A
+     A          K CDPROD
+     A          K NUAPOL
+     A          K NUSEQU

@@ -1,0 +1,22 @@
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      REF(QTEMP/T1520DD5)
+     A                                      INDARA
+     A                                      CF03(03 'EXIT ORDER ENTRY')
+     A          R PURCHASE
+     A                                  3 32'PURCHASE ORDER FORM'
+     A                                      DSPATR(UL)
+     A                                      DSPATR(HI)
+     A                                 10 20'ITEM NAME :'
+     A                                      DSPATR(HI)
+     A                                 12 20'SERIAL NUMBER :'
+     A                                      DSPATR(HI)
+     A            ITEMNAME  R        I 10 37REFFLD(PURCHASE/ITEMNAME T1520DD6)
+     A            SERIALNUM R        I 12 37REFFLD(PURCHASE/SERIALNUM  T1520DD6)
+     A                                 23 34'F3 - EXIT'
+     A                                      DSPATR(HI)
+     A          R ERROR
+     A                                  6 28'ERROR: WRITE FAILED'
+     A                                       DSPATR(BL)
+     A                                       DSPATR(UL)
+     A                                       DSPATR(HI)
+     A                                 10 26'PURCHASE ORDER ENTRY ENDED'

@@ -1,0 +1,14 @@
+     A*===============================================================
+     A* Ficheiro...: FCOBP011
+     A* Descrição..: Agrupamento de Cartas de Agradecimento
+     A* Original...: TBIDDGF
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCOBP011                  TEXT('Agrup. Cartas de Agradecim.')
+     A
+     A            IGNAGR         7S 0       COLHDG('NºAgr.')
+     A                                      EDTWRD('       ')
+     A            IGVAL          9S 2       COLHDG('Valor Pago')
+     A                                      EDTWRD(' .   .   ,  ')
+     A
+     A          K IGNAGR

@@ -1,0 +1,26 @@
+     A*================================================================
+     A* Tabela....: FINTP053
+     A* Descrição.: Definição das Interfaces
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP053
+     A            CDINTER        3S 0       TEXT('Código de Interface')
+     A            TPINTER        3A         TEXT('Tipo de Interface')
+     A            CDPROGR        5S 0       TEXT('Programa a Processar')
+     A
+     A*==> Validade da Interface
+     A            CDESTAD        1A         TEXT('Estado da Interface')
+     A            DTINICIO       8S 0       TEXT('Inicio da Interface')
+     A            DTTERMO        8S 0       TEXT('Termo da Interface')
+     A
+     A*==> Informação de Detalhe
+     A            LATCHARS       1A         TEXT('Caracteres Latinos')
+     A            UPPERCHR       1A         TEXT('Caracteres Maiúsculos')
+     A            DUPLICATE      1A         TEXT('Aceita duplicados')
+     A            QTDFIELD       3S 0       TEXT('Quantidade de Campos')
+     A
+     A*==> Campos de Controlo do Registo
+     A            INT05301        L
+     A            INT05302        L
+     A
+     A          K CDINTER

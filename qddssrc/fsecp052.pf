@@ -1,0 +1,19 @@
+     A***************************************************************
+     A* Tabela....: FSECP052
+     A* Descrição.: Operações sobre a transacção
+     A*
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP052
+     A            SQLOG          5S 0       TEXT('Registo de Operação')
+     A            NUSEQ          5S 0       TEXT('Sequência')
+     A            CDUSER        10A         TEXT('Utilizador')
+     A            CDSTATUS       1A         TEXT('Situação')
+     A            DTSTATUS        L         TEXT('Data estado')
+     A
+     A*==> Campos de Controlo de Registo
+     A            SEC05201        L         TEXT('Criação do Registo')
+     A            SEC05202        L         TEXT('alteração')
+     A
+     A          K SQLOG
+     A          K NUSEQ

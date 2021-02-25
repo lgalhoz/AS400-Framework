@@ -1,0 +1,18 @@
+     A*===============================================================
+     A* Ficheiro...: FTECP041
+     A* Descrição..: Comentários sobre a Versão
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RTECP041
+     A            CDSRCE         9S 0       TEXT('Código da Fonte')
+     A            CDVERS         9S 0       TEXT('Versão da Fonte')
+     A
+     A            COMENT       500A         TEXT('Comentários')
+     A
+     A*==> Campos de Controlo
+     A            TEC04101        L         TEXT('Data Inicio')
+     A            TEC04102        L         TEXT('Data Termo')
+     A            TEC04103      10A         TEXT('Responsável')
+     A
+     A          K CDSRCE
+     A          K CDVERS

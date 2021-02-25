@@ -1,0 +1,29 @@
+     A*================================================================
+     A* Tabela....: FINTP058
+     A* Descrição.: Interfaces Gerados para o Mediador
+     A* Observação: Esta estrutura possibilita a geração dos interfaces.
+     A*             Permite também auditorar, sobre quando foi gerado,
+     A*             quando foi enviado e o que foi enviado.
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP058
+     A            CDMEDIA        9S 0       TEXT('Código do Mediador')
+     A            CDINTER        5S 0       TEXT('Código do Interface')
+     A            NMINTER       50A         TEXT('Nome do Interface')
+     A            TPINTER        3A         TEXT('Tipo de Informação Gerada')
+     A
+     A*==> Ligação com o Processo Batch
+     A            CDPROCE        5S 0       TEXT('Código do Processo')
+     A
+     A*==> Identificação Original
+     A            DTPRODUC       8S 0       TEXT('Data da produção')
+     A            DTENVIO        8S 0       TEXT('Data do envio')
+     A            CDSTATUS       3A         TEXT('Estado do Interface')
+     A            QTDREGIS       5S 0       TEXT('Quantidade Gerada')
+     A
+     A*==> Campos de Controlo do Registo
+     A            INT05801        L
+     A            INT05802        L
+     A
+     A          K CDMEDIA
+     A          K CDINTER

@@ -1,0 +1,11 @@
+     A*================================================================
+     A* Tabela....: FRAUDES
+     A* Alias.....: Ficheiro de Fraudes
+     A*================================================================
+     A                                      UNIQUE
+     A          R RFRAUDES                  TEXT('Ficheiro de Fraudes')
+     A            NIF            9S 0
+     A            ANO            4S 0
+     A            OBSERVA      140A
+     A
+     A          K NIF

@@ -1,0 +1,12 @@
+     A***************************************************************
+     A* Tabela....: FSECP013
+     A* Descrição.: Lista de Operações Standard
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP013
+     A            VLINDICA       5S 0       TEXT('Valor Indicador')
+     A            VLOPERA       10A         TEXT('Valor Reservado')
+     A            DSOPERA       20A         TEXT('Descrição')
+     A            DFACCESS       1A         TEXT('Acesso por defeito')
+     A
+     A          K VLINDICA

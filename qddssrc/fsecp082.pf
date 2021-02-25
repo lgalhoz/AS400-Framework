@@ -1,0 +1,17 @@
+     A***************************************************************
+     A* Tabela....: FSECP082
+     A* Descrição.: Pedidos Especiais.
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP082
+     A            TPPEDIDO       5S 0       TEXT('Tipo de Pedido')
+     A
+     A*==> Informação sobre quem fez o pedido
+     A            DSPEDIDO     100A         TEXT('Data do Pedido')
+     A            CDGRAVID       3S 0       TEXT('Hora do Pedido')
+     A
+     A*==> Campos de Controlo
+     A            SEC08201        L
+     A            SEC08202        L
+     A
+     A          K TPPEDIDO

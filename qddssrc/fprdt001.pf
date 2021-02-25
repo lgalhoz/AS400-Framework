@@ -1,0 +1,32 @@
+     A*===============================================================
+     A* Ficheiro...: FPRDP001
+     A* Descrição..: Relação das Apólices Existentes
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP001
+     A            CDRAMO         2S 0       TEXT('Código de Ramo')
+     A            NUAPOL         7S 0       TEXT('Número Apólice')
+     A            NUSEG          5S 0       TEXT('Código do Segurado')
+     A            NOSEG         40A         TEXT('Nome')
+     A            APELIDO       20A         TEXT('Apelido')
+     A            NUNIF          9S 0       TEXT('Numero Fiscal')
+     A            MATRIC        12A         TEXT('Matricula')
+     A            STATUS         1S 0       TEXT('Estado')
+     A            LCRISK        50A         TEXT('Local Risco')
+     A            CDMED1         8S 0       TEXT('Corretor')
+     A            CDJMM1         8S 0       TEXT('Mediador com cobrança')
+     A            CDJMM2         8S 0       TEXT('Mediador sem cobrança')
+     A            ICCARR         1A         TEXT('Carregamento ?')
+     A*
+     A* VALORES TPACTA: [A]=ANTIGA; [N]=NOVA; [C]=CONVERTIDA
+     A*    [A] -> [C] -> [N] -> [A]
+     A*           [C] -> [A]
+     A*
+     A            TPACTA         1A         TEXT('Tipo de Acta')
+     A            CDPROD         5S 0       TEXT('Código de Produto')
+     A
+     A            PRD00101        L         TEXT('Data Inicio')
+     A            PRD00102        L         TEXT('Data Termo')
+     A
+     A          K CDRAMO
+     A          K NUAPOL

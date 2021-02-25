@@ -1,0 +1,24 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP206
+     A* Descrição..: Lista de Campos a Exportar, para Excel
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLP206
+     A
+     A            CDSESS         5S 0       TEXT('Código da Sessão')
+     A            NUSEQU         5S 0       TEXT('Sequência da selecção')
+     A            NUORDEM        5S 0       TEXT('Ordem na lista')
+     A            CDGRUPO        2A         TEXT('Grupo a que pertence')
+     A            NOFILE        10A         TEXT('Nome do Ficheiro')
+     A            NOFIELD       15A         TEXT('Nome do Campo')
+     A            LBFIELD       20A         TEXT('Nome Abreviado')
+     A            DSFIELD       50A         TEXT('Descrição do Campo')
+     A            NUTABL         5S 0       TEXT('Código da Tabela')
+     A            ICDEFT         1A         TEXT('Selecção por Defeito')
+     A
+     A*-----> Campos de Controlo
+     A            GRL20601        L         TEXT('Data de Criação')
+     A            GRL20602        L         TEXT('Data de Alteração')
+     A
+     A          K CDSESS
+     A          K NUSEQU

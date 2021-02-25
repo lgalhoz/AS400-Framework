@@ -1,0 +1,15 @@
+     A***************************************************************
+     A* Tabela....: FSECP020
+     A* Descrição.: Lista de Utilizadores Registados no Sistema
+     A*
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP020
+     A            CDUSER        10A         TEXT('Código de Utilizador')
+     A            NMUSER        40A         TEXT('Nome Utilizador')
+     A            CDGRUPO       10A         TEXT('Grupo Utilizador')
+     A            CDDEPART       3A         TEXT('Departamento')
+     A            CDNIVEL        1A         TEXT('Nivel Utilizador')
+     A            CDPROGR        5S 0       TEXT('Objecto inicio')
+     A
+     A          K CDUSER

@@ -1,0 +1,30 @@
+     A*===============================================================
+     A* Ficheiro...: FPRDP030
+     A* Descrição..: Histórico de Alterações de Apólices
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP030
+     A            CDRAMO         2S 0       TEXT('Código de Ramo')
+     A            NUAPOL         7S 0       TEXT('Número Apólice')
+     A            NUSEQU         5S 0       TEXT('Número de Sequência')
+     A            NOMFILE       10A         TEXT('Nome do Ficheiro')
+     A            ANO            4S 0       TEXT('Ano do Ficheiro')
+     A            CDTPALT        1A         TEXT('Tipo de Alteração')
+     A            DSALTERA      40A         TEXT('Descrição da Alteração')
+     A            ICCOBERT       1S 0       TEXT('Coberturas Alteradas')
+     A            ICRISCO        1S 0       TEXT('Riscos Alterados')
+     A            ICLIMIT        1S 0       TEXT('Limites Alterados')
+     A            ICNOTAS        1S 0       TEXT('Notas descritivas')
+     A            ICCOND         1S 0       TEXT('Condições')
+     A            ICAPOL         1S 0       TEXT('Dados Gerais Apólice')
+     A
+     A*==> Controlo do Registo
+     A            PRD03001        L         TEXT('Data Inicio')
+     A            PRD03002        L         TEXT('Data Termo')
+     A            PRD03003       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A            PRD03004      10A         TEXT('Quem Criou')
+     A            PRD03005      10A         TEXT('Quem Alterou')
+     A
+     A          K CDRAMO
+     A          K NUAPOL
+     A          K NUSEQU

@@ -1,0 +1,9 @@
+     A*===============================================================
+     A* Ficheiro...: FINTP02301
+     A* Descrição..: Ordenado por Companhia e Tipo de Excepção
+     A*===============================================================
+     A          R RINTP023                  PFILE(FINTP023)
+     A
+     A          K CCOMP
+     A          K TPEXCEPT
+     A          K CDESTADO

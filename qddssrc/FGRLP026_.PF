@@ -1,0 +1,20 @@
+     A*===============================================================
+     A* Ficheiro...: FPRDP032
+     A* Descrição..: Hinformação da Apólices dispersa nos temporários
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RPRDP032
+     A            CDRAMO         2S 0       TEXT('Código de Ramo')
+     A            NUAPOL         7S 0       TEXT('Número Apólice')
+     A            NUSEQU         5S 0       TEXT('Número de Sequência')
+     A            CDBATCH        9S 0       TEXT('Código')
+     A            SEQFILE        5S 0       TEXT('Sequência do ficheiro')
+     A            CDTIPO         3A         TEXT('Tipo de Ficheiro')
+     A
+     A*==> Controlo do Registo
+     A            PRD03201        L         TEXT('Data Inicio')
+     A            PRD03202        L         TEXT('Data Termo')
+     A
+     A          K CDRAMO
+     A          K NUAPOL
+     A          K NUSEQU

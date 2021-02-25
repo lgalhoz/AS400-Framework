@@ -1,0 +1,14 @@
+     A*================================================================
+     A* Tabela....: FINTP027
+     A* Descrição.: Relação recibos do ficheiro de Interface
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP027
+     A            CDFILE         9S 0       TEXT('Código de Ficheiro')
+     A            CDREGIS        9S 0       TEXT('Código do Registo')
+     A
+     A*==> Controlo da informação
+     A            CDERRO         7A         TEXT('Código de Erro')
+     A
+     A          K CDFILE
+     A          K CDREGIS

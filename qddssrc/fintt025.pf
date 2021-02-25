@@ -1,0 +1,43 @@
+     A*===============================================================
+     A* Ficheiro...: FINTT025
+     A* Descrição..: Recibos da Fidelidade e Mundial
+     A*===============================================================
+     A          R RINTT025
+     A            TPSIS          1A         TEXT('Tipo-Sistema')
+     A            TIPREG         1A         TEXT('Tipo-Registo')
+     A            TIPAGEN        2A         TEXT('Tipo-Agente')
+     A            AGENTE         8A         TEXT('Código Agente')
+     A            DESCRAMO      40A         TEXT('Descrição do Ramo')
+     A            APOLICE       20A         TEXT('Apólice')
+     A            RECIBO        20A         TEXT('Recibo')
+     A            LIVRE01        3A         TEXT('Filler 01')
+     A            ESTADO        20A         TEXT('Estado do Recibo')
+     A            DATINICIO      8A         TEXT('Data de Inicio')
+     A            DATTERMO       8A         TEXT('Data de Termo')
+     A            DATLIMITE      8A         TEXT('Data Limite')
+     A            DATDEVIDO      8A         TEXT('Data Devido')
+     A            DATPROCES      8A         TEXT('Data Processamento')
+     A            CODMOEDA       3A         TEXT('Moeda')
+     A            PRMBONUS      13A         TEXT('Prémio-Bónus')
+     A            PRMCOMER      13A         TEXT('Prémio-Comercial')
+     A            PRMTOTAL      13A         TEXT('Prémio-Total')
+     A            COMCOBRA      13A         TEXT('Comissão Cobrança')
+     A            COMANGAR      13A         TEXT('Comissão Angariação')
+     A            COMESPECI     13A         TEXT('Comissão Especial')
+     A            TIPRECIB      30A         TEXT('Tipo Recibo')
+     A            LIVRE02        3A         TEXT('Filler 02')
+     A            NOME          60A         TEXT('Tomador do Seguro')
+     A            NIF            9A         TEXT('Moeda')
+     A            MARCA          3A         TEXT('Código de Marca')
+     A            CODCOBRA      10A         TEXT('Cobrador')
+     A            NOMCOBRA      60A         TEXT('Nome do Cobrador')
+     A            CDSUBTPREC     5A         TEXT('Código Sub-Tipo de Recibo')
+     A            DSSUBTPREC    40A         TEXT('Descrição Sub-Tipo de Recibo')
+     A            ENTATM         8A         TEXT('Entidade ATM')
+     A            REFATM        10A         TEXT('Referencia ATM')
+     A            DATINFOR       8A         TEXT('Data da Informação')
+     A
+     A
+     A          K DESCRAMO
+     A          K APOLICE
+     A          K RECIBO

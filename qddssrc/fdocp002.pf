@@ -1,0 +1,14 @@
+     A                                      UNIQUE
+     A          R RDOCP002
+     A            CDDOCUM        5S 0       TEXT('Código')
+     A            NUPAGINA       5S 0       TEXT('Número página')
+     A            DSPAGINA      50A         TEXT('Descrição da Página')
+     A            ICORIENT       1A         TEXT('Orientação Texto')
+     A            ICFORMAT       2S 0       TEXT('Formato página')
+     A            NULINHAS       3S 0       TEXT('Número Linhas')
+     A            NUCOLUNAS      3S 0       TEXT('Número Colunas')
+     A            DOC00201        L
+     A            DOC00202        L
+     A
+     A          K CDDOCUM
+     A          K NUPAGINA

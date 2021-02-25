@@ -1,0 +1,8 @@
+     A          R TBIDDG                    TEXT('Agrup. Cartas de Agradecim.')
+      *
+     A            IGNAGR         7S 0       COLHDG('NºAgr.')
+     A                                      EDTWRD('       ')
+     A            IGVAL          9S 2       COLHDG('Valor Pago')
+     A                                      EDTWRD(' .   .   ,  ')
+      *
+     A          K IGNAGR

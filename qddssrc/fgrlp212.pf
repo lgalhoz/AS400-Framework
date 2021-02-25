@@ -1,0 +1,20 @@
+     A*===============================================================
+     A* Ficheiro...: FGRLP211
+     A* Descrição..: Campos a Extrair da Interface.
+     A*
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RGRLP211
+     A
+     A            CDINTER        9S 0       TEXT('Código de Interface')
+     A            NUSEQU         5S 0       TEXT('Sequencia do Campo')
+     A
+     A*==> Informação do Campo
+     A            NOFIELD       15A         TEXT('Nome do Campo')
+     A            DSFIELD       15A         TEXT('Descrição do Campo')
+     A            TIPO           1A         TEXT('Tipo de Campo')
+     A            POINI          3S 0       TEXT('Posição inicial')
+     A            DIMENSAO       3S 0       TEXT('Dimensão')
+     A
+     A          K CDINTER
+     A          K NUSEQU

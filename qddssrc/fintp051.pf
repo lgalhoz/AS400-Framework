@@ -1,0 +1,25 @@
+     A*================================================================
+     A* Tabela....: FINTP051
+     A* Descrição.: Definição das Interfaces
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP051
+     A            CDMEDIA        9S 0       TEXT('Código do Mediador')
+     A            CDINTER        3S 0       TEXT('Código de Interface')
+     A            TPINTER        3A         TEXT('Tipo de Interface')
+     A
+     A*==> Validade da Interface
+     A            HEADER         1A         TEXT('Incluir Cabeçalho')
+     A            CDESTAD        1A         TEXT('Estado da Interface')
+     A            DTINICIO       8S 0       TEXT('Inicio da Interface')
+     A            DTTERMO        8S 0       TEXT('Termo da Interface')
+     A
+     A*==> Informação de Detalhe
+     A            QTDFIELD       3S 0       TEXT('Quantidade de Campos')
+     A
+     A*==> Campos de Controlo do Registo
+     A            INT05101        L
+     A            INT05102        L
+     A
+     A          K CDMEDIA
+     A          K CDINTER

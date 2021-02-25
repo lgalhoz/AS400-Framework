@@ -1,0 +1,18 @@
+     A*===============================================================
+     A* Ficheiro...: FINTP001
+     A* Descrição..: Controlo de Interfaces Gerados
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RINTP001
+     A            CDREMESSA      9S 0       TEXT('Código Remessa')
+     A            CDENTIDAD      9S 0       TEXT('Código Entidade')
+     A            NOBATCH        5A         TEXT('Nome do Processo Batch')
+     A            CDUSER        10A         TEXT('Utilizador')
+     A            CDPRCEXEC      5S 0       TEXT('Processo Executado')
+     A            DTINICIO        L         TEXT('Data Inicio Registos')
+     A            DTTERMO         L         TEXT('Data Termo Registos')
+     A
+     A            INT00101        Z         TEXT('Inicio do Processo')
+     A            INT00102        Z         TEXT('Termo do Processo')
+     A
+     A          K CDREMESSA

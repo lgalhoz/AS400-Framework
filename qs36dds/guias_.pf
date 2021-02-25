@@ -1,0 +1,110 @@
+     A*-------------------------------------------------------------------------------------+
+     A*       [Pos.Fim]=[Pos.Ini]+IF([Tipo]<>"P";[Dimensao];(INT([Dimensao]/2)+1))-1        |
+     A*-------------------------------------------------------------------------+-----+-----+
+     A          R RGUIAS                                                        | INI.| FIM.|
+     A*-------------------------------------------------------------------------+-----+-----+
+     A            NREC           9S 0                                           |   1 |   9 |
+     A            RAMO           2S 0                                           |  10 |  11 |
+     A            APOL           7S 0                                           |  12 |  18 |
+     A            SEG           40A                                             |  19 |  58 |
+     A            MOR           40A                                             |  59 |  98 |
+     A            CPOSTAL        5P 0                                           |  99 | 101 |
+     A            CPMOR2        20A                                             | 102 | 121 |
+     A            LCB           40A                                             | 122 | 161 |
+     A            CPLCB2        20A                                             | 162 | 181 |
+     A            NSEG           5P 0                                           | 182 | 184 |
+     A            TREG           1S 0                                           | 185 | 185 |
+     A            DTINIC         6S 0                                           | 186 | 191 |
+     A            FRAC           1S 0                                           | 192 | 192 |
+     A            DTFIM          6S 0                                           | 193 | 198 |
+     A            CAP           11P 0                                           | 199 | 204 |
+     A            CAPRC          5P 0                                           | 205 | 207 |
+     A            PRC            9P 2                                           | 208 | 212 |
+     A            BONUS          7P 2                                           | 213 | 216 |
+     A            ENC            7P 2                                           | 217 | 220 |
+     A            CUSTAA         3P 2                                           | 221 | 222 |
+     A            CRC            3P 2                                           | 223 | 224 |
+     A            PJUR           1A                                             | 225 | 225 |
+     A            DDD            1A                                             | 226 | 226 |
+     A            SELO           7P 2                                           | 227 | 230 |
+     A            SNA            7P 2                                           | 231 | 234 |
+     A            SNB            7P 2                                           | 235 | 238 |
+     A            TOTREC         9P 2                                           | 239 | 243 |
+     A            ISEN           1S 0                                           | 244 | 244 |
+     A            CDEMISSAO      1S 0                                           | 245 | 245 |
+     A            CONCELHO       3P 0                                           | 246 | 247 |
+     A            MED1           3S 0                                           | 248 | 250 |
+     A            COM1           9P 2                                           | 251 | 255 |
+     A            MED2           5P 0                                           | 256 | 258 |
+     A            COM2           9P 2                                           | 259 | 263 |
+     A            MARCA1        14A                                             | 264 | 277 |
+     A            MATR1         11A                                             | 278 | 288 |
+     A            MARCA2        14A                                             | 289 | 302 |
+     A            MATR2         11A                                             | 303 | 313 |
+     A            LIVRE1         1A                                             | 314 | 314 |
+     A            LRPS          45A                                             | 315 | 359 |
+     A            PRRC           9P 2                                           | 360 | 364 |
+     A            PRDP           9P 2                                           | 365 | 369 |
+     A            CATV           1A                                             | 370 | 370 |
+     A            AVIAG          1A                                             | 371 | 371 |
+     A            VFRAC          7P 2                                           | 372 | 375 |
+     A            PR             7P 2                                           | 376 | 379 |   FGA/FA
+     A            PRBAG          7S 2                                           | 380 | 386 |
+     A            RESSEG         7S 2                                           | 387 | 393 |
+     A            AGRCSP         7P 2                                           | 394 | 397 |
+     A            NDIAS          3S 0                                           | 398 | 400 |
+     A            ZONA           1S 0                                           | 401 | 401 |
+     A            MTRAN          1S 0                                           | 402 | 402 |
+     A            VLONOVO        7P 0                                           | 403 | 406 |
+     A            VLEXTRA        5P 0                                           | 407 | 409 |
+     A            CAPDPI         7P 0                                           | 410 | 413 |
+     A            ARTG5          1A                                             | 414 | 414 |
+     A            CODFRQ         2A                                             | 415 | 416 |
+     A            FRANQ          5S 0                                           | 417 | 421 |
+     A            DESCTO         3P 0                                           | 422 | 423 |
+     A            CATV1          1S 0                                           | 424 | 424 |
+     A            CL             1S 0                                           | 425 | 425 |
+     A            PB             1S 0                                           | 426 | 426 |
+     A            CATR           3A                                             | 427 | 429 |
+     A            PRCAGR         9P 2                                           | 430 | 434 |
+     A            CAPOCU         5P 0                                           | 435 | 437 |
+     A            PROCU          9P 2                                           | 438 | 442 |
+     A            PROCUA         9P 2                                           | 443 | 447 |
+     A            NAPL           7S 0                                           | 448 | 454 |
+     A            TAXA           7S 4                                           | 455 | 461 |
+     A            WFGA           5P 2                                           | 462 | 464 | FGA/FA
+     A            JMCOM1         7P 2                                           | 465 | 468 |
+     A            JMCOM2         7P 2                                           | 469 | 472 |
+     A            JMAVC1         7P 2                                           | 473 | 476 |
+     A            JMAVC2         7P 2                                           | 477 | 480 |
+     A            JMPJC1         7P 2                                           | 481 | 484 |
+     A            JMPJC2         7P 2                                           | 485 | 488 |
+     A            CAPFAT        11P 0                                           | 489 | 494 | Capital FAT
+     A            CDCAE          6A                                             | 495 | 500 | Código de CAE
+     A            MOD            1A                                             | 501 | 501 | Modalidade
+     A            TPT            1A                                             | 502 | 502 | Tipot Trabalhador
+     A            JMM1           3S 0                                           | 503 | 505 | Med.C/Cobrança
+     A            JMC1           5P 3                                           | 506 | 508 | % Comissão
+     A            JMM2           3S 0                                           | 509 | 511 | Med.S/Cobrança
+     A            JMC2           5P 3                                           | 512 | 514 | % Comissão
+     A            CR2            1A                                             | 515 | 515 |
+     A            CR3            1A                                             | 516 | 516 |
+     A            QIV            1A                                             | 517 | 517 |
+     A            VAL01          7P 0                                           | 518 | 521 |
+     A            VAL02          2A                                             | 522 | 523 |
+     A            PRIV           1A                                             | 524 | 524 |
+     A            VAL03          7P 0                                           | 525 | 528 |
+     A            VAL04          2A                                             | 529 | 530 |
+     A            MES1           2S 0                                           | 531 | 532 |
+     A            MMMOV          2S 0                                           | 533 | 534 |
+     A            AAMOV          2S 0                                           | 535 | 536 |
+     A            NP             2S 0                                           | 537 | 538 |
+     A            VAL05          3P 0                                           | 539 | 540 |
+     A            VAL06          1A                                             | 541 | 541 |
+     A            ASTER          1A                                             | 542 | 542 |
+     A            CPMOR1         7P 0                                           | 543 | 546 |
+     A            CPLCB1         7P 0                                           | 547 | 550 |
+     A*-------------------------------------------------------------------------+-----+-----+
+     A          K RAMO
+     A          K APOL
+     A          K NREC

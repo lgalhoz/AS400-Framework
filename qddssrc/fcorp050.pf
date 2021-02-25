@@ -1,0 +1,12 @@
+     A*===============================================================
+     A* Ficheiro...: FCORP050
+     A* Descrição..: Conjunto de Funções Reservadas
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCORP050
+ #0  A            CDTABELA       3S 0       TEXT('        ')
+ #1  A            CDFUNCAO       9S 0       TEXT('        ')
+ #2  A            FUNCAO        30A
+     A
+     A          K CDTABELA
+     A          K CDFUNCAO

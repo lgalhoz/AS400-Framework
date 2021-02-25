@@ -1,0 +1,26 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP109
+     A* Descrição..: Textos das Cláusulas e Condições.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP109
+     A
+     A            CDPROD         5S 0       TEXT('Código Produto')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            NULINE         5S 0       TEXT('Numero da Linha')
+     A            TEXTO        500A         VARLEN(10)
+     A                                      TEXT('Tipo de Item')
+     A
+     A*==> Campos de Controlo
+     A            CAT10901        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT10902        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT10903       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT10904      10A         TEXT('Quem Criou')
+     A            CAT10905      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD
+     A          K NUSEQU
+     A          K NULINE

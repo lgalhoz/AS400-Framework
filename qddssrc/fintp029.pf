@@ -1,0 +1,20 @@
+     A*================================================================
+     A* Tabela....: FINTP029
+     A* Descrição.: Operações realizadas sobre os recibos
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP029
+     A            CDREGIS        9S 0       TEXT('Código do Registo')
+     A            NUOPERA        5S 0       TEXT('Código de Operação')
+     A            CDESTAD        1A         TEXT('Código de Operação')
+     A
+     A*==> Outras Informações
+     A            CDERRO         7A         TEXT('Código de erro')
+     A
+     A*==> Valores do Recibos
+     A            DTOPERA         L         TEXT('Data de Operação')
+     A            HROPERA         T         TEXT('Hora de Operação')
+     A            USOPERA       10A         TEXT('Utilizador da Operação')
+     A
+     A          K CDREGIS
+     A          K NUOPERA

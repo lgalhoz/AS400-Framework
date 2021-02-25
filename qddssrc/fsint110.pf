@@ -1,0 +1,36 @@
+     A*==============================================================================
+     A* Ficheiro..: FSINT110
+     A* Descrição.: Provisões de Sinistros
+     A*             Este ficheiro é actualizado a partir de ficheiros de produção,
+     A*             e contém a informação normalizada.
+     A*
+     A* Origens...: Lista de Ficheiros Originais de onde foram extraídos os dados:
+     A*             [x] QS36F/G.SINPRV     = Processos de Sinistro Automóvel
+     A*             [x] QS36F/O.SINPRV     = Processos de Sinistro Outros Ramos
+     A*             [x] QS36F/IDSPRV       = Processos de Sinistro IDS
+     A*             [x] QS36F/FICI<AAMMDD> = Interface de Sinistros IDS Lusitânia
+     A*
+     A*==============================================================================
+     A                                      UNIQUE
+     A          R RSINT110
+     A            NORDSIN        9S 0       COLHDG('Número de Ordem')
+     A            NLINHA         3S 0       COLHDG('Nº Linha')
+     A
+     A            TIPMOV         3S 0       COLHDG('Tipo' 'Movimt.')
+     A            DTMOV          8S 0       COLHDG('Data' 'Movimt.')
+     A            DESCR         30A         COLHDG('Descrição')
+     A            VALOR          9S 2       COLHDG('Valor')
+     A            CTAIND        10A         COLHDG('Conta Indemnização')
+     A            SIT1           1A         COLHDG('      ')
+     A            SIT2           1A         COLHDG('      ')
+     A            SIT3           1A         COLHDG('      ')
+     A            VLDMAT         9S 2       COLHDG('Danos' 'Materiais')
+     A            VLDCOR         9S 2       COLHDG('Danos' 'Corporais')
+     A            AASIN          4S 0       COLHDG('Ano' 'Sinistro')
+     A            MMSIN          2S 0       COLHDG('Mês' 'Sinistro')
+     A
+     A            DTUACT         8S 0       COLHDG('Data' 'Alteração')
+     A            USERID        10A         COLHDG('Utilizador')
+      *
+     A          K NORDSIN
+     A          K NLINHA

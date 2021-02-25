@@ -1,0 +1,26 @@
+     A***************************************************************
+     A* Tabela....: FSECP040
+     A* Descrição.: Parameterização de Regras
+     A*
+     A***************************************************************
+     A                                      UNIQUE
+     A          R RSECP040
+     A            SQREGRA        5S 0       TEXT('Sequência da Regra')
+     A            DSOPERA       50A         TEXT('Operação')
+     A            SQSUPER        5S 0       TEXT('Superior')
+     A
+     A*==> Localização da Regra
+     A            CDPROGR        5S 0       TEXT('Programa')
+     A            CDFUNCT        5S 0       TEXT('Função')
+     A            CDOPERA        5S 0       TEXT('Operação')
+     A
+     A*==> Caraterização da Regra
+     A            CDRISCO        3S 0       TEXT('Risco')
+     A            CDNIVEL        3S 0       TEXT('Nível')
+     A            VALIDADE       3S 0       TEXT('Validade')
+     A
+     A*==> Campos de Controlo de Registo
+     A            SEC04001        L         TEXT('Criação do Registo')
+     A            SEC04002        L         TEXT('alteração')
+     A
+     A          K SQREGRA

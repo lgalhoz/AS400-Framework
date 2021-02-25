@@ -1,0 +1,12 @@
+     A*===============================================================
+     A* Ficheiro...: FCOBP022
+     A* Descrição..: Ficheiro de ADC
+     A* Original...: TBADCRF
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCOBP022                  TEXT('Cod. rejeição TB')
+     A
+     A            TRCRET         3S 0       COLHDG('C.Rej.')
+     A            TRTEXT        50A         COLHDG('Texto')
+     A
+     A          K TRCRET

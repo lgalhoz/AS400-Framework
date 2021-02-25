@@ -1,0 +1,185 @@
+     A*================================================================
+     A* Tabela....: FSINP103
+     A* Alias.....: Intervenientes_DM
+     A* Descrição.: Tabela usada em MS.ACCESS
+     A*================================================================
+     A                                      UNIQUE
+     A          R RSINP103                  TEXT('Intervinientes_DM')
+     A            NR             9S 0       COLHDG('Código')
+     A                                      DFT(0)
+     A            NORDEM         2A         TEXT('Nº Ordem do Lesado')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            NRPROC        50A         TEXT('Nº do Processo')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            INTERVEN      50A         TEXT('Nome do Interviniente (Segura+
+     A                                            do ou Terceiro)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10301       8A         ALIAS(TIPOINTERVEN)
+     A                                      TEXT('Tipo Interviniente (Segurado +
+     A                                            ou Terceiro)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            MATRICULA     20A         TEXT('Matricula')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10302       1A         ALIAS(LUCROSCESSANTES)
+     A                                      TEXT('Lucros cessantes (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            DANOSCARGA     1A         TEXT('Danos à Carga')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10303        L         ALIAS(DATA1CONTACTO)
+     A                                      TEXT('Data 1º.Contacto')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10304       1A         ALIAS(IMPOSSCONTACTO)
+     A                                      TEXT('Impossibilidade de Contacto +
+     A                                             (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10305       1A         ALIAS(DIREFECTREP)
+     A                                      TEXT('Direcção Efectiva da Repara+
+     A                                            ção (S/N)')
+     A                                      ALWNULL
+     A                                      DFT('N')
+     A            SIN10306        L         ALIAS(DATADISPOFICINTERV)
+     A                                      TEXT('Data disponibilidade da ofici+
+     A                                            na e Segurado')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10307       1A         ALIAS(NECDESMVEICULO)
+     A                                      TEXT('Necessidade de desmontagem +
+     A                                            do Veiculo (S/N)')
+     A                                      ALWNULL
+     A                                      DFT('N')
+     A            SIN10308        L         ALIAS(DATAPEDAUTDESM)
+     A                                      TEXT('Pedido de Autorização de +
+     A                                            desmontagem')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10309        L         ALIAS(DATAAUTDESM)
+     A                                      TEXT('Autorização de desmontagem')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10310        L         ALIAS(DATACONCPERITAGEM)
+     A                                      TEXT('Conclusão da Peritagem')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10311        L         ALIAS(DATADISPRELATPERIT)
+     A                                      TEXT('Disponibilização do Relatóri+
+     A                                            o de Peritagem')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10312        L         ALIAS(DATAASSRESP)
+     A                                      TEXT('Assunção ou não de Responsab+
+     A                                            ilidade')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10313        L         ALIAS(DATAAPINFADINTER)
+     A                                      TEXT('Apresentação Informações adi+
+     A                                            cionais pelo Interviniente')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10314        L         ALIAS(DATADECFINALSEG)
+     A                                      TEXT('Decisaão final P/Segurador')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10315      50A         ALIAS(TIPDOCQUIT)
+     A                                      TEXT('Tipo documento de Quitação')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10316      50A         ALIAS(ENTCREDORA)
+     A                                      TEXT('Entidade Credora')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10317        L         ALIAS(DATAENVIORECQUIT)
+     A                                      TEXT('Envio Recibo Quitação')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10318        L         ALIAS(DATARECEPRECQUIT)
+     A                                      TEXT('Recepção Recibo Quitação ou+
+     A                                            Factura da Oficina')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10319        L         ALIAS(DATAULTPAGINDEMINTEROFIC)
+     A                                      TEXT('Ultimo pagamento Indemniza+
+     A                                            ção ao Interviniente/Oficina')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10320       1A         ALIAS(AQUISALVADO)
+     A                                      TEXT('Aquisição de Salvado (S/N)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10321        L         ALIAS(DATARECEPDOCVEIC)
+     A                                      TEXT('Recepção documentos Veiculo+
+     A                                            (se Salvado)')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10322      50A         ALIAS(INFADRELEVAPRECPRZ1)
+     A                                      TEXT('Informações P1')
+     A                                      ALWNULL
+     A                                      DFT('00')
+     A            SIN10323      50A         ALIAS(INFADRELEVAPRECPRZ2)
+     A                                      TEXT('Informações P2')
+     A                                      ALWNULL
+     A                                      DFT('00')
+     A            SIN10324      50A         ALIAS(INFADRELEVAPRECPRZ3)
+     A                                      TEXT('Informações P3')
+     A                                      ALWNULL
+     A                                      DFT('00')
+     A            SIN10325      50A         ALIAS(INFADRELEVAPRECPRZ4)
+     A                                      TEXT('Informações P4')
+     A                                      ALWNULL
+     A                                      DFT('00')
+     A            SIN10326      50A         ALIAS(INFADRELEVAPRECPRZ5)
+     A                                      TEXT('Informações P5')
+     A                                      ALWNULL
+     A                                      DFT('00')
+     A            SIN10327      50A         ALIAS(INFADRELEVAPRECPRZ6)
+     A                                      TEXT('Informações P6')
+     A                                      ALWNULL
+     A                                      DFT('00')
+     A            SIN10328       3S 0       ALIAS(PER_RESPONS)
+     A                                      TEXT('Percentagem Responsabilidade')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10332       3S 0       ALIAS(PER_RESPLES)
+     A                                      TEXT('Percentagem Responsabilidade')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            POSI_SEG      20A         TEXT('Posição do segurado')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            PRENCERISP      L         ALIAS(PREENCERISP)
+     A                                      TEXT('Pre Encerramento Isp')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10329      50A         ALIAS(INTERVENCERRADO)
+     A                                      TEXT('Interveniente Encerrado')
+     A                                      ALWNULL
+     A                                      DFT('N')
+     A            SIN10330        L         ALIAS(DATAENCERINTERV)
+     A                                      TEXT('Encerramento Interviniente')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            ENVIADOS       1S 0       TEXT('Enviados em Quadrimestre An+
+     A                                            terior')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            ENVIODM        9S 0       TEXT('Nº.de Envio')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            SIN10331        L         ALIAS(DATALTERA)
+     A                                      TEXT('Data de Alteracao')
+     A                                      ALWNULL
+     A                                      DFT(*NULL)
+     A            NUMINT         9S 0       TEXT('Sequência Interv.')
+     A            TIPINT         1A         TEXT('Tipo Interveinie.')
+     A            ICCPRS         1A         TEXT('Controlo prazos')
+     A
+     A          K NRPROC
+     A          K NORDEM

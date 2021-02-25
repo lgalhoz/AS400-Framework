@@ -1,0 +1,218 @@
+     A*%%TS  SD  20141030  152737  LGALHOZ     REL-V6R1M0  5761-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      CF01(01 'F01')
+     A                                      CF02(02 'F02')
+     A                                      CF03(03 'F03')
+     A                                      CF04(04 'F04')
+     A                                      CF05(05 'F05')
+     A                                      CF06(06 'F06')
+     A                                      CF07(07 'F07')
+     A                                      CF08(08 'F08')
+     A                                      CF09(09 'F09')
+     A                                      CF10(10 'F10')
+     A                                      CF11(11 'F11')
+     A                                      CF12(12 'F12')
+     A                                      CF13(13 'F13')
+     A                                      CF14(14 'F14')
+     A                                      CF15(15 'F15')
+     A                                      CF16(16 'F16')
+     A                                      CF17(17 'F17')
+     A                                      CF18(18 'F18')
+     A                                      CF19(19 'F19')
+     A                                      CF20(20 'F20')
+     A                                      CF21(21 'F21')
+     A                                      CF22(22 'F22')
+     A                                      CF23(23 'F23')
+     A                                      CF24(24 'F24')
+     A          R RCOBE21000
+     A*%%TS  SD  20120224  154940  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                  1 71USER
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A            S#PGM         10A  O  2 71
+     A            DS#FNC        57A  O  2 12DSPATR(HI)
+     A            DS#PGM        57A  O  1 12DSPATR(HI)
+     A          R RCOBE21002                SFL
+     A*%%TS  SD  20140321  113710  LGALHOZ     REL-V6R1M0  5761-WDS
+     A            CDCONT         9S 0H
+     A            NUOPERA        9S 0H
+     A            OPTION         1A  I  9  3
+     A            LST#DET       76   O  9  5
+     A  62                                  COLOR(WHT)
+     A  60                                  COLOR(RED)
+     A  64                                  COLOR(YLW)
+     A*           CURS#          4Y 0H      SFLRCDNBR(CURSOR)
+     A          R RCOBE21003                SFLCTL(RCOBE21002)
+     A*%%TS  SD  20130924  113540  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      SFLSIZ(0013)
+     A                                      SFLPAG(0012)
+     A                                      ROLLUP(50)
+     A                                      ROLLDOWN(51)
+     A                                      OVERLAY
+     A  52                                  SFLDSP
+     A                                      SFLDSPCTL
+     A  53                                  SFLCLR
+     A  54                                  SFLEND(*MORE)
+     A            RRN            4S 0H      SFLRCDNBR(CURSOR *TOP)
+     A            LST#HDR       76   O  8  5DSPATR(HI)
+     A                                      DSPATR(RI)
+     A            DS#OPT01      76A  O  5  4COLOR(BLU)
+     A            DSCRITER      12A  O  7  2
+     A            CRITERIA      40A  B  7 15
+     A                                  8  2'Op'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(RI)
+     A                                  4  2'Escolha a Opção'
+     A            DS#OPT02      76A  O  6  4COLOR(BLU)
+     A          R RCOBE21005
+     A*%%TS  SD  20141030  152737  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      RTNCSRLOC(*WINDOW &CM#CROW &CM#CCOL)
+     A                                      RTNCSRLOC(&CM#NMREC &CM#NMFLD)
+     A                                      CSRLOC(CM#ROW     CM#COL)
+     A                                      OVERLAY
+     A            CM#CROW        3S 0H
+     A            CM#ROW         3S 0H
+     A            CM#CCOL        3S 0H
+     A            CM#COL         3S 0H
+     A            CM#NMREC      10A  H
+     A            CM#NMFLD      10A  H
+     A                                  4  2'Informação detalhada'
+     A                                      COLOR(BLU)
+     A                                  5  4'Companhia.:'
+     A                                  6  4'Ramo/Apól.:'
+     A                                  6 27'/'
+     A  52                              9  4'Recibo....:'
+     A  52                             10  4'Periodo...:'
+     A  52                             10 27'a'
+     A  52                             10 46'Entr/Limit:'
+     A  52                             10 69'/'
+     A                                  7  4'Segurado..:'
+     A            CDCOMP         3S 0O  5 16DSPATR(UL)
+     A            DSCOMP        40A  O  5 20DSPATR(UL)
+     A            CDRAMO        10A  O  6 16DSPATR(UL)
+     A            NUAPOL        10A  O  6 29DSPATR(UL)
+     A  52        NUMREC         9A  O  9 16DSPATR(UL)
+     A  52        DTINICIO       8Y 0O 10 16DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A  52        DTTERMO        8Y 0O 10 29DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A  52        DTENTRADA      8Y 0O 10 58DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A  52        DTLIMITE       8Y 0O 10 71DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A            NOSEG         60A  O  7 16DSPATR(UL)
+     A            DSRAMO        40A  O  6 41DSPATR(UL)
+     A  52        NUMORDEM       8S 0O  9 49DSPATR(UL)
+     A  52                              9 37'Num.Ordem.:'
+     A  52                              9 69'/'
+     A  52        DTESTADO       8Y 0O  9 58DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A            DSTIPRECIB    10A  O  4 71DSPATR(UL)
+     A                                      DSPATR(HI)
+     A  52        DSESTADO      10A  O  9 71DSPATR(UL)
+     A                                  8  4'Telefone..:'
+     A            NUTELEF       15A  O  8 16DSPATR(UL)
+     A                                  8 37'Med.C.Cob.:'
+     A            NOMED         32A  O  8 49DSPATR(UL)
+     A          R RCOBE21006
+     A*%%TS  SD  20140328  112024  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      RTNCSRLOC(*WINDOW &CM#CROW &CM#CCOL)
+     A                                      RTNCSRLOC(&CM#NMREC &CM#NMFLD)
+     A                                      CSRLOC(CM#ROW     CM#COL)
+     A                                      OVERLAY
+     A            CM#CROW        3S 0H
+     A            CM#ROW         3S 0H
+     A            CM#CCOL        3S 0H
+     A            CM#COL         3S 0H
+     A            CM#NMREC      10A  H
+     A            CM#NMFLD      10A  H
+     A                                 13  4'Forma.....:'
+     A            DSTPCONT       9A  B 13 16DSPATR(UL)
+     A N50                                  DSPATR(PR)
+     A  50                                  DSPATR(HI)
+     A                                      DSPATR(&F#01)
+     A            F#01           1A  P
+     A                                 13 27'Data/Hora.:'
+     A            DTCONT         8Y 0B 13 39DSPATR(UL)
+     A                                      EDTWRD('  -  -    ')
+     A N50                                  DSPATR(PR)
+     A  50                                  DSPATR(HI)
+     A                                      DSPATR(&F#02)
+     A            F#02           1A  P
+     A                                 13 50'/'
+     A            HRCONT         6Y 0B 13 52EDTWRD('  :  :  ')
+     A                                      DSPATR(UL)
+     A N50                                  DSPATR(PR)
+     A  50                                  DSPATR(HI)
+     A                                      DSPATR(&F#03)
+     A            F#03           1A  P
+     A            USCONT        10A  B 13 71DSPATR(UL)
+     A N50                                  DSPATR(PR)
+     A  50                                  DSPATR(HI)
+     A                                      DSPATR(&F#04)
+     A            F#04           1A  P
+     A                                 14  4'Pessoa....:'
+     A                                 15  4'Comentár..:'
+     A            TXLINE01      60A  B 15 21DSPATR(UL)
+     A N50                                  DSPATR(PR)
+     A  50                                  DSPATR(HI)
+     A                                      DSPATR(&F#05)
+     A            TXLINE02      60A  B 16 21DSPATR(UL)
+     A N50                                  DSPATR(PR)
+     A  50                                  DSPATR(HI)
+     A                                      DSPATR(&F#05)
+     A            TXLINE03      60A  B 17 21DSPATR(UL)
+     A N50                                  DSPATR(PR)
+     A  50                                  DSPATR(HI)
+     A                                      DSPATR(&F#05)
+     A            TXLINE04      60A  B 18 21DSPATR(UL)
+     A N50                                  DSPATR(PR)
+     A  50                                  DSPATR(HI)
+     A                                      DSPATR(&F#05)
+     A            TXLINE05      60A  B 19 21DSPATR(UL)
+     A N50                                  DSPATR(PR)
+     A  50                                  DSPATR(HI)
+     A                                      DSPATR(&F#05)
+     A            TXLINE06      60A  B 20 21DSPATR(UL)
+     A N50                                  DSPATR(PR)
+     A  50                                  DSPATR(HI)
+     A                                      DSPATR(&F#05)
+     A            F#05           1A  P
+     A            CONTAC        60A  B 14 16DSPATR(UL)
+     A N50                                  DSPATR(PR)
+     A  50                                  DSPATR(HI)
+     A                                      DSPATR(&F#06)
+     A            F#06           1A  P
+     A                                 15 16'001.'
+     A                                 16 16'002.'
+     A                                 17 16'003.'
+     A                                 18 16'004.'
+     A                                 19 16'005.'
+     A                                 20 16'006.'
+     A            GRPHEADER     40A  O 12  2COLOR(BLU)
+     A          R RCOBE21098
+     A*%%TS  SD  20130903  114317  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A                                 12  9'|              NÃO EXISTEM REGISTO-
+     A                                      S               |'
+     A                                      DSPATR(HI)
+     A                                 10  9'+----------------------------------
+     A                                      ----------------+'
+     A                                      DSPATR(HI)
+     A                                 13  9'|                                 -
+     A                                                      |'
+     A                                      DSPATR(HI)
+     A                                 14  9'+----------------------------------
+     A                                      ----------------+'
+     A                                      DSPATR(HI)
+     A                                 11  9'|                                 -
+     A                                                      |'
+     A                                      DSPATR(HI)
+     A          R RCOBE21099
+     A*%%TS  SD  20130910  124026  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            DS#KEY01      78A  O 22  2COLOR(BLU)
+     A            DS#KEY02      78A  O 23  2COLOR(BLU)
+     A            ERR#MSG       78A  O 24  2COLOR(RED)

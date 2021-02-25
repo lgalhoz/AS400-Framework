@@ -1,0 +1,22 @@
+     A*================================================================
+     A* Tabela....: FINTP059
+     A* Descrição.: Detalhe dos Registos Gerados
+     A*================================================================
+     A                                      UNIQUE
+     A          R RINTP059
+     A            CDMEDIA        9S 0       TEXT('Código do Mediador')
+     A            CDINTER        5S 0       TEXT('Código do Interface')
+     A            NUSEQU         5S 0       TEXT('Sequencia do registo')
+     A
+     A*==> Detalhe do Registo
+     A            CDFILE         5S 0       TEXT('Código do Ficheiro')
+     A            KEYFLD       100A         TEXT('Chave do Registo')
+     A            DETAIL       500A         TEXT('Detalhe do Registo')
+     A
+     A*==> Campos de Controlo do Registo
+     A            INT05901        L
+     A            INT05902        L
+     A
+     A          K CDMEDIA
+     A          K CDINTER
+     A          K NUSEQU

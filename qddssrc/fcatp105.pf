@@ -1,0 +1,26 @@
+     A*===============================================================
+     A* Ficheiro...: FCATP105
+     A* Descrição..: Riscos / Notas descritivas
+     A* Observação.: Parameterizado manualmente.
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RCATP105
+     A
+     A            CDPROD         5S 0       TEXT('Código')
+     A            CDRISCO        5S 0       TEXT('Código de Risco')
+     A            CDTEXTO        5S 0       TEXT('Códito Texto')
+     A            ICDEFEIT       1A         TEXT('Por defeito')
+     A
+     A*==> Campos de Controlo
+     A            CAT10501        L         TEXT('Data de Inicio')
+     A                                      DFT('2000-01-01')
+     A            CAT10502        L         TEXT('Data de Termo')
+     A                                      DFT('9999-12-31')
+     A            CAT10503       1S 0       TEXT('1=>Activo,0=>Histórico')
+     A                                      DFT(1)
+     A            CAT10504      10A         TEXT('Quem Criou')
+     A            CAT10505      10A         TEXT('Quem Alterou')
+     A
+     A          K CDPROD
+     A          K CDRISCO
+     A          K CDTEXTO

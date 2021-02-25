@@ -1,0 +1,17 @@
+     A*===============================================================
+     A* Ficheiro...: FENTP004
+     A* Descrição..: Moradas da Entidade
+     A*===============================================================
+     A                                      UNIQUE
+     A          R RENTP004
+     A            CODIGO         9S 0       TEXT('Código de Entidade')
+     A            NUSEQU         5S 0       TEXT('Tipo de Documento')
+     A            TPMORADA       3A         TEXT('Número do Documento')
+     A            MORADA       100A         TEXT('Morada')
+     A            LOCALID       25A         TEXT('Localidade')
+     A            CDPOSTAL       7S 0       TEXT('Código Postal')
+     A            CDPAIS         3S 0       TEXT('Código de País')
+     A            CDRELAC        9S 0       TEXT('Registo original')
+     A
+     A          K CODIGO
+     A          K NUSEQU

@@ -1,0 +1,247 @@
+     A*%%TS  SD  20131219  122254  LGALHOZ     REL-V6R1M0  5761-WDS
+0000 A*0IGC 0DS4  V6R1M0                    910710
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3                  -
+     A                                             27 132 *DS4)
+0042 A**************************************************************************
+0042 A*ECRAN CONSULTA DADOS DA APOLICE DE QUALQUER RAMO
+0043 A**************************************************************************
+     A          R RPRDE01600
+     A*%%TS  SD  20120224  154940  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      CF03(03 'Sair')
+     A                                      CF12(12 'Cancelar')
+     A                                  1 71USER
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A            S#PGM         10A  O  2 71
+     A            DS#FNC        57A  O  2 12DSPATR(HI)
+     A            DS#PGM        57A  O  1 12DSPATR(HI)
+     A          R RPRDE01605
+     A*%%TS  SD  20131219  122254  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      TEXT('Lusitania')
+     A                                  4  2'Tomador..:'
+     A                                 13  2'Data Carta Seg.:'
+     A                                 15  2'Med C/ Cobr.:'
+     A                                 16  2'Med S/ Cobr.:'
+     A                                 17  2'Canal Cobr. :'
+     A                                 17 30'Alt.Canal Cobr.:'
+     A                                 18  2'Pré Contenc.:'
+     A                                 18 30'Valor:'
+     A                                 19 46'Sit:'
+     A                                 19 71'000000000'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                 19  2'Refer. MB...:'
+     A                                 19 30'Entidade:'
+     A                                 19 59'->'
+     A                                 24 29'F3'
+     A                                      DSPATR(HI)
+     A                                 24 32'- ECRAN ANTERIOR'
+     A            FLD002        40A  O  4 22DSPATR(UL)
+     A            FLD004         8S 0O  4 13DSPATR(UL)
+     A                                  5  2'Recibo...:'
+     A            FLD005         9S 0O  5 13DSPATR(UL)
+     A                                  5 29'Tipo.....:'
+     A            FLD006        15A  O  5 40DSPATR(UL)
+     A                                  5 58'Emissão..:'
+     A            FLD007         8Y 0O  5 69EDTWRD('  -  -    ')
+     A                                      DSPATR(UL)
+     A                                  6  2'Valor....:'
+     A            FLD008         9Y 2O  6 13EDTWRD(' .   .   ,  ')
+     A                                      DSPATR(UL)
+     A                                  6 29'Comissão.:'
+     A            FLD009         9Y 2O  6 40EDTWRD(' .   .   ,  ')
+     A                                      DSPATR(UL)
+     A                                  7  2'Situação.:'
+     A            FLD010        15A  O  7 13DSPATR(UL)
+     A                                  7 29'->'
+     A            FLD011         8Y 0O  7 32EDTWRD('  -  -    ')
+     A                                      DSPATR(UL)
+     A                                  6 58'Atraso...:'
+     A            FLD012         3S 0O  6 69DSPATR(UL)
+     A                                  6 73'dias'
+     A                                  7 58'Ref.Pagam:'
+     A                                  9  2'Segurado.:'
+     A            FLD013         8S 0O  9 13DSPATR(UL)
+     A            FLD014        40A  O  9 22DSPATR(UL)
+     A                                 10  2'Apólice..:'
+     A            FLD015         2S 0O 10 13DSPATR(UL)
+     A            FLD016         7S 0O 10 16DSPATR(UL)
+     A                                 10 29'Período..:'
+     A            FLD017         8Y 0O 10 40EDTWRD('  -  -    ')
+     A                                      DSPATR(UL)
+     A                                 10 51'-'
+     A            FLD018         8Y 0O 10 53EDTWRD('  -  -    ')
+     A                                      DSPATR(UL)
+     A                                 11  2'Motivo...:'
+     A            FLD019        40A  O 11 13DSPATR(UL)
+     A            FLD021         8Y 0O 13 19EDTWRD('  -  -    ')
+     A                                      DSPATR(UL)
+     A            FLD022         4S 0O 16 16DSPATR(UL)
+     A            FLD023        40A  O 16 21DSPATR(UL)
+     A            FLD024         4S 0O 15 16DSPATR(UL)
+     A            FLD025        40A  O 15 21DSPATR(UL)
+     A            FLD026        10A  O 17 16DSPATR(UL)
+     A            FLD027         8Y 0O 17 47EDTWRD('  -  -    ')
+     A                                      DSPATR(UL)
+     A            FLD028         9  2O 18 40EDTWRD(' .   .   ,  ')
+     A                                      DSPATR(UL)
+     A            FLD029        11A  O 19 16DSPATR(UL)
+     A            FLD030         5A  O 19 40DSPATR(UL)
+     A          R RPRDE01607
+     A*%%TS  SD  20130523  130512  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      TEXT('Corretor')
+     A                                  1 20'Visualização'
+     A                                  1 33'do'
+     A                                  1 36'Recibo'
+     A                                  1 43'de'
+     A                                  1 46'P R É M I O'
+     A                                      DSPATR(HI)
+     A                                  2 20'Responsáveis......'
+     A                                  2 40'Sem Gestor  /Grupo-B'
+     A                                      DSPATR(HI)
+     A                                  3  3' N. de Ordem '
+     A                                      DSPATR(UL)
+     A                                  3 20'Segurado...'
+     A                                  3 33'84471  LUIS ALBERTO CONCEIÇÃO GALH-
+     A                                      OZ'
+     A                                      DSPATR(HI)
+     A                                  4  6'1316635'
+     A                                      DSPATR(HI)
+     A                                  4 20'Companhia..'
+     A                                  4 36'54  LUSITANIA,SA'
+     A                                      DSPATR(HI)
+     A                                  5 20'Ramo.......'
+     A                                  5 35'342  RISCOS MULTIPLOS-HABIT.'
+     A                                      DSPATR(HI)
+     A                                  6  2'                       Elementos d-
+     A                                      e Entrada e Facturação             -
+     A                                               '
+     A                                      DSPATR(UL)
+     A                                  7  2'Apólice.......'
+     A                                  7 21'9910401'
+     A                                      DSPATR(HI)
+     A                                  7 45'Período'
+     A                                  7 53'.....'
+     A                                  7 61'31/05/13'
+     A                                      DSPATR(HI)
+     A                                  7 70'a'
+     A                                  7 72'30/05/14'
+     A                                      DSPATR(HI)
+     A                                  8  2'Data'
+     A                                  8  7'Entrada..'
+     A                                  8 20'25/03/13'
+     A                                      DSPATR(HI)
+     A                                  8 45'Valor'
+     A                                  8 52'Prémio.'
+     A                                  8 74'291,54'
+     A                                      DSPATR(HI)
+     A                                  9  2'Recibo'
+     A                                  9  9'Companh'
+     A                                  9 19'130516635'
+     A                                      DSPATR(HI)
+     A                                  9 30'Data'
+     A                                  9 35'25/03/13'
+     A                                      DSPATR(HI)
+     A                                  9 45'Comis.'
+     A                                  9 52'Corret.'
+     A                                  9 60'¤'
+     A                                  9 75'42,61'
+     A                                      DSPATR(HI)
+     A                                 10  2'G/R'
+     A                                 10  6'Companhia.'
+     A                                 10 30'Data'
+     A                                 10 45'Med.'
+     A                                 10 50'Com'
+     A                                 10 54'Cobrança'
+     A                                 10 68'¤'
+     A                                 10 76'0,00'
+     A                                      DSPATR(HI)
+     A                                 11  2'Dt'
+     A                                 11  5'Limite'
+     A                                 11 12'Pag.'
+     A                                 11 20'31/05/13'
+     A                                      DSPATR(HI)
+     A                                 11 45'Med.'
+     A                                 11 50'Sem'
+     A                                 11 54'Cobrança'
+     A                                 11 68'¤'
+     A                                 11 76'0,00'
+     A                                      DSPATR(HI)
+     A                                 12  2'Aviso'
+     A                                 12  8'Débito'
+     A                                 12 15'.'
+     A                                 12 22'199091'
+     A                                      DSPATR(HI)
+     A                                 12 30'Data'
+     A                                 12 35'26/03/13'
+     A                                      DSPATR(HI)
+     A                                 12 45'Prémio'
+     A                                 12 52'Comerc.'
+     A                                 12 60'¤'
+     A                                 12 74'258,23'
+     A                                      DSPATR(HI)
+     A                                 13  2'1. Descrição                      -
+     A                                       '
+     A                                      DSPATR(UL)
+     A                                 13 45'2. Descrição                      -
+     A                                       '
+     A                                      DSPATR(UL)
+     A                                 14  2'Continuado'
+     A                                      DSPATR(HI)
+     A                                 16  2'Descrição'
+     A                                 16 12'Variável'
+     A                                 16 23'RUA HENRIQUE MEDINA,Nº56,SEIXAL.'
+     A                                      DSPATR(HI)
+     A                                 16 60'Assinado'
+     A                                 16 69'em'
+     A                                 17  2'                     Elementos de -
+     A                                      Devolução ou Liquidação            -
+     A                                               '
+     A                                      DSPATR(UL)
+     A                                 18  2'N.'
+     A                                 18  5'N/Devolução.'
+     A                                 18 30'Desc.Devolução'
+     A                                 19  2'Data'
+     A                                 19  7'Devolução'
+     A                                 20  2'Relat.'
+     A                                 20  9'Contas.'
+     A                                 20 30'Data'
+     A                                 20 45'Data'
+     A                                 20 50'Cobrança.'
+     A                                 21  2'Tipo'
+     A                                 21  7'Pag/Entid.'
+     A                                 21 20'/'
+     A                                 21 31'N.'
+     A                                 21 45'Valor'
+     A                                 21 51'Pagamento.¤'
+     A                                 21 76'0,00'
+     A                                      DSPATR(HI)
+     A                                 22  2'Val.'
+     A                                 22  7'Desconto'
+     A                                 22 16'¤'
+     A                                 22 45'Dif.Pagamento...¤'
+     A                                 22 76'0,00'
+     A                                      DSPATR(HI)
+     A                                 23  2'Agradec.Cheque'
+     A                                 23 30'Agr/Seg'
+     A                                 23 45'PagamtºAntecip.'
+     A                                 23 61'¤'
+     A                                 23 76'0,00'
+     A                                      DSPATR(HI)
+     A                                 24  2'Situação..'
+     A                                 24 14'C/AVISO DÉBITO'
+     A                                      DSPATR(HI)
+     A                                 24 32'press ENTER'
+     A                                      COLOR(RED)
+     A                                 24 47'Último'
+     A                                 24 54'utilizador'
+     A                                 24 72'NUNO'
+     A                                      DSPATR(HI)
+     A          R RPRDE01699
+     A*%%TS  SD  20120906  165033  LGALHOZ     REL-V6R1M0  5761-WDS
+     A                                      OVERLAY
+     A            DS#KEY01      78   O 22  2COLOR(BLU)
+     A            DS#KEY02      78   O 23  2COLOR(BLU)
+     A            ERR#MSG       78   O 24  2COLOR(RED)

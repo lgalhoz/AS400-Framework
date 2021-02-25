@@ -1,0 +1,13 @@
+     A*================================================================
+     A* Tabela....: FGRLP201
+     A* Descrição.: Código de FTP
+     A*================================================================
+     A                                      UNIQUE
+     A          R RGRLP201
+     A
+     A            CDSERVER       5S 0       TEXT('Código da Template')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            SOURCE       120A         TEXT('Instrução FTP')
+     A
+     A          K CDSERVER
+     A          K NUSEQU

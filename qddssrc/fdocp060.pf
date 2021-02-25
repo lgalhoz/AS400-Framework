@@ -1,0 +1,34 @@
+     A                                      UNIQUE
+     A          R RDOCP060                  TEXT('Historico de Cartas Verdes')
+     A            NCV            9S 0       TEXT('Numero Carta Verde')
+     A            ANNCV          4S 0       TEXT('Ano da Carta Verde')
+     A            CRAMO          2S 0       TEXT('Código do Ramo')
+     A            NUAPOL         7S 0       TEXT('Numero da Apólice')
+     A            DTINICIO       8S 0       TEXT('Data Inicio')
+     A            DTTERMO        8S 0       TEXT('Data Termo')
+     A            NUMATR1       15A         TEXT('Matricula')
+     A            CATVIA         1A         TEXT('Categoria')
+     A            MARCA1        14A         TEXT('Marca')
+     A            NUMATR2       15A         TEXT('Matricula')
+     A            MARCA2        14A         TEXT('Marca')
+     A            NUMSEG         6S 0       TEXT('Código de Segurado')
+     A            NOMSEG        50A         TEXT('Nome Segurado')
+     A            MORSEG        50A         TEXT('Morada')
+     A            CODPOS         8S 0       TEXT('Código Postal')
+     A            LOCPOS        30A         TEXT('Localidade Postal')
+     A            PAIMOR        30A         TEXT('Pais da Morada')
+     A            NUMED1         3S 0       TEXT('Mediador 01')
+     A            NUMED2         3S 0       TEXT('Mediador 02')
+     A            ICGERA         1S 0       TEXT('Documento Gerado')
+     A            ASTVIAG        1A         TEXT('Assistencia Viagem')
+     A            FILORG        10A         TEXT('Ficheiro de Origem')
+     A            NREC           9S 0       COLHDG('Nº Recibo')
+     A
+     A*==> Campos de Controlo
+     A            DOC06004      10A         TEXT('Utilizador que Criou')
+     A            DOC06005      10A         TEXT('Utilizador que Alterou')
+     A            DOC06006        L         TEXT('Data de Criação')
+     A            DOC06007        L         TEXT('Data de Alteração')
+     A
+     A          K NCV
+     A          K ANNCV

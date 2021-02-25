@@ -1,0 +1,17 @@
+     A*================================================================
+     A* Tabela....: FCOBP012
+     A* Descrição.: Linhas de Texto
+     A*================================================================
+     A                                      UNIQUE
+     A          R RCOBP012
+     A            CDCONT         9S 0       TEXT('Código de Contacto')
+     A            NUOPERA        5S 0       TEXT('Número de Operação')
+     A            NULINH         3S 0       TEXT('Número da Linha')
+     A
+     A*==> linhas do Texto
+     A            TPREGIS        2A         TEXT('Agenda ou resultado')
+     A            TXLINE        60A         TEXT('Texto do Contacto')
+     A
+     A          K CDCONT
+     A          K NUOPERA
+     A          K NULINH

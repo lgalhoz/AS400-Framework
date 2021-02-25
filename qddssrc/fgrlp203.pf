@@ -1,0 +1,17 @@
+     A*================================================================
+     A* Tabela....: FGRLP203
+     A* Descrição.: Separação dos Campos no Servidor FTP
+     A*================================================================
+     A                                      UNIQUE
+     A          R RGRLP203
+     A
+     A            CDSERVER       5S 0       TEXT('Código do Servidor')
+     A            NUSEQU         5S 0       TEXT('Sequencia')
+     A            NMFIELD       20A         TEXT('Nome do Campo')
+     A            TPFIELD        2A         TEXT('Tipo de Campo')
+     A            VALDEFT       10A         TEXT('Valor por defeito')
+     A            POSINI         3S 0       TEXT('Posição Inicial')
+     A            POSFIM         3S 0       TEXT('Posição Final')
+     A
+     A          K CDSERVER
+     A          K NUSEQU
