@@ -1,5 +1,6 @@
 # AS400-Framework
-This framework was developped to increase the quality of AS400 Software. 
+This framework was developed to increase the quality of AS400 Software. This is a way for rapid software development over traditional 5250 AS400 Screens. 
+To use this you need to explore the entire framework, becouse of database structure. This framework has many modules that are used. for example module for secutiry access.
 
 ## Declaration
 ### Declaring the subfile and the main BNDDIR for this framework 
